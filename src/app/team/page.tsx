@@ -7,7 +7,7 @@ export default function TeamPage() {
       <section className="modern-hero modern-section">
         <div className="modern-container">
           <div className="text-center">
-            <div className="inline-flex items-center px-6 py-3 rounded-full bg-[#0395A6] bg-opacity-10 text-[#0395A6] font-semibold mb-12 modern-animate-fade-in">
+            <div className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#0395A6] text-white font-semibold mb-12 modern-animate-fade-in">
               <Users className="w-5 h-5 mr-2" />
               Unser Expertenteam
             </div>
