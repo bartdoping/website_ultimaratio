@@ -9,7 +9,7 @@ export default function AGBPage() {
               Allgemeine Geschäftsbedingungen
             </h1>
             <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-              AGB für ultima-rat.io
+              für die Erbringung von Dienstleistungen
             </p>
           </div>
         </div>
@@ -19,112 +19,170 @@ export default function AGBPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">§ 1 Geltungsbereich</h2>
-            <p className="text-gray-700 mb-6">
-              Diese Allgemeinen Geschäftsbedingungen gelten für alle Dienstleistungen von ultima-rat.io, 
-              insbesondere für Medizin-Nachhilfe, Coaching und Prüfungsvorbereitung.
+            <p className="text-gray-700 mb-8">
+              für die Erbringung von Dienstleistungen von Thavarajasingam, Ahkash; Eid, Mustafa Magdy Abdel Razik GbR, 
+              Warburghof, 14, 30627 Hannover, E-Mail: info@ultima-rat.io (nachfolgend „Auftragnehmer") gegenüber seinen 
+              Kunden (nachfolgend „Auftraggeber")
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">§ 2 Leistungen</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">1. Allgemeines</h2>
             <p className="text-gray-700 mb-6">
-              ultima-rat.io bietet folgende Dienstleistungen an:
+              1.1 Diese Allgemeinen Geschäftsbedingungen (AGB) für die Erbringung von Dienstleistungen gelten für Verträge, 
+              die zwischen dem Auftraggeber und dem Auftragnehmer unter Einbeziehung dieser AGB geschlossen werden.
             </p>
-            <ul className="list-disc pl-6 text-gray-700 mb-6">
-              <li>Einzelcoaching und Nachhilfe für Medizinstudierende</li>
-              <li>Prüfungsvorbereitung für Physikum, M2, M3 und Kenntnisprüfung</li>
-              <li>Online-Sessions via Zoom mit Screen-Sharing und Whiteboard</li>
-              <li>Bereitstellung von Lernmaterialien und Protokollen</li>
-              <li>Strukturierte Lernpläne und Feedback</li>
-            </ul>
-
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">§ 3 Vertragsschluss</h2>
             <p className="text-gray-700 mb-6">
-              Der Vertrag kommt durch die Buchung einer Coaching-Session zustande. Die Buchung erfolgt über 
-              WhatsApp oder per E-Mail. Eine Bestätigung der Buchung durch ultima-rat.io ist erforderlich.
+              1.2 Soweit neben diesen AGB weitere Vertragsdokumente oder andere Geschäftsbedingungen in Text- oder 
+              Schriftform Vertragsbestandteil geworden sind, gehen die Regelungen dieser weiteren Vertragsdokumente im 
+              Widerspruchsfalle den vorliegenden AGB vor.
+            </p>
+            <p className="text-gray-700 mb-6">
+              1.3 Von diesen Geschäftsbedingungen abweichende AGB, die durch den Auftraggeber verwendet werden, erkennt 
+              Auftragnehmer – vorbehaltlich einer ausdrücklichen Zustimmung – nicht an.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">§ 4 Preise und Zahlungsbedingungen</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">2. Vertragsgegenstand und Leistungsumfang</h2>
             <p className="text-gray-700 mb-6">
-              Die Preise für unsere Dienstleistungen sind auf der Website angegeben. Alle Preise verstehen sich 
-              in Euro und inklusive der gesetzlichen Mehrwertsteuer, soweit anwendbar.
+              2.1 Der Auftragnehmer erbringt als selbständiger Unternehmer folgende Leistungen gegenüber dem Auftraggeber:
             </p>
             <p className="text-gray-700 mb-6">
-              Die Zahlung erfolgt nach der erbrachten Leistung. Wir senden Ihnen eine Rechnung per E-Mail zu, 
-              die innerhalb von 14 Tagen zu begleichen ist. Zahlungsmöglichkeiten sind Überweisung oder PayPal.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">§ 5 Durchführung der Dienstleistungen</h2>
-            <p className="text-gray-700 mb-6">
-              Die Coaching-Sessions finden online über Zoom statt. Der Teilnehmer erhält einen Link zur 
-              Session und kann mit Screen-Sharing und Whiteboard arbeiten. Nach der Session erhält der 
-              Teilnehmer ein Protokoll und weiteres Material per E-Mail.
+              Online-Coaching via Video-Call und umfängliche Unterstützung zum Erlernen von Inhalten des Medizinstudiums 
+              vorrangig zur Vorbereitung auf Prüfungen.
             </p>
             <p className="text-gray-700 mb-6">
-              Der Teilnehmer ist verpflichtet, pünktlich zur vereinbarten Zeit an der Session teilzunehmen. 
-              Bei Verspätung von mehr als 15 Minuten kann die Session als nicht wahrgenommen gelten.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">§ 6 Stornierung und Umbuchung</h2>
-            <p className="text-gray-700 mb-6">
-              Stornierungen müssen mindestens 24 Stunden vor dem vereinbarten Termin erfolgen. Bei kurzfristigeren 
-              Stornierungen behalten wir uns vor, 50% der vereinbarten Gebühr zu berechnen.
+              2.2 Der spezifische Leistungsumfang ist Gegenstand von Individualvereinbarungen zwischen Auftragnehmer und 
+              dem Auftraggeber.
             </p>
             <p className="text-gray-700 mb-6">
-              Umbuchungen sind bis 24 Stunden vor dem Termin kostenfrei möglich, sofern ein alternativer Termin 
-              verfügbar ist.
+              2.3 Der Auftragnehmer erbringt die vertragsgemäßen Leistungen mit größtmöglicher Sorgfalt und Gewissenhaftigkeit 
+              nach dem jeweils neuesten Stand, neuesten Regeln und Erkenntnissen.
+            </p>
+            <p className="text-gray-700 mb-6">
+              2.4 Der Auftragnehmer ist zur Erbringung der vertragsgemäß geschuldeten Leistungen verpflichtet. Bei der 
+              Durchführung seiner Tätigkeit ist er jedoch etwaigen Weisungen im Hinblick auf die Art der Erbringung seiner 
+              Leistungen, den Ort der Leistungserbringung ebenso wie die Zeit der Leistungserbringung nicht unterworfen. 
+              Er wird jedoch bei der Einteilung der Tätigkeitstage und bei der Zeiteinteilung an diesen Tagen diese selbst 
+              in der Weise festlegen, dass eine optimale Effizienz bei seiner Tätigkeit und bei der Realisierung des 
+              Vertragsgegenstandes erzielt wird. Die Leistungserbringung durch den Auftragnehmer erfolgt lediglich in 
+              Abstimmung und in Koordination mit dem Auftraggeber.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">§ 7 Haftung</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">3. Mitwirkungspflichten des Auftraggebers</h2>
             <p className="text-gray-700 mb-6">
-              Wir haften nur für Schäden, die auf Vorsatz oder grober Fahrlässigkeit beruhen. Die Haftung für 
-              leichte Fahrlässigkeit ist ausgeschlossen, soweit nicht zwingende gesetzliche Haftungsbestimmungen 
-              entgegenstehen.
-            </p>
-            <p className="text-gray-700 mb-6">
-              Wir übernehmen keine Gewähr für den Erfolg der Prüfungen oder Examina. Unsere Dienstleistungen 
-              dienen der Unterstützung und Vorbereitung, können aber keine Garantie für das Bestehen geben.
+              Es obliegt dem Auftraggeber, die von ihm zum Zwecke der Leistungserfüllung zur Verfügung zu stellenden 
+              Informationen, Daten und sonstigen Inhalte vollständig und korrekt mitzuteilen. Für Verzögerungen und 
+              Verspätungen bei der Leistungserbringung, die durch eine verspätete und notwendige Mit- bzw. Zuarbeit des 
+              Kunden entstehen, ist der Auftragnehmer gegenüber dem Kunden in keinerlei Hinsicht verantwortlich; die 
+              Vorschriften unter der Überschrift „Haftung/Freistellung" bleiben hiervon unberührt.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">§ 8 Datenschutz</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">4. Vergütung</h2>
             <p className="text-gray-700 mb-6">
-              Die Erhebung, Verarbeitung und Nutzung personenbezogener Daten erfolgt in Übereinstimmung mit der 
-              Datenschutz-Grundverordnung (DSGVO) und unserer Datenschutzerklärung.
+              4.1 Die Vergütung wird individualvertraglich vereinbart.
+            </p>
+            <p className="text-gray-700 mb-6">
+              4.2 Die Vergütung ist nach der Leistung der Dienste zu entrichten. Ist die Vergütung nach Zeitabschnitten 
+              bemessen, so ist sie nach dem Ablauf der einzelnen Zeitabschnitte zu entrichten (§ 614 BGB). Bei aufwandsbezogener 
+              Abrechnung ist der Auftragnehmer vorbehaltlich abweichender Vereinbarungen berechtigt, die erbrachte Leistungen 
+              monatlich abzurechnen.
+            </p>
+            <p className="text-gray-700 mb-6">
+              4.3 Der Auftragnehmer stellt dem Auftraggeber nach Erbringung der Leistungen eine Rechnung per Post oder per 
+              E-Mail (z.B. als PDF). Die Vergütung ist innerhalb von 14 Tagen nach Zugang der Rechnung zur Zahlung fällig.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">§ 9 Vertraulichkeit</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">5. Haftung / Freistellung</h2>
             <p className="text-gray-700 mb-6">
-              Alle im Rahmen der Coaching-Sessions besprochenen Inhalte werden vertraulich behandelt. Wir verpflichten 
-              uns, keine Informationen an Dritte weiterzugeben.
+              5.1 Der Auftragnehmer haftet aus jedem Rechtsgrund uneingeschränkt bei Vorsatz oder grober Fahrlässigkeit, bei 
+              vorsätzlicher oder fahrlässiger Verletzung des Lebens, des Körpers oder der Gesundheit, aufgrund eines 
+              Garantieversprechens, soweit diesbezüglich nichts anderes geregelt ist oder aufgrund zwingender Haftung. 
+              Verletzt der Auftragnehmer fahrlässig eine wesentliche Vertragspflicht, ist die Haftung auf den vertragstypischen, 
+              vorhersehbaren Schaden begrenzt, sofern nicht gemäß vorstehendem Satz unbeschränkt gehaftet wird. Wesentliche 
+              Vertragspflichten sind Pflichten, die der Vertrag dem Auftragnehmer nach seinem Inhalt zur Erreichung des 
+              Vertragszwecks auferlegt, deren Erfüllung die ordnungsgemäße Durchführung des Vertrags überhaupt erst ermöglicht 
+              und auf deren Einhaltung der Kunde regelmäßig vertrauen darf. Im Übrigen ist eine Haftung des Auftragnehmers 
+              ausgeschlossen. Vorstehende Haftungsregelungen gelten auch im Hinblick auf die Haftung des Auftragnehmers für 
+              seine Erfüllungsgehilfen und gesetzlichen Vertreter.
+            </p>
+            <p className="text-gray-700 mb-6">
+              5.2 Der Auftraggeber stellt den Auftragnehmer von jeglichen Ansprüchen Dritter frei, die gegen den Auftragnehmer 
+              aufgrund von Verstößen des Kunden gegen diese Vertragsbedingungen oder gegen geltendes Recht geltend gemacht 
+              werden.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">§ 10 Schlussbestimmungen</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">6. Vertragsdauer und Kündigung</h2>
             <p className="text-gray-700 mb-6">
-              Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, bleibt die Wirksamkeit der 
-              übrigen Bestimmungen unberührt.
+              6.1 Die Vertragsdauer und die Fristen zur ordentlichen Kündigung vereinbaren die Parteien individuell.
             </p>
             <p className="text-gray-700 mb-6">
-              Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts. Gerichtsstand ist Hannover.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">§ 11 Kontakt</h2>
-            <p className="text-gray-700 mb-6">
-              Bei Fragen zu diesen AGB wenden Sie sich bitte an:
+              6.2 Das Recht beider Parteien zur fristlosen Kündigung aus wichtigem Grund bleibt unberührt.
             </p>
             <p className="text-gray-700 mb-6">
-              ultima-rat.io<br />
-              Warburghof 14<br />
-              30672 Hannover<br />
-              Deutschland<br />
-              E-Mail: info@ultima-rat.io<br />
-              Telefon: +49 163 9347633
+              6.3 Der Auftragnehmer hat alle ihm überlassenen Unterlagen und sonstigen Inhalte nach Vertragsbeendigung 
+              unverzüglich nach Wahl des Kunden zurückzugeben oder zu vernichten. Die Geltendmachung eines Zurückbehaltungsrechts 
+              daran ist ausgeschlossen. Elektronische Daten sind vollständig zu löschen. Ausgenommen davon sind Unterlagen 
+              und Daten, hinsichtlich derer eine längere gesetzliche Aufbewahrungspflicht besteht, jedoch nur bis zum Ende 
+              der jeweiligen Aufbewahrungsfrist. Der Auftragnehmer hat dem Unternehmen auf dessen Verlangen die Löschung 
+              schriftlich zu bestätigen.
             </p>
 
-            <div className="bg-gray-50 p-6 rounded-lg mt-8">
-              <p className="text-sm text-gray-600">
-                <strong>Stand:</strong> Januar 2025<br />
-                <strong>Gültig ab:</strong> 01.01.2025
-              </p>
-            </div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">7. Vertraulichkeit und Datenschutz</h2>
+            <p className="text-gray-700 mb-6">
+              7.1 Der Auftragnehmer wird alle ihm im Zusammenhang mit dem Auftrag zur Kenntnis gelangenden Vorgänge streng 
+              vertraulich behandeln. Der Auftragnehmer verpflichtet sich, die Geheimhaltungspflicht sämtlichen Angestellten 
+              und / oder Dritten, die Zugang zu den vertragsgegenständlichen Informationen haben, aufzuerlegen. Die 
+              Geheimhaltungspflicht gilt zeitlich unbegrenzt über die Dauer dieses Vertrages hinaus.
+            </p>
+            <p className="text-gray-700 mb-6">
+              7.2 Der Auftragnehmer verpflichtet sich, bei der Durchführung des Auftrags sämtliche datenschutzrechtlichen 
+              Vorschriften – insbesondere die Vorschriften der Datenschutzgrundverordnung und des Bundesdatenschutzgesetzes 
+              – einzuhalten.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">8. Schlussbestimmungen</h2>
+            <p className="text-gray-700 mb-6">
+              8.1 Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des CISG.
+            </p>
+            <p className="text-gray-700 mb-6">
+              8.2 Sollte eine Bestimmung dieser AGB unwirksam sein oder werden, so wird die Gültigkeit der AGB im Übrigen 
+              hiervon nicht berührt.
+            </p>
+            <p className="text-gray-700 mb-6">
+              8.3 Der Auftraggeber wird den Auftragnehmer bei der Erbringung seiner vertragsgemäßen Leistungen durch 
+              angemessene Mitwirkungshandlungen, soweit erforderlich, fördern. Der Auftraggeber wird insbesondere dem 
+              Auftragnehmer die zur Erfüllung des Auftrags erforderlichen Informationen und Daten zur Verfügung stellen.
+            </p>
+            <p className="text-gray-700 mb-6">
+              8.4 Sofern der Auftraggeber Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches 
+              Sondervermögen ist oder keinen allgemeinen Gerichtsstand in Deutschland hat, vereinbaren die Parteien den Sitz 
+              des Auftragnehmers als Gerichtsstand für sämtliche Streitigkeiten aus diesem Vertragsverhältnis; ausschließliche 
+              Gerichtsstände bleiben hiervon unberührt.
+            </p>
+            <p className="text-gray-700 mb-6">
+              8.5 Der Auftragnehmer ist berechtigt, diese AGB aus sachlich gerechtfertigten Gründen (z. B. Änderungen in der 
+              Rechtsprechung, Gesetzeslage, Marktgegebenheiten oder der Geschäfts- oder Unternehmensstrategie) und unter 
+              Einhaltung einer angemessenen Frist zu ändern. Bestandskunden werden hierüber spätestens zwei Wochen vor 
+              Inkrafttreten der Änderung per E-Mail benachrichtigt. Sofern der Bestandskunde nicht innerhalb der in der 
+              Änderungsmitteilung gesetzten Frist widerspricht, gilt seine Zustimmung zur Änderung als erteilt. Widerspricht 
+              er, treten die Änderungen nicht in Kraft; Auftragnehmer ist in diesem Fall berechtigt, den Vertrag zum Zeitpunkt 
+              des Inkrafttretens der Änderung außerordentlich zu kündigen. Die Benachrichtigung über die beabsichtigte 
+              Änderung dieser AGB wird auf die Frist und die Folgen des Widerspruchs oder seines Ausbleibens hinweisen.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">9. Informationen zur Online-Streitbeilegung / Verbraucherschlichtung</h2>
+            <p className="text-gray-700 mb-6">
+              Die EU-Kommission stellt im Internet unter folgendem Link eine Plattform zur Online-Streitbeilegung bereit: 
+              <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                https://ec.europa.eu/consumers/odr
+              </a>
+            </p>
+            <p className="text-gray-700 mb-6">
+              Diese Plattform dient als Anlaufstelle zur außergerichtlichen Beilegung von Streitigkeiten aus Online-Kauf- 
+              oder Dienstleistungsverträgen, an denen ein Verbraucher beteiligt ist. Der Anbieter ist weder bereit noch 
+              verpflichtet, an einem Verbraucherstreitschlichtungsverfahren nach dem VSBG teilzunehmen.
+            </p>
+            <p className="text-gray-700 mb-6">
+              Unsere E-Mail-Adresse entnehmen Sie der Überschrift dieser AGB.
+            </p>
           </div>
         </div>
       </section>

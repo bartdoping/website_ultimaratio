@@ -19,26 +19,22 @@ export default function ImpressumPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Anbieter</h2>
+            <p>
+              <strong>Thavarajasingam, Ahkash; Eid, Mustafa Magdy Abdel Razik Mahmoud GbR</strong><br />
+              Warburghof, 14<br />
+              30627 Hannover
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Vertreten durch:</h2>
             <p className="text-gray-700 mb-6">
-              ultima-rat.io<br />
-              Warburghof 14<br />
-              30672 Hannover<br />
-              Deutschland
+              Mustafa Magdy Abdel Razik Mahmoud Eid<br />
+              Ahkash Thavarajasingam
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Kontakt</h2>
             <p className="text-gray-700 mb-6">
               Telefon: +49 163 9347633<br />
               E-Mail: info@ultima-rat.io
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Verantwortlich für den Inhalt</h2>
-            <p className="text-gray-700 mb-6">
-              Mustafa Eid<br />
-              Warburghof 14<br />
-              30672 Hannover<br />
-              Deutschland
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Umsatzsteuer-ID</h2>
@@ -64,10 +60,15 @@ export default function ImpressumPage() {
               . Unsere E-Mail-Adresse finden Sie oben im Impressum.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
             <p className="text-gray-700 mb-6">
-              Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer 
-              Verbraucherschlichtungsstelle teilzunehmen.
+              Wir nehmen an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil. 
+              Zuständig ist die Universalschlichtungsstelle des Zentrums für Schlichtung e.V., 
+              Straßburger Straße 8, 77694 Kehl am Rhein (
+              <a href="https://www.verbraucher-schlichter.de" rel="noopener noreferrer" target="_blank" className="text-blue-600 hover:underline">
+                https://www.verbraucher-schlichter.de
+              </a>
+              ).
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Haftung für Inhalte</h2>

@@ -6,7 +6,7 @@ export default function DatenschutzPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Datenschutzerklärung
+              Datenschutz&shy;erkl&auml;rung
             </h1>
             <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
               Informationen zum Umgang mit Ihren personenbezogenen Daten
@@ -21,90 +21,113 @@ export default function DatenschutzPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">1. Datenschutz auf einen Blick</h2>
             
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Allgemeine Hinweise</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Allgemeine Hinweise</h3>
             <p className="text-gray-700 mb-6">
-              Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten 
-              passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie 
-              persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen 
-              Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
+              Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, 
+              wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert 
+              werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text 
+              aufgeführten Datenschutzerklärung.
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Datenerfassung auf dieser Website</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Datenerfassung auf dieser Website</h3>
+            
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h4>
             <p className="text-gray-700 mb-6">
-              <strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong><br />
-              Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten 
-              können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle" in dieser Datenschutzerklärung entnehmen.
+              Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie 
+              dem Abschnitt „Hinweis zur Verantwortlichen Stelle" in dieser Datenschutzerklärung entnehmen.
             </p>
 
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Wie erfassen wir Ihre Daten?</h4>
             <p className="text-gray-700 mb-6">
-              <strong>Wie erfassen wir Ihre Daten?</strong><br />
-              Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. 
-              um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch oder nach 
-              Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische 
-              Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten 
-              erfolgt automatisch, sobald Sie diese Website betreten.
+              Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um 
+              Daten handeln, die Sie in ein Kontaktformular eingeben.
+            </p>
+            <p className="text-gray-700 mb-6">
+              Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme 
+              erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des 
+              Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
             </p>
 
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Wofür nutzen wir Ihre Daten?</h4>
             <p className="text-gray-700 mb-6">
-              <strong>Wofür nutzen wir Ihre Daten?</strong><br />
-              Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. 
-              Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.
+              Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere 
+              Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden. Sofern über die Website Verträge 
+              geschlossen oder angebahnt werden können, werden die übermittelten Daten auch für Vertragsangebote, 
+              Bestellungen oder sonstige Auftragsanfragen verarbeitet.
             </p>
 
+            <h4 className="text-lg font-bold text-gray-900 mb-3">Welche Rechte haben Sie bezüglich Ihrer Daten?</h4>
             <p className="text-gray-700 mb-6">
-              <strong>Welche Rechte haben Sie bezüglich Ihrer Daten?</strong><br />
-              Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer 
-              gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder 
-              Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, 
-              können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter 
-              bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. 
-              Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
+              Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten 
+              personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser 
+              Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese 
+              Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen 
+              die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein 
+              Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
+            </p>
+            <p className="text-gray-700 mb-6">
+              Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.
+            </p>
+
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Analyse-Tools und Tools von Dritt&shy;anbietern</h3>
+            <p className="text-gray-700 mb-6">
+              Beim Besuch dieser Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. Das geschieht vor allem 
+              mit sogenannten Analyseprogrammen.
+            </p>
+            <p className="text-gray-700 mb-6">
+              Detaillierte Informationen zu diesen Analyseprogrammen finden Sie in der folgenden Datenschutzerklärung.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">2. Hosting</h2>
+            <p className="text-gray-700 mb-6">Wir hosten die Inhalte unserer Website bei folgenden Anbietern:</p>
+
+            <h3 className="text-xl font-bold text-gray-900 mb-4">IONOS</h3>
             <p className="text-gray-700 mb-6">
-              Wir hosten die Inhalte unserer Website bei folgendem Anbieter:
+              Anbieter ist die IONOS SE, Elgendorfer Str. 57, 56410 Montabaur (nachfolgend IONOS). Wenn Sie unsere Website 
+              besuchen, erfasst IONOS verschiedene Logfiles inklusive Ihrer IP-Adressen. Details entnehmen Sie der 
+              Datenschutzerklärung von IONOS: 
+              <a href="https://www.ionos.de/terms-gtc/terms-privacy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                https://www.ionos.de/terms-gtc/terms-privacy
+              </a>.
             </p>
             <p className="text-gray-700 mb-6">
-              <strong>Vercel Inc.</strong><br />
-              340 S Lemon Ave #4133<br />
-              Walnut, CA 91789<br />
-              USA
-            </p>
-            <p className="text-gray-700 mb-6">
-              Die Erfassung und Verarbeitung Ihrer Daten erfolgt ausschließlich in Deutschland und unterliegt den 
-              strengen deutschen und europäischen Datenschutzgesetzen.
+              Die Verwendung von IONOS erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes 
+              Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine entsprechende Einwilligung 
+              abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und 
+              § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen 
+              im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung ist 
+              jederzeit widerrufbar.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">3. Allgemeine Hinweise und Pflichtinformationen</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">3. Allgemeine Hinweise und Pflicht&shy;informationen</h2>
             
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Datenschutz</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Datenschutz</h3>
             <p className="text-gray-700 mb-6">
               Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre 
-              personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie 
-              dieser Datenschutzerklärung.
+              personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser 
+              Datenschutzerklärung.
             </p>
             <p className="text-gray-700 mb-6">
-              Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene 
-              Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung 
+              Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten 
+              sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung 
               erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck 
               das geschieht.
             </p>
             <p className="text-gray-700 mb-6">
               Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) 
-              Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+              Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht 
+              möglich.
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Hinweis zur verantwortlichen Stelle</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Hinweis zur verantwortlichen Stelle</h3>
+            <p className="text-gray-700 mb-6">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
             <p className="text-gray-700 mb-6">
-              Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
+              Ahkash Thavarajasingam<br />
+              Warburghof 14<br />
+              30627 Hannover
             </p>
             <p className="text-gray-700 mb-6">
-              ultima-rat.io<br />
-              Warburghof 14<br />
-              30672 Hannover<br />
-              Deutschland<br />
-              Telefon: +49 163 9347633<br />
+              Telefon: 017624062685<br />
               E-Mail: info@ultima-rat.io
             </p>
             <p className="text-gray-700 mb-6">
@@ -113,90 +136,123 @@ export default function DatenschutzPage() {
               entscheidet.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">4. Datenerfassung auf dieser Website</h2>
-            
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Kontaktformular</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Speicherdauer</h3>
             <p className="text-gray-700 mb-6">
-              Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular 
-              inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von 
-              Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
-            </p>
-            <p className="text-gray-700 mb-6">
-              Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage 
-              mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. 
-              In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven 
-              Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung 
-              (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.
-            </p>
-            <p className="text-gray-700 mb-6">
-              Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, 
-              Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach 
-              abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – 
-              bleiben unberührt.
+              Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre 
+              personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes 
+              Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten 
+              gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen 
+              Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die 
+              Löschung nach Fortfall dieser Gründe.
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Anfrage per E-Mail, Telefon oder Telefax</h3>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">4. Datenerfassung auf dieser Website</h2>
+            
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Cookies</h3>
+            <p className="text-gray-700 mb-6">
+              Unsere Internetseiten verwenden so genannte „Cookies". Cookies sind kleine Datenpakete und richten auf Ihrem 
+              Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) 
+              oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende Ihres 
+              Besuchs automatisch gelöscht. Permanente Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese selbst 
+              löschen oder eine automatische Löschung durch Ihren Webbrowser erfolgt.
+            </p>
+
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Anfrage per E-Mail, Telefon oder Telefax</h3>
             <p className="text-gray-700 mb-6">
               Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus 
               hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns 
               gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
             </p>
             <p className="text-gray-700 mb-6">
-              Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage 
-              mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. 
+              Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit 
+              der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. 
               In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven 
               Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung 
               (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">5. Newsletter</h2>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Kommunikation via WhatsApp</h3>
             <p className="text-gray-700 mb-6">
-              Wir versenden derzeit keinen Newsletter. Sollte sich dies ändern, werden wir Sie entsprechend informieren 
-              und Ihre ausdrückliche Einwilligung einholen.
+              Für die Kommunikation mit unseren Kunden und sonstigen Dritten nutzen wir unter anderem den Instant-Messaging-Dienst 
+              WhatsApp. Anbieter ist die WhatsApp Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland.
+            </p>
+            <p className="text-gray-700 mb-6">
+              Die Kommunikation erfolgt über eine Ende-zu-Ende-Verschlüsselung (Peer-to-Peer), die verhindert, dass WhatsApp 
+              oder sonstige Dritte Zugriff auf die Kommunikationsinhalte erlangen können. WhatsApp erhält jedoch Zugriff auf 
+              Metadaten, die im Zuge des Kommunikationsvorgangs entstehen (z. B. Absender, Empfänger und Zeitpunkt). Wir weisen 
+              ferner darauf hin, dass WhatsApp nach eigener Aussage, personenbezogene Daten seiner Nutzer mit seiner in den USA 
+              ansässigen Konzernmutter Meta teilt. Weitere Details zur Datenverarbeitung finden Sie in der Datenschutzrichtlinie 
+              von WhatsApp unter: 
+              <a href="https://www.whatsapp.com/legal/#privacy-policy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                https://www.whatsapp.com/legal/#privacy-policy
+              </a>.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">6. Plugins und Tools</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">5. Soziale Medien</h2>
             
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">WhatsApp</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Instagram</h3>
             <p className="text-gray-700 mb-6">
-              Auf unserer Website haben wir Links zu WhatsApp integriert. WhatsApp ist ein Dienst der WhatsApp Ireland Limited, 
-              4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland.
+              Auf dieser Website sind Funktionen des Dienstes Instagram eingebunden. Diese Funktionen werden angeboten durch 
+              die Meta Platforms Ireland Limited, Merrion Road, Dublin 4, D04 X2K5, Irland.
             </p>
             <p className="text-gray-700 mb-6">
-              Wenn Sie auf einen WhatsApp-Link klicken, werden Sie zu WhatsApp weitergeleitet. WhatsApp kann dabei 
-              personenbezogene Daten verarbeiten. Weitere Informationen finden Sie in der Datenschutzerklärung von WhatsApp: 
-              <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                https://www.whatsapp.com/legal/privacy-policy
-              </a>
+              Wenn das Social-Media-Element aktiv ist, wird eine direkte Verbindung zwischen Ihrem Endgerät und dem 
+              Instagram-Server hergestellt. Instagram erhält dadurch Informationen über den Besuch dieser Website durch Sie.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">7. eRecht24 Safe Sharing</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">6. Analyse-Tools und Werbung</h2>
+            
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Google Tag Manager</h3>
             <p className="text-gray-700 mb-6">
-              Diese Datenschutzerklärung wurde mit dem Datenschutzerklärungs-Generator der eRecht24 erstellt. 
-              Die eRecht24 Safe Sharing Funktion wird von der eRecht24 GmbH, Bahnhofplatz 3, 83435 Bad Reichenhall 
-              bereitgestellt.
+              Wir setzen den Google Tag Manager ein. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, 
+              Dublin 4, Irland.
+            </p>
+            <p className="text-gray-700 mb-6">
+              Der Google Tag Manager ist ein Tool, mit dessen Hilfe wir Tracking- oder Statistik-Tools und andere Technologien 
+              auf unserer Website einbinden können. Der Google Tag Manager selbst erstellt keine Nutzerprofile, speichert keine 
+              Cookies und nimmt keine eigenständigen Analysen vor. Er dient lediglich der Verwaltung und Ausspielung der über 
+              ihn eingebundenen Tools.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">8. Ihre Rechte</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">7. Newsletter</h2>
+            
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Newsletter&shy;daten</h3>
             <p className="text-gray-700 mb-6">
-              Sie haben folgende Rechte:
+              Wenn Sie den auf der Website angebotenen Newsletter beziehen möchten, benötigen wir von Ihnen eine E-Mail-Adresse 
+              sowie Informationen, welche uns die Überprüfung gestatten, dass Sie der Inhaber der angegebenen E-Mail-Adresse 
+              sind und mit dem Empfang des Newsletters einverstanden sind. Weitere Daten werden nicht bzw. nur auf freiwilliger 
+              Basis erhoben. Diese Daten verwenden wir ausschließlich für den Versand der angeforderten Informationen und geben 
+              diese nicht an Dritte weiter.
             </p>
-            <ul className="list-disc pl-6 text-gray-700 mb-6">
-              <li>Recht auf Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten</li>
-              <li>Recht auf Berichtigung unrichtiger oder unvollständiger Daten</li>
-              <li>Recht auf Löschung Ihrer bei uns gespeicherten Daten</li>
-              <li>Recht auf Einschränkung der Datenverarbeitung</li>
-              <li>Recht auf Datenübertragbarkeit</li>
-              <li>Widerspruchsrecht gegen die Verarbeitung Ihrer Daten bei uns</li>
-              <li>Recht auf Beschwerde bei einer Aufsichtsbehörde</li>
-            </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">9. Änderungen dieser Datenschutzerklärung</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">8. Plugins und Tools</h2>
+            
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Google Fonts (lokales Hosting)</h3>
             <p className="text-gray-700 mb-6">
-              Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, damit sie stets den aktuellen 
-              rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung 
-              umzusetzen, z. B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue 
-              Datenschutzerklärung.
+              Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Google Fonts, die von Google 
+              bereitgestellt werden. Die Google Fonts sind lokal installiert. Eine Verbindung zu Servern von Google findet 
+              dabei nicht statt.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">9. eCommerce und Zahlungs&shy;anbieter</h2>
+            
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Verarbeiten von Kunden- und Vertragsdaten</h3>
+            <p className="text-gray-700 mb-6">
+              Wir erheben, verarbeiten und nutzen personenbezogene Kunden- und Vertragsdaten zur Begründung, inhaltlichen 
+              Ausgestaltung und Änderung unserer Vertragsbeziehungen. Personenbezogene Daten über die Inanspruchnahme dieser 
+              Website (Nutzungsdaten) erheben, verarbeiten und nutzen wir nur, soweit dies erforderlich ist, um dem Nutzer 
+              die Inanspruchnahme des Dienstes zu ermöglichen oder abzurechnen. Rechtsgrundlage hierfür ist Art. 6 Abs. 1 lit. b DSGVO.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">10. Audio- und Videokonferenzen</h2>
+            
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Zoom</h3>
+            <p className="text-gray-700 mb-6">
+              Wir nutzen Zoom. Anbieter dieses Dienstes ist die Zoom Communications Inc., San Jose, 55 Almaden Boulevard, 
+              6th Floor, San Jose, CA 95113, USA. Details zur Datenverarbeitung entnehmen Sie der Datenschutzerklärung von Zoom: 
+              <a href="https://www.zoom.com/de/trust/privacy/privacy-statement/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                https://www.zoom.com/de/trust/privacy/privacy-statement/
+              </a>.
             </p>
           </div>
         </div>
