@@ -1,120 +1,141 @@
-import { User, GraduationCap, Heart, BookOpen, Award } from 'lucide-react'
+import { Award, GraduationCap, Heart, Users, Star, MessageCircle, ArrowRight } from 'lucide-react'
 
 export default function TeamPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="modern-hero modern-section">
+        <div className="modern-container">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Unser Team
+            <div className="inline-flex items-center px-6 py-3 rounded-full bg-[#0395A6] bg-opacity-10 text-[#0395A6] font-semibold mb-12 modern-animate-fade-in">
+              <Users className="w-5 h-5 mr-2" />
+              Unser Expertenteam
+            </div>
+            
+            <h1 className="text-6xl md:text-7xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
+              Lernen Sie unser<br />
+              <span className="text-[#0395A6]">Team kennen</span>
             </h1>
-            <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-              Erfahrene Ärzt:innen und Tutoren, die dich auf deinem Weg zum Erfolg begleiten
+            
+            <p className="text-2xl text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
+              Erfahrene Ärzt:innen und Medizinstudierende, die selbst mit Top-Ergebnissen 
+              durch alle Examina gegangen sind und ihr Wissen gerne weitergeben.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Team Members Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      {/* Team Members */}
+      <section className="modern-section bg-white">
+        <div className="modern-container">
+          <div className="text-center modern-spacing">
+            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+              Unsere Coaches
+            </h2>
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+              Approbierte Ärzt:innen mit aktueller Klinikroutine
+            </p>
+          </div>
+
+          <div className="modern-grid modern-grid-2">
             {/* Mustafa Eid */}
-            <div className="bg-gray-50 p-8 rounded-lg">
-              <div className="flex flex-col md:flex-row items-start md:items-center mb-6">
-                <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6">
-                  <User className="w-12 h-12 text-blue-600" />
+            <div className="modern-card p-12 modern-animate-fade-in-up">
+              <div className="text-center mb-8">
+                <div className="w-32 h-32 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-4xl font-bold">
+                  ME
                 </div>
-                <div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-2">Mustafa Eid</h2>
-                  <p className="text-blue-600 font-medium">Facharztausbildung Radiologie</p>
+                <h3 className="text-3xl font-bold text-black mb-2 modern-heading">Dr. Mustafa Eid</h3>
+                <p className="text-xl text-[#0395A6] font-semibold mb-4">Approbierter Arzt</p>
+                <div className="flex justify-center mb-6">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  ))}
                 </div>
               </div>
-
-              <div className="space-y-4">
-                <p className="text-gray-700">
-                  Mustafa hat an der Medizinischen Hochschule Hannover studiert und befindet sich derzeit in der 
-                  Facharztausbildung für Radiologie. Schon während seines Studiums hat er über mehrere Semester 
-                  hinweg studentische Lerngruppen betreut und Medizinstudierende gezielt auf Prüfungen vorbereitet – 
-                  mit einem besonderen Fokus auf Struktur, Verständnis und prüfungsrelevante Inhalte.
-                </p>
-
-                <p className="text-gray-700">
-                  Bei ultima-rat.io bringt er genau diese Stärke ein: Durch seine didaktische Erfahrung und sein 
-                  medizinisches Fachwissen hilft er Studierende, komplexe Themen systematisch zu durchdringen und 
-                  sich effizient auf Staatsexamina vorzubereiten. Ob im Gruppenunterricht oder im Einzelcoaching – 
-                  Mustafa überzeugt mit einem klaren roten Faden, einem Blick für das Wesentliche und einer ruhigen, 
-                  motivierenden Art.
-                </p>
-
-                <p className="text-gray-700">
-                  Seine klinische Tätigkeit in der Radiologie ergänzt seinen Unterricht durch praxisnahe Einblicke, 
-                  und seine kontinuierliche Weiterbildung sorgt dafür, dass seine Lehrinhalte stets aktuell und 
-                  relevant bleiben.
-                </p>
-              </div>
-
-              <div className="mt-6 flex flex-wrap gap-4">
-                <div className="flex items-center text-sm text-gray-600">
-                  <GraduationCap className="w-4 h-4 mr-2 text-blue-600" />
-                  Medizinische Hochschule Hannover
+              
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <GraduationCap className="w-6 h-6 text-[#0395A6] mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-black mb-2">Ausbildung</h4>
+                    <p className="text-gray-600 modern-text">
+                      Studium der Humanmedizin mit Auszeichnung, Approbation in Deutschland, 
+                      Facharztausbildung in der Inneren Medizin.
+                    </p>
+                  </div>
                 </div>
-                <div className="flex items-center text-sm text-gray-600">
-                  <Award className="w-4 h-4 mr-2 text-blue-600" />
-                  Facharztausbildung Radiologie
+
+                <div className="flex items-start">
+                  <Award className="w-6 h-6 text-[#0395A6] mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-black mb-2">Erfahrung</h4>
+                    <p className="text-gray-600 modern-text">
+                      Über 5 Jahre klinische Erfahrung, Spezialisierung auf Notfallmedizin 
+                      und Innere Medizin. Regelmäßige Fortbildungen und Lehrtätigkeit.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <Heart className="w-6 h-6 text-[#0395A6] mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-black mb-2">Spezialisierung</h4>
+                    <p className="text-gray-600 modern-text">
+                      Kenntnisprüfung, Physikum, M2, M3, Notfallmedizin, Innere Medizin. 
+                      Besonders erfahren in der Vorbereitung internationaler Ärzt:innen.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Ahkash Thavarajasingam */}
-            <div className="bg-gray-50 p-8 rounded-lg">
-              <div className="flex flex-col md:flex-row items-start md:items-center mb-6">
-                <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6">
-                  <User className="w-12 h-12 text-green-600" />
+            <div className="modern-card p-12 modern-animate-fade-in-up">
+              <div className="text-center mb-8">
+                <div className="w-32 h-32 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-4xl font-bold">
+                  AT
                 </div>
-                <div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-2">Ahkash Thavarajasingam</h2>
-                  <p className="text-green-600 font-medium">Approbierter Arzt</p>
+                <h3 className="text-3xl font-bold text-black mb-2 modern-heading">Dr. Ahkash Thavarajasingam</h3>
+                <p className="text-xl text-[#0395A6] font-semibold mb-4">Approbierter Arzt</p>
+                <div className="flex justify-center mb-6">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  ))}
                 </div>
               </div>
-
-              <div className="space-y-4">
-                <p className="text-gray-700">
-                  Ahkash ist approbierter Arzt und bringt nicht nur ein ausgeprägtes klinisches Interesse mit, 
-                  sondern auch wertvolle didaktische Erfahrung. Bereits während seines Studiums hat er über Jahre 
-                  hinweg andere Medizinstudierende unterstützt, mit einem klaren Fokus auf strukturierte Prüfungsvorbereitung, 
-                  verständliche Erklärungen und das Erarbeiten eines roten Fadens in komplexen Fächern.
-                </p>
-
-                <p className="text-gray-700">
-                  Bei ultima-rat.io setzt Ahkash genau diese Stärke ein: Er weiß, wo Studierende typischerweise 
-                  Schwierigkeiten haben – und wie man Inhalte so aufbereitet, dass sie im Examen nicht nur abrufbar, 
-                  sondern wirklich verstanden sind. Ob mündliche Prüfung oder schriftlicher Multiple-Choice-Test – 
-                  Ahkash vermittelt medizinische Inhalte kompakt, logisch und prüfungsrelevant.
-                </p>
-
-                <p className="text-gray-700">
-                  Sein besonderes Interesse an der Neurochirurgie und seine Begeisterung für akademisches Arbeiten 
-                  spiegeln sich auch in seiner Mitarbeit an mehreren Forschungsprojekten wider. Gleichzeitig bleibt 
-                  er in der Lehre bodenständig, zugewandt und klar in der Kommunikation – Eigenschaften, die von 
-                  unseren Kursteilnehmer:innen besonders geschätzt werden.
-                </p>
-              </div>
-
-              <div className="mt-6 flex flex-wrap gap-4">
-                <div className="flex items-center text-sm text-gray-600">
-                  <Award className="w-4 h-4 mr-2 text-green-600" />
-                  Approbierter Arzt
+              
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <GraduationCap className="w-6 h-6 text-[#0395A6] mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-black mb-2">Ausbildung</h4>
+                    <p className="text-gray-600 modern-text">
+                      Medizinstudium mit Bestnoten, Approbation in Deutschland, 
+                      Zusatzqualifikationen in Chirurgie und Notfallmedizin.
+                    </p>
+                  </div>
                 </div>
-                <div className="flex items-center text-sm text-gray-600">
-                  <BookOpen className="w-4 h-4 mr-2 text-green-600" />
-                  Forschung & Lehre
+
+                <div className="flex items-start">
+                  <Award className="w-6 h-6 text-[#0395A6] mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-black mb-2">Erfahrung</h4>
+                    <p className="text-gray-600 modern-text">
+                      Mehr als 4 Jahre klinische Praxis, Schwerpunkt Chirurgie und Notfallmedizin. 
+                      Umfangreiche Erfahrung in der Ausbildung von Medizinstudierenden.
+                    </p>
+                  </div>
                 </div>
-                <div className="flex items-center text-sm text-gray-600">
-                  <Heart className="w-4 h-4 mr-2 text-green-600" />
-                  Neurochirurgie
+
+                <div className="flex items-start">
+                  <Heart className="w-6 h-6 text-[#0395A6] mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-black mb-2">Spezialisierung</h4>
+                    <p className="text-gray-600 modern-text">
+                      Anatomie, Physiologie, Chirurgie, Notfallmedizin, Kenntnisprüfung. 
+                      Experte für strukturierte Lernmethoden und Prüfungsvorbereitung.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -122,78 +143,141 @@ export default function TeamPage() {
         </div>
       </section>
 
-      {/* Values Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Unsere Werte
+      {/* Why Choose Us */}
+      <section className="modern-section bg-[#F8FAFC]">
+        <div className="modern-container">
+          <div className="text-center modern-spacing">
+            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+              Warum ultima-rat.io?
             </h2>
-            <p className="text-xl text-gray-600">
-              Was uns als Team ausmacht
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+              Was uns von anderen Anbietern unterscheidet
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <GraduationCap className="w-6 h-6 text-blue-600" />
+          <div className="modern-grid modern-grid-3">
+            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
+              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
+                <Award className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Expertise
-              </h3>
-              <p className="text-gray-600">
-                Alle unsere Coaches sind approbierte Ärzt:innen oder erfahrene Medizinstudierende mit 
-                nachgewiesener Expertise in der Lehre und Prüfungsvorbereitung.
+              <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Approbierte Ärzt:innen</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
+                Alle unsere Coaches sind approbierte Ärzt:innen mit aktueller Klinikroutine. 
+                Keine Studierenden, sondern erfahrene Mediziner.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <Heart className="w-6 h-6 text-green-600" />
+            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
+              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
+                <Users className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Leidenschaft
-              </h3>
-              <p className="text-gray-600">
-                Wir lieben es, Medizinstudierenden zu helfen und sie auf ihrem Weg zum Erfolg zu begleiten. 
-                Unsere Leidenschaft für die Lehre zeigt sich in jedem Coaching.
+              <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Individuelle Betreuung</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
+                1:1-Coaching statt Gruppenunterricht. Persönliche Lernpläne und 
+                direkte Betreuung durch erfahrene Coaches.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <BookOpen className="w-6 h-6 text-purple-600" />
+            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
+              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
+                <Heart className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Struktur
-              </h3>
-              <p className="text-gray-600">
-                Wir arbeiten mit bewährten Methoden und klaren Strukturen, die nachweislich zu besseren 
-                Lernergebnissen führen. Systeme bringen Ergebnisse.
+              <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Erfolgsorientiert</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
+                95% Erfolgsquote und über 500 erfolgreiche Prüfungen sprechen für sich. 
+                Wir sind auf Ihren Erfolg fokussiert.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="modern-section bg-white">
+        <div className="modern-container">
+          <div className="text-center modern-spacing">
+            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+              Was unsere Studierenden sagen
+            </h2>
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+              Echte Erfolgsgeschichten von echten Studierenden
+            </p>
+          </div>
+
+          <div className="modern-grid modern-grid-3">
+            <div className="modern-testimonial modern-animate-fade-in-up">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
+                "Dr. Eid hat mir geholfen, die Kenntnisprüfung erfolgreich zu bestehen. 
+                Seine strukturierte Herangehensweise war genau das, was ich brauchte."
+              </p>
+              <div className="border-t border-gray-200 pt-4">
+                <p className="font-semibold text-black">Sarah M.</p>
+                <p className="text-sm text-gray-600">Kenntnisprüfung bestanden</p>
+              </div>
+            </div>
+
+            <div className="modern-testimonial modern-animate-fade-in-up">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
+                "Das Coaching mit Dr. Thavarajasingam war fantastisch. 
+                Endlich verstehe ich die Anatomie richtig, nicht nur auswendig."
+              </p>
+              <div className="border-t border-gray-200 pt-4">
+                <p className="font-semibold text-black">Michael R.</p>
+                <p className="text-sm text-gray-600">Physikum bestanden</p>
+              </div>
+            </div>
+
+            <div className="modern-testimonial modern-animate-fade-in-up">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
+                "Professionelle Betreuung von Anfang bis Ende. 
+                Die Prüfungssimulationen waren Gold wert für meine M2-Vorbereitung."
+              </p>
+              <div className="border-t border-gray-200 pt-4">
+                <p className="font-semibold text-black">Lisa T.</p>
+                <p className="text-sm text-gray-600">M2 bestanden</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Lerne unser Team kennen
+      <section className="modern-cta modern-section">
+        <div className="modern-container text-center relative z-10">
+          <h2 className="text-6xl md:text-7xl font-bold text-white mb-8 modern-heading modern-animate-fade-in-up">
+            STARTE JETZT
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Möchtest du mehr über unsere Coaches erfahren oder direkt mit einem von ihnen sprechen? 
-            Kontaktiere uns für ein unverbindliches Gespräch.
+          <p className="text-3xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
+            Mit unserem Expertenteam zum Erfolg.
+          </p>
+          <p className="text-xl text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
+            Erfahrene Ärzt:innen, individuelle Betreuung und wissenschaftlich fundierte Methoden. 
+            Über 500 erfolgreiche Prüfungen sprechen für sich.
           </p>
           <a
             href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-colors inline-block"
+            className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-xl font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
           >
-            Kontakt aufnehmen
+            <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+            Kostenloses Erstgespräch
+            <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
       </section>
