@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-gray-900 to-black text-white">
-      <div className="academic-container py-20">
+      <div className="modern-container py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
@@ -11,9 +11,9 @@ export default function Footer() {
               <div className="h-14 w-14 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-xl flex items-center justify-center shadow-lg">
                 <span className="text-white font-bold text-2xl">UR</span>
               </div>
-              <span className="ml-4 text-3xl font-bold premium-heading">ultima-rat.io</span>
+              <span className="ml-4 text-3xl font-bold modern-heading">ultima-rat.io</span>
             </div>
-            <p className="text-gray-300 mb-8 text-xl leading-relaxed premium-text">
+            <p className="text-gray-300 mb-8 text-xl leading-relaxed modern-text">
               Professionelle Medizin-Nachhilfe mit approbierten Ärzt:innen. 
               Wissenschaftlich fundierte Lernmethoden für optimale Prüfungsvorbereitung.
             </p>

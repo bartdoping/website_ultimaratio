@@ -63,22 +63,22 @@ export default function FAQ() {
   }
 
   return (
-    <section className="academic-section bg-white">
-      <div className="academic-container">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 premium-heading">
+    <section className="modern-section bg-white">
+      <div className="modern-container">
+        <div className="text-center modern-spacing">
+          <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
             Häufig gestellte Fragen
           </h2>
-          <p className="text-2xl text-gray-600 max-w-4xl mx-auto premium-text">
+          <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
             Alle wichtigen Informationen auf einen Blick
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           {faqData.map((item, index) => (
-            <div key={index} className="faq-item">
+            <div key={index} className="modern-faq">
               <div 
-                className="faq-question"
+                className="modern-faq-question"
                 onClick={() => toggleItem(index)}
               >
                 <span className="text-xl font-semibold text-black">{item.question}</span>
@@ -88,22 +88,22 @@ export default function FAQ() {
                   }`}
                 />
               </div>
-              <div className={`faq-answer ${openItems.includes(index) ? 'open' : ''}`}>
-                <p className="text-lg text-gray-700 leading-relaxed">{item.answer}</p>
+              <div className={`modern-faq-answer ${openItems.includes(index) ? 'open' : ''}`}>
+                <p className="text-lg text-gray-700 leading-relaxed modern-text">{item.answer}</p>
               </div>
             </div>
           ))}
         </div>
 
         <div className="text-center mt-16">
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-gray-600 mb-8 modern-text">
             Haben Sie weitere Fragen? Wir helfen gerne weiter!
           </p>
           <a
             href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-            className="premium-button px-12 py-5 rounded-lg text-xl font-semibold focus-ring inline-block"
+            className="modern-button px-12 py-5 rounded-lg text-xl font-semibold modern-focus inline-block"
           >
             Jetzt kontaktieren
           </a>

@@ -7,31 +7,31 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="hero-section academic-section">
-        <div className="academic-container relative z-10">
+      <section className="modern-hero modern-section">
+        <div className="modern-container">
           <div className="text-center">
-            <div className="inline-flex items-center px-6 py-3 rounded-full bg-[#0395A6] bg-opacity-10 text-[#0395A6] font-semibold mb-8 animate-fade-in-up">
+            <div className="inline-flex items-center px-6 py-3 rounded-full bg-[#0395A6] bg-opacity-10 text-[#0395A6] font-semibold mb-12 modern-animate-fade-in">
               <Award className="w-5 h-5 mr-2" />
               Über 500 erfolgreiche Prüfungen
             </div>
             
-            <h1 className="text-7xl md:text-8xl font-bold text-black mb-8 premium-heading leading-tight animate-fade-in-up">
+            <h1 className="text-6xl md:text-8xl font-bold text-black mb-12 modern-heading leading-tight modern-animate-fade-in-up">
               Bestnoten im<br />
               <span className="text-[#0395A6]">Medizinstudium</span><br />
               durch echtes Verstehen
             </h1>
             
-            <p className="text-2xl text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed premium-text animate-fade-in-up">
+            <p className="text-2xl text-gray-600 mb-16 max-w-4xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
               Professionelle Medizin-Nachhilfe mit approbierten Ärzt:innen. Wissenschaftlich fundierte Lernmethoden, 
               die nachweislich funktionieren. Strukturierte Prüfungsvorbereitung für Physikum, M2, M3 und Kenntnisprüfung.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-8 justify-center mb-16 animate-fade-in-up">
+            <div className="flex flex-col sm:flex-row gap-8 justify-center mb-20 modern-animate-fade-in-up">
               <a
                 href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-                className="premium-button px-12 py-5 rounded-lg text-xl font-semibold focus-ring group"
+                className="modern-button px-12 py-5 rounded-lg text-xl font-semibold modern-focus group"
               >
                 <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
                 Kostenloses Erstgespräch
@@ -39,7 +39,7 @@ export default function HomePage() {
               </a>
               <Link
                 href="/coaching"
-                className="border-2 border-[#0395A6] text-[#0395A6] hover:bg-[#0395A6] hover:text-white px-12 py-5 rounded-lg text-xl font-semibold transition-all focus-ring group"
+                className="modern-button-secondary px-12 py-5 rounded-lg text-xl font-semibold modern-focus group"
               >
                 Coaching entdecken
                 <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
@@ -47,22 +47,22 @@ export default function HomePage() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto animate-fade-in-up">
-              <div className="text-center">
-                <div className="stat-number">95%</div>
-                <p className="text-gray-600 font-semibold">Erfolgsquote</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto modern-animate-fade-in-up">
+              <div className="modern-stat">
+                <div className="modern-stat-number">95%</div>
+                <p className="modern-stat-label">Erfolgsquote</p>
               </div>
-              <div className="text-center">
-                <div className="stat-number">500+</div>
-                <p className="text-gray-600 font-semibold">Erfolgreiche Prüfungen</p>
+              <div className="modern-stat">
+                <div className="modern-stat-number">500+</div>
+                <p className="modern-stat-label">Erfolgreiche Prüfungen</p>
               </div>
-              <div className="text-center">
-                <div className="stat-number">5.0</div>
-                <p className="text-gray-600 font-semibold">Durchschnittsbewertung</p>
+              <div className="modern-stat">
+                <div className="modern-stat-number">5.0</div>
+                <p className="modern-stat-label">Durchschnittsbewertung</p>
               </div>
-              <div className="text-center">
-                <div className="stat-number">3</div>
-                <p className="text-gray-600 font-semibold">Jahre Erfahrung</p>
+              <div className="modern-stat">
+                <div className="modern-stat-number">3</div>
+                <p className="modern-stat-label">Jahre Erfahrung</p>
               </div>
             </div>
           </div>
@@ -70,46 +70,46 @@ export default function HomePage() {
       </section>
 
       {/* Problem Section */}
-      <section className="academic-section bg-white">
-        <div className="academic-container">
-          <div className="text-center mb-20 animate-fade-in-up">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 premium-heading">
+      <section className="modern-section bg-white">
+        <div className="modern-container">
+          <div className="text-center modern-spacing">
+            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Das Problem: Falsche Lernstrategien
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto premium-text">
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Warum traditionelle Lernmethoden im Medizinstudium versagen
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="premium-card p-12 text-center animate-fade-in-up">
+          <div className="modern-grid modern-grid-3">
+            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Brain className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-2xl font-bold text-black mb-6">Bulimielernen</h3>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Bulimielernen</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Stures Auswendiglernen ohne Verständnis führt zu Blackouts in der Prüfung. 
                 Ohne echte Verknüpfungen ist das Wissen nicht abrufbar.
               </p>
             </div>
 
-            <div className="premium-card p-12 text-center animate-fade-in-up">
+            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Clock className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-2xl font-bold text-black mb-6">Zeitverschwendung</h3>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Zeitverschwendung</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Fokus auf unwichtige Details statt Prüfungsrelevanz. Stundenlanges Lernen 
                 ohne Struktur und Priorisierung führt zu Frustration.
               </p>
             </div>
 
-            <div className="premium-card p-12 text-center animate-fade-in-up">
+            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Target className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-2xl font-bold text-black mb-6">Fehlende Strategie</h3>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Fehlende Strategie</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Kein Plan, keine Struktur, keine klaren Ziele. Studierende verlieren sich 
                 in der Stoffmenge und wissen nicht, wo sie anfangen sollen.
               </p>
@@ -119,79 +119,79 @@ export default function HomePage() {
       </section>
 
       {/* Solution Section */}
-      <section className="academic-section bg-[#FAFAFA]">
-        <div className="academic-container">
-          <div className="text-center mb-20 animate-fade-in-up">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 premium-heading">
+      <section className="modern-section bg-[#F8FAFC]">
+        <div className="modern-container">
+          <div className="text-center modern-spacing">
+            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Die ultima-rat.io Lösung
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto premium-text">
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Wissenschaftlich fundierte Lernmethoden, die nachweislich funktionieren
             </p>
           </div>
 
-          <div className="feature-grid">
-            <div className="premium-card p-12 animate-fade-in-up">
+          <div className="modern-grid modern-grid-3">
+            <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
                 <Users className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6">Approbierte Ärzt:innen</h3>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Approbierte Ärzt:innen</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Erfahrene Mediziner mit aktueller Klinikroutine leiten Sie durch komplexe medizinische Inhalte. 
                 Praxisnahe Erklärungen anhand von Befunden, Bildern und klinischen Algorithmen.
               </p>
             </div>
 
-            <div className="premium-card p-12 animate-fade-in-up">
+            <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
                 <BookOpen className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6">Strukturierte Lernpläne</h3>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Strukturierte Lernpläne</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Individuelle Wochenpläne mit gezielten Wiederholungen und Meilensteinen. 
                 Kontinuierliche Anpassung an Ihre Lernfortschritte und Prüfungstermine.
               </p>
             </div>
 
-            <div className="premium-card p-12 animate-fade-in-up">
+            <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
                 <Brain className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6">Fokussiertes Lernen</h3>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Fokussiertes Lernen</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Priorisierung nach Prüfungsrelevanz und Ihren Stärken. Klare Strukturierung 
                 von Pflichtstoff, Kernkompetenzen und optionalen Inhalten.
               </p>
             </div>
 
-            <div className="premium-card p-12 animate-fade-in-up">
+            <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
                 <Zap className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6">Adaptive Prüfungsplattform</h3>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Adaptive Prüfungsplattform</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Eigene Plattform mit aktuellen Prüfungsfragen und adaptiven Übungssets. 
                 Intelligente Auswertung nach Themen und Fehlerarten für gezieltes Training.
               </p>
             </div>
 
-            <div className="premium-card p-12 animate-fade-in-up">
+            <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
                 <Target className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6">Prüfungslogik & Anwendung</h3>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Prüfungslogik & Anwendung</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Training von klinischen Entscheidungsprozessen: Next-best-step, Ausschlusskriterien 
                 und typische Fallen. Systematische Herleitung statt auswendig lernen.
               </p>
             </div>
 
-            <div className="premium-card p-12 animate-fade-in-up">
+            <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
                 <Shield className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6">Kontinuierliche Begleitung</h3>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Kontinuierliche Begleitung</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Online 1:1-Sessions mit festen Terminen und schnellem Feedback. 
                 Kuratierte Materialien und strukturierte Begleitung bis zur Prüfung.
               </p>
@@ -201,46 +201,46 @@ export default function HomePage() {
       </section>
 
       {/* Method Section */}
-      <section className="academic-section bg-white">
-        <div className="academic-container">
-          <div className="text-center mb-20 animate-fade-in-up">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 premium-heading">
+      <section className="modern-section bg-white">
+        <div className="modern-container">
+          <div className="text-center modern-spacing">
+            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Der ultima-rat.io Ansatz
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto premium-text">
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Systematische Defizitanalyse statt verzweifeltes Bulimielernen
             </p>
           </div>
 
           <div className="max-w-6xl mx-auto">
-            <div className="premium-card p-16 animate-fade-in-up">
-              <div className="academic-quote">
-                <p className="text-2xl text-[#0395A6] font-semibold text-center mb-8">
+            <div className="modern-card p-16 modern-animate-fade-in-up">
+              <div className="text-center mb-12">
+                <p className="text-2xl text-[#0395A6] font-semibold italic">
                   "Du steigst nicht auf das Niveau deiner Ziele. Du fällst auf das Niveau deiner Systeme."
                 </p>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+              <div className="modern-grid modern-grid-2">
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-6">Wissenschaftliche Grundlage</h3>
-                  <p className="text-lg text-gray-600 leading-relaxed premium-text mb-6">
+                  <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Wissenschaftliche Grundlage</h3>
+                  <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                     Wir arbeiten mit bewährten Lernmethoden aus der Kognitionsforschung: Retrieval Practice 
                     (aktives Abrufen), Spaced Repetition (geplante Wiederholung), Interleaving (systematisches 
                     Mischen von Themen) und gezieltes Feedback.
                   </p>
-                  <p className="text-lg text-gray-600 leading-relaxed premium-text">
+                  <p className="text-lg text-gray-600 leading-relaxed modern-text">
                     Diese Methoden sind wissenschaftlich belegt und führen nachweislich zu besseren 
                     Prüfungsergebnissen.
                   </p>
                 </div>
                 
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-6">Strukturierte Herangehensweise</h3>
-                  <p className="text-lg text-gray-600 leading-relaxed premium-text mb-6">
+                  <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Strukturierte Herangehensweise</h3>
+                  <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                     Statt beim Altbewährten zu bleiben und verzweifelt die letzten Energiereserven auszuschöpfen, 
                     gehen wir Ihre Defizite strukturiert an.
                   </p>
-                  <p className="text-lg text-gray-600 leading-relaxed premium-text">
+                  <p className="text-lg text-gray-600 leading-relaxed modern-text">
                     Unsere Coaches sind approbierte Ärzt:innen und erfahrene Medizinstudierende, die selbst 
                     mit Top-Ergebnissen durch alle Examina gegangen sind.
                   </p>
@@ -252,28 +252,28 @@ export default function HomePage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="academic-section bg-[#FAFAFA]">
-        <div className="academic-container">
-          <div className="text-center mb-20 animate-fade-in-up">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 premium-heading">
+      <section className="modern-section bg-[#F8FAFC]">
+        <div className="modern-container">
+          <div className="text-center modern-spacing">
+            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Transparente Preise
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto premium-text">
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Klare Struktur, faire Preise, keine versteckten Kosten
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="premium-card p-16 animate-fade-in-up">
+          <div className="max-w-5xl mx-auto">
+            <div className="modern-card p-16 modern-animate-fade-in-up">
               <div className="text-center mb-12">
                 <div className="text-6xl font-bold text-[#0395A6] mb-4">39€</div>
                 <p className="text-2xl text-gray-600 mb-8">60 Min 1‑on‑1 · Online via Zoom</p>
                 <p className="text-lg text-gray-500">inkl. Unterlagen & Nachbereitung</p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+              <div className="modern-grid modern-grid-2 mb-12">
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-6">Was du bekommst:</h3>
+                  <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Was du bekommst:</h3>
                   <ul className="space-y-4">
                     {[
                       "1‑on‑1 mit Ärzt:in",
@@ -294,7 +294,7 @@ export default function HomePage() {
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-6">Flexible Buchung:</h3>
+                  <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Flexible Buchung:</h3>
                   <ul className="space-y-4">
                     {[
                       "Einzelstunden (60 Min)",
@@ -312,7 +312,7 @@ export default function HomePage() {
               </div>
 
               <div className="text-center">
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed modern-text">
                   Online über Zoom mit Screen Sharing und Whiteboard. Flexibel buchbar über WhatsApp, 
                   bezahlen erst im Anschluss!
                 </p>
@@ -320,9 +320,11 @@ export default function HomePage() {
                   href="http://wa.me/491639347633"
           target="_blank"
           rel="noopener noreferrer"
-                  className="premium-button px-12 py-5 rounded-lg text-xl font-semibold focus-ring"
+                  className="modern-button px-12 py-5 rounded-lg text-xl font-semibold modern-focus group"
                 >
+                  <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
                   Jetzt buchen
+                  <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
@@ -337,24 +339,24 @@ export default function HomePage() {
       <FAQ />
 
       {/* CTA Section */}
-      <section className="cta-section academic-section">
-        <div className="academic-container text-center relative z-10">
-          <h2 className="text-6xl md:text-7xl font-bold text-white mb-8 premium-heading animate-fade-in-up">
+      <section className="modern-cta modern-section">
+        <div className="modern-container text-center relative z-10">
+          <h2 className="text-6xl md:text-7xl font-bold text-white mb-8 modern-heading modern-animate-fade-in-up">
             GEMEINSAM
           </h2>
-          <p className="text-3xl text-white text-opacity-90 mb-8 animate-fade-in-up">
+          <p className="text-3xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
             Dein Weg zur Prüfungssicherheit beginnt hier.
           </p>
-          <p className="text-xl text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in-up">
+          <p className="text-xl text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
             Wähle das Coaching-Format, das zu deinem Lernstil und deinem Ziel passt. 
             Über 500 erfolgreiche Prüfungen sprechen für sich.
           </p>
-          <div className="flex flex-col sm:flex-row gap-8 justify-center animate-fade-in-up">
+          <div className="flex flex-col sm:flex-row gap-8 justify-center modern-animate-fade-in-up">
             <a
               href="http://wa.me/491639347633"
           target="_blank"
           rel="noopener noreferrer"
-              className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-xl font-semibold transition-all focus-ring inline-block group"
+              className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-xl font-semibold transition-all modern-focus inline-block group"
             >
               <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
               Kostenloses Erstgespräch
@@ -362,7 +364,7 @@ export default function HomePage() {
             </a>
             <Link
               href="/coaching"
-              className="border-2 border-white text-white hover:bg-white hover:text-[#0395A6] px-12 py-5 rounded-lg text-xl font-semibold transition-all focus-ring inline-block group"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#0395A6] px-12 py-5 rounded-lg text-xl font-semibold transition-all modern-focus inline-block group"
             >
               Coaching entdecken
               <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
