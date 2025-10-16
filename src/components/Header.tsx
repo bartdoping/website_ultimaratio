@@ -22,7 +22,7 @@ export default function Header() {
       <div className="bg-[#0395A6] text-white py-2">
         <div className="modern-container">
           <div className="flex justify-between items-center text-sm">
-            <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-4">
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
                 <span>+49 163 9347633</span>
@@ -32,10 +32,10 @@ export default function Header() {
                 <span>info@ultima-rat.io</span>
               </div>
             </div>
-            <div className="hidden md:flex items-center space-x-4">
-              <span className="text-white/80">Über 500 erfolgreiche Prüfungen</span>
+            <div className="hidden lg:flex items-center space-x-3">
+              <span className="text-white/80">500+ Prüfungen</span>
               <div className="w-1 h-1 bg-white/60 rounded-full"></div>
-              <span className="text-white/80">95% Erfolgsquote</span>
+              <span className="text-white/80">95% Erfolg</span>
             </div>
           </div>
         </div>
@@ -48,23 +48,23 @@ export default function Header() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center group">
-                <div className="h-14 w-14 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg">
-                  <span className="text-white font-bold text-2xl">UR</span>
+                <div className="h-12 w-12 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg">
+                  <span className="text-white font-bold text-xl">UR</span>
                 </div>
-                <div className="ml-4">
-                  <span className="text-2xl font-bold text-black modern-heading block">ultima-rat.io</span>
-                  <span className="text-sm text-gray-500">Medizin-Nachhilfe</span>
+                <div className="ml-3">
+                  <span className="text-xl font-bold text-black modern-heading block">ultima-rat.io</span>
+                  <span className="text-xs text-gray-500">Medizin-Nachhilfe</span>
                 </div>
               </Link>
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex space-x-8">
+            <nav className="hidden lg:flex space-x-6">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-[#0395A6] px-4 py-2 text-base font-medium transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] modern-focus relative group"
+                  className="text-gray-700 hover:text-[#0395A6] px-3 py-2 text-sm font-medium transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] modern-focus relative group"
                 >
                   {item.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0395A6] transition-all duration-300 group-hover:w-full"></span>
@@ -73,19 +73,19 @@ export default function Header() {
             </nav>
 
             {/* CTA Buttons */}
-            <div className="hidden md:flex items-center space-x-4">
+            <div className="hidden md:flex items-center space-x-3">
               <a
                 href="http://wa.me/491639347633"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="modern-button px-6 py-3 rounded-lg text-sm font-semibold modern-focus group"
+                className="modern-button px-5 py-2.5 rounded-lg text-sm font-semibold modern-focus group"
               >
-                <MessageCircle className="w-4 h-4 mr-2 inline-block group-hover:animate-pulse" />
+                <MessageCircle className="w-4 h-4 mr-1.5 inline-block group-hover:animate-pulse" />
                 Erstgespräch
               </a>
               <Link
                 href="/coaching"
-                className="modern-button-secondary px-6 py-3 rounded-lg text-sm font-semibold modern-focus"
+                className="modern-button-secondary px-5 py-2.5 rounded-lg text-sm font-semibold modern-focus"
               >
                 Coaching
               </Link>
@@ -116,29 +116,29 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] block px-4 py-3 rounded-lg text-base font-medium transition-all"
+                  className="text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] block px-3 py-2.5 rounded-lg text-sm font-medium transition-all"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-4 border-t border-gray-200">
+              <div className="pt-3 border-t border-gray-200">
                 <a
                   href="http://wa.me/491639347633"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="modern-button block w-full text-center px-4 py-3 rounded-lg text-base font-medium mb-3"
+                  className="modern-button block w-full text-center px-4 py-2.5 rounded-lg text-sm font-medium mb-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <MessageCircle className="w-5 h-5 mr-2 inline-block" />
-                  Kostenloses Erstgespräch
+                  <MessageCircle className="w-4 h-4 mr-1.5 inline-block" />
+                  Erstgespräch
                 </a>
                 <Link
                   href="/coaching"
-                  className="modern-button-secondary block w-full text-center px-4 py-3 rounded-lg text-base font-medium"
+                  className="modern-button-secondary block w-full text-center px-4 py-2.5 rounded-lg text-sm font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Coaching buchen
+                  Coaching
                 </Link>
               </div>
             </div>
