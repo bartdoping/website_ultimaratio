@@ -1,73 +1,178 @@
 import Link from 'next/link'
+import { MessageCircle, Phone, Mail, MapPin, Clock, Star } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-gray-900 to-black text-white">
+    <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+      {/* Main Footer Content */}
       <div className="modern-container py-20">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
-          <div className="col-span-1 md:col-span-2">
+          <div className="lg:col-span-2">
             <div className="flex items-center mb-8">
-              <div className="h-14 w-14 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-2xl">UR</span>
+              <div className="h-16 w-16 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-2xl flex items-center justify-center shadow-xl">
+                <span className="text-white font-bold text-3xl">UR</span>
               </div>
-              <span className="ml-4 text-3xl font-bold modern-heading">ultima-rat.io</span>
+              <div className="ml-4">
+                <span className="text-3xl font-bold modern-heading block">ultima-rat.io</span>
+                <span className="text-lg text-gray-300">Medizin-Nachhilfe</span>
+              </div>
             </div>
-            <p className="text-gray-300 mb-8 text-xl leading-relaxed modern-text">
+            
+            <p className="text-gray-300 mb-8 text-lg leading-relaxed modern-text max-w-md">
               Professionelle Medizin-Nachhilfe mit approbierten Ärzt:innen. 
               Wissenschaftlich fundierte Lernmethoden für optimale Prüfungsvorbereitung.
             </p>
-            <div className="text-gray-300 space-y-3">
-              <p className="font-semibold text-lg flex items-center">
-                <span className="w-2 h-2 bg-[#0395A6] rounded-full mr-3"></span>
-                Warburghof 14, 30627 Hannover, Deutschland
-              </p>
-              <p className="font-semibold text-lg flex items-center">
-                <span className="w-2 h-2 bg-[#0395A6] rounded-full mr-3"></span>
-                +49 163 9347633
-              </p>
-              <p className="font-semibold text-lg flex items-center">
-                <span className="w-2 h-2 bg-[#0395A6] rounded-full mr-3"></span>
-                info@ultima-rat.io
-              </p>
+
+            {/* Contact Info */}
+            <div className="space-y-4">
+              <div className="flex items-center text-gray-300">
+                <MapPin className="w-5 h-5 mr-3 text-[#0395A6]" />
+                <span className="text-lg">Warburghof 14, 30627 Hannover, Deutschland</span>
+              </div>
+              <div className="flex items-center text-gray-300">
+                <Phone className="w-5 h-5 mr-3 text-[#0395A6]" />
+                <span className="text-lg">+49 163 9347633</span>
+              </div>
+              <div className="flex items-center text-gray-300">
+                <Mail className="w-5 h-5 mr-3 text-[#0395A6]" />
+                <span className="text-lg">info@ultima-rat.io</span>
+              </div>
+              <div className="flex items-center text-gray-300">
+                <Clock className="w-5 h-5 mr-3 text-[#0395A6]" />
+                <span className="text-lg">Mo-Fr: 9:00-18:00 Uhr</span>
+              </div>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Navigation</h3>
-            <ul className="space-y-2">
-              <li><Link href="/" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
-              <li><Link href="/methoden" className="text-gray-300 hover:text-white transition-colors">Unsere Methoden</Link></li>
-              <li><Link href="/coaching" className="text-gray-300 hover:text-white transition-colors">Coaching</Link></li>
-              <li><Link href="/kenntnispruefung" className="text-gray-300 hover:text-white transition-colors">Kenntnisprüfung</Link></li>
-              <li><Link href="/team" className="text-gray-300 hover:text-white transition-colors">Team</Link></li>
-              <li><Link href="/kontakt" className="text-gray-300 hover:text-white transition-colors">Kontakt</Link></li>
+            <h3 className="text-xl font-bold mb-6 modern-heading">Navigation</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/methoden" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
+                  Unsere Methoden
+                </Link>
+              </li>
+              <li>
+                <Link href="/coaching" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
+                  Coaching
+                </Link>
+              </li>
+              <li>
+                <Link href="/kenntnispruefung" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
+                  Kenntnisprüfung
+                </Link>
+              </li>
+              <li>
+                <Link href="/team" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
+                  Team
+                </Link>
+              </li>
+              <li>
+                <Link href="/kontakt" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
+                  Kontakt
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Legal Links */}
+          {/* Services & Legal */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Rechtliches</h3>
-            <ul className="space-y-2">
-              <li><Link href="/impressum" className="text-gray-300 hover:text-white transition-colors">Impressum</Link></li>
-              <li><Link href="/datenschutz" className="text-gray-300 hover:text-white transition-colors">Datenschutz</Link></li>
-              <li><Link href="/agb" className="text-gray-300 hover:text-white transition-colors">AGB</Link></li>
-              <li><Link href="/cookie-richtlinie" className="text-gray-300 hover:text-white transition-colors">Cookie Richtlinie</Link></li>
-              <li><Link href="/widerruf" className="text-gray-300 hover:text-white transition-colors">Widerruf</Link></li>
+            <h3 className="text-xl font-bold mb-6 modern-heading">Services</h3>
+            <ul className="space-y-3 mb-8">
+              <li className="text-gray-300 text-lg">Einzelcoaching (39€/60min)</li>
+              <li className="text-gray-300 text-lg">Crashkurse (5h Intensiv)</li>
+              <li className="text-gray-300 text-lg">Prüfungsvorbereitung</li>
+              <li className="text-gray-300 text-lg">Online via Zoom</li>
+            </ul>
+
+            <h3 className="text-xl font-bold mb-6 modern-heading">Rechtliches</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/impressum" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
+                  Impressum
+                </Link>
+              </li>
+              <li>
+                <Link href="/datenschutz" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
+                  Datenschutz
+                </Link>
+              </li>
+              <li>
+                <Link href="/agb" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
+                  AGB
+                </Link>
+              </li>
+              <li>
+                <Link href="/widerruf" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
+                  Widerruf
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8">
+        {/* Stats Section */}
+        <div className="border-t border-gray-700 mt-16 pt-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-3xl font-bold text-[#0395A6] mb-2">95%</div>
+              <div className="text-gray-300">Erfolgsquote</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-[#0395A6] mb-2">500+</div>
+              <div className="text-gray-300">Erfolgreiche Prüfungen</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-[#0395A6] mb-2">5.0</div>
+              <div className="text-gray-300">Durchschnittsbewertung</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-[#0395A6] mb-2">3</div>
+              <div className="text-gray-300">Jahre Erfahrung</div>
+            </div>
+          </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="border-t border-gray-700 mt-12 pt-12 text-center">
+          <h3 className="text-2xl font-bold mb-4 modern-heading">Bereit für deine Prüfung?</h3>
+          <p className="text-gray-300 mb-8 text-lg">
+            Starte jetzt mit deinem kostenlosen Erstgespräch
+          </p>
+          <a
+            href="http://wa.me/491639347633"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="modern-button px-8 py-4 rounded-lg text-lg font-semibold modern-focus inline-block group"
+          >
+            <MessageCircle className="w-5 h-5 mr-3 inline-block group-hover:animate-pulse" />
+            Kostenloses Erstgespräch
+          </a>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-gray-700 bg-gray-900">
+        <div className="modern-container py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-300 text-sm">
-              Copyright © 2025 ultima-rat.io. Alle Rechte vorbehalten.
-            </p>
-            <div className="flex space-x-4 mt-4 md:mt-0">
-              <Link href="/impressum" className="text-gray-300 hover:text-white text-sm transition-colors">
-                Impressum und Datenschutz
-              </Link>
+            <div className="text-gray-400 text-sm mb-4 md:mb-0">
+              <p className="mb-1">Copyright © 2025 ultima-rat.io. Alle Rechte vorbehalten.</p>
+              <p>ultima-rat.io - Optimale Prüfungs-Vorbereitung für dein Medizinstudium.</p>
+            </div>
+            <div className="flex items-center space-x-4">
+              <div className="flex items-center text-gray-400 text-sm">
+                <Star className="w-4 h-4 mr-1 text-yellow-400" />
+                <span>Bewertet mit 5.0/5.0</span>
+              </div>
+              <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
+              <span className="text-gray-400 text-sm">Vertrauenswürdig</span>
             </div>
           </div>
         </div>
