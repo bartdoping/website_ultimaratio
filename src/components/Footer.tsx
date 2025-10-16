@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { MessageCircle, Phone, Mail, MapPin, Clock, Star } from 'lucide-react'
 
 export default function Footer() {
@@ -10,8 +11,14 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-8">
-              <div className="h-16 w-16 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-2xl flex items-center justify-center shadow-xl">
-                <span className="text-white font-bold text-3xl">UR</span>
+              <div className="h-16 w-16 rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="/images/logo/logo-white.png"
+                  alt="ultima-rat.io Logo"
+                  width={64}
+                  height={64}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="ml-4">
                 <span className="text-3xl font-bold modern-heading block">ultima-rat.io</span>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Award, GraduationCap, Heart, Users, Star, MessageCircle, ArrowRight } from 'lucide-react'
 
 export default function TeamPage() {
@@ -41,8 +42,14 @@ export default function TeamPage() {
             {/* Mustafa Eid */}
             <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="text-center mb-8">
-                <div className="w-32 h-32 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-4xl font-bold">
-                  ME
+                <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6 shadow-xl">
+                  <Image
+                    src="/images/team/mustafa-eid.jpg"
+                    alt="Dr. Mustafa Eid"
+                    width={128}
+                    height={128}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-3xl font-bold text-black mb-2 modern-heading">Dr. Mustafa Eid</h3>
                 <p className="text-xl text-[#0395A6] font-semibold mb-4">Approbierter Arzt</p>
@@ -92,8 +99,14 @@ export default function TeamPage() {
             {/* Ahkash Thavarajasingam */}
             <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="text-center mb-8">
-                <div className="w-32 h-32 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-4xl font-bold">
-                  AT
+                <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6 shadow-xl">
+                  <Image
+                    src="/images/team/ahkash-thavarajasingam.jpg"
+                    alt="Dr. Ahkash Thavarajasingam"
+                    width={128}
+                    height={128}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-3xl font-bold text-black mb-2 modern-heading">Dr. Ahkash Thavarajasingam</h3>
                 <p className="text-xl text-[#0395A6] font-semibold mb-4">Approbierter Arzt</p>

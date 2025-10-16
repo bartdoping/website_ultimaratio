@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { Menu, X, MessageCircle, Phone, Mail } from 'lucide-react'
 
@@ -48,8 +49,15 @@ export default function Header() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center group">
-                <div className="h-12 w-12 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg">
-                  <span className="text-white font-bold text-xl">UR</span>
+                <div className="h-12 w-12 rounded-xl overflow-hidden group-hover:scale-110 transition-all duration-300 shadow-lg">
+                  <Image
+                    src="/images/logo/logo.png"
+                    alt="ultima-rat.io Logo"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-contain"
+                    priority
+                  />
                 </div>
                 <div className="ml-3">
                   <span className="text-xl font-bold text-black modern-heading block">ultima-rat.io</span>
