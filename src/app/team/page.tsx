@@ -225,8 +225,8 @@ export default function TeamPage() {
                 ))}
               </div>
               <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
-                "Dr. Eid hat mir geholfen, die Kenntnisprüfung erfolgreich zu bestehen. 
-                Seine strukturierte Herangehensweise war genau das, was ich brauchte."
+                &ldquo;Dr. Eid hat mir geholfen, die Kenntnisprüfung erfolgreich zu bestehen. 
+                Seine strukturierte Herangehensweise war genau das, was ich brauchte.&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">
                 <p className="font-semibold text-black">Sarah M.</p>
@@ -241,8 +241,8 @@ export default function TeamPage() {
                 ))}
               </div>
               <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
-                "Das Coaching mit Dr. Thavarajasingam war fantastisch. 
-                Endlich verstehe ich die Anatomie richtig, nicht nur auswendig."
+                &ldquo;Das Coaching mit Dr. Thavarajasingam war fantastisch. 
+                Endlich verstehe ich die Anatomie richtig, nicht nur auswendig.&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">
                 <p className="font-semibold text-black">Michael R.</p>
@@ -257,8 +257,8 @@ export default function TeamPage() {
                 ))}
               </div>
               <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
-                "Professionelle Betreuung von Anfang bis Ende. 
-                Die Prüfungssimulationen waren Gold wert für meine M2-Vorbereitung."
+                &ldquo;Professionelle Betreuung von Anfang bis Ende. 
+                Die Prüfungssimulationen waren Gold wert für meine M2-Vorbereitung.&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">
                 <p className="font-semibold text-black">Lisa T.</p>

@@ -216,7 +216,7 @@ export default function HomePage() {
             <div className="modern-card p-16 modern-animate-fade-in-up">
               <div className="text-center mb-12">
                 <p className="text-2xl text-[#0395A6] font-semibold italic">
-                  "Du steigst nicht auf das Niveau deiner Ziele. Du fällst auf das Niveau deiner Systeme."
+                  &ldquo;Du steigst nicht auf das Niveau deiner Ziele. Du fällst auf das Niveau deiner Systeme.&rdquo;
                 </p>
               </div>
               

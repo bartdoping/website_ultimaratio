@@ -263,8 +263,8 @@ export default function MethodenPage() {
                 ))}
               </div>
               <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
-                "Durch die Retrieval Practice habe ich endlich verstanden, wie ich effektiv lerne. 
-                Meine Prüfungsergebnisse haben sich deutlich verbessert."
+                &ldquo;Durch die Retrieval Practice habe ich endlich verstanden, wie ich effektiv lerne. 
+                Meine Prüfungsergebnisse haben sich deutlich verbessert.&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">
                 <p className="font-semibold text-black">Sarah M.</p>
@@ -279,8 +279,8 @@ export default function MethodenPage() {
                 ))}
               </div>
               <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
-                "Die Spaced Repetition hat mein Lernen revolutioniert. 
-                Ich behalte jetzt viel mehr und vergesse weniger."
+                &ldquo;Die Spaced Repetition hat mein Lernen revolutioniert. 
+                Ich behalte jetzt viel mehr und vergesse weniger.&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">
                 <p className="font-semibold text-black">Michael R.</p>
@@ -295,8 +295,8 @@ export default function MethodenPage() {
                 ))}
               </div>
               <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
-                "Das Interleaving hat mir geholfen, Zusammenhänge zu verstehen. 
-                Ich kann jetzt Wissen viel besser anwenden."
+                &ldquo;Das Interleaving hat mir geholfen, Zusammenhänge zu verstehen. 
+                Ich kann jetzt Wissen viel besser anwenden.&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">
                 <p className="font-semibold text-black">Lisa T.</p>
