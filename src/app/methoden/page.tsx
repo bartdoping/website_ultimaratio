@@ -1,4 +1,4 @@
-import { CheckCircle, Users, Target, BookOpen, Brain, Clock, Award, Zap, TrendingUp, Shield, Star, ArrowRight, MessageCircle, FileText, Calendar } from 'lucide-react'
+import { CheckCircle, Target, Brain, Clock, Award, Shield, ArrowRight, MessageCircle } from 'lucide-react'
 
 export default function MethodenPage() {
   return (

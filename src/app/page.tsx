@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { CheckCircle, Users, Target, BookOpen, Brain, Clock, Award, Zap, TrendingUp, Shield, Star, ArrowRight, MessageCircle } from 'lucide-react'
+import { CheckCircle, Users, Target, BookOpen, Brain, Clock, Award, Zap, Shield, ArrowRight, MessageCircle } from 'lucide-react'
 import FAQ from '../components/FAQ'
 import Testimonials from '../components/Testimonials'
 

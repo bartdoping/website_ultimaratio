@@ -21,8 +21,8 @@ export default function AGBPage() {
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-8">
               für die Erbringung von Dienstleistungen von Thavarajasingam, Ahkash; Eid, Mustafa Magdy Abdel Razik GbR, 
-              Warburghof, 14, 30627 Hannover, E-Mail: info@ultima-rat.io (nachfolgend „Auftragnehmer") gegenüber seinen 
-              Kunden (nachfolgend „Auftraggeber")
+              Warburghof, 14, 30627 Hannover, E-Mail: info@ultima-rat.io (nachfolgend &ldquo;Auftragnehmer&rdquo;) gegenüber seinen 
+              Kunden (nachfolgend &ldquo;Auftraggeber&rdquo;)
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">1. Allgemeines</h2>
@@ -72,7 +72,7 @@ export default function AGBPage() {
               Informationen, Daten und sonstigen Inhalte vollständig und korrekt mitzuteilen. Für Verzögerungen und 
               Verspätungen bei der Leistungserbringung, die durch eine verspätete und notwendige Mit- bzw. Zuarbeit des 
               Kunden entstehen, ist der Auftragnehmer gegenüber dem Kunden in keinerlei Hinsicht verantwortlich; die 
-              Vorschriften unter der Überschrift „Haftung/Freistellung" bleiben hiervon unberührt.
+              Vorschriften unter der Überschrift &ldquo;Haftung/Freistellung&rdquo; bleiben hiervon unberührt.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">4. Vergütung</h2>

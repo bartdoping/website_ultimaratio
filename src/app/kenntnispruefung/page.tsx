@@ -1,4 +1,4 @@
-import { CheckCircle, Users, Target, BookOpen, Clock, Zap, MessageCircle, Award, TrendingUp, Shield, Star, ArrowRight, Brain, FileText, Calendar } from 'lucide-react'
+import { CheckCircle, Users, Target, BookOpen, Clock, Zap, MessageCircle, Award, ArrowRight, Brain, FileText, Calendar } from 'lucide-react'
 
 export default function KenntnispruefungPage() {
   return (
