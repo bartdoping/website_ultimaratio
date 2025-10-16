@@ -4,21 +4,22 @@ export default function CoachingPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
+      <section className="academic-gradient py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold text-black mb-8 leading-tight">
               Lernprobleme?<br />
               Blackouts?<br />
-              <span className="text-blue-600">Prüfungsstress?</span>
+              <span className="text-[#0395A6]">Prüfungsstress?</span>
             </h1>
-            <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-              Mit individuellem Coaching gehst du sicher und strukturiert in jede Prüfung – 
-              egal ob Vorklinik oder Klinik, schriftlich oder mündlich!
+            <p className="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+              Mit individuellem Coaching gehen Sie sicher und strukturiert in jede Prüfung – 
+              egal ob Vorklinik oder Klinik, schriftlich oder mündlich. Wissenschaftlich fundierte Methoden, 
+              die nachweislich funktionieren.
             </p>
             <a
               href="#mehr-erfahren"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors inline-block"
+              className="primary-button px-10 py-4 rounded-lg text-lg font-semibold inline-block"
             >
               Mehr erfahren ↓
             </a>
