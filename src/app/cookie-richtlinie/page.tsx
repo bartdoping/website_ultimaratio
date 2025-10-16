@@ -83,10 +83,10 @@ export default function CookieRichtliniePage() {
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Browser-spezifische Anleitungen:</h3>
             <ul className="list-disc pl-6 text-gray-700 mb-6">
-              <li><strong>Chrome:</strong> Einstellungen > Erweitert > Datenschutz und Sicherheit > Cookies</li>
-              <li><strong>Firefox:</strong> Einstellungen > Datenschutz & Sicherheit > Cookies und Website-Daten</li>
-              <li><strong>Safari:</strong> Einstellungen > Datenschutz > Cookies und Website-Daten verwalten</li>
-              <li><strong>Edge:</strong> Einstellungen > Cookies und Websiteberechtigungen</li>
+              <li><strong>Chrome:</strong> Einstellungen &gt; Erweitert &gt; Datenschutz und Sicherheit &gt; Cookies</li>
+              <li><strong>Firefox:</strong> Einstellungen &gt; Datenschutz &amp; Sicherheit &gt; Cookies und Website-Daten</li>
+              <li><strong>Safari:</strong> Einstellungen &gt; Datenschutz &gt; Cookies und Website-Daten verwalten</li>
+              <li><strong>Edge:</strong> Einstellungen &gt; Cookies und Websiteberechtigungen</li>
             </ul>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Auswirkungen der Cookie-Deaktivierung</h2>
