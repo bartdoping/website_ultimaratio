@@ -2,25 +2,34 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-gradient-to-br from-gray-900 to-black text-white">
       <div className="academic-container py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-8">
-              <div className="h-12 w-12 bg-[#0395A6] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">UR</span>
+              <div className="h-14 w-14 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-xl flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-2xl">UR</span>
               </div>
-              <span className="ml-4 text-3xl font-bold academic-heading">ultima-rat.io</span>
+              <span className="ml-4 text-3xl font-bold premium-heading">ultima-rat.io</span>
             </div>
-            <p className="text-gray-300 mb-8 text-xl leading-relaxed academic-text">
+            <p className="text-gray-300 mb-8 text-xl leading-relaxed premium-text">
               Professionelle Medizin-Nachhilfe mit approbierten Ärzt:innen. 
               Wissenschaftlich fundierte Lernmethoden für optimale Prüfungsvorbereitung.
             </p>
             <div className="text-gray-300 space-y-3">
-              <p className="font-semibold text-lg">Warburghof 14, 30627 Hannover, Deutschland</p>
-              <p className="font-semibold text-lg">+49 163 9347633</p>
-              <p className="font-semibold text-lg">info@ultima-rat.io</p>
+              <p className="font-semibold text-lg flex items-center">
+                <span className="w-2 h-2 bg-[#0395A6] rounded-full mr-3"></span>
+                Warburghof 14, 30627 Hannover, Deutschland
+              </p>
+              <p className="font-semibold text-lg flex items-center">
+                <span className="w-2 h-2 bg-[#0395A6] rounded-full mr-3"></span>
+                +49 163 9347633
+              </p>
+              <p className="font-semibold text-lg flex items-center">
+                <span className="w-2 h-2 bg-[#0395A6] rounded-full mr-3"></span>
+                info@ultima-rat.io
+              </p>
             </div>
           </div>
 

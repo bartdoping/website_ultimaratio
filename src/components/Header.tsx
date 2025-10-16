@@ -17,16 +17,16 @@ export default function Header() {
   ]
 
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
+    <header className="bg-white/95 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50 shadow-sm">
       <div className="academic-container">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center group">
-              <div className="h-10 w-10 bg-[#0395A6] rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
-                <span className="text-white font-bold text-lg">UR</span>
+              <div className="h-12 w-12 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg">
+                <span className="text-white font-bold text-xl">UR</span>
               </div>
-              <span className="ml-4 text-2xl font-bold text-black academic-heading">ultima-rat.io</span>
+              <span className="ml-4 text-2xl font-bold text-black premium-heading">ultima-rat.io</span>
             </Link>
           </div>
 
@@ -36,9 +36,10 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-600 hover:text-[#0395A6] px-4 py-2 text-base font-medium transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] focus-ring"
+                className="text-gray-600 hover:text-[#0395A6] px-4 py-2 text-base font-medium transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] focus-ring relative group"
               >
                 {item.name}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0395A6] transition-all duration-300 group-hover:w-full"></span>
               </Link>
             ))}
           </nav>
@@ -49,8 +50,9 @@ export default function Header() {
               href="http://wa.me/491639347633"
               target="_blank"
               rel="noopener noreferrer"
-              className="primary-button px-8 py-3 rounded-lg text-base font-semibold focus-ring"
+              className="premium-button px-8 py-3 rounded-lg text-base font-semibold focus-ring group"
             >
+              <MessageCircle className="w-5 h-5 mr-2 inline-block group-hover:animate-pulse" />
               Kostenloses Erstgespräch
             </a>
           </div>
