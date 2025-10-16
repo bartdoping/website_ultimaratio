@@ -17,26 +17,26 @@ export default function Header() {
   ]
 
   return (
-    <header className="bg-white border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <header className="bg-white border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
+      <div className="academic-container">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center">
-              <div className="h-8 w-8 bg-[#0395A6] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">UR</span>
+            <Link href="/" className="flex items-center group">
+              <div className="h-10 w-10 bg-[#0395A6] rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
+                <span className="text-white font-bold text-lg">UR</span>
               </div>
-              <span className="ml-3 text-xl font-bold text-black">ultima-rat.io</span>
+              <span className="ml-4 text-2xl font-bold text-black academic-heading">ultima-rat.io</span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-12">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-600 hover:text-[#0395A6] px-3 py-2 text-sm font-medium transition-colors border-b-2 border-transparent hover:border-[#0395A6]"
+                className="text-gray-600 hover:text-[#0395A6] px-4 py-2 text-base font-medium transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] focus-ring"
               >
                 {item.name}
               </Link>
@@ -49,7 +49,7 @@ export default function Header() {
               href="http://wa.me/491639347633"
               target="_blank"
               rel="noopener noreferrer"
-              className="primary-button px-6 py-2 rounded-lg text-sm font-semibold"
+              className="primary-button px-8 py-3 rounded-lg text-base font-semibold focus-ring"
             >
               Kostenloses Erstgespräch
             </a>

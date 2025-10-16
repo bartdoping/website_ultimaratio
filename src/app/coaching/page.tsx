@@ -1,25 +1,25 @@
-import { CheckCircle, Users, Target, BookOpen, Clock, Zap, MessageCircle } from 'lucide-react'
+import { CheckCircle, Users, Target, BookOpen, Clock, Zap, MessageCircle, Award, TrendingUp } from 'lucide-react'
 
 export default function CoachingPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="academic-gradient py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-black mb-8 leading-tight">
+      <section className="academic-gradient academic-section">
+        <div className="academic-container">
+          <div className="text-center animate-fade-in-up">
+            <h1 className="text-6xl md:text-7xl font-bold text-black mb-8 academic-heading leading-tight">
               Lernprobleme?<br />
               Blackouts?<br />
               <span className="text-[#0395A6]">Prüfungsstress?</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-2xl text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed academic-text">
               Mit individuellem Coaching gehen Sie sicher und strukturiert in jede Prüfung – 
               egal ob Vorklinik oder Klinik, schriftlich oder mündlich. Wissenschaftlich fundierte Methoden, 
               die nachweislich funktionieren.
             </p>
             <a
               href="#mehr-erfahren"
-              className="primary-button px-10 py-4 rounded-lg text-lg font-semibold inline-block"
+              className="primary-button px-12 py-5 rounded-lg text-xl font-semibold focus-ring"
             >
               Mehr erfahren ↓
             </a>
@@ -28,129 +28,105 @@ export default function CoachingPage() {
       </section>
 
       {/* Problem Section */}
-      <section id="mehr-erfahren" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              DAS PROBLEM
+      <section id="mehr-erfahren" className="academic-section bg-white">
+        <div className="academic-container">
+          <div className="text-center mb-20 animate-fade-in-up">
+            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 academic-heading">
+              Das Problem
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto academic-text">
               Der falsche Ansatz macht alles kaputt
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-gray-700 mb-8">
+          <div className="max-w-6xl mx-auto">
+            <p className="text-xl text-gray-700 mb-12 text-center leading-relaxed academic-text">
               Statt beim Altbewährten zu bleiben und verzweifelt seine letzte Energiereverse auszuschöpfen, 
               gehen wir deine Defizite strukturiert auf den Grund.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <div className="bg-red-50 p-8 rounded-lg">
-              <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-6">
-                <Users className="w-6 h-6 text-red-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="academic-card p-12 text-center animate-fade-in-up">
+              <h3 className="text-3xl font-bold text-black mb-6 academic-heading">
                 Überfordert
               </h3>
-              <p className="text-gray-600">
+              <p className="text-lg text-gray-600 leading-relaxed academic-text">
                 Der Stoff stapelt sich, während die Prüfung näher rückt. Du verlässt deinen Lernplan 
                 und endest letztlich in einem sinnlosen Chaos.
               </p>
             </div>
 
-            <div className="bg-orange-50 p-8 rounded-lg">
-              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
-                <BookOpen className="w-6 h-6 text-orange-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            <div className="academic-card p-12 text-center animate-fade-in-up">
+              <h3 className="text-3xl font-bold text-black mb-6 academic-heading">
                 Fehlendes Verständnis
               </h3>
-              <p className="text-gray-600">
+              <p className="text-lg text-gray-600 leading-relaxed academic-text">
                 Was ist wichtig? Was wird sowieso nicht abgefragt? Es fehlt dir das Know-How, um deine Zeit 
                 strukturiert zu investieren und statt trocken alles auswendig zu lernen, effektives Verstehen anwendest.
               </p>
             </div>
 
-            <div className="bg-yellow-50 p-8 rounded-lg">
-              <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
-                <Target className="w-6 h-6 text-yellow-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            <div className="academic-card p-12 text-center animate-fade-in-up">
+              <h3 className="text-3xl font-bold text-black mb-6 academic-heading">
                 Strukturlosigkeit
               </h3>
-              <p className="text-gray-600">
+              <p className="text-lg text-gray-600 leading-relaxed academic-text">
                 Du hast zwar viel gelernt, aber dennoch weißt du, dass das Bestehen nicht sicher ist. 
                 Du brauchst mehr Struktur und nicht mehr Inhalte.
               </p>
             </div>
           </div>
-
-          <div className="text-center mt-12">
-            <p className="text-lg text-gray-600">
-              Und viele weitere Probleme!
-            </p>
-          </div>
         </div>
       </section>
 
       {/* Solution Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              DIE LÖSUNG
+      <section className="academic-section bg-[#FAFAFA]">
+        <div className="academic-container">
+          <div className="text-center mb-20 animate-fade-in-up">
+            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 academic-heading">
+              Die Lösung
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto academic-text">
               Wie Du dein Studium mit Bravur meisterst
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <p className="text-lg text-gray-700 mb-8">
+          <div className="max-w-5xl mx-auto text-center mb-16">
+            <p className="text-xl text-gray-700 mb-8 leading-relaxed academic-text">
               Mit approbierten Ärzt:innen, realistischen Prüfungssimulationen und individualisierten 
               Lernplänen unter die Top 5%!
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                <Users className="w-6 h-6 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="academic-card p-12 animate-fade-in-up">
+              <h3 className="text-3xl font-bold text-black mb-8 academic-heading">
                 Persönlich auf dich abgestimmt
               </h3>
-              <p className="text-gray-600">
+              <p className="text-lg text-gray-600 leading-relaxed academic-text">
                 Kein 08/15-Lernplan, sondern ein Coaching, das exakt zu deinem Fach, deinem Tempo und 
                 deinem Verständnisniveau passt. Wir analysieren gemeinsam, wo du stehst – und bauen darauf 
                 ein System auf, das dich gezielt zum Erfolg führt.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
-                <CheckCircle className="w-6 h-6 text-green-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            <div className="academic-card p-12 animate-fade-in-up">
+              <h3 className="text-3xl font-bold text-black mb-8 academic-heading">
                 Gecoacht von approbierten Ärzt:innen
               </h3>
-              <p className="text-gray-600">
+              <p className="text-lg text-gray-600 leading-relaxed academic-text">
                 Bei uns wirst du von erfahrenen Ärzt:innen trainiert, die jegliche Prüfungen und Examina 
                 selbst durchlaufen haben. Du profitierst von echten Einblicken, klinischer Erfahrung und 
                 Insiderwissen aus erster Hand.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
-                <BookOpen className="w-6 h-6 text-purple-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            <div className="academic-card p-12 animate-fade-in-up">
+              <h3 className="text-3xl font-bold text-black mb-8 academic-heading">
                 Fokus auf Verstehen, nicht nur Bulimielernen
               </h3>
-              <p className="text-gray-600">
+              <p className="text-lg text-gray-600 leading-relaxed academic-text">
                 Wir zeigen dir nicht nur die richtige Antwort – sondern warum sie richtig ist und wie du sie 
                 wiedererkennst. Statt sturem Auswendiglernen lernst du, Zusammenhänge zu begreifen und in 
                 der Prüfung sicher zu handeln.
@@ -160,73 +136,73 @@ export default function CoachingPage() {
         </div>
       </section>
 
-      {/* Promise Section */}
-      <section className="py-20 bg-blue-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              VERSPRECHEN
+      {/* Process Section */}
+      <section className="academic-section bg-white">
+        <div className="academic-container">
+          <div className="text-center mb-20 animate-fade-in-up">
+            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 academic-heading">
+              Unser Versprechen
             </h2>
-            <p className="text-xl text-blue-100">
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto academic-text">
               Individuelles Medizin-Coaching – 100 % auf dich zugeschnitten
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <p className="text-lg text-blue-100">
+          <div className="max-w-5xl mx-auto text-center mb-16">
+            <p className="text-xl text-gray-700 mb-8 leading-relaxed academic-text">
               Präzise Hilfe statt Planlosigkeit: 1-on-1 Coachings mit echten Ärzt:innen, klarer Struktur, 
               Fokus auf Verstehen – für alle Phasen deines Medizinstudiums.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-lg">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl font-bold text-blue-600">01</span>
+            <div className="academic-card p-8 text-center animate-fade-in-up">
+              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl font-bold text-[#0395A6]">01</span>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-black mb-4 academic-heading">
                 Buchung und Themenwahl
               </h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 leading-relaxed academic-text">
                 Du sagst uns, was du brauchst – z. B. Anatomie, Physiologie, Altklausuren oder konkrete 
                 Prüfungsfälle. Wir richten das Coaching genau danach aus.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl font-bold text-green-600">02</span>
+            <div className="academic-card p-8 text-center animate-fade-in-up">
+              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl font-bold text-[#0395A6]">02</span>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-black mb-4 academic-heading">
                 Live-Coaching per Zoom
               </h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 leading-relaxed academic-text">
                 Ob 1h-Session oder 5h-Intensivtag – wir coachen dich strukturiert, verständlich und 
                 prüfungsnah. Direkt, klar und ohne Zeitverlust.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg">
-              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl font-bold text-purple-600">03</span>
+            <div className="academic-card p-8 text-center animate-fade-in-up">
+              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl font-bold text-[#0395A6]">03</span>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-black mb-4 academic-heading">
                 PDF mit Protokoll & weiterem Material
               </h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 leading-relaxed academic-text">
                 Du bekommst alles zum Nachlesen: Zusammenfassungen, Lernpläne, Tipps – individuell auf dich 
                 abgestimmt. Ideal zum Wiederholen und Vertiefen.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg">
-              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl font-bold text-orange-600">04</span>
+            <div className="academic-card p-8 text-center animate-fade-in-up">
+              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl font-bold text-[#0395A6]">04</span>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-black mb-4 academic-heading">
                 Du lernst fokussiert, nachhaltig - mit Plan
               </h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 leading-relaxed academic-text">
                 Nach dem Coaching bist du nicht allein – sondern vorbereitet. Du weißt genau, was, wie und 
                 warum du lernen musst. Und das macht den Unterschied.
               </p>
@@ -236,88 +212,67 @@ export default function CoachingPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Dein Investment
+      <section className="academic-section bg-[#FAFAFA]">
+        <div className="academic-container">
+          <div className="text-center mb-20 animate-fade-in-up">
+            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 academic-heading">
+              Transparente Preise
             </h2>
-            <p className="text-xl text-gray-600">
-              60 Min 1‑on‑1 · 39€ · Online via Zoom
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto academic-text">
+              Klare Struktur, faire Preise, keine versteckten Kosten
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-lg">
-              <div className="text-center mb-8">
-                <div className="text-4xl font-bold text-blue-600 mb-2">39€</div>
-                <p className="text-gray-600">inkl. Unterlagen & Nachbereitung</p>
+          <div className="max-w-5xl mx-auto">
+            <div className="academic-card p-16 animate-fade-in-up">
+              <div className="text-center mb-12">
+                <div className="text-6xl font-bold text-[#0395A6] mb-4">39€</div>
+                <p className="text-xl text-gray-600 mb-8">60 Min 1‑on‑1 · Online via Zoom</p>
+                <p className="text-lg text-gray-500">inkl. Unterlagen & Nachbereitung</p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Was du bekommst:</h3>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                      1‑on‑1 mit Ärzt:in
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                      Zoom · Screen‑Sharing · Live‑Skizzen
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                      Kursprotokoll als PDF
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                      Individueller Aufgabensheet
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                      Prüfungssimulation
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                      Direktes Feedback
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                      Flexible Terminvergabe
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                      Konkrete Lernpläne
-                    </li>
+                  <h3 className="text-2xl font-bold text-black mb-6 academic-heading">Was du bekommst:</h3>
+                  <ul className="space-y-4">
+                    {[
+                      "1‑on‑1 mit Ärzt:in",
+                      "Zoom · Screen‑Sharing · Live‑Skizzen",
+                      "Kursprotokoll als PDF",
+                      "Individueller Aufgabensheet",
+                      "Prüfungssimulation",
+                      "Direktes Feedback",
+                      "Flexible Terminvergabe",
+                      "Konkrete Lernpläne"
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-center text-lg text-gray-700">
+                        <CheckCircle className="w-6 h-6 text-[#0395A6] mr-3 flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Flexible Buchung:</h3>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center">
-                      <Zap className="w-5 h-5 text-blue-500 mr-2" />
-                      Einzelstunden (60 Min)
-                    </li>
-                    <li className="flex items-center">
-                      <Zap className="w-5 h-5 text-blue-500 mr-2" />
-                      Crashkurse (5h Intensiv)
-                    </li>
-                    <li className="flex items-center">
-                      <Zap className="w-5 h-5 text-blue-500 mr-2" />
-                      Regelmäßige Betreuung
-                    </li>
-                    <li className="flex items-center">
-                      <Zap className="w-5 h-5 text-blue-500 mr-2" />
-                      Prüfungsvorbereitung
-                    </li>
+                  <h3 className="text-2xl font-bold text-black mb-6 academic-heading">Flexible Buchung:</h3>
+                  <ul className="space-y-4">
+                    {[
+                      "Einzelstunden (60 Min)",
+                      "Crashkurse (5h Intensiv)",
+                      "Regelmäßige Betreuung",
+                      "Prüfungsvorbereitung"
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-center text-lg text-gray-700">
+                        <Zap className="w-6 h-6 text-[#0395A6] mr-3 flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
 
               <div className="text-center">
-                <p className="text-gray-600 mb-4">
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                   Online über Zoom mit Screen Sharing und Whiteboard. Flexibel buchbar über WhatsApp, 
                   bezahlen erst im Anschluss!
                 </p>
@@ -325,7 +280,7 @@ export default function CoachingPage() {
                   href="http://wa.me/491639347633"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors inline-block"
+                  className="primary-button px-12 py-5 rounded-lg text-xl font-semibold focus-ring"
                 >
                   Kontakt aufnehmen
                 </a>
@@ -336,22 +291,22 @@ export default function CoachingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <section className="academic-section bg-[#0395A6]">
+        <div className="academic-container text-center">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 academic-heading animate-fade-in-up">
             GEMEINSAM
           </h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className="text-2xl text-white text-opacity-90 mb-8 animate-fade-in-up">
             Dein Weg zur Prüfungssicherheit beginnt hier.
           </p>
-          <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in-up">
             Wähle das Coaching-Format, das zu deinem Lernstil und deinem Ziel passt.
           </p>
           <a
             href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors inline-block"
+            className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-xl font-semibold transition-all focus-ring animate-fade-in-up inline-block"
           >
             Kontakt aufnehmen
           </a>
