@@ -1,4 +1,4 @@
-import { CheckCircle, Users, Target, BookOpen, Clock, Zap, MessageCircle, Award, ArrowRight, Brain } from 'lucide-react'
+import { CheckCircle, Users, Target, BookOpen, Clock, Zap, MessageCircle, Award, ArrowRight, Brain, Shield } from 'lucide-react'
 
 export default function CoachingPage() {
   return (
