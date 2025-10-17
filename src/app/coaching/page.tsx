@@ -110,8 +110,8 @@ export default function CoachingPage() {
 
           <div className="feature-grid">
             <div className="premium-card p-12 animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Users className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Users className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6">Approbierte Ärzt:innen</h3>
               <p className="text-lg text-gray-600 leading-relaxed premium-text">
@@ -121,8 +121,8 @@ export default function CoachingPage() {
             </div>
 
             <div className="premium-card p-12 animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <BookOpen className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <BookOpen className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6">Strukturierte Lernpläne</h3>
               <p className="text-lg text-gray-600 leading-relaxed premium-text">
@@ -132,8 +132,8 @@ export default function CoachingPage() {
             </div>
 
             <div className="premium-card p-12 animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Brain className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Brain className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6">Fokussiertes Lernen</h3>
               <p className="text-lg text-gray-600 leading-relaxed premium-text">
@@ -143,8 +143,8 @@ export default function CoachingPage() {
             </div>
 
             <div className="premium-card p-12 animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Zap className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Zap className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6">Adaptive Prüfungsplattform</h3>
               <p className="text-lg text-gray-600 leading-relaxed premium-text">
@@ -154,8 +154,8 @@ export default function CoachingPage() {
             </div>
 
             <div className="premium-card p-12 animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Target className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Target className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6">Prüfungslogik & Anwendung</h3>
               <p className="text-lg text-gray-600 leading-relaxed premium-text">
@@ -165,8 +165,8 @@ export default function CoachingPage() {
             </div>
 
             <div className="premium-card p-12 animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Shield className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Shield className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6">Kontinuierliche Begleitung</h3>
               <p className="text-lg text-gray-600 leading-relaxed premium-text">

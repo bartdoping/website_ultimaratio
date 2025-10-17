@@ -108,8 +108,8 @@ export default function KenntnispruefungPage() {
 
           <div className="modern-grid modern-grid-2">
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Users className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Users className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">1:1 Coaching</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
@@ -132,8 +132,8 @@ export default function KenntnispruefungPage() {
             </div>
 
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <BookOpen className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <BookOpen className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Zoom Sessions</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
@@ -156,8 +156,8 @@ export default function KenntnispruefungPage() {
             </div>
 
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <FileText className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <FileText className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Individuelle Aufgaben</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
@@ -180,8 +180,8 @@ export default function KenntnispruefungPage() {
             </div>
 
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Calendar className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Calendar className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Flexible Termine</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">

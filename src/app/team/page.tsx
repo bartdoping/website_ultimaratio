@@ -170,8 +170,8 @@ export default function TeamPage() {
 
           <div className="modern-grid modern-grid-3">
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Award className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Award className="w-12 h-12 text-[#0395A6] mx-auto" />
               </div>
               <h3 className="text-lg font-bold text-black mb-6 modern-heading">Approbierte Ärzt:innen</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
@@ -181,8 +181,8 @@ export default function TeamPage() {
             </div>
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Users className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Users className="w-12 h-12 text-[#0395A6] mx-auto" />
               </div>
               <h3 className="text-lg font-bold text-black mb-6 modern-heading">Individuelle Betreuung</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
@@ -192,8 +192,8 @@ export default function TeamPage() {
             </div>
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Heart className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Heart className="w-12 h-12 text-[#0395A6] mx-auto" />
               </div>
               <h3 className="text-lg font-bold text-black mb-6 modern-heading">Erfolgsorientiert</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">

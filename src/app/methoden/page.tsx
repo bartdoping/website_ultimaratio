@@ -39,8 +39,8 @@ export default function MethodenPage() {
 
           <div className="modern-grid modern-grid-2">
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Brain className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Brain className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Retrieval Practice</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
@@ -63,8 +63,8 @@ export default function MethodenPage() {
             </div>
 
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Clock className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Clock className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Spaced Repetition</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
@@ -87,8 +87,8 @@ export default function MethodenPage() {
             </div>
 
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Target className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Target className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Interleaving</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
@@ -111,8 +111,8 @@ export default function MethodenPage() {
             </div>
 
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Shield className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Shield className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Fehlerprotokolle</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">

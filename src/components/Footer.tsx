@@ -5,6 +5,9 @@ import { MessageCircle, Phone, Mail, MapPin, Clock, Star } from 'lucide-react'
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+      {/* Dark Blue Background Strip */}
+      <div className="h-8 bg-gradient-to-br from-gray-900 via-gray-800 to-black"></div>
+      
       {/* Main Footer Content */}
       <div className="modern-container pt-16 pb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -137,7 +140,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-16 pt-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-xl font-bold text-[#0395A6] mb-2">95%</div>
+              <div className="text-xl font-bold text-[#0395A6] mb-2">97%</div>
               <div className="text-gray-300">Erfolgsquote</div>
             </div>
             <div>
@@ -145,11 +148,7 @@ export default function Footer() {
               <div className="text-gray-300">Erfolgreiche Prüfungen</div>
             </div>
             <div>
-              <div className="text-xl font-bold text-[#0395A6] mb-2">5.0</div>
-              <div className="text-gray-300">Durchschnittsbewertung</div>
-            </div>
-            <div>
-              <div className="text-xl font-bold text-[#0395A6] mb-2">3</div>
+              <div className="text-xl font-bold text-[#0395A6] mb-2">6+</div>
               <div className="text-gray-300">Jahre Erfahrung</div>
             </div>
           </div>
