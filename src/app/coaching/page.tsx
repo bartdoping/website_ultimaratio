@@ -192,7 +192,7 @@ export default function CoachingPage() {
           </div>
 
           <div className="modern-grid modern-grid-2">
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mobile-inset">
               <div className="mb-3 md:mb-8">
                 <Brain className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
@@ -216,7 +216,7 @@ export default function CoachingPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mobile-inset">
               <div className="mb-3 md:mb-8">
                 <Clock className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
@@ -240,7 +240,7 @@ export default function CoachingPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mobile-inset">
               <div className="mb-3 md:mb-8">
                 <Target className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
@@ -264,7 +264,7 @@ export default function CoachingPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mobile-inset">
               <div className="mb-3 md:mb-8">
                 <BookOpen className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>

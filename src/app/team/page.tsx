@@ -40,9 +40,9 @@ export default function TeamPage() {
 
           <div className="modern-grid modern-grid-2">
             {/* Mustafa Eid */}
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mobile-inset">
               <div className="text-center mb-4 md:mb-8">
-                <div className="w-16 h-16 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto mb-3 md:mb-6 shadow-xl">
+                <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto mb-3 md:mb-6 shadow-xl">
                   <Image
                     src="/images/team/mustafa-eid.jpg"
                     alt="Mustafa Eid"
@@ -97,9 +97,9 @@ export default function TeamPage() {
             </div>
 
             {/* Ahkash Thavarajasingam */}
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mobile-inset">
               <div className="text-center mb-3 md:mb-8">
-                <div className="w-16 h-16 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto mb-2 md:mb-6 shadow-xl">
+                <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto mb-2 md:mb-6 shadow-xl">
                   <Image
                     src="/images/team/ahkash-thavarajasingam.jpg"
                     alt="Ahkash Thavarajasingam"

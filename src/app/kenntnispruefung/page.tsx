@@ -109,7 +109,7 @@ export default function KenntnispruefungPage() {
           </div>
 
           <div className="modern-grid modern-grid-2">
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mobile-inset">
               <div className="mb-4 md:mb-8">
                 <FileText className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
@@ -132,7 +132,7 @@ export default function KenntnispruefungPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mobile-inset">
               <div className="mb-4 md:mb-8">
                 <Users className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
