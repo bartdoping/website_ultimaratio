@@ -40,9 +40,9 @@ export default function TeamPage() {
 
           <div className="modern-grid modern-grid-2">
             {/* Mustafa Eid */}
-            <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="text-center mb-8">
-                <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6 shadow-xl">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+              <div className="text-center mb-4 md:mb-8">
+                <div className="w-16 h-16 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto mb-3 md:mb-6 shadow-xl">
                   <Image
                     src="/images/team/mustafa-eid.jpg"
                     alt="Mustafa Eid"
@@ -51,8 +51,8 @@ export default function TeamPage() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                        <h3 className="text-xl font-bold text-black mb-2 modern-heading">Mustafa Eid</h3>
-                <p className="text-lg text-[#0395A6] font-semibold mb-4">Approbierter Arzt</p>
+                        <h3 className="text-sm md:text-xl font-bold text-black mb-1 md:mb-2 modern-heading">Mustafa Eid</h3>
+                <p className="text-xs md:text-lg text-[#0395A6] font-semibold mb-2 md:mb-4">Approbierter Arzt</p>
                 <div className="flex justify-center mb-6">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
@@ -60,12 +60,12 @@ export default function TeamPage() {
                 </div>
               </div>
               
-              <div className="space-y-6">
+              <div className="space-y-3 md:space-y-6">
                 <div className="flex items-start">
-                  <GraduationCap className="w-6 h-6 text-[#0395A6] mr-3 mt-1 flex-shrink-0" />
+                  <GraduationCap className="w-4 h-4 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-black mb-2">Ausbildung</h4>
-                    <p className="text-gray-600 modern-text">
+                    <h4 className="font-semibold text-black mb-1 md:mb-2 text-xs md:text-base">Ausbildung</h4>
+                    <p className="text-gray-600 modern-text text-xs md:text-base">
                       Medizinstudium mit Bestnoten, Approbation in Deutschland,
                       Facharztausbildung in der Radiologie. Zweitstudium Informatik (B.Sc.).
                     </p>
@@ -73,10 +73,10 @@ export default function TeamPage() {
                 </div>
 
                 <div className="flex items-start">
-                  <Award className="w-6 h-6 text-[#0395A6] mr-3 mt-1 flex-shrink-0" />
+                  <Award className="w-4 h-4 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-black mb-2">Erfahrung</h4>
-                    <p className="text-gray-600 modern-text">
+                    <h4 className="font-semibold text-black mb-1 md:mb-2 text-xs md:text-base">Erfahrung</h4>
+                    <p className="text-gray-600 modern-text text-xs md:text-base">
                       Tutor in der Vorklinik. Nachhilfe sowohl in der Oberstufe als auch in der Studienzeit.
                       Regelmäßige Fortbildungen und Lehrtätigkeit (bspw. PJ-Unterricht).
                     </p>
@@ -84,10 +84,10 @@ export default function TeamPage() {
                 </div>
 
                 <div className="flex items-start">
-                  <Heart className="w-6 h-6 text-[#0395A6] mr-3 mt-1 flex-shrink-0" />
+                  <Heart className="w-4 h-4 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-black mb-2">Spezialisierung</h4>
-                    <p className="text-gray-600 modern-text">
+                    <h4 className="font-semibold text-black mb-1 md:mb-2 text-xs md:text-base">Spezialisierung</h4>
+                    <p className="text-gray-600 modern-text text-xs md:text-base">
                       Physik, Chemie, Anatomie, Pharmakologie, Radiologie und M2.
                       Besonders erfahren in der Vorbereitung internationaler Ärzt:innen im Rahmen der Kenntnisprüfung.
                     </p>
@@ -97,9 +97,9 @@ export default function TeamPage() {
             </div>
 
             {/* Ahkash Thavarajasingam */}
-            <div className="modern-card p-6 md:p-12 modern-animate-fade-in-up">
-              <div className="text-center mb-4 md:mb-8">
-                <div className="w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto mb-3 md:mb-6 shadow-xl">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+              <div className="text-center mb-3 md:mb-8">
+                <div className="w-16 h-16 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto mb-2 md:mb-6 shadow-xl">
                   <Image
                     src="/images/team/ahkash-thavarajasingam.jpg"
                     alt="Ahkash Thavarajasingam"
@@ -108,7 +108,7 @@ export default function TeamPage() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                        <h3 className="text-sm md:text-xl font-bold text-black mb-2 modern-heading">Ahkash Thavarajasingam</h3>
+                <h3 className="text-sm md:text-xl font-bold text-black mb-1 md:mb-2 modern-heading">Ahkash Thavarajasingam</h3>
                 <p className="text-xs md:text-lg text-[#0395A6] font-semibold mb-2 md:mb-4">Approbierter Arzt</p>
                 <div className="flex justify-center mb-6">
                   {[...Array(5)].map((_, i) => (

@@ -109,12 +109,12 @@ export default function KenntnispruefungPage() {
           </div>
 
           <div className="modern-grid modern-grid-2">
-            <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="mb-8">
-                <FileText className="w-12 h-12 text-[#0395A6]" />
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+              <div className="mb-4 md:mb-8">
+                <FileText className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Klinische Prüfung (60 Min)</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
+              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Klinische Prüfung (60 Min)</h3>
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
                 Praktische Fertigkeiten unter Beweis stellen:
               </p>
               <ul className="space-y-3">
@@ -132,12 +132,12 @@ export default function KenntnispruefungPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="mb-8">
-                <Users className="w-12 h-12 text-[#0395A6]" />
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+              <div className="mb-4 md:mb-8">
+                <Users className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Mündlich-praktische Prüfung (90 Min)</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
+              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Mündlich-praktische Prüfung (90 Min)</h3>
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
                 Fachwissen und Kommunikationsfähigkeit:
               </p>
               <ul className="space-y-3">

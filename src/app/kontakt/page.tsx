@@ -82,35 +82,35 @@ export default function KontaktPage() {
           </div>
 
           <div className="modern-grid modern-grid-2">
-            <div className="modern-card p-6 md:p-12 text-center modern-animate-fade-in-up">
-              <div className="flex items-center justify-center mx-auto mb-4 md:mb-8">
-                <MessageSquare className="w-10 h-10 md:w-16 md:h-16 text-[#0395A6]" />
+            <div className="modern-card p-4 md:p-12 text-center modern-animate-fade-in-up">
+              <div className="flex items-center justify-center mx-auto mb-3 md:mb-8">
+                <MessageSquare className="w-8 h-8 md:w-16 md:h-16 text-[#0395A6]" />
               </div>
-              <h3 className="text-sm md:text-lg font-bold text-black mb-3 md:mb-6 modern-heading">WhatsApp</h3>
-              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
+              <h3 className="text-xs md:text-lg font-bold text-black mb-2 md:mb-6 modern-heading">WhatsApp</h3>
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6">
                 Schnell und unkompliziert. Schreib uns direkt über WhatsApp.
               </p>
               <a
                 href="http://wa.me/491639347633"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="modern-button px-4 md:px-8 py-2 md:py-4 rounded-lg text-xs md:text-lg font-semibold modern-focus inline-block"
+                className="modern-button px-3 md:px-8 py-2 md:py-4 rounded-lg text-xs md:text-lg font-semibold modern-focus inline-block"
               >
                 WhatsApp öffnen
               </a>
             </div>
 
-            <div className="modern-card p-6 md:p-12 text-center modern-animate-fade-in-up">
-              <div className="flex items-center justify-center mx-auto mb-4 md:mb-8">
-                <MailOpen className="w-10 h-10 md:w-16 md:h-16 text-[#0395A6]" />
+            <div className="modern-card p-4 md:p-12 text-center modern-animate-fade-in-up">
+              <div className="flex items-center justify-center mx-auto mb-3 md:mb-8">
+                <MailOpen className="w-8 h-8 md:w-16 md:h-16 text-[#0395A6]" />
               </div>
-              <h3 className="text-sm md:text-lg font-bold text-black mb-3 md:mb-6 modern-heading">E-Mail</h3>
-              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
+              <h3 className="text-xs md:text-lg font-bold text-black mb-2 md:mb-6 modern-heading">E-Mail</h3>
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6">
                 Schreib uns eine E-Mail. Wir antworten innerhalb von 24 Stunden.
               </p>
               <a
                 href="mailto:info@ultima-rat.io"
-                className="modern-button-secondary px-4 md:px-8 py-2 md:py-4 rounded-lg text-xs md:text-lg font-semibold modern-focus inline-block"
+                className="modern-button-secondary px-3 md:px-8 py-2 md:py-4 rounded-lg text-xs md:text-lg font-semibold modern-focus inline-block"
               >
                 info@ultima-rat.io
               </a>
@@ -259,32 +259,32 @@ export default function KontaktPage() {
           </div>
 
           <div className="modern-grid modern-grid-2">
-            <div className="modern-card p-6 md:p-12 modern-animate-fade-in-up">
-              <h3 className="text-sm md:text-lg font-bold text-black mb-4 md:mb-8 modern-heading">Kontakt</h3>
-              <div className="space-y-3 md:space-y-6">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+              <h3 className="text-xs md:text-lg font-bold text-black mb-3 md:mb-8 modern-heading">Kontakt</h3>
+              <div className="space-y-2 md:space-y-6">
                 <div className="flex items-center">
-                  <MapPin className="w-4 h-4 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-4 flex-shrink-0" />
+                  <MapPin className="w-3 h-3 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-4 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-black text-xs md:text-base">Adresse</p>
                     <p className="text-gray-600 text-xs md:text-base">Warburghof 14, 30627 Hannover, Deutschland</p>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="w-4 h-4 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-4 flex-shrink-0" />
+                  <Phone className="w-3 h-3 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-4 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-black text-xs md:text-base">Telefon</p>
                     <p className="text-gray-600 text-xs md:text-base">+49 163 9347633</p>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <Mail className="w-4 h-4 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-4 flex-shrink-0" />
+                  <Mail className="w-3 h-3 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-4 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-black text-xs md:text-base">E-Mail</p>
                     <p className="text-gray-600 text-xs md:text-base">info@ultima-rat.io</p>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <Clock className="w-4 h-4 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-4 flex-shrink-0" />
+                  <Clock className="w-3 h-3 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-4 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-black text-xs md:text-base">Erreichbarkeit</p>
                     <p className="text-gray-600 text-xs md:text-base">Mo-So: 00:00-24:00 Uhr</p>
@@ -293,16 +293,16 @@ export default function KontaktPage() {
               </div>
             </div>
 
-            <div className="modern-card p-6 md:p-12 modern-animate-fade-in-up">
-              <h3 className="text-sm md:text-lg font-bold text-black mb-4 md:mb-8 modern-heading">Schnellkontakt</h3>
-              <div className="space-y-3 md:space-y-6">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+              <h3 className="text-xs md:text-lg font-bold text-black mb-3 md:mb-8 modern-heading">Schnellkontakt</h3>
+              <div className="space-y-2 md:space-y-6">
                 <a
                   href="http://wa.me/491639347633"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center p-2 md:p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-all group"
+                  className="flex items-center p-1.5 md:p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-all group"
                 >
-                  <MessageCircle className="w-4 h-4 md:w-6 md:h-6 text-green-600 mr-2 md:mr-4" />
+                  <MessageCircle className="w-3 h-3 md:w-6 md:h-6 text-green-600 mr-1.5 md:mr-4" />
                   <div>
                     <p className="font-semibold text-black text-xs md:text-base">WhatsApp</p>
                     <p className="text-gray-600 text-xs md:text-sm">Sofortige Antwort</p>
@@ -312,9 +312,9 @@ export default function KontaktPage() {
                   href="https://www.instagram.com/ultimarat.io?igsh=MXgxeHphbndoYjhs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center p-2 md:p-4 bg-pink-50 rounded-lg hover:bg-pink-100 transition-all group"
+                  className="flex items-center p-1.5 md:p-4 bg-pink-50 rounded-lg hover:bg-pink-100 transition-all group"
                 >
-                  <Instagram className="w-4 h-4 md:w-6 md:h-6 text-pink-600 mr-2 md:mr-4" />
+                  <Instagram className="w-3 h-3 md:w-6 md:h-6 text-pink-600 mr-1.5 md:mr-4" />
                   <div>
                     <p className="font-semibold text-black text-xs md:text-base">Instagram</p>
                     <p className="text-gray-600 text-xs md:text-sm">Direkter Kontakt</p>
@@ -322,9 +322,9 @@ export default function KontaktPage() {
                 </a>
                 <a
                   href="mailto:info@ultima-rat.io"
-                  className="flex items-center p-2 md:p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-all group"
+                  className="flex items-center p-1.5 md:p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-all group"
                 >
-                  <Mail className="w-4 h-4 md:w-6 md:h-6 text-purple-600 mr-2 md:mr-4" />
+                  <Mail className="w-3 h-3 md:w-6 md:h-6 text-purple-600 mr-1.5 md:mr-4" />
                   <div>
                     <p className="font-semibold text-black text-xs md:text-base">E-Mail</p>
                     <p className="text-gray-600 text-xs md:text-sm">Detaillierte Anfrage</p>

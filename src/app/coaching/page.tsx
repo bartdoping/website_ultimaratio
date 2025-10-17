@@ -192,13 +192,13 @@ export default function CoachingPage() {
           </div>
 
           <div className="modern-grid modern-grid-2">
-            <div className="modern-card p-6 md:p-12 modern-animate-fade-in-up">
-              <div className="mb-4 md:mb-8">
-                <Brain className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+              <div className="mb-3 md:mb-8">
+                <Brain className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Retrieval Practice</h3>
-              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
-                Aktives Abrufen von Wissen statt passives Wiederholen. Studien zeigen: 
+              <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">Retrieval Practice</h3>
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6">
+                Aktives Abrufen von Wissen statt passives Wiederholen. Studien zeigen:
                 Retrieval Practice ist 3x effektiver als traditionelles Lernen.
               </p>
               <ul className="space-y-3">
@@ -216,12 +216,12 @@ export default function CoachingPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-6 md:p-12 modern-animate-fade-in-up">
-              <div className="mb-4 md:mb-8">
-                <Clock className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+              <div className="mb-3 md:mb-8">
+                <Clock className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Spaced Repetition</h3>
-              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
+              <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">Spaced Repetition</h3>
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6">
                 Geplante Wiederholungen in optimalen Abständen. Vergessenskurve überwinden 
                 und Wissen dauerhaft im Langzeitgedächtnis verankern.
               </p>
@@ -240,12 +240,12 @@ export default function CoachingPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-6 md:p-12 modern-animate-fade-in-up">
-              <div className="mb-4 md:mb-8">
-                <Target className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+              <div className="mb-3 md:mb-8">
+                <Target className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Interleaving</h3>
-              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
+              <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">Interleaving</h3>
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6">
                 Systematisches Mischen verschiedener Themen und Fächer. 
                 Verbessert Transferleistung und Anwendungsfähigkeit um 40%.
               </p>
@@ -264,12 +264,12 @@ export default function CoachingPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-6 md:p-12 modern-animate-fade-in-up">
-              <div className="mb-4 md:mb-8">
-                <BookOpen className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
+              <div className="mb-3 md:mb-8">
+                <BookOpen className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Elaboration</h3>
-              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
+              <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">Elaboration</h3>
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6">
                 Komplexe Zusammenhänge erklären und verknüpfen. 
                 Tiefes Verständnis statt oberflächliches Auswendiglernen.
               </p>

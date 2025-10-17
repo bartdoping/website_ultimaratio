@@ -285,11 +285,13 @@ body {
   /* Fix blue stripes behind headers for mobile - match button styling exactly */
   .bg-gradient-to-r {
     background: linear-gradient(135deg, #0395A6, #028A9A) !important;
-    border-radius: 0.75rem !important;
-    padding: 0.75rem 1.5rem !important;
+    border-radius: 0.5rem !important;
+    padding: 0.5rem 1rem !important;
     display: inline-block !important;
-    box-shadow: 0 4px 14px 0 rgba(3, 149, 166, 0.4) !important;
+    box-shadow: 0 2px 8px 0 rgba(3, 149, 166, 0.3) !important;
     transition: all 0.3s ease !important;
+    width: fit-content !important;
+    min-width: auto !important;
   }
   
   /* Mobile logo and burger menu sizing */
@@ -299,8 +301,8 @@ body {
   }
   
   .burger-mobile {
-    width: 2rem !important;
-    height: 2rem !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
   }
   
   /* Mobile price emphasis */
