@@ -29,7 +29,7 @@ export default function KenntnispruefungPage() {
                 href="http://wa.me/491639347633"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#0395A6] text-white hover:bg-[#0395A6]/90 px-12 py-5 rounded-lg text-xl font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#0395A6] focus:ring-offset-2 group cursor-pointer"
+                className="modern-button px-12 py-5 rounded-lg text-xl font-semibold modern-focus group cursor-pointer"
               >
                 <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
                 Kostenloses Erstgespräch
@@ -42,7 +42,7 @@ export default function KenntnispruefungPage() {
                     element.scrollIntoView({ behavior: 'smooth', block: 'start' })
                   }
                 }}
-                className="border-2 border-[#0395A6] text-[#0395A6] hover:bg-[#0395A6] hover:text-white px-12 py-5 rounded-lg text-xl font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#0395A6] focus:ring-offset-2 group cursor-pointer"
+                className="modern-button-secondary px-12 py-5 rounded-lg text-xl font-semibold modern-focus group cursor-pointer"
               >
                 Mehr erfahren
                 <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
