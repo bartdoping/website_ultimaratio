@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { MessageCircle, Phone, Mail, MapPin, Clock, Send, CheckCircle, Instagram } from 'lucide-react'
+import { MessageCircle, Phone, Mail, MapPin, Clock, Send, CheckCircle, Instagram, MessageSquare, MailOpen } from 'lucide-react'
 
 export default function KontaktPage() {
   const [formData, setFormData] = useState({
@@ -57,8 +57,8 @@ export default function KontaktPage() {
             </div>
             
             <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
-              Lass uns<br />
-              <span className="text-[#0395A6]">sprechen</span>
+              Lass uns gemeinsam<br />
+              <span className="text-[#0395A6]">deine Prüfung bestehen</span>
             </h1>
             
             <p className="text-lg text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
@@ -84,7 +84,7 @@ export default function KontaktPage() {
           <div className="modern-grid modern-grid-2">
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
-                <MessageCircle className="w-10 h-10 text-[#0395A6]" />
+                <MessageSquare className="w-10 h-10 text-[#0395A6]" />
               </div>
               <h3 className="text-lg font-bold text-black mb-6 modern-heading">WhatsApp</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
@@ -102,7 +102,7 @@ export default function KontaktPage() {
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Mail className="w-10 h-10 text-[#0395A6]" />
+                <MailOpen className="w-10 h-10 text-[#0395A6]" />
               </div>
               <h3 className="text-lg font-bold text-black mb-6 modern-heading">E-Mail</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
