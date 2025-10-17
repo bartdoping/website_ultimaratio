@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { MessageCircle, Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react'
+import { MessageCircle, Phone, Mail, MapPin, Clock, Send, CheckCircle, Instagram } from 'lucide-react'
 
 export default function KontaktPage() {
   const [formData, setFormData] = useState({
@@ -81,7 +81,7 @@ export default function KontaktPage() {
             </p>
           </div>
 
-          <div className="modern-grid modern-grid-3">
+          <div className="modern-grid modern-grid-2">
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
                 <MessageCircle className="w-10 h-10 text-[#0395A6]" />
@@ -97,22 +97,6 @@ export default function KontaktPage() {
                 className="modern-button px-8 py-4 rounded-lg text-lg font-semibold modern-focus inline-block"
               >
                 WhatsApp öffnen
-              </a>
-            </div>
-
-            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Phone className="w-10 h-10 text-[#0395A6]" />
-              </div>
-              <h3 className="text-lg font-bold text-black mb-6 modern-heading">Telefon</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Ruf uns direkt an. Mo-Fr von 9:00-18:00 Uhr.
-              </p>
-              <a
-                href="tel:+491639347633"
-                className="modern-button-secondary px-8 py-4 rounded-lg text-lg font-semibold modern-focus inline-block"
-              >
-                +49 163 9347633
               </a>
             </div>
 
@@ -302,8 +286,8 @@ export default function KontaktPage() {
                 <div className="flex items-center">
                   <Clock className="w-6 h-6 text-[#0395A6] mr-4 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-black">Öffnungszeiten</p>
-                    <p className="text-gray-600">Mo-Fr: 9:00-18:00 Uhr</p>
+                    <p className="font-semibold text-black">Erreichbarkeit</p>
+                    <p className="text-gray-600">Mo-So: 00:00-24:00 Uhr</p>
                   </div>
                 </div>
               </div>
@@ -325,12 +309,14 @@ export default function KontaktPage() {
                   </div>
                 </a>
                 <a
-                  href="tel:+491639347633"
-                  className="flex items-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-all group"
+                  href="https://www.instagram.com/ultimarat.io?igsh=MXgxeHphbndoYjhs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center p-4 bg-pink-50 rounded-lg hover:bg-pink-100 transition-all group"
                 >
-                  <Phone className="w-6 h-6 text-blue-600 mr-4" />
+                  <Instagram className="w-6 h-6 text-pink-600 mr-4" />
                   <div>
-                    <p className="font-semibold text-black">Anrufen</p>
+                    <p className="font-semibold text-black">Instagram</p>
                     <p className="text-gray-600">Direkter Kontakt</p>
                   </div>
                 </a>
