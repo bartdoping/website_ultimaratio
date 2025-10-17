@@ -59,7 +59,8 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="relative overflow-hidden">
+        {/* Desktop: Carousel */}
+        <div className="hidden md:block relative overflow-hidden">
           <div className="flex animate-scroll">
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <div key={index} className="flex-shrink-0 w-80 mx-4">
@@ -87,6 +88,33 @@ export default function Testimonials() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Mobile: Static grid without carousel */}
+        <div className="md:hidden grid grid-cols-1 gap-4">
+          {testimonials.slice(0, 3).map((testimonial, index) => (
+            <div key={index} className="modern-testimonial">
+              <div className="flex items-center mb-3">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-sm text-gray-700 leading-relaxed mb-4">
+                "{testimonial.text.length > 120 ? testimonial.text.substring(0, 120) + '...' : testimonial.text}"
+              </p>
+              <div className="border-t border-gray-200 pt-3">
+                <div className="flex justify-between items-end">
+                  <div className="flex-1">
+                    <p className="font-semibold text-black text-sm">{testimonial.name}</p>
+                    <p className="text-xs text-gray-600">{testimonial.exam}</p>
+                  </div>
+                  <div className="text-right ml-2">
+                    <p className="font-bold text-[#0395A6] text-xs">{testimonial.result}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className="text-center mt-16">
