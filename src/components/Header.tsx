@@ -3,10 +3,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
-import { Menu, X, MessageCircle, Phone, Mail } from 'lucide-react'
+import { Menu, X, MessageCircle, Phone, Mail, Settings } from 'lucide-react'
+import { useCookies } from '../contexts/CookieContext'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { openCookieSettings } = useCookies()
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -82,6 +84,13 @@ export default function Header() {
 
             {/* CTA Buttons */}
             <div className="hidden md:flex items-center space-x-3">
+              <button
+                onClick={openCookieSettings}
+                className="p-2.5 text-gray-600 hover:text-[#0395A6] hover:bg-gray-100 rounded-lg transition-colors modern-focus"
+                title="Cookie-Einstellungen"
+              >
+                <Settings className="w-4 h-4" />
+              </button>
               <a
                 href="http://wa.me/491639347633"
                 target="_blank"
@@ -131,6 +140,16 @@ export default function Header() {
                 </Link>
               ))}
               <div className="pt-3 border-t border-gray-200">
+                <button
+                  onClick={() => {
+                    openCookieSettings()
+                    setIsMenuOpen(false)
+                  }}
+                  className="w-full text-center px-4 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-[#0395A6] transition-colors flex items-center justify-center gap-2 mb-2"
+                >
+                  <Settings className="w-4 h-4" />
+                  Cookie-Einstellungen
+                </button>
                 <a
                   href="http://wa.me/491639347633"
                   target="_blank"

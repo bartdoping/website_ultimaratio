@@ -112,6 +112,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/cookie-richtlinie" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
+                  Cookie-Richtlinie
+                </Link>
+              </li>
+              <li>
                 <Link href="/agb" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
                   AGB
                 </Link>
