@@ -59,8 +59,16 @@ export async function POST(request: Request) {
       const transporter = nodemailer.createTransport({
         host,
         port,
-        secure: port === 465,
+        secure: port === 465, // true for 465, false for other ports
         auth: { user, pass },
+        tls: {
+          rejectUnauthorized: false // Zoho sometimes requires this
+        },
+        // Zoho-specific settings
+        requireTLS: port === 587,
+        connectionTimeout: 60000, // 60 seconds
+        greetingTimeout: 30000,  // 30 seconds
+        socketTimeout: 60000,    // 60 seconds
       })
 
       console.log('Sending email...')
@@ -77,10 +85,25 @@ export async function POST(request: Request) {
       
     } catch (error) {
       console.error('SMTP Error:', error)
+      
+      // Zoho-specific error handling
+      let errorMessage = 'E-Mail konnte nicht gesendet werden. Bitte nutzen Sie WhatsApp oder E-Mail direkt.'
+      
+      if (error instanceof Error) {
+        if (error.message.includes('535')) {
+          errorMessage = 'Zoho-Authentifizierung fehlgeschlagen. Bitte prüfen Sie App-Passwort und 2FA-Einstellungen.'
+        } else if (error.message.includes('Connection timeout')) {
+          errorMessage = 'Zoho-Server nicht erreichbar. Bitte versuchen Sie es später erneut.'
+        } else if (error.message.includes('Invalid login')) {
+          errorMessage = 'Zoho-Login ungültig. Bitte prüfen Sie Benutzername und App-Passwort.'
+        }
+      }
+      
       return NextResponse.json({ 
         ok: false, 
         error: 'SMTP_ERROR',
-        message: 'E-Mail konnte nicht gesendet werden. Bitte nutzen Sie WhatsApp oder E-Mail direkt.' 
+        message: errorMessage,
+        details: error instanceof Error ? error.message : 'Unknown error'
       }, { status: 500 })
     }
 
