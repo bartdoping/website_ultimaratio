@@ -128,7 +128,7 @@ export default function DatenschutzPage() {
             </p>
             <p className="text-gray-700 mb-6">
               Telefon: 017624062685<br />
-              E-Mail: info@ultima-rat.io
+              E-Mail: <a href="mailto:info@ultima-rat.io" className="text-[#0395A6] hover:underline">info@ultima-rat.io</a>
             </p>
             <p className="text-gray-700 mb-6">
               Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen 

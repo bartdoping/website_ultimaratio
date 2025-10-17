@@ -30,10 +30,13 @@ export default function Header() {
                 <Phone className="w-4 h-4 mr-2" />
                 <span>+49 163 9347633</span>
               </div>
-              <div className="flex items-center">
+              <a 
+                href="mailto:info@ultima-rat.io"
+                className="flex items-center hover:text-white/90 transition-colors"
+              >
                 <Mail className="w-4 h-4 mr-2" />
                 <span>info@ultima-rat.io</span>
-              </div>
+              </a>
             </div>
             <div className="hidden lg:flex items-center space-x-3">
               <span className="text-white/80">500+ Prüfungen</span>

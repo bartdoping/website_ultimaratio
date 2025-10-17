@@ -32,7 +32,7 @@ export default function WiderrufPage() {
             </p>
             <p className="text-gray-700 mb-6">
               Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Thavarajasingam, Ahkash; Eid, Mustafa Magdy Abdel Razik 
-              Mahmoud GbR, Warburghof, 14, 30627 Hannover, Telefon: +49 163 9347633, E-Mail: info@ultima-rat.io) mittels 
+              Mahmoud GbR, Warburghof, 14, 30627 Hannover, Telefon: +49 163 9347633, E-Mail: <a href="mailto:info@ultima-rat.io" className="text-[#0395A6] hover:underline">info@ultima-rat.io</a>) mittels 
               einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder eine E-Mail) über Ihren Entschluss, 
               diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, 
               das jedoch nicht vorgeschrieben ist.
@@ -70,7 +70,7 @@ export default function WiderrufPage() {
                 Thavarajasingam, Ahkash; Eid, Mustafa Magdy Abdel Razik Mahmoud GbR<br />
                 Warburghof, 14<br />
                 30627 Hannover<br />
-                E-Mail: info@ultima-rat.io
+                E-Mail: <a href="mailto:info@ultima-rat.io" className="text-[#0395A6] hover:underline">info@ultima-rat.io</a>
               </p>
               
               <p className="text-gray-700 mb-4">

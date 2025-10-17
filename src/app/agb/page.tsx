@@ -21,7 +21,7 @@ export default function AGBPage() {
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-8">
               für die Erbringung von Dienstleistungen von Thavarajasingam, Ahkash; Eid, Mustafa Magdy Abdel Razik GbR, 
-              Warburghof, 14, 30627 Hannover, E-Mail: info@ultima-rat.io (nachfolgend &ldquo;Auftragnehmer&rdquo;) gegenüber seinen 
+              Warburghof, 14, 30627 Hannover, E-Mail: <a href="mailto:info@ultima-rat.io" className="text-[#0395A6] hover:underline">info@ultima-rat.io</a> (nachfolgend &ldquo;Auftragnehmer&rdquo;) gegenüber seinen 
               Kunden (nachfolgend &ldquo;Auftraggeber&rdquo;)
             </p>
 

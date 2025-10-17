@@ -34,7 +34,7 @@ export default function ImpressumPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Kontakt</h2>
             <p className="text-gray-700 mb-6">
               Telefon: +49 163 9347633<br />
-              E-Mail: info@ultima-rat.io
+              E-Mail: <a href="mailto:info@ultima-rat.io" className="text-[#0395A6] hover:underline">info@ultima-rat.io</a>
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Umsatzsteuer-ID</h2>
