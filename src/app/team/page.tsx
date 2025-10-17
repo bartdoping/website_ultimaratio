@@ -66,8 +66,8 @@ export default function TeamPage() {
                   <div>
                     <h4 className="font-semibold text-black mb-2">Ausbildung</h4>
                     <p className="text-gray-600 modern-text">
-                      Studium der Humanmedizin mit Auszeichnung, Approbation in Deutschland, 
-                      Facharztausbildung in der Inneren Medizin.
+                      Medizinstudium mit Bestnoten, Approbation in Deutschland,
+                      Facharztausbildung in der Radiologie. Zweitstudium Informatik (B.Sc.).
                     </p>
                   </div>
                 </div>
@@ -77,8 +77,8 @@ export default function TeamPage() {
                   <div>
                     <h4 className="font-semibold text-black mb-2">Erfahrung</h4>
                     <p className="text-gray-600 modern-text">
-                      Über 5 Jahre klinische Erfahrung, Spezialisierung auf Notfallmedizin 
-                      und Innere Medizin. Regelmäßige Fortbildungen und Lehrtätigkeit.
+                      Tutor in der Vorklinik. Nachhilfe sowohl in der Oberstufe als auch in der Studienzeit.
+                      Regelmäßige Fortbildungen und Lehrtätigkeit (bspw. PJ-Unterricht).
                     </p>
                   </div>
                 </div>
@@ -88,8 +88,8 @@ export default function TeamPage() {
                   <div>
                     <h4 className="font-semibold text-black mb-2">Spezialisierung</h4>
                     <p className="text-gray-600 modern-text">
-                      Kenntnisprüfung, Physikum, M2, M3, Notfallmedizin, Innere Medizin. 
-                      Besonders erfahren in der Vorbereitung internationaler Ärzt:innen.
+                      Physik, Chemie, Anatomie, Pharmakologie, Radiologie und M2.
+                      Besonders erfahren in der Vorbereitung internationaler Ärzt:innen im Rahmen der Kenntnisprüfung.
                     </p>
                   </div>
                 </div>
@@ -124,7 +124,7 @@ export default function TeamPage() {
                     <h4 className="font-semibold text-black mb-2">Ausbildung</h4>
                     <p className="text-gray-600 modern-text">
                       Medizinstudium mit Bestnoten, Approbation in Deutschland, 
-                      Zusatzqualifikationen in Chirurgie und Notfallmedizin.
+                      Publikationen in der Neurochirurgie.
                     </p>
                   </div>
                 </div>
@@ -134,7 +134,7 @@ export default function TeamPage() {
                   <div>
                     <h4 className="font-semibold text-black mb-2">Erfahrung</h4>
                     <p className="text-gray-600 modern-text">
-                      Mehr als 4 Jahre klinische Praxis, Schwerpunkt Chirurgie und Notfallmedizin. 
+                      Sowohl klinische als auch akademische Praxis, ausgeprägtes Interesse für Chirurgie und Notfallmedizin. 
                       Umfangreiche Erfahrung in der Ausbildung von Medizinstudierenden.
                     </p>
                   </div>
@@ -197,7 +197,7 @@ export default function TeamPage() {
               </div>
               <h3 className="text-lg font-bold text-black mb-6 modern-heading">Erfolgsorientiert</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
-                95% Erfolgsquote und über 500 erfolgreiche Prüfungen sprechen für sich. 
+                97% Erfolgsquote und über 500 erfolgreiche Prüfungen sprechen für sich. 
                 Wir sind auf Ihren Erfolg fokussiert.
               </p>
             </div>
@@ -225,12 +225,11 @@ export default function TeamPage() {
                 ))}
               </div>
               <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
-                &ldquo;Mustafa hat mir geholfen, die Kenntnisprüfung erfolgreich zu bestehen. 
-                Seine strukturierte Herangehensweise war genau das, was ich brauchte.&rdquo;
+                &ldquo;Mehr gelernt in 1 Stunde als in einer ganzen Woche alleine. Ich war total überfordert mit der prüfungsvorbereitung fürs M2 (vor allem weil ich letztendlich komplett falsch rangegangen bin und ein &bdquo;dummes&ldquo; Lernsystem hatte). Das Einzelcoaching war auf den Punkt, super strukturiert, mega empathisch und wirklich hilfreich.&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-black">Sarah M.</p>
-                <p className="text-sm text-gray-600">Kenntnisprüfung bestanden</p>
+                <p className="font-semibold text-black">Marcel M.</p>
+                <p className="text-sm text-gray-600">M2 bestanden mit 2</p>
               </div>
             </div>
 
@@ -241,12 +240,11 @@ export default function TeamPage() {
                 ))}
               </div>
               <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
-                &ldquo;Das Coaching mit Ahkash war fantastisch. 
-                Endlich verstehe ich die Anatomie richtig, nicht nur auswendig.&rdquo;
+                &ldquo;Ich hab den 5h-Crashkurs gemacht und bin echt zufrieden! In nur fünf Stunden wurde mir alles verständlich erklärt, und der Inhalt wurde super hilfreich vermittelt. Was mir besonders gefallen hat: Ich habe endlich eine Lernstrategie gefunden, die zu mir passt - mit Anki-Karten, sinnvoller Nachbereitung und praxisnahem Falltraining.&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-black">Michael R.</p>
-                <p className="text-sm text-gray-600">Physikum bestanden</p>
+                <p className="font-semibold text-black">Victoria G.</p>
+                <p className="text-sm text-gray-600">5 Std. Crashkurs bestanden</p>
               </div>
             </div>
 
@@ -257,12 +255,11 @@ export default function TeamPage() {
                 ))}
               </div>
               <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
-                &ldquo;Professionelle Betreuung von Anfang bis Ende. 
-                Die Prüfungssimulationen waren Gold wert für meine M2-Vorbereitung.&rdquo;
+                &ldquo;Zu Beginn meines Studiums hatte ich große Schwierigkeiten, die für mich passende Lerntechnik zu finden und die relevanten Lerninhalte richtig zu filtern. Ich war dann in einem Dritt- und zwei Zweitversuchen, die ich ohne Hilfe nicht geschafft hätte. Mit ärztlicher &lsquo;Nachhilfe&rsquo; konnte ich die Wiederholungsklausuren erfolgreich bestehen!&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-black">Lisa T.</p>
-                <p className="text-sm text-gray-600">M2 bestanden</p>
+                <p className="font-semibold text-black">Angelina P.</p>
+                <p className="text-sm text-gray-600">Anatomie und Physiologie bestanden</p>
               </div>
             </div>
           </div>
@@ -280,7 +277,6 @@ export default function TeamPage() {
           </p>
           <p className="text-lg text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
             Erfahrene Ärzt:innen, individuelle Betreuung und wissenschaftlich fundierte Methoden. 
-            Über 500 erfolgreiche Prüfungen sprechen für sich.
           </p>
           <a
             href="http://wa.me/491639347633"
