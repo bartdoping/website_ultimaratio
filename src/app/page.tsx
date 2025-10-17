@@ -234,7 +234,7 @@ export default function HomePage() {
                   <h3 className="text-lg font-bold text-black mb-6 modern-heading">Strukturierte Herangehensweise</h3>
                   <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                     Statt beim Altbewährten zu bleiben und verzweifelt die letzten Energiereserven auszuschöpfen, 
-                    gehen wir Ihre Defizite strukturiert an.
+                    gehen wir deine Defizite strukturiert an.
                   </p>
                   <p className="text-lg text-gray-600 leading-relaxed modern-text">
                     Unsere Coaches sind approbierte Ärzt:innen und erfahrene Medizinstudierende, die selbst 

@@ -263,7 +263,7 @@ export default function CoachingPage() {
                   <h3 className="text-lg font-bold text-black mb-6">Was du bekommst:</h3>
                   <ul className="space-y-4">
                     {[
-                      "1‑on‑1 mit Ärzt:in",
+                      "1‑on‑1",
                       "Zoom · Screen‑Sharing · Live‑Skizzen",
                       "Kursprotokoll als PDF",
                       "Individueller Aufgabensheet",
@@ -330,7 +330,6 @@ export default function CoachingPage() {
           </p>
           <p className="text-lg text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in-up">
             Wähle das Coaching-Format, das zu deinem Lernstil und deinem Ziel passt. 
-            Über 500 erfolgreiche Prüfungen sprechen für sich.
           </p>
           <div className="flex flex-col sm:flex-row gap-8 justify-center animate-fade-in-up">
             <a

@@ -18,8 +18,10 @@ export default function KenntnispruefungPage() {
             </h1>
             
             <p className="body-text-large text-gray-600 mb-16 max-w-5xl mx-auto modern-text modern-animate-fade-in-up">
-              Spezialisierte Vorbereitung für internationale Ärzt:innen. Individuelle Betreuung, 
-              prüfungsnahe Simulationen und strukturierte Lernpläne für die Kenntnisprüfung.
+              Spezialisierte Vorbereitung für internationale Ärzt:innen auf die deutsche Kenntnisprüfung. 
+              Vollständige Abdeckung aller Prüfungsinhalte: Innere Medizin, Chirurgie, Notfallmedizin, 
+              Klinische Pharmakologie, Bildgebende Verfahren und Rechtsfragen. Individuelle Betreuung 
+              durch erfahrene deutsche Ärzt:innen mit Prüfungssimulationen und strukturierten Lernplänen.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-8 justify-center modern-animate-fade-in-up">
@@ -50,10 +52,10 @@ export default function KenntnispruefungPage() {
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Die Herausforderung
+              Die Herausforderung der Kenntnisprüfung
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Warum die Kenntnisprüfung so anspruchsvoll ist
+              Warum die Kenntnisprüfung für internationale Ärzt:innen so anspruchsvoll ist
             </p>
           </div>
 
@@ -62,10 +64,10 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Brain className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Komplexe Inhalte</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Breites Themenspektrum</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
-                Deutsche Medizinstandards, Rechtssystem und Gesundheitssystem sind komplex 
-                und unterscheiden sich stark von anderen Ländern.
+                Innere Medizin, Chirurgie, Notfallmedizin, Klinische Pharmakologie, Bildgebende Verfahren, 
+                Strahlenschutz und Rechtsfragen - alle Bereiche müssen beherrscht werden.
               </p>
             </div>
 
@@ -73,10 +75,10 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Clock className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Zeitdruck</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Praktische Fertigkeiten</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
-                Die Prüfung ist zeitlich begrenzt und erfordert schnelle, präzise Antworten 
-                auf komplexe medizinische Fragestellungen.
+                Anamneseerhebung, körperliche Untersuchung, Patientenberichte schreiben und 
+                klinische Entscheidungsfindung - alles unter Zeitdruck und auf Deutsch.
               </p>
             </div>
 
@@ -84,44 +86,43 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Target className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Hohe Anforderungen</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Sprachliche Kompetenz</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
-                Erwartet wird nicht nur medizinisches Wissen, sondern auch Verständnis 
-                für deutsche Behandlungsstandards und rechtliche Rahmenbedingungen.
+                Medizinische Fachsprache auf C1-Niveau, Patientenkommunikation und 
+                präzise Dokumentation - alles in deutscher Sprache.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Solution Section */}
+      {/* Exam Structure Section */}
       <section className="modern-section bg-[#F8FAFC]">
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Unsere Lösung
+              Die Kenntnisprüfung im Detail
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Spezialisierte Vorbereitung für internationale Ärzt:innen
+              Struktur und Ablauf der deutschen Kenntnisprüfung
             </p>
           </div>
 
           <div className="modern-grid modern-grid-2">
             <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="mb-8">
-                <Users className="w-12 h-12 text-[#0395A6]" />
+                <FileText className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">1:1 Coaching</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Klinische Prüfung (60 Min)</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Individuelle Betreuung durch erfahrene deutsche Ärzt:innen, die selbst 
-                die Kenntnisprüfung erfolgreich absolviert haben.
+                Praktische Fertigkeiten unter Beweis stellen:
               </p>
               <ul className="space-y-3">
                 {[
-                  "Persönliche Lernpläne",
-                  "Direktes Feedback",
-                  "Flexible Terminvergabe",
-                  "Kontinuierliche Begleitung"
+                  "Anamneseerhebung mit Patienten",
+                  "Körperliche Untersuchung durchführen",
+                  "Arztbericht schreiben (Diagnose, Differentialdiagnose, Therapieplan)",
+                  "Klinische Entscheidungsfindung demonstrieren"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -133,19 +134,57 @@ export default function KenntnispruefungPage() {
 
             <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="mb-8">
-                <BookOpen className="w-12 h-12 text-[#0395A6]" />
+                <Users className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Zoom Sessions</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Mündlich-praktische Prüfung (90 Min)</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Online-Coaching via Zoom mit Screen-Sharing und Whiteboard für 
-                interaktive Lerninhalte und direkte Kommunikation.
+                Fachwissen und Kommunikationsfähigkeit:
               </p>
               <ul className="space-y-3">
                 {[
-                  "Screen-Sharing",
-                  "Live-Whiteboard",
-                  "PDF-Protokolle",
-                  "Aufgabensheets"
+                  "Patientenvorstellung vor Prüfungskommission",
+                  "Fachfragen aus allen Bereichen beantworten",
+                  "Klinische Fälle diskutieren",
+                  "Rechtliche und ethische Aspekte erläutern"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Solution Section */}
+      <section className="modern-section bg-[#F8FAFC]">
+        <div className="modern-container">
+          <div className="text-center modern-spacing">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+              Unsere spezialisierte Kenntnisprüfungs-Vorbereitung
+            </h2>
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+              Vollständige Abdeckung aller Prüfungsinhalte und Herausforderungen
+            </p>
+          </div>
+
+          <div className="modern-grid modern-grid-3">
+            <div className="modern-card p-12 modern-animate-fade-in-up">
+              <div className="mb-8">
+                <Users className="w-12 h-12 text-[#0395A6]" />
+              </div>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Alle Prüfungsfächer</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
+                Vollständige Vorbereitung auf alle Kenntnisprüfungs-Inhalte:
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Innere Medizin & Chirurgie",
+                  "Notfallmedizin & Pharmakologie",
+                  "Bildgebende Verfahren & Strahlenschutz",
+                  "Rechtsfragen des ärztlichen Berufs"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -159,17 +198,85 @@ export default function KenntnispruefungPage() {
               <div className="mb-8">
                 <FileText className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Individuelle Aufgaben</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Praktische Fertigkeiten</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Maßgeschneiderte Lernmaterialien und Übungsaufgaben, die speziell 
-                auf deine Vorkenntnisse und Schwächen abgestimmt sind.
+                Training der klinischen Prüfungsteile:
               </p>
               <ul className="space-y-3">
                 {[
-                  "Prüfungssimulationen",
-                  "Altklausuren",
-                  "Fallbeispiele",
-                  "Lernpläne"
+                  "Anamneseerhebung üben",
+                  "Körperliche Untersuchung trainieren",
+                  "Arztberichte schreiben",
+                  "Patientenvorstellung simulieren"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="modern-card p-12 modern-animate-fade-in-up">
+              <div className="mb-8">
+                <Brain className="w-12 h-12 text-[#0395A6]" />
+              </div>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Sprachliche Kompetenz</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
+                Medizinische Fachsprache und Kommunikation:
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Fachsprache auf C1-Niveau",
+                  "Patientenkommunikation",
+                  "Präzise Dokumentation",
+                  "Mündliche Präsentation"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="modern-card p-12 modern-animate-fade-in-up">
+              <div className="mb-8">
+                <Target className="w-12 h-12 text-[#0395A6]" />
+              </div>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Prüfungssimulationen</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
+                Realistische Prüfungssituationen trainieren:
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Klinische Prüfung simulieren",
+                  "Mündliche Prüfung üben",
+                  "Zeitdruck trainieren",
+                  "Prüfungsstrategien entwickeln"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="modern-card p-12 modern-animate-fade-in-up">
+              <div className="mb-8">
+                <BookOpen className="w-12 h-12 text-[#0395A6]" />
+              </div>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Individuelle Betreuung</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
+                Persönliche Unterstützung durch erfahrene Ärzt:innen:
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "1:1 Coaching mit deutschen Ärzt:innen",
+                  "Individuelle Lernpläne",
+                  "Direktes Feedback",
+                  "Kontinuierliche Begleitung"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -185,15 +292,14 @@ export default function KenntnispruefungPage() {
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Flexible Termine</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Anpassung an deinen Zeitplan und Prüfungstermin. Kurzfristige Buchungen 
-                und flexible Terminvergabe über WhatsApp.
+                Anpassung an deinen Zeitplan:
               </p>
               <ul className="space-y-3">
                 {[
+                  "Online via Zoom",
                   "Flexible Buchung",
                   "Kurzfristige Termine",
-                  "WhatsApp-Kommunikation",
-                  "Individuelle Betreuung"
+                  "WhatsApp-Kommunikation"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -211,10 +317,10 @@ export default function KenntnispruefungPage() {
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Unser Prozess
+              Unser Kenntnisprüfungs-Prozess
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Strukturierte Vorbereitung in 4 Schritten
+              Strukturierte Vorbereitung auf alle Prüfungsanforderungen
             </p>
           </div>
 
@@ -223,9 +329,10 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 01
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Analyse</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Defizitanalyse</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
-                Einschätzung deiner Vorkenntnisse und Identifikation der wichtigsten Lernbereiche.
+                Einschätzung deiner medizinischen Vorkenntnisse und Identifikation der 
+                wichtigsten Lernbereiche für die Kenntnisprüfung.
               </p>
             </div>
 
@@ -233,9 +340,10 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 02
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Planung</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Fachliche Vorbereitung</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
-                Erstellung eines individuellen Lernplans mit Fokus auf Prüfungsrelevanz.
+                Systematische Vorbereitung auf alle Prüfungsfächer: Innere Medizin, Chirurgie, 
+                Notfallmedizin, Pharmakologie und Rechtsfragen.
               </p>
             </div>
 
@@ -243,9 +351,10 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 03
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Training</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Praktisches Training</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
-                Intensive Vorbereitung mit Prüfungssimulationen und direktem Feedback.
+                Training der klinischen Fertigkeiten: Anamnese, Untersuchung, 
+                Arztberichte und Patientenvorstellung simulieren.
               </p>
             </div>
 
@@ -253,9 +362,10 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 04
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Prüfung</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Prüfungssimulation</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
-                Begleitung bis zur Prüfung mit finalen Tipps und Strategien.
+                Realistische Prüfungssimulationen mit Zeitdruck und finalen 
+                Strategien für die erfolgreiche Prüfung.
               </p>
             </div>
           </div>
@@ -287,14 +397,14 @@ export default function KenntnispruefungPage() {
                   <h3 className="text-lg font-bold text-black mb-6 modern-heading">Was du bekommst:</h3>
                   <ul className="space-y-4">
                     {[
-                      "1‑on‑1 mit erfahrenem Arzt",
-                      "Zoom · Screen‑Sharing · Whiteboard",
-                      "Prüfungsprotokoll als PDF",
-                      "Individuelle Aufgabensheets",
-                      "Prüfungssimulation",
+                      "1‑on‑1 mit deutschen Ärzt:innen",
+                      "Alle Prüfungsfächer abgedeckt",
+                      "Praktische Fertigkeiten trainieren",
+                      "Sprachliche Kompetenz fördern",
+                      "Prüfungssimulationen",
+                      "Individuelle Lernpläne",
                       "Direktes Feedback",
-                      "Flexible Terminvergabe",
-                      "Lernplan bis zur Prüfung"
+                      "Begleitung bis zur Prüfung"
                     ].map((item, index) => (
                       <li key={index} className="flex items-center text-lg text-gray-700">
                         <CheckCircle className="w-6 h-6 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -347,14 +457,14 @@ export default function KenntnispruefungPage() {
       <section className="modern-cta modern-section">
         <div className="modern-container text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 modern-heading modern-animate-fade-in-up">
-            BEREIT FÜR DIE PRÜFUNG?
+            BEREIT FÜR DIE KENNTNISPRÜFUNG?
           </h2>
           <p className="text-xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
-            Starte jetzt mit deiner Kenntnisprüfungs-Vorbereitung.
+            Starte jetzt mit deiner spezialisierten Kenntnisprüfungs-Vorbereitung.
           </p>
           <p className="text-lg text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
-            Professionelle Betreuung durch erfahrene deutsche Ärzt:innen. 
-            Individuelle Lernpläne und prüfungsnahe Simulationen.
+            Vollständige Abdeckung aller Prüfungsinhalte: Innere Medizin, Chirurgie, Notfallmedizin, 
+            Pharmakologie und Rechtsfragen. Praktische Fertigkeiten und sprachliche Kompetenz trainieren.
           </p>
           <a
             href="http://wa.me/491639347633"
