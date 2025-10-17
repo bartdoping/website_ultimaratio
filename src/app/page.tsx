@@ -15,13 +15,13 @@ export default function HomePage() {
               Über 500 erfolgreiche Prüfungen
             </div>
             
-            <h1 className="text-2xl md:text-4xl font-bold text-black mb-12 modern-heading leading-tight modern-animate-fade-in-up">
+            <h1 className="hero-text text-black mb-12 modern-heading modern-animate-fade-in-up">
               Bestnoten im<br />
               <span className="text-[#0395A6]">Medizinstudium</span><br />
               durch echtes Verstehen
             </h1>
             
-            <p className="text-lg text-gray-600 mb-16 max-w-4xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
+            <p className="body-text-large text-gray-600 mb-16 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Professionelle Medizin-Nachhilfe mit approbierten Ärzt:innen. Wissenschaftlich fundierte Lernmethoden, 
               die nachweislich funktionieren. Strukturierte Prüfungsvorbereitung für Physikum, M2, M3 und Kenntnisprüfung.
             </p>
@@ -31,7 +31,7 @@ export default function HomePage() {
                 href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-                className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus group"
+                className="modern-button px-12 py-5 rounded-lg button-text modern-focus group"
               >
                 <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
                 Kostenloses Erstgespräch
@@ -39,7 +39,7 @@ export default function HomePage() {
               </a>
               <Link
                 href="/coaching"
-                className="modern-button-secondary px-12 py-5 rounded-lg text-lg font-semibold modern-focus group"
+                className="modern-button-secondary px-12 py-5 rounded-lg button-text modern-focus group"
               >
                 Coaching entdecken
                 <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
@@ -320,7 +320,7 @@ export default function HomePage() {
                   href="http://wa.me/491639347633"
           target="_blank"
           rel="noopener noreferrer"
-                  className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus group"
+                  className="modern-button px-12 py-5 rounded-lg button-text modern-focus group"
                 >
                   <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
                   Jetzt buchen
@@ -356,7 +356,7 @@ export default function HomePage() {
               href="http://wa.me/491639347633"
           target="_blank"
           rel="noopener noreferrer"
-              className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group"
+              className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg button-text transition-all modern-focus inline-block group"
             >
               <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
               Kostenloses Erstgespräch
@@ -364,7 +364,7 @@ export default function HomePage() {
             </a>
             <Link
               href="/coaching"
-              className="border-2 border-white text-white hover:bg-white hover:text-[#0395A6] px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#0395A6] px-12 py-5 rounded-lg button-text transition-all modern-focus inline-block group"
             >
               Coaching entdecken
               <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />

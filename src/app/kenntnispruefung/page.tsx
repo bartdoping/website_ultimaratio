@@ -12,12 +12,12 @@ export default function KenntnispruefungPage() {
               Spezialisiert auf Kenntnisprüfung
             </div>
             
-            <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
+            <h1 className="heading-primary text-black mb-8 modern-heading modern-animate-fade-in-up">
               Kenntnisprüfung<br />
               <span className="text-[#0395A6]">erfolgreich bestehen</span>
             </h1>
             
-            <p className="text-lg text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
+            <p className="body-text-large text-gray-600 mb-16 max-w-5xl mx-auto modern-text modern-animate-fade-in-up">
               Spezialisierte Vorbereitung für internationale Ärzt:innen. Individuelle Betreuung, 
               prüfungsnahe Simulationen und strukturierte Lernpläne für die Kenntnisprüfung.
             </p>

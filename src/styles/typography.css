@@ -1,0 +1,81 @@
+/* Typography System - Optimized for Medical Education Website */
+
+/* Hero Text - Main landing page headline */
+.hero-text {
+  @apply text-5xl md:text-7xl lg:text-8xl font-bold leading-tight;
+}
+
+/* Primary Headings - Main page titles */
+.heading-primary {
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+}
+
+/* Secondary Headings - Section titles */
+.heading-secondary {
+  @apply text-2xl md:text-3xl lg:text-4xl font-bold leading-tight;
+}
+
+/* Tertiary Headings - Subsection titles */
+.heading-tertiary {
+  @apply text-xl md:text-2xl lg:text-3xl font-semibold leading-tight;
+}
+
+/* Card Headings - Component titles */
+.heading-card {
+  @apply text-lg md:text-xl lg:text-2xl font-semibold leading-tight;
+}
+
+/* Body Text - Main content */
+.body-text {
+  @apply text-base md:text-lg leading-relaxed;
+}
+
+/* Body Text Large - Important descriptions */
+.body-text-large {
+  @apply text-lg md:text-xl leading-relaxed;
+}
+
+/* Small Text - Captions, metadata */
+.text-small {
+  @apply text-sm md:text-base leading-normal;
+}
+
+/* Button Text - CTA buttons */
+.button-text {
+  @apply text-base md:text-lg font-semibold;
+}
+
+/* Navigation Text - Menu items */
+.nav-text {
+  @apply text-base md:text-lg font-medium;
+}
+
+/* Badge Text - Status indicators */
+.badge-text {
+  @apply text-sm md:text-base font-semibold;
+}
+
+/* Quote Text - Testimonials */
+.quote-text {
+  @apply text-base md:text-lg leading-relaxed italic;
+}
+
+/* Form Text - Input labels */
+.form-text {
+  @apply text-sm md:text-base font-medium;
+}
+
+/* Footer Text - Footer content */
+.footer-text {
+  @apply text-sm md:text-base leading-normal;
+}
+
+/* Cookie Banner Text */
+.cookie-text {
+  @apply text-sm md:text-base leading-normal;
+}
+
+/* Cookie Banner Title */
+.cookie-title {
+  @apply text-base md:text-lg font-semibold;
+}
