@@ -22,12 +22,19 @@ export default function KontaktPage() {
         body: JSON.stringify(formData),
       })
       const data = await res.json()
-      if (!res.ok || !data.ok) throw new Error('Senden fehlgeschlagen')
+      
+      if (!res.ok || !data.ok) {
+        const errorMessage = data.message || 'Senden fehlgeschlagen'
+        alert(`${errorMessage}\n\nBitte nutzen Sie stattdessen:\n• WhatsApp: http://wa.me/491639347633\n• E-Mail: info@ultima-rat.io`)
+        return
+      }
+      
       setIsSubmitted(true)
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
       setTimeout(() => setIsSubmitted(false), 4000)
-    } catch {
-      alert('Senden fehlgeschlagen. Bitte versuchen Sie es später erneut oder nutzen Sie WhatsApp/E-Mail.')
+    } catch (error) {
+      console.error('Contact form error:', error)
+      alert('Verbindungsfehler. Bitte nutzen Sie stattdessen:\n• WhatsApp: http://wa.me/491639347633\n• E-Mail: info@ultima-rat.io')
     }
   }
 
