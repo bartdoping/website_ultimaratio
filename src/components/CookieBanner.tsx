@@ -14,89 +14,89 @@ export default function CookieBanner() {
   if (!showCookieBanner) return null
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-2xl">
-      <div className="modern-container py-6">
-        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
-          {/* Cookie Icon and Title */}
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center">
-              <Cookie className="w-6 h-6 text-[#0395A6]" />
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50">
+      <div className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+        <div className="p-8">
+          {/* Header */}
+          <div className="text-center mb-8">
+            <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Cookie className="w-8 h-8 text-[#0395A6]" />
             </div>
-            <div>
-              <h3 className="text-lg font-semibold text-black modern-heading">
-                Cookie-Einstellungen
-              </h3>
-              <p className="text-sm text-gray-600">
-                Wir verwenden Cookies für die optimale Nutzung unserer Website
-              </p>
-            </div>
+            <h2 className="text-3xl font-bold text-black modern-heading mb-4">
+              Cookie-Einstellungen
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten.
+            </p>
           </div>
 
           {/* Cookie Categories Preview */}
-          <div className="flex flex-wrap gap-3">
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-green-50 rounded-full">
-              <Shield className="w-4 h-4 text-green-600" />
-              <span className="text-sm font-medium text-green-700">Notwendig</span>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div className="flex flex-col items-center p-4 bg-green-50 rounded-xl border border-green-200">
+              <Shield className="w-8 h-8 text-green-600 mb-2" />
+              <span className="text-sm font-semibold text-green-700">Notwendig</span>
+              <span className="text-xs text-green-600 text-center">Immer aktiv</span>
             </div>
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-blue-50 rounded-full">
-              <BarChart3 className="w-4 h-4 text-blue-600" />
-              <span className="text-sm font-medium text-blue-700">Analyse</span>
+            <div className="flex flex-col items-center p-4 bg-blue-50 rounded-xl border border-blue-200">
+              <BarChart3 className="w-8 h-8 text-blue-600 mb-2" />
+              <span className="text-sm font-semibold text-blue-700">Analyse</span>
+              <span className="text-xs text-blue-600 text-center">Optional</span>
             </div>
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-purple-50 rounded-full">
-              <Target className="w-4 h-4 text-purple-600" />
-              <span className="text-sm font-medium text-purple-700">Marketing</span>
+            <div className="flex flex-col items-center p-4 bg-purple-50 rounded-xl border border-purple-200">
+              <Target className="w-8 h-8 text-purple-600 mb-2" />
+              <span className="text-sm font-semibold text-purple-700">Marketing</span>
+              <span className="text-xs text-purple-600 text-center">Optional</span>
             </div>
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-orange-50 rounded-full">
-              <Cog className="w-4 h-4 text-orange-600" />
-              <span className="text-sm font-medium text-orange-700">Funktional</span>
+            <div className="flex flex-col items-center p-4 bg-orange-50 rounded-xl border border-orange-200">
+              <Cog className="w-8 h-8 text-orange-600 mb-2" />
+              <span className="text-sm font-semibold text-orange-700">Funktional</span>
+              <span className="text-xs text-orange-600 text-center">Optional</span>
             </div>
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={rejectAll}
-              className="px-6 py-2.5 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition-colors modern-focus"
+              className="px-8 py-3 border-2 border-gray-300 rounded-lg text-gray-700 font-semibold hover:bg-gray-50 transition-colors modern-focus"
             >
-              Ablehnen
+              Alle ablehnen
             </button>
             <button
               onClick={openCookieSettings}
-              className="px-6 py-2.5 border border-[#0395A6] rounded-lg text-[#0395A6] font-medium hover:bg-[#0395A6] hover:text-white transition-colors modern-focus flex items-center gap-2"
+              className="px-8 py-3 border-2 border-[#0395A6] rounded-lg text-[#0395A6] font-semibold hover:bg-[#0395A6] hover:text-white transition-colors modern-focus flex items-center justify-center gap-2"
             >
-              <Settings className="w-4 h-4" />
-              Einstellungen
+              <Settings className="w-5 h-5" />
+              Einstellungen anpassen
             </button>
             <button
               onClick={acceptAll}
-              className="px-6 py-2.5 bg-[#0395A6] text-white rounded-lg font-medium hover:bg-[#0395A6]/90 transition-colors modern-focus"
+              className="px-8 py-3 bg-[#0395A6] text-white rounded-lg font-semibold hover:bg-[#0395A6]/90 transition-colors modern-focus"
             >
               Alle akzeptieren
             </button>
           </div>
-        </div>
 
-        {/* Additional Info */}
-        <div className="mt-4 pt-4 border-t border-gray-100">
-          <p className="text-sm text-gray-600 leading-relaxed">
-            Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. 
-            Notwendige Cookies sind für die Grundfunktionen der Website erforderlich. 
-            Weitere Informationen finden Sie in unserer{' '}
-            <a 
-              href="/datenschutz" 
-              className="text-[#0395A6] hover:underline font-medium"
-            >
-              Datenschutzerklärung
-            </a>
-            {' '}und{' '}
-            <a 
-              href="/cookie-richtlinie" 
-              className="text-[#0395A6] hover:underline font-medium"
-            >
-              Cookie-Richtlinie
-            </a>
-            .
-          </p>
+          {/* Additional Info */}
+          <div className="mt-8 pt-6 border-t border-gray-200">
+            <p className="text-sm text-gray-600 leading-relaxed text-center">
+              Weitere Informationen finden Sie in unserer{' '}
+              <a 
+                href="/datenschutz" 
+                className="text-[#0395A6] hover:underline font-medium"
+              >
+                Datenschutzerklärung
+              </a>
+              {' '}und{' '}
+              <a 
+                href="/cookie-richtlinie" 
+                className="text-[#0395A6] hover:underline font-medium"
+              >
+                Cookie-Richtlinie
+              </a>
+              .
+            </p>
+          </div>
         </div>
       </div>
     </div>
