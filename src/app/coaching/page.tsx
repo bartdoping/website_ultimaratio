@@ -19,7 +19,7 @@ export default function CoachingPage() {
             </h1>
             
             <p className="text-2xl text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed premium-text animate-fade-in-up">
-              Mit individuellem Coaching gehen Sie sicher und strukturiert in jede Prüfung – 
+              Mit individuellem Coaching gehst du sicher und strukturiert in jede Prüfung – 
               egal ob Vorklinik oder Klinik, schriftlich oder mündlich. Wissenschaftlich fundierte Methoden, 
               die nachweislich funktionieren.
             </p>
@@ -115,7 +115,7 @@ export default function CoachingPage() {
               </div>
               <h3 className="text-3xl font-bold text-black mb-6">Approbierte Ärzt:innen</h3>
               <p className="text-lg text-gray-600 leading-relaxed premium-text">
-                Erfahrene Mediziner mit aktueller Klinikroutine leiten Sie durch komplexe medizinische Inhalte. 
+                Erfahrene Mediziner mit aktueller Klinikroutine leiten dich durch komplexe medizinische Inhalte. 
                 Praxisnahe Erklärungen anhand von Befunden, Bildern und klinischen Algorithmen.
               </p>
             </div>
@@ -127,7 +127,7 @@ export default function CoachingPage() {
               <h3 className="text-3xl font-bold text-black mb-6">Strukturierte Lernpläne</h3>
               <p className="text-lg text-gray-600 leading-relaxed premium-text">
                 Individuelle Wochenpläne mit gezielten Wiederholungen und Meilensteinen. 
-                Kontinuierliche Anpassung an Ihre Lernfortschritte und Prüfungstermine.
+                Kontinuierliche Anpassung an deine Lernfortschritte und Prüfungstermine.
               </p>
             </div>
 
@@ -137,7 +137,7 @@ export default function CoachingPage() {
               </div>
               <h3 className="text-3xl font-bold text-black mb-6">Fokussiertes Lernen</h3>
               <p className="text-lg text-gray-600 leading-relaxed premium-text">
-                Priorisierung nach Prüfungsrelevanz und Ihren Stärken. Klare Strukturierung 
+                Priorisierung nach Prüfungsrelevanz und deinen Stärken. Klare Strukturierung 
                 von Pflichtstoff, Kernkompetenzen und optionalen Inhalten.
               </p>
             </div>
@@ -208,7 +208,7 @@ export default function CoachingPage() {
               </div>
               <h3 className="text-xl font-bold text-black mb-4">Live-Coaching per Zoom</h3>
               <p className="text-gray-600 leading-relaxed premium-text">
-                Ob 1h-Session oder 5h-Intensivtag – wir coachen dich strukturiert, verständlich und 
+                Ob 1h-Session oder beliebig viele Stunden am Stück – wir coachen dich strukturiert, verständlich und 
                 prüfungsnah. Direkt, klar und ohne Zeitverlust.
               </p>
             </div>
@@ -285,7 +285,7 @@ export default function CoachingPage() {
                   <ul className="space-y-4">
                     {[
                       "Einzelstunden (60 Min)",
-                      "Crashkurse (5h Intensiv)",
+                      "Crashkurse (beliebig viele Stunden)",
                       "Regelmäßige Betreuung",
                       "Prüfungsvorbereitung"
                     ].map((item, index) => (

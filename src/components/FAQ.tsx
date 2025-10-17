@@ -19,7 +19,7 @@ const faqData: FAQItem[] = [
   },
   {
     question: "Wie viel kostet eine Session?",
-    answer: "Eine 60-minütige Einzelsession kostet 39€. Wir bieten auch Crashkurse (5h für 180€) und regelmäßige Betreuung (4x 60 Min für 140€). Alle Preise sind transparent und ohne versteckte Kosten."
+    answer: "Eine 60-minütige Einzelsession kostet 39€. Wir bieten auch Crashkurse (beliebig viele Stunden) und regelmäßige Betreuung (4x 60 Min für 140€). Alle Preise sind transparent und ohne versteckte Kosten."
   },
   {
     question: "Kann ich auch kurzfristig buchen?",

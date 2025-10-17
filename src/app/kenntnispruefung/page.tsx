@@ -162,7 +162,7 @@ export default function KenntnispruefungPage() {
               <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Individuelle Aufgaben</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                 Maßgeschneiderte Lernmaterialien und Übungsaufgaben, die speziell 
-                auf Ihre Vorkenntnisse und Schwächen abgestimmt sind.
+                auf deine Vorkenntnisse und Schwächen abgestimmt sind.
               </p>
               <ul className="space-y-3">
                 {[
@@ -185,7 +185,7 @@ export default function KenntnispruefungPage() {
               </div>
               <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Flexible Termine</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Anpassung an Ihren Zeitplan und Prüfungstermin. Kurzfristige Buchungen 
+                Anpassung an deinen Zeitplan und Prüfungstermin. Kurzfristige Buchungen 
                 und flexible Terminvergabe über WhatsApp.
               </p>
               <ul className="space-y-3">
@@ -225,7 +225,7 @@ export default function KenntnispruefungPage() {
               </div>
               <h3 className="text-xl font-bold text-black mb-4 modern-heading">Analyse</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
-                Einschätzung Ihrer Vorkenntnisse und Identifikation der wichtigsten Lernbereiche.
+                Einschätzung deiner Vorkenntnisse und Identifikation der wichtigsten Lernbereiche.
               </p>
             </div>
 
@@ -284,7 +284,7 @@ export default function KenntnispruefungPage() {
 
               <div className="modern-grid modern-grid-2 mb-12">
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Was Sie bekommen:</h3>
+                  <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Was du bekommst:</h3>
                   <ul className="space-y-4">
                     {[
                       "1‑on‑1 mit erfahrenem Arzt",
@@ -309,7 +309,7 @@ export default function KenntnispruefungPage() {
                   <ul className="space-y-4">
                     {[
                       "Einzelstunden (60 Min)",
-                      "Intensivkurse (5h)",
+                      "Intensivkurse (beliebig viele Stunden)",
                       "Regelmäßige Betreuung",
                       "Prüfungsvorbereitung"
                     ].map((item, index) => (

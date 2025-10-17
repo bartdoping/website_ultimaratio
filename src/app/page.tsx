@@ -298,7 +298,7 @@ export default function HomePage() {
                   <ul className="space-y-4">
                     {[
                       "Einzelstunden (60 Min)",
-                      "Crashkurse (5h Intensiv)",
+                      "Crashkurse (beliebig viele Stunden)",
                       "Regelmäßige Betreuung",
                       "Prüfungsvorbereitung"
                     ].map((item, index) => (

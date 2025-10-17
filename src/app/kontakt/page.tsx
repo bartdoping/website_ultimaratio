@@ -57,13 +57,13 @@ export default function KontaktPage() {
             </div>
             
             <h1 className="text-6xl md:text-7xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
-              Lassen Sie uns<br />
+              Lass uns<br />
               <span className="text-[#0395A6]">sprechen</span>
             </h1>
             
             <p className="text-2xl text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
-              Haben Sie Fragen zu unserem Coaching? Möchten Sie einen Termin vereinbaren? 
-              Wir sind für Sie da und helfen gerne weiter.
+              Hast du Fragen zu unserem Coaching? Möchtest du einen Termin vereinbaren? 
+              Wir sind für dich da und helfen gerne weiter.
             </p>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function KontaktPage() {
               Kontaktmöglichkeiten
             </h2>
             <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Wählen Sie den für Sie bequemsten Weg
+              Wähle den für dich bequemsten Weg
             </p>
           </div>
 
@@ -88,7 +88,7 @@ export default function KontaktPage() {
               </div>
               <h3 className="text-2xl font-bold text-black mb-6 modern-heading">WhatsApp</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Schnell und unkompliziert. Schreiben Sie uns direkt über WhatsApp.
+                Schnell und unkompliziert. Schreib uns direkt über WhatsApp.
               </p>
               <a
                 href="http://wa.me/491639347633"
@@ -122,7 +122,7 @@ export default function KontaktPage() {
               </div>
               <h3 className="text-2xl font-bold text-black mb-6 modern-heading">E-Mail</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Schreiben Sie uns eine E-Mail. Wir antworten innerhalb von 24 Stunden.
+                Schreib uns eine E-Mail. Wir antworten innerhalb von 24 Stunden.
               </p>
               <a
                 href="mailto:info@ultima-rat.io"
@@ -143,7 +143,7 @@ export default function KontaktPage() {
               Kontaktformular
             </h2>
             <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Senden Sie uns eine Nachricht
+              Sende uns eine Nachricht
             </p>
           </div>
 
@@ -154,7 +154,7 @@ export default function KontaktPage() {
                   <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-6" />
                   <h3 className="text-2xl font-bold text-black mb-4">Nachricht gesendet!</h3>
                   <p className="text-lg text-gray-600">
-                    Vielen Dank für Ihre Nachricht. Wir melden uns schnellstmöglich bei Ihnen.
+                    Vielen Dank für deine Nachricht. Wir melden uns schnellstmöglich bei dir.
                   </p>
                 </div>
               ) : (
@@ -172,7 +172,7 @@ export default function KontaktPage() {
                         onChange={handleChange}
                         required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus"
-                        placeholder="Ihr Name"
+                        placeholder="Dein Name"
                       />
                     </div>
                     <div>
@@ -242,7 +242,7 @@ export default function KontaktPage() {
                       required
                       rows={6}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus"
-                      placeholder="Beschreiben Sie Ihr Anliegen..."
+                      placeholder="Beschreibe dein Anliegen..."
                     />
                   </div>
 
@@ -357,11 +357,11 @@ export default function KontaktPage() {
             BEREIT ZU STARTEN?
           </h2>
           <p className="text-3xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
-            Kontaktieren Sie uns noch heute.
+            Kontaktiere uns noch heute.
           </p>
           <p className="text-xl text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
             Kostenloses Erstgespräch, individuelle Beratung und flexible Terminvergabe. 
-            Wir helfen Ihnen gerne bei Ihrer Prüfungsvorbereitung.
+            Wir helfen dir gerne bei deiner Prüfungsvorbereitung.
           </p>
           <a
             href="http://wa.me/491639347633"

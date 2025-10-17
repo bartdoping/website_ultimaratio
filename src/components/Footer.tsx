@@ -97,7 +97,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-6 text-white">Services</h3>
             <ul className="space-y-3 mb-8">
               <li className="text-gray-300 text-lg">Einzelcoaching (39€/60min)</li>
-              <li className="text-gray-300 text-lg">Crashkurse (5h Intensiv)</li>
+              <li className="text-gray-300 text-lg">Crashkurse (beliebig viele Stunden)</li>
               <li className="text-gray-300 text-lg">Prüfungsvorbereitung</li>
               <li className="text-gray-300 text-lg">Online via Zoom</li>
             </ul>
