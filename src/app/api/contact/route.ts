@@ -1,14 +1,68 @@
 import { NextResponse } from 'next/server'
 
-// Force Node.js runtime for nodemailer compatibility
-export const runtime = 'nodejs'
-
 type ContactPayload = {
   name: string
   email: string
   phone?: string
   subject: string
   message: string
+}
+
+async function sendWithResend(payload: ContactPayload) {
+  const apiKey = process.env.RESEND_API_KEY
+  if (!apiKey) {
+    console.log('RESEND_API_KEY not configured')
+    return false
+  }
+
+  try {
+    console.log('Sending email via Resend...')
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        from: 'ultima-rat.io <noreply@ultima-rat.io>',
+        to: [process.env.CONTACT_TO_EMAIL || 'info@ultima-rat.io'],
+        subject: `[Kontakt] ${payload.subject}`,
+        reply_to: payload.email,
+        text: `Neue Kontaktanfrage\n\nName: ${payload.name}\nE-Mail: ${payload.email}\nTelefon: ${payload.phone || '-'}\nBetreff: ${payload.subject}\n\nNachricht:\n${payload.message}`,
+        html: `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <h2 style="color: #0395A6;">Neue Kontaktanfrage</h2>
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+              <p><strong>Name:</strong> ${payload.name}</p>
+              <p><strong>E-Mail:</strong> ${payload.email}</p>
+              <p><strong>Telefon:</strong> ${payload.phone || '-'}</p>
+              <p><strong>Betreff:</strong> ${payload.subject}</p>
+            </div>
+            <div style="background: white; padding: 20px; border: 1px solid #e9ecef; border-radius: 8px;">
+              <h3>Nachricht:</h3>
+              <p style="white-space: pre-wrap;">${payload.message}</p>
+            </div>
+            <p style="color: #6c757d; font-size: 14px; margin-top: 20px;">
+              Diese E-Mail wurde über das Kontaktformular von ultima-rat.io gesendet.
+            </p>
+          </div>
+        `,
+      }),
+    })
+
+    if (!res.ok) {
+      const errorData = await res.json()
+      console.error('Resend API error:', errorData)
+      return false
+    }
+
+    const result = await res.json()
+    console.log('Resend email sent successfully:', result.id)
+    return true
+  } catch (error) {
+    console.error('Resend error:', error)
+    return false
+  }
 }
 
 export async function POST(request: Request) {
@@ -29,83 +83,22 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: false, error: 'VALIDATION_FAILED' }, { status: 400 })
     }
 
-    // Check if we have SMTP configuration
-    const host = process.env.SMTP_HOST
-    const port = process.env.SMTP_PORT ? Number(process.env.SMTP_PORT) : undefined
-    const user = process.env.SMTP_USER
-    const pass = process.env.SMTP_PASS
-    
-    console.log('SMTP Config check:', { 
-      host: host ? 'set' : 'missing', 
-      port, 
-      user: user ? 'set' : 'missing', 
-      pass: pass ? 'set' : 'missing' 
-    })
+    const payload: ContactPayload = { name, email, phone, subject, message }
 
-    if (!host || !port || !user || !pass) {
-      console.log('SMTP configuration incomplete')
+    // Send via Resend
+    const success = await sendWithResend(payload)
+
+    if (!success) {
+      console.log('Resend failed')
       return NextResponse.json({ 
         ok: false, 
-        error: 'SMTP_NOT_CONFIGURED',
-        message: 'E-Mail-Konfiguration unvollständig. Bitte nutzen Sie WhatsApp oder E-Mail direkt.' 
+        error: 'EMAIL_FAILED',
+        message: 'E-Mail konnte nicht gesendet werden. Bitte nutzen Sie WhatsApp oder E-Mail direkt.' 
       }, { status: 500 })
     }
 
-    try {
-      console.log('Importing nodemailer...')
-      const nodemailer = await import('nodemailer')
-      
-      console.log('Creating transporter...')
-      const transporter = nodemailer.createTransport({
-        host,
-        port,
-        secure: port === 465, // true for 465, false for other ports
-        auth: { user, pass },
-        tls: {
-          rejectUnauthorized: false // Zoho sometimes requires this
-        },
-        // Zoho-specific settings
-        requireTLS: port === 587,
-        connectionTimeout: 60000, // 60 seconds
-        greetingTimeout: 30000,  // 30 seconds
-        socketTimeout: 60000,    // 60 seconds
-      })
-
-      console.log('Sending email...')
-      await transporter.sendMail({
-        from: `ultima-rat.io <${user}>`,
-        to: process.env.CONTACT_TO_EMAIL || 'info@ultima-rat.io',
-        subject: `[Kontakt] ${subject}`,
-        replyTo: email,
-        text: `Neue Kontaktanfrage\n\nName: ${name}\nE-Mail: ${email}\nTelefon: ${phone || '-'}\nBetreff: ${subject}\n\nNachricht:\n${message}`,
-      })
-      
-      console.log('Email sent successfully!')
-      return NextResponse.json({ ok: true })
-      
-    } catch (error) {
-      console.error('SMTP Error:', error)
-      
-      // Zoho-specific error handling
-      let errorMessage = 'E-Mail konnte nicht gesendet werden. Bitte nutzen Sie WhatsApp oder E-Mail direkt.'
-      
-      if (error instanceof Error) {
-        if (error.message.includes('535')) {
-          errorMessage = 'Zoho-Authentifizierung fehlgeschlagen. Bitte prüfen Sie App-Passwort und 2FA-Einstellungen.'
-        } else if (error.message.includes('Connection timeout')) {
-          errorMessage = 'Zoho-Server nicht erreichbar. Bitte versuchen Sie es später erneut.'
-        } else if (error.message.includes('Invalid login')) {
-          errorMessage = 'Zoho-Login ungültig. Bitte prüfen Sie Benutzername und App-Passwort.'
-        }
-      }
-      
-      return NextResponse.json({ 
-        ok: false, 
-        error: 'SMTP_ERROR',
-        message: errorMessage,
-        details: error instanceof Error ? error.message : 'Unknown error'
-      }, { status: 500 })
-    }
+    console.log('Email sent successfully via Resend')
+    return NextResponse.json({ ok: true })
 
   } catch (error) {
     console.error('Contact API error:', error)

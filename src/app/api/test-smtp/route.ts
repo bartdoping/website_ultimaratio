@@ -1,51 +1,63 @@
 import { NextResponse } from 'next/server'
 
-export const runtime = 'nodejs'
-
 export async function GET() {
   try {
-    console.log('Testing SMTP configuration...')
+    console.log('Testing Resend configuration...')
     
-    const host = process.env.SMTP_HOST
-    const port = process.env.SMTP_PORT ? Number(process.env.SMTP_PORT) : undefined
-    const user = process.env.SMTP_USER
-    const pass = process.env.SMTP_PASS
+    const apiKey = process.env.RESEND_API_KEY
+    const contactEmail = process.env.CONTACT_TO_EMAIL || 'info@ultima-rat.io'
     
-    console.log('SMTP Config:', { 
-      host: host ? 'set' : 'missing', 
-      port, 
-      user: user ? 'set' : 'missing', 
-      pass: pass ? 'set' : 'missing' 
+    console.log('Resend Config:', { 
+      apiKey: apiKey ? 'set' : 'missing',
+      contactEmail
     })
     
-    if (!host || !port || !user || !pass) {
+    if (!apiKey) {
       return NextResponse.json({ 
-        error: 'SMTP_NOT_CONFIGURED',
-        config: { host: !!host, port, user: !!user, pass: !!pass }
+        error: 'RESEND_NOT_CONFIGURED',
+        message: 'RESEND_API_KEY not set in environment variables'
       })
     }
     
     try {
-      const nodemailer = await import('nodemailer')
-      const transporter = nodemailer.createTransport({
-        host,
-        port,
-        secure: port === 465,
-        auth: { user, pass },
+      // Test Resend API with a simple request
+      const res = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          from: 'ultima-rat.io <noreply@ultima-rat.io>',
+          to: [contactEmail],
+          subject: '[Test] Resend Configuration Test',
+          text: 'This is a test email to verify Resend configuration.',
+        }),
       })
       
-      // Test connection
-      await transporter.verify()
+      if (!res.ok) {
+        const errorData = await res.json()
+        console.error('Resend test error:', errorData)
+        return NextResponse.json({ 
+          error: 'RESEND_API_ERROR',
+          message: errorData.message || 'Resend API error',
+          details: errorData
+        })
+      }
+      
+      const result = await res.json()
+      console.log('Resend test successful:', result.id)
       
       return NextResponse.json({ 
         success: true, 
-        message: 'SMTP configuration is valid' 
+        message: 'Resend configuration is valid',
+        emailId: result.id
       })
       
     } catch (error) {
-      console.error('SMTP test error:', error)
+      console.error('Resend test error:', error)
       return NextResponse.json({ 
-        error: 'SMTP_CONNECTION_FAILED',
+        error: 'RESEND_CONNECTION_FAILED',
         message: error instanceof Error ? error.message : 'Unknown error'
       })
     }
