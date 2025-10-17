@@ -131,9 +131,9 @@ export default function HomePage() {
               <div className="mb-8">
                 <Users className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Approbierte Ärzt:innen</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Erfahrene Tutor:innen</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
-                Erfahrene Mediziner mit aktueller Klinikroutine leiten dich durch komplexe medizinische Inhalte. 
+                Erfahrene Mediziner und Tutoren mit aktueller Klinikroutine leiten dich durch komplexe medizinische Inhalte. 
                 Praxisnahe Erklärungen anhand von Befunden, Bildern und klinischen Algorithmen.
               </p>
             </div>
@@ -272,7 +272,7 @@ export default function HomePage() {
                   <h3 className="text-lg font-bold text-black mb-6 modern-heading">Was du bekommst:</h3>
                   <ul className="space-y-4">
                     {[
-                      "1‑on‑1 mit Ärzt:in",
+                      "1‑on‑1",
                       "Zoom · Screen‑Sharing · Live‑Skizzen",
                       "Kursprotokoll als PDF",
                       "Individueller Aufgabensheet",
@@ -345,7 +345,6 @@ export default function HomePage() {
           </p>
           <p className="text-lg text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
             Wähle das Coaching-Format, das zu deinem Lernstil und deinem Ziel passt. 
-            Über 500 erfolgreiche Prüfungen sprechen für sich.
           </p>
           <div className="flex flex-col sm:flex-row gap-8 justify-center modern-animate-fade-in-up">
             <a

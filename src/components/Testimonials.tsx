@@ -10,45 +10,38 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Sarah M.",
-    exam: "Physikum",
-    result: "Bestanden mit 1,3",
-    text: "Das Coaching hat mir geholfen, die Anatomie endlich zu verstehen statt nur auswendig zu lernen. Die strukturierte Herangehensweise war genau das, was ich brauchte.",
-    rating: 5
-  },
-  {
-    name: "Ahmed K.",
-    exam: "Kenntnisprüfung",
-    result: "Erfolgreich bestanden",
-    text: "Als ausländischer Arzt war die Kenntnisprüfung eine große Herausforderung. Das Coaching hat mir geholfen, die deutschen Standards zu verstehen und sicher zu bestehen.",
-    rating: 5
-  },
-  {
-    name: "Michael R.",
+    name: "Marcel M.",
     exam: "M2",
-    result: "Bestanden mit 1,7",
-    text: "Die Prüfungssimulationen waren Gold wert. Ich fühlte mich in der echten Prüfung viel sicherer und konnte strukturiert vorgehen.",
+    result: "Bestanden mit 2",
+    text: "Mehr gelernt in 1 Stunde als in einer ganzen Woche alleine. Ich war total überfordert mit der prüfungsvorbereitung fürs M2 (vor allem weil ich letztendlich komplett falsch rangegangen bin und ein „dummes“ Lernsystem hatte). Das Einzelcoaching war auf den Punkt, super strukturiert, mega empathisch und wirklich hilfreich. Besonders die PDF mit den Strategien danach war gold wert (wusste gar nicht dass man eine bekommt 😅). Würde ich jederzeit wieder buchen! Auch der Preis echt fair",
     rating: 5
   },
   {
-    name: "Lisa T.",
-    exam: "Physiologie",
-    result: "Note verbessert von 4,0 auf 1,7",
-    text: "Endlich verstehe ich die Zusammenhänge! Das Coaching hat mir geholfen, die Physiologie nicht nur zu lernen, sondern wirklich zu begreifen.",
+    name: "Bushra B.",
+    exam: "60 Minuten Coaching",
+    result: "Bestanden",
+    text: "Hatte das 1-Stunden Coaching – echt top! Alles super und verständlich erklärt, sodass ich endlich einen roten Faden bei dem Thema habe. Hat mir richtig geholfen, den Überblick zu bekommen und Sicherheit zu gewinnen. Kann ich absolut weiterempfehlen!",
     rating: 5
   },
   {
-    name: "Maria S.",
-    exam: "M3",
-    result: "Bestanden mit 1,5",
-    text: "Die strukturierte Vorbereitung auf das M3 war perfekt. Ich wusste genau, was auf mich zukommt und konnte gezielt lernen.",
+    name: "Victoria G.",
+    exam: "5 Std. Crashkurs",
+    result: "Bestanden",
+    text: "Ich hab den 5h-Crashkurs gemacht und bin echt zufrieden! Ich muss sagen: Es hat sich total gelohnt! In nur fünf Stunden wurde mir alles verständlich erklärt, und der Inhalt wurde super hilfreich vermittelt. Was mir besonders gefallen hat: Ich habe endlich eine Lernstrategie gefunden, die zu mir passt - mit Anki-Karten, sinnvoller Nachbereitung und praxisnahem Falltraining. Perfekt für alle, die schnell und effektiv lernen wollen!",
     rating: 5
   },
   {
-    name: "Tom W.",
-    exam: "Biochemie",
-    result: "Bestanden mit 2,0",
-    text: "Biochemie war immer mein Problemfach. Das Coaching hat mir geholfen, die Stoffwechselwege zu verstehen statt nur zu memorieren.",
+    name: "Marten K.",
+    exam: "Physikum",
+    result: "Bestanden",
+    text: "Super Erfahrung gemacht, konnte für das Physikum viel aus dem Coaching mitnehmen und werde definitiv fürs Examen wiederkommen.",
+    rating: 5
+  },
+  {
+    name: "Angelina P.",
+    exam: "Anatomie und Physiologie",
+    result: "Bestanden",
+    text: "Zu Beginn meines Studiums hatte ich große Schwierigkeiten, die für mich passende Lerntechnik zu finden und die relevanten Lerninhalte richtig zu filtern. Ich war dann in einem Dritt- und zwei Zweitversuchen, die ich ohne Hilfe nicht geschafft hätte. Mit ärztlicher 'Nachhilfe' konnte ich die Wiederholungsklausuren erfolgreich bestehen und sozusagen wieder bei null starten! :)",
     rating: 5
   }
 ]

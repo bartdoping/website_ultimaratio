@@ -11,15 +11,15 @@ interface FAQItem {
 const faqData: FAQItem[] = [
   {
     question: "Wie funktioniert das Coaching genau?",
-    answer: "Unser Coaching läuft über Zoom mit Screen-Sharing und Whiteboard. Sie buchen flexibel über WhatsApp, wir führen eine 60-minütige 1:1-Session durch und senden Ihnen anschließend ein detailliertes Protokoll mit Lernplan und Materialien. Bezahlung erfolgt erst nach der Session."
+    answer: "Unser Coaching läuft über Zoom mit Screen-Sharing und Whiteboard. Wir vereinbaren ganz einfach und flexibel über WhatsApp einen Termin buchen flexibel über WhatsApp einen Termin und senden dir den entsprechenden Zoom-Link zeitnah zu. Im Anschluss an das Coaching erhälst du bei Bedarf die Notizen als PDF und ggf. weitere Materialien. Bezahlung erfolgt erst nach der Session online über Stripe."
   },
   {
     question: "Welche Fächer werden angeboten?",
-    answer: "Wir bieten Coaching für alle medizinischen Fächer: Anatomie, Physiologie, Physik, Chemie, Biochemie, M2, M3 und speziell für die Kenntnisprüfung. Unsere Coaches sind approbierte Ärzt:innen mit aktueller Klinikroutine."
+    answer: "Wir bieten Coaching für alle medizinischen Fächer und Staatsexamina an sowie auch für die Kenntnisprüfung. Unsere Coaches sind approbierte Ärzt:innen und qualifizierte Tutor:innen."
   },
   {
     question: "Wie viel kostet eine Session?",
-    answer: "Eine 60-minütige Einzelsession kostet 39€. Wir bieten auch Crashkurse (beliebig viele Stunden) und regelmäßige Betreuung (4x 60 Min für 140€). Alle Preise sind transparent und ohne versteckte Kosten."
+    answer: "Eine 60-minütige Einzelsession kostet 39€. Wir bieten auch Crashkurse (beliebig viele Stunden) an, welche individuell auf den Studenten angepasst werden; schreib uns gerne hierzu einfach an, damit wir dir ein Angebot erstellen können. Alle Preise sind transparent und ohne versteckte Kosten."
   },
   {
     question: "Kann ich auch kurzfristig buchen?",
@@ -27,7 +27,7 @@ const faqData: FAQItem[] = [
   },
   {
     question: "Was ist der Unterschied zu anderen Nachhilfe-Anbietern?",
-    answer: "Unsere Coaches sind approbierte Ärzt:innen mit aktueller Klinikroutine. Wir fokussieren auf Verstehen statt Auswendiglernen, nutzen wissenschaftlich fundierte Lernmethoden und bieten strukturierte, prüfungsnahe Vorbereitung mit individuellen Lernplänen."
+    answer: "Unser Team besteht aus approbierten Ärzt:innen, die das Studium mit Bestnoten absolviert haben und schon während des Studiums anderen Studenten bei multiplen Prüfungen geholfen haben. Teilweise waren unsere Coaches während des Studiums auch als Tutor:innen tätig. Gleichzeitig bringen insbesondere unsere Gründer klinische Erfahrungen in ultima-rat.io ein, was insbesondere bei mündlichen Prüfungen oder der Vorbereitung auf die Kenntnisprüfung signifikante Vorteile bietet. Wir fokussieren auf Verstehen statt Auswendiglernen, nutzen wissenschaftlich fundierte Lernmethoden und bieten strukturierte, prüfungsnahe Vorbereitung mit individuellen Lernplänen."
   },
   {
     question: "Wie läuft die Prüfungsvorbereitung ab?",
@@ -43,11 +43,11 @@ const faqData: FAQItem[] = [
   },
   {
     question: "Wie buche ich einen Termin?",
-    answer: "Einfach über WhatsApp unter +49 163 9347633 schreiben. Nennen Sie Ihr Fach, den gewünschten Termin und Ihre spezifischen Lernziele. Wir melden uns schnellstmöglich mit einem konkreten Vorschlag."
+    answer: "Einfach über WhatsApp unter +49 163 9347633 schreiben. Nenne uns dein Anliegen bzw. die anstehende Prüfung, den gewünschten Termin und deine spezifischen Lernziele. Wir melden uns schnellstmöglich mit einem konkreten Vorschlag. Meistens vereinbaren wir zunächst ein kostenloses Erstgespräch, um deine Bedürfnisse und Ziele genauer zu verstehen."
   },
   {
     question: "Was passiert, wenn ich nicht zufrieden bin?",
-    answer: "Ihre Zufriedenheit ist unser oberstes Ziel. Bei Unzufriedenheit bieten wir kostenlose Nachbesprechungen oder eine teilweise Rückerstattung. Wir stehen hinter unserem Service und passen uns an Ihre Bedürfnisse an."
+    answer: "Deine Zufriedenheit ist unser oberstes Ziel. Bei Unzufriedenheit bieten wir kostenlose Nachbesprechungen oder eine (teilweise) Rückerstattung. Wir stehen hinter unserem Service und passen uns an deine Bedürfnisse an."
   }
 ]
 
