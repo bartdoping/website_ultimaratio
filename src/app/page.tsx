@@ -211,34 +211,34 @@ export default function HomePage() {
           </div>
 
           <div className="max-w-6xl mx-auto">
-            <div className="modern-card p-16 modern-animate-fade-in-up">
-              <div className="text-center mb-12">
-                <p className="text-lg text-[#0395A6] font-semibold italic">
+            <div className="modern-card p-8 md:p-16 modern-animate-fade-in-up">
+              <div className="text-center mb-8 md:mb-12">
+                <p className="text-base md:text-lg text-[#0395A6] font-semibold italic">
                   &ldquo;Du steigst nicht auf das Niveau deiner Ziele. Du fällst auf das Niveau deiner Systeme.&rdquo;
                 </p>
               </div>
               
               <div className="modern-grid modern-grid-2">
                 <div>
-                  <h3 className="text-lg font-bold text-black mb-6 modern-heading">Wissenschaftliche Grundlage</h3>
-                  <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
+                  <h3 className="text-base md:text-lg font-bold text-black mb-4 md:mb-6 modern-heading">Wissenschaftliche Grundlage</h3>
+                  <p className="text-sm md:text-lg text-gray-600 leading-relaxed modern-text mb-4 md:mb-6">
                     Wir arbeiten mit bewährten Lernmethoden aus der Kognitionsforschung: Retrieval Practice 
                     (aktives Abrufen), Spaced Repetition (geplante Wiederholung), Interleaving (systematisches 
                     Mischen von Themen) und gezieltes Feedback.
                   </p>
-                  <p className="text-lg text-gray-600 leading-relaxed modern-text">
+                  <p className="text-sm md:text-lg text-gray-600 leading-relaxed modern-text">
                     Diese Methoden sind wissenschaftlich belegt und führen nachweislich zu besseren 
                     Prüfungsergebnissen.
                   </p>
                 </div>
                 
                 <div>
-                  <h3 className="text-lg font-bold text-black mb-6 modern-heading">Strukturierte Herangehensweise</h3>
-                  <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
+                  <h3 className="text-base md:text-lg font-bold text-black mb-4 md:mb-6 modern-heading">Strukturierte Herangehensweise</h3>
+                  <p className="text-sm md:text-lg text-gray-600 leading-relaxed modern-text mb-4 md:mb-6">
                     Statt beim Altbewährten zu bleiben und verzweifelt die letzten Energiereserven auszuschöpfen, 
                     gehen wir deine Defizite strukturiert an.
                   </p>
-                  <p className="text-lg text-gray-600 leading-relaxed modern-text">
+                  <p className="text-sm md:text-lg text-gray-600 leading-relaxed modern-text">
                     Unsere Coaches sind approbierte Ärzt:innen und erfahrene Medizinstudierende, die selbst 
                     mit Top-Ergebnissen durch alle Examina gegangen sind.
                   </p>
@@ -264,7 +264,7 @@ export default function HomePage() {
           <div className="max-w-5xl mx-auto">
             <div className="modern-card p-16 modern-animate-fade-in-up">
               <div className="text-center mb-12">
-                <div className="text-4xl font-bold text-[#0395A6] mb-4">39€</div>
+                <div className="text-4xl md:text-6xl font-bold text-[#0395A6] mb-4 price-mobile">39€</div>
                 <p className="text-lg text-gray-600 mb-8">60 Min 1‑on‑1 · Online via Zoom</p>
                 <p className="text-lg text-gray-500">inkl. Unterlagen & Nachbereitung</p>
               </div>
@@ -310,7 +310,7 @@ export default function HomePage() {
               </div>
 
               <div className="text-center">
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed modern-text">
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed modern-text price-text-mobile">
                   Online über Zoom mit Screen Sharing und Whiteboard. Flexibel buchbar über WhatsApp, 
                   bezahlen erst im Anschluss!
                 </p>
@@ -318,7 +318,7 @@ export default function HomePage() {
                   href="http://wa.me/491639347633"
           target="_blank"
           rel="noopener noreferrer"
-                  className="modern-button px-12 py-5 rounded-lg button-text modern-focus group"
+                  className="modern-button px-12 py-5 rounded-lg button-text modern-focus group price-button-mobile"
                 >
                   <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
                   Jetzt buchen

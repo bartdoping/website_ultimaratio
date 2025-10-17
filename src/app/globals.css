@@ -282,6 +282,43 @@ body {
     height: 2rem !important;
   }
   
+  /* Fix blue stripes behind headers for mobile */
+  .bg-gradient-to-r {
+    background: linear-gradient(90deg, #0395A6, #028A9A) !important;
+    border-radius: 0.5rem !important;
+    padding: 0.5rem 1rem !important;
+    display: inline-block !important;
+  }
+  
+  /* Mobile logo and burger menu sizing */
+  .logo-mobile {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+  }
+  
+  .burger-mobile {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+  
+  /* Mobile price emphasis */
+  .price-mobile {
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    color: #0395A6 !important;
+  }
+  
+  /* Mobile spacing for price sections */
+  .price-text-mobile {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .price-button-mobile {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
   /* Mobile-optimized circles and decorative elements */
   .rounded-full {
     border-radius: 50% !important;

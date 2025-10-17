@@ -56,7 +56,7 @@ export default function Header() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center group">
-                <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-xl overflow-hidden group-hover:scale-110 transition-all duration-300 shadow-lg">
+                <div className="h-12 w-12 sm:h-12 sm:w-12 rounded-xl overflow-hidden group-hover:scale-110 transition-all duration-300 shadow-lg logo-mobile">
                   <Image
                     src="/images/logo/logo.png"
                     alt="ultima-rat.io Logo"
@@ -121,9 +121,9 @@ export default function Header() {
               >
                 <span className="sr-only">Open main menu</span>
                 {isMenuOpen ? (
-                  <X className="block h-6 w-6" aria-hidden="true" />
+                  <X className="block h-6 w-6 burger-mobile" aria-hidden="true" />
                 ) : (
-                  <Menu className="block h-6 w-6" aria-hidden="true" />
+                  <Menu className="block h-6 w-6 burger-mobile" aria-hidden="true" />
                 )}
               </button>
             </div>

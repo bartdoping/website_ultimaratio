@@ -97,9 +97,9 @@ export default function TeamPage() {
             </div>
 
             {/* Ahkash Thavarajasingam */}
-            <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="text-center mb-8">
-                <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6 shadow-xl">
+            <div className="modern-card p-8 md:p-12 modern-animate-fade-in-up">
+              <div className="text-center mb-6 md:mb-8">
+                <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto mb-4 md:mb-6 shadow-xl">
                   <Image
                     src="/images/team/ahkash-thavarajasingam.jpg"
                     alt="Ahkash Thavarajasingam"
@@ -108,8 +108,8 @@ export default function TeamPage() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                        <h3 className="text-xl font-bold text-black mb-2 modern-heading">Ahkash Thavarajasingam</h3>
-                <p className="text-lg text-[#0395A6] font-semibold mb-4">Approbierter Arzt</p>
+                        <h3 className="text-lg md:text-xl font-bold text-black mb-2 modern-heading">Ahkash Thavarajasingam</h3>
+                <p className="text-base md:text-lg text-[#0395A6] font-semibold mb-3 md:mb-4">Approbierter Arzt</p>
                 <div className="flex justify-center mb-6">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
@@ -169,34 +169,34 @@ export default function TeamPage() {
           </div>
 
           <div className="modern-grid modern-grid-3">
-            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="mb-8">
-                <Award className="w-12 h-12 text-[#0395A6] mx-auto" />
+            <div className="modern-card p-8 md:p-12 text-center modern-animate-fade-in-up">
+              <div className="mb-6 md:mb-8">
+                <Award className="w-10 h-10 md:w-12 md:h-12 text-[#0395A6] mx-auto" />
               </div>
-              <h3 className="text-lg font-bold text-black mb-6 modern-heading">Approbierte Ärzt:innen</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text">
+              <h3 className="text-base md:text-lg font-bold text-black mb-4 md:mb-6 modern-heading">Approbierte Ärzt:innen</h3>
+              <p className="text-sm md:text-lg text-gray-600 leading-relaxed modern-text">
                 Alle unsere Coaches sind approbierte Ärzt:innen mit aktueller Klinikroutine. 
                 Keine Studierenden, sondern erfahrene Mediziner.
               </p>
             </div>
 
-            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="mb-8">
-                <Users className="w-12 h-12 text-[#0395A6] mx-auto" />
+            <div className="modern-card p-8 md:p-12 text-center modern-animate-fade-in-up">
+              <div className="mb-6 md:mb-8">
+                <Users className="w-10 h-10 md:w-12 md:h-12 text-[#0395A6] mx-auto" />
               </div>
-              <h3 className="text-lg font-bold text-black mb-6 modern-heading">Individuelle Betreuung</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text">
+              <h3 className="text-base md:text-lg font-bold text-black mb-4 md:mb-6 modern-heading">Individuelle Betreuung</h3>
+              <p className="text-sm md:text-lg text-gray-600 leading-relaxed modern-text">
                 1:1-Coaching statt Gruppenunterricht. Persönliche Lernpläne und 
                 direkte Betreuung durch erfahrene Coaches.
               </p>
             </div>
 
-            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="mb-8">
-                <Heart className="w-12 h-12 text-[#0395A6] mx-auto" />
+            <div className="modern-card p-8 md:p-12 text-center modern-animate-fade-in-up">
+              <div className="mb-6 md:mb-8">
+                <Heart className="w-10 h-10 md:w-12 md:h-12 text-[#0395A6] mx-auto" />
               </div>
-              <h3 className="text-lg font-bold text-black mb-6 modern-heading">Erfolgsorientiert</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text">
+              <h3 className="text-base md:text-lg font-bold text-black mb-4 md:mb-6 modern-heading">Erfolgsorientiert</h3>
+              <p className="text-sm md:text-lg text-gray-600 leading-relaxed modern-text">
                 97% Erfolgsquote und über 500 erfolgreiche Prüfungen sprechen für sich. 
                 Wir sind auf Ihren Erfolg fokussiert.
               </p>
