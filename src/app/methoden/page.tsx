@@ -207,7 +207,17 @@ export default function MethodenPage() {
               </div>
               <h3 className="text-lg font-bold text-black mb-4 modern-heading">Analyse</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
-                Einschätzung Ihrer aktuellen Lernmethoden und Identifikation von Verbesserungspotenzialen.
+                Einschätzung deiner aktuellen Lernmethoden und Identifikation von Problemen und Verbesserungspotenzialen.
+              </p>
+            </div>
+
+            <div className="modern-card p-8 text-center modern-animate-fade-in-up">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
+                02
+              </div>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Zielsetzung</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">
+              Gemeinsame Definition klarer, realistischer Lernziele basierend auf Ihrem Wissensstand, Zeitrahmen und Prüfungsformat.
               </p>
             </div>
 
@@ -235,9 +245,19 @@ export default function MethodenPage() {
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 04
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Optimierung</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Feedback & Anpassung</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
-                Kontinuierliche Verbesserung basierend auf Ihren Fortschritten und Ergebnissen.
+              Regelmäßige Auswertung Ihrer Fortschritte mit gezieltem Feedback - Anpassung der Strategien für maximalen Lernerfolg.
+              </p>
+            </div>
+
+            <div className="modern-card p-8 text-center modern-animate-fade-in-up">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
+                04
+              </div>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Ergebnisse & Transfer</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">
+              Messbare Verbesserungen, gestärktes Langzeitgedächtnis und sicherer Wissenstransfer in Prüfung und Praxis.
               </p>
             </div>
           </div>

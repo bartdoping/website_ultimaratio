@@ -95,7 +95,7 @@ export default function Testimonials() {
               Werde Teil unserer Erfolgsgeschichten
             </h3>
             <p className="text-lg text-gray-600 mb-8 modern-text">
-              Über 500 erfolgreiche Prüfungen und eine 95%ige Erfolgsquote sprechen für sich.
+              Über 500 erfolgreiche Prüfungen und eine 97%ige Erfolgsquote sprechen für sich.
             </p>
             <a
               href="http://wa.me/491639347633"
