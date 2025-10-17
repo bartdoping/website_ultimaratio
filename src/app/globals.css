@@ -282,57 +282,59 @@ body {
     height: 2rem !important;
   }
   
-  /* Remove blue stripes completely on mobile */
-  .bg-gradient-to-r {
-    background: none !important;
-    border-radius: 0 !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-    display: inline !important;
-  }
+  /* MOBILE ONLY: Remove blue stripes completely */
+  @media (max-width: 768px) {
+    .bg-gradient-to-r {
+      background: none !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+      display: inline !important;
+    }
 
-  /* Remove blue background from all gradient elements on mobile */
-  .bg-gradient-to-r *,
-  .bg-gradient-to-r span,
-  .bg-gradient-to-r div,
-  .bg-gradient-to-r p {
-    background: none !important;
-    border-radius: 0 !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-    display: inline !important;
-  }
+    /* Remove blue background from all gradient elements on mobile */
+    .bg-gradient-to-r *,
+    .bg-gradient-to-r span,
+    .bg-gradient-to-r div,
+    .bg-gradient-to-r p {
+      background: none !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+      display: inline !important;
+    }
 
-  /* Remove all gradient backgrounds on mobile */
-  [class*="bg-gradient"],
-  *[class*="gradient"] {
-    background: none !important;
-    border-radius: 0 !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-  }
+    /* Remove all gradient backgrounds on mobile */
+    [class*="bg-gradient"],
+    *[class*="gradient"] {
+      background: none !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
 
-  /* Make blue text in headers same size as black text on mobile */
-  .text-[#0395A6] {
-    font-size: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
-  }
+    /* Make blue text in headers same size as black text on mobile */
+    .text-[#0395A6] {
+      font-size: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
 
-  /* Specific targeting for blue text in hero sections */
-  h1 .text-[#0395A6],
-  h2 .text-[#0395A6],
-  h3 .text-[#0395A6] {
-    font-size: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
-  }
+    /* Specific targeting for blue text in hero sections */
+    h1 .text-[#0395A6],
+    h2 .text-[#0395A6],
+    h3 .text-[#0395A6] {
+      font-size: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
 
-  /* Ensure blue text matches parent heading size */
-  .modern-heading .text-[#0395A6] {
-    font-size: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
+    /* Ensure blue text matches parent heading size */
+    .modern-heading .text-[#0395A6] {
+      font-size: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
   }
   
   /* Mobile logo and burger menu sizing */
