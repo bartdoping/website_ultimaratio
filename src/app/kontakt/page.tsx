@@ -56,12 +56,12 @@ export default function KontaktPage() {
               Kontakt aufnehmen
             </div>
             
-            <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 sm:mb-8 modern-heading leading-tight modern-animate-fade-in-up px-2 sm:px-4">
               Lass uns gemeinsam<br />
               <span className="text-[#0395A6]">deine Prüfung bestehen</span>
             </h1>
             
-            <p className="text-lg text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-8 sm:mb-12 md:mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up px-2 sm:px-4">
               Hast du Fragen zu unserem Coaching? Möchtest du einen Termin vereinbaren? 
               Wir sind für dich da und helfen gerne weiter.
             </p>

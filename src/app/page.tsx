@@ -15,13 +15,13 @@ export default function HomePage() {
               Über 500 erfolgreiche Prüfungen
             </div>
             
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-8 sm:mb-12 modern-heading leading-tight modern-animate-fade-in-up">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mb-6 sm:mb-8 md:mb-12 modern-heading leading-tight modern-animate-fade-in-up px-2 sm:px-4">
               Bestnoten im<br />
               <span className="text-[#0395A6]">Medizinstudium</span><br />
               durch echtes Verstehen
             </h1>
             
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-12 sm:mb-16 max-w-4xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up px-4">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-8 sm:mb-12 md:mb-16 max-w-4xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up px-2 sm:px-4">
               Professionelle Medizin-Nachhilfe mit approbierten Ärzt:innen und qualifizierten Tutor:innen. Wissenschaftlich fundierte Lernmethoden, 
               die nachweislich funktionieren. Strukturierte Prüfungsvorbereitung von der Vorklinik bis zum M3 sowie auch für die Kenntnisprüfung.
             </p>

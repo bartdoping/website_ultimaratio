@@ -12,13 +12,13 @@ export default function CoachingPage() {
               Individuelles 1:1 Coaching
             </div>
             
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-6 sm:mb-8 premium-heading leading-tight animate-fade-in-up px-4">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4 sm:mb-6 md:mb-8 premium-heading leading-tight animate-fade-in-up px-2 sm:px-4">
               Anatomie verstehen?<br />
               Physiologie begreifen?<br />
               <span className="text-[#0395A6]">Prüfungen bestehen?</span>
             </h1>
             
-            <p className="text-base sm:text-lg text-gray-600 mb-12 sm:mb-16 max-w-5xl mx-auto leading-relaxed premium-text animate-fade-in-up px-4">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-8 sm:mb-12 md:mb-16 max-w-5xl mx-auto leading-relaxed premium-text animate-fade-in-up px-2 sm:px-4">
               Mit unserem spezialisierten Medizin-Coaching verwandelst du komplexe Lerninhalte in verständliches Wissen. 
               Von Anatomie bis Biochemie, von Physikum bis M3 – wir zeigen dir die effektivsten Lernstrategien und 
               helfen dir, jede Prüfung mit Bestnoten zu bestehen.
