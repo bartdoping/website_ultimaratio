@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { MessageCircle, Phone, Mail, MapPin, Clock, Send, CheckCircle, Instagram, MessageSquare, MailOpen } from 'lucide-react'
-import BlackBookPopup from '../../components/BlackBookPopup'
 
 export default function KontaktPage() {
   const [formData, setFormData] = useState({
@@ -48,7 +47,6 @@ export default function KontaktPage() {
 
   return (
     <div className="min-h-screen">
-      <BlackBookPopup />
       {/* Hero Section */}
       <section className="modern-hero modern-section">
         <div className="modern-container">

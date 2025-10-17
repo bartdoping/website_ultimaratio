@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import { CookieProvider } from '@/contexts/CookieContext'
 import CookieBanner from '@/components/CookieBanner'
 import CookieSettings from '@/components/CookieSettings'
+import BlackBookPopup from '@/components/BlackBookPopup'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,6 +30,7 @@ export default function RootLayout({
           <Footer />
           <CookieBanner />
           <CookieSettings />
+          <BlackBookPopup />
         </CookieProvider>
       </body>
     </html>

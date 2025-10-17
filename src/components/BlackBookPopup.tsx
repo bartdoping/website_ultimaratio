@@ -1,16 +1,21 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { X, Download, Heart, BookOpen } from 'lucide-react'
+import { X, Download, Heart, Stethoscope } from 'lucide-react'
 
 export default function BlackBookPopup() {
   const [isVisible, setIsVisible] = useState(false)
   const [isClosing, setIsClosing] = useState(false)
 
   useEffect(() => {
+    // Check if popup was already shown in this session
+    const popupShown = sessionStorage.getItem('blackBookPopupShown')
+    if (popupShown) return
+
     // Show popup after 15 seconds
     const timer = setTimeout(() => {
       setIsVisible(true)
+      sessionStorage.setItem('blackBookPopupShown', 'true')
     }, 15000)
 
     return () => clearTimeout(timer)
@@ -68,9 +73,7 @@ export default function BlackBookPopup() {
           <div className="p-8">
             {/* Icon */}
             <div className="flex justify-center mb-6">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center">
-                <BookOpen className="w-8 h-8 text-[#0395A6]" />
-              </div>
+              <Stethoscope className="w-16 h-16 text-[#0395A6]" />
             </div>
 
             {/* Title */}
