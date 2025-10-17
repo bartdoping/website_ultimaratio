@@ -25,17 +25,19 @@ export default function Header() {
       <div className="bg-[#0395A6] text-white py-2">
         <div className="modern-container">
           <div className="flex justify-between items-center text-sm">
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-2 sm:space-x-4">
               <div className="flex items-center">
-                <Phone className="w-4 h-4 mr-2" />
-                <span>+49 163 9347633</span>
+                <Phone className="w-4 h-4 mr-1 sm:mr-2" />
+                <span className="hidden xs:inline">+49 163 9347633</span>
+                <span className="xs:hidden">+49 163 9347633</span>
               </div>
               <a 
                 href="mailto:info@ultima-rat.io"
                 className="flex items-center hover:text-white/90 transition-colors"
               >
-                <Mail className="w-4 h-4 mr-2" />
-                <span>info@ultima-rat.io</span>
+                <Mail className="w-4 h-4 mr-1 sm:mr-2" />
+                <span className="hidden sm:inline">info@ultima-rat.io</span>
+                <span className="sm:hidden">E-Mail</span>
               </a>
             </div>
             <div className="hidden lg:flex items-center space-x-3">
@@ -54,7 +56,7 @@ export default function Header() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center group">
-                <div className="h-12 w-12 rounded-xl overflow-hidden group-hover:scale-110 transition-all duration-300 shadow-lg">
+                <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-xl overflow-hidden group-hover:scale-110 transition-all duration-300 shadow-lg">
                   <Image
                     src="/images/logo/logo.png"
                     alt="ultima-rat.io Logo"
@@ -64,9 +66,9 @@ export default function Header() {
                     priority
                   />
                 </div>
-                <div className="ml-3">
-                  <span className="text-xl font-bold text-black modern-heading block">ultima-rat.io</span>
-                  <span className="text-xs text-gray-500">Medizin-Nachhilfe</span>
+                <div className="ml-2 sm:ml-3">
+                  <span className="text-lg sm:text-xl font-bold text-black modern-heading block">ultima-rat.io</span>
+                  <span className="text-xs text-gray-500 hidden sm:block">Medizin-Nachhilfe</span>
                 </div>
               </Link>
             </div>

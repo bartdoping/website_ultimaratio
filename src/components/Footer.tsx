@@ -10,11 +10,11 @@ export default function Footer() {
       
       {/* Main Footer Content */}
       <div className="modern-container pt-8 pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center mb-8">
-              <div className="h-16 w-16 rounded-2xl overflow-hidden shadow-xl">
+            <div className="flex items-center mb-6 sm:mb-8">
+              <div className="h-12 w-12 sm:h-16 sm:w-16 rounded-2xl overflow-hidden shadow-xl">
                 <Image
                   src="/images/logo/logo-white.png"
                   alt="ultima-rat.io Logo"
@@ -23,37 +23,37 @@ export default function Footer() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="ml-4">
-                <span className="text-xl font-bold text-white block">ultima-rat.io</span>
-                <span className="text-lg text-gray-300">Medizin-Nachhilfe</span>
+              <div className="ml-3 sm:ml-4">
+                <span className="text-lg sm:text-xl font-bold text-white block">ultima-rat.io</span>
+                <span className="text-sm sm:text-lg text-gray-300">Medizin-Nachhilfe</span>
               </div>
             </div>
             
-            <p className="text-gray-300 mb-8 text-lg leading-relaxed modern-text max-w-md">
+            <p className="text-gray-300 mb-6 sm:mb-8 text-base sm:text-lg leading-relaxed modern-text max-w-md">
               Professionelle Medizin-Nachhilfe mit approbierten Ärzt:innen. 
               Wissenschaftlich fundierte Lernmethoden für optimale Prüfungsvorbereitung.
             </p>
 
             {/* Contact Info */}
-            <div className="space-y-4">
-              <div className="flex items-center text-gray-300">
-                <MapPin className="w-5 h-5 mr-3 text-[#0395A6]" />
-                <span className="text-lg">Warburghof 14, 30627 Hannover, Deutschland</span>
+            <div className="space-y-3 sm:space-y-4">
+              <div className="flex items-start text-gray-300">
+                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-[#0395A6] mt-1 flex-shrink-0" />
+                <span className="text-sm sm:text-lg">Warburghof 14, 30627 Hannover, Deutschland</span>
               </div>
               <div className="flex items-center text-gray-300">
-                <Phone className="w-5 h-5 mr-3 text-[#0395A6]" />
-                <span className="text-lg">+49 163 9347633</span>
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-[#0395A6] flex-shrink-0" />
+                <span className="text-sm sm:text-lg">+49 163 9347633</span>
               </div>
               <a 
                 href="mailto:info@ultima-rat.io"
                 className="flex items-center text-gray-300 hover:text-[#0395A6] transition-colors"
               >
-                <Mail className="w-5 h-5 mr-3 text-[#0395A6]" />
-                <span className="text-lg">info@ultima-rat.io</span>
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-[#0395A6] flex-shrink-0" />
+                <span className="text-sm sm:text-lg">info@ultima-rat.io</span>
               </a>
               <div className="flex items-center text-gray-300">
-                <Clock className="w-5 h-5 mr-3 text-[#0395A6]" />
-                <span className="text-lg">Mo-Fr: 9:00-18:00 Uhr</span>
+                <Clock className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-[#0395A6] flex-shrink-0" />
+                <span className="text-sm sm:text-lg">Mo-Fr: 9:00-18:00 Uhr</span>
               </div>
             </div>
           </div>

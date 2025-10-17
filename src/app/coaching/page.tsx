@@ -12,35 +12,35 @@ export default function CoachingPage() {
               Individuelles 1:1 Coaching
             </div>
             
-            <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 premium-heading leading-tight animate-fade-in-up">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-6 sm:mb-8 premium-heading leading-tight animate-fade-in-up px-4">
               Anatomie verstehen?<br />
               Physiologie begreifen?<br />
               <span className="text-[#0395A6]">Prüfungen bestehen?</span>
             </h1>
             
-            <p className="text-lg text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed premium-text animate-fade-in-up">
+            <p className="text-base sm:text-lg text-gray-600 mb-12 sm:mb-16 max-w-5xl mx-auto leading-relaxed premium-text animate-fade-in-up px-4">
               Mit unserem spezialisierten Medizin-Coaching verwandelst du komplexe Lerninhalte in verständliches Wissen. 
               Von Anatomie bis Biochemie, von Physikum bis M3 – wir zeigen dir die effektivsten Lernstrategien und 
               helfen dir, jede Prüfung mit Bestnoten zu bestehen.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-8 justify-center animate-fade-in-up">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center animate-fade-in-up px-4">
               <a
                 href="http://wa.me/491639347633"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus group cursor-pointer"
+                className="modern-button px-8 sm:px-12 py-4 sm:py-5 rounded-lg text-base sm:text-lg font-semibold modern-focus group cursor-pointer w-full sm:w-auto"
               >
-                <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 inline-block group-hover:animate-pulse" />
                 Kostenloses Erstgespräch
-                <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 ml-2 sm:ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </a>
               <a
                 href="#mehr-erfahren"
-                className="modern-button-secondary px-12 py-5 rounded-lg text-lg font-semibold modern-focus group cursor-pointer"
+                className="modern-button-secondary px-8 sm:px-12 py-4 sm:py-5 rounded-lg text-base sm:text-lg font-semibold modern-focus group cursor-pointer w-full sm:w-auto"
               >
                 Mehr erfahren
-                <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 ml-2 sm:ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>

@@ -15,34 +15,34 @@ export default function HomePage() {
               Über 500 erfolgreiche Prüfungen
             </div>
             
-            <h1 className="hero-text text-black mb-12 modern-heading modern-animate-fade-in-up">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-8 sm:mb-12 modern-heading leading-tight modern-animate-fade-in-up">
               Bestnoten im<br />
               <span className="text-[#0395A6]">Medizinstudium</span><br />
               durch echtes Verstehen
             </h1>
             
-            <p className="body-text-large text-gray-600 mb-16 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-12 sm:mb-16 max-w-4xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up px-4">
               Professionelle Medizin-Nachhilfe mit approbierten Ärzt:innen und qualifizierten Tutor:innen. Wissenschaftlich fundierte Lernmethoden, 
               die nachweislich funktionieren. Strukturierte Prüfungsvorbereitung von der Vorklinik bis zum M3 sowie auch für die Kenntnisprüfung.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-8 justify-center mb-20 modern-animate-fade-in-up">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center mb-16 sm:mb-20 modern-animate-fade-in-up px-4">
               <a
                 href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-                className="modern-button px-12 py-5 rounded-lg button-text modern-focus group"
+                className="modern-button px-8 sm:px-12 py-4 sm:py-5 rounded-lg text-base sm:text-lg font-semibold modern-focus group w-full sm:w-auto"
               >
-                <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 inline-block group-hover:animate-pulse" />
                 Kostenloses Erstgespräch
-                <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 ml-2 sm:ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </a>
               <Link
                 href="/coaching"
-                className="modern-button-secondary px-12 py-5 rounded-lg button-text modern-focus group"
+                className="modern-button-secondary px-8 sm:px-12 py-4 sm:py-5 rounded-lg text-base sm:text-lg font-semibold modern-focus group w-full sm:w-auto"
               >
                 Coaching entdecken
-                <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 ml-2 sm:ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
 

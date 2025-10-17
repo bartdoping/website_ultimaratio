@@ -56,11 +56,11 @@ export default function BlackBookPopup() {
       
       {/* Popup */}
       <div 
-        className={`fixed inset-0 z-50 flex items-center justify-center p-4 transition-all duration-300 ${
+        className={`fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 transition-all duration-300 ${
           isClosing ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
         }`}
       >
-        <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 relative overflow-hidden">
+        <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full mx-2 sm:mx-4 relative overflow-hidden">
           {/* Close Button */}
           <button
             onClick={handleClose}
@@ -70,44 +70,44 @@ export default function BlackBookPopup() {
           </button>
 
           {/* Content */}
-          <div className="p-8">
+          <div className="p-6 sm:p-8">
             {/* Icon */}
-            <div className="flex justify-center mb-6">
-              <Stethoscope className="w-16 h-16 text-[#0395A6]" />
+            <div className="flex justify-center mb-4 sm:mb-6">
+              <Stethoscope className="w-12 h-12 sm:w-16 sm:h-16 text-[#0395A6]" />
             </div>
 
             {/* Title */}
-            <h3 className="text-2xl font-bold text-black text-center mb-4">
+            <h3 className="text-xl sm:text-2xl font-bold text-black text-center mb-3 sm:mb-4">
               Kostenloses Black Book
             </h3>
 
             {/* Description */}
-            <div className="text-center mb-6">
-              <p className="text-lg text-gray-600 mb-4">
+            <div className="text-center mb-4 sm:mb-6">
+              <p className="text-base sm:text-lg text-gray-600 mb-3 sm:mb-4">
                 Über 100 EKG- und Röntgen-Thorax-Bilder aller klinisch und prüfungsrelevanten Pathologien
               </p>
-              <div className="flex items-center justify-center text-sm text-gray-500 mb-4">
-                <Heart className="w-4 h-4 text-red-500 mr-2" />
+              <div className="flex items-center justify-center text-xs sm:text-sm text-gray-500 mb-3 sm:mb-4">
+                <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-red-500 mr-1 sm:mr-2" />
                 <span>Strukturiert • Detailliert • Kostenlos</span>
               </div>
             </div>
 
             {/* Features */}
-            <div className="space-y-2 mb-8">
-              <div className="flex items-center text-gray-700">
-                <div className="w-2 h-2 bg-[#0395A6] rounded-full mr-3"></div>
+            <div className="space-y-2 mb-6 sm:mb-8">
+              <div className="flex items-center text-gray-700 text-sm sm:text-base">
+                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#0395A6] rounded-full mr-2 sm:mr-3 flex-shrink-0"></div>
                 <span>Über 100 klinische Bilder</span>
               </div>
-              <div className="flex items-center text-gray-700">
-                <div className="w-2 h-2 bg-[#0395A6] rounded-full mr-3"></div>
+              <div className="flex items-center text-gray-700 text-sm sm:text-base">
+                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#0395A6] rounded-full mr-2 sm:mr-3 flex-shrink-0"></div>
                 <span>Detaillierte Erklärungen</span>
               </div>
-              <div className="flex items-center text-gray-700">
-                <div className="w-2 h-2 bg-[#0395A6] rounded-full mr-3"></div>
+              <div className="flex items-center text-gray-700 text-sm sm:text-base">
+                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#0395A6] rounded-full mr-2 sm:mr-3 flex-shrink-0"></div>
                 <span>Prüfungsrelevante Pathologien</span>
               </div>
-              <div className="flex items-center text-gray-700">
-                <div className="w-2 h-2 bg-[#0395A6] rounded-full mr-3"></div>
+              <div className="flex items-center text-gray-700 text-sm sm:text-base">
+                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#0395A6] rounded-full mr-2 sm:mr-3 flex-shrink-0"></div>
                 <span>Strukturierte Übersicht</span>
               </div>
             </div>
@@ -115,14 +115,14 @@ export default function BlackBookPopup() {
             {/* Download Button */}
             <button
               onClick={handleDownload}
-              className="w-full bg-[#0395A6] hover:bg-[#028A9A] text-white py-4 px-6 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center group"
+              className="w-full bg-[#0395A6] hover:bg-[#028A9A] text-white py-3 sm:py-4 px-4 sm:px-6 rounded-lg font-semibold text-base sm:text-lg transition-colors flex items-center justify-center group"
             >
-              <Download className="w-5 h-5 mr-3 group-hover:animate-bounce" />
+              <Download className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 group-hover:animate-bounce" />
               Kostenlos herunterladen
             </button>
 
             {/* Footer */}
-            <p className="text-xs text-gray-400 text-center mt-4">
+            <p className="text-xs text-gray-400 text-center mt-3 sm:mt-4">
               PDF-Download • Keine Anmeldung erforderlich
             </p>
           </div>
