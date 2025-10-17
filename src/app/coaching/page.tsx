@@ -48,46 +48,46 @@ export default function CoachingPage() {
       </section>
 
       {/* Problem Section */}
-      <section id="mehr-erfahren" className="academic-section bg-white">
-        <div className="academic-container">
-          <div className="text-center mb-20 animate-fade-in-up">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 premium-heading">
+      <section id="mehr-erfahren" className="modern-section bg-white">
+        <div className="modern-container">
+          <div className="text-center modern-spacing">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Das Problem: Falsche Lernstrategien
             </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto premium-text">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Warum traditionelle Lernmethoden im Medizinstudium versagen
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="premium-card p-12 text-center animate-fade-in-up">
+          <div className="modern-grid modern-grid-3">
+            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Brain className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6">Bulimielernen</h3>
-              <p className="text-lg text-gray-600 leading-relaxed premium-text">
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Bulimielernen</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Stures Auswendiglernen ohne Verständnis führt zu Blackouts in der Prüfung. 
                 Ohne echte Verknüpfungen ist das Wissen nicht abrufbar.
               </p>
             </div>
 
-            <div className="premium-card p-12 text-center animate-fade-in-up">
+            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Clock className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6">Zeitverschwendung</h3>
-              <p className="text-lg text-gray-600 leading-relaxed premium-text">
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Zeitverschwendung</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Fokus auf unwichtige Details statt Prüfungsrelevanz. Stundenlanges Lernen 
                 ohne Struktur und Priorisierung führt zu Frustration.
               </p>
             </div>
 
-            <div className="premium-card p-12 text-center animate-fade-in-up">
+            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Target className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6">Fehlende Strategie</h3>
-              <p className="text-lg text-gray-600 leading-relaxed premium-text">
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Fehlende Strategie</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Kein Plan, keine Struktur, keine klaren Ziele. Studierende verlieren sich 
                 in der Stoffmenge und wissen nicht, wo sie anfangen sollen.
               </p>
@@ -97,79 +97,79 @@ export default function CoachingPage() {
       </section>
 
       {/* Solution Section */}
-      <section className="academic-section bg-[#FAFAFA]">
-        <div className="academic-container">
-          <div className="text-center mb-20 animate-fade-in-up">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 premium-heading">
+      <section className="modern-section bg-[#F8FAFC]">
+        <div className="modern-container">
+          <div className="text-center modern-spacing">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Die ultima-rat.io Lösung
             </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto premium-text">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Wissenschaftlich fundierte Lernmethoden, die nachweislich funktionieren
             </p>
           </div>
 
-          <div className="feature-grid">
-            <div className="premium-card p-12 animate-fade-in-up">
+          <div className="modern-grid modern-grid-3">
+            <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="mb-8">
                 <Users className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6">Approbierte Ärzt:innen</h3>
-              <p className="text-lg text-gray-600 leading-relaxed premium-text">
-                Erfahrene Mediziner mit aktueller Klinikroutine leiten dich durch komplexe medizinische Inhalte. 
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Erfahrene Tutor:innen</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
+                Erfahrene Mediziner und Tutoren mit aktueller Klinikroutine leiten dich durch komplexe medizinische Inhalte. 
                 Praxisnahe Erklärungen anhand von Befunden, Bildern und klinischen Algorithmen.
               </p>
             </div>
 
-            <div className="premium-card p-12 animate-fade-in-up">
+            <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="mb-8">
                 <BookOpen className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6">Strukturierte Lernpläne</h3>
-              <p className="text-lg text-gray-600 leading-relaxed premium-text">
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Strukturierte Lernpläne</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Individuelle Wochenpläne mit gezielten Wiederholungen und Meilensteinen. 
-                Kontinuierliche Anpassung an deine Lernfortschritte und Prüfungstermine.
+                Kontinuierliche Anpassung an Ihre Lernfortschritte und Prüfungstermine.
               </p>
             </div>
 
-            <div className="premium-card p-12 animate-fade-in-up">
+            <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="mb-8">
                 <Brain className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6">Fokussiertes Lernen</h3>
-              <p className="text-lg text-gray-600 leading-relaxed premium-text">
-                Priorisierung nach Prüfungsrelevanz und deinen Stärken. Klare Strukturierung 
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Fokussiertes Lernen</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
+                Priorisierung nach Prüfungsrelevanz und Ihren Stärken. Klare Strukturierung 
                 von Pflichtstoff, Kernkompetenzen und optionalen Inhalten.
               </p>
             </div>
 
-            <div className="premium-card p-12 animate-fade-in-up">
+            <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="mb-8">
                 <Zap className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6">Adaptive Prüfungsplattform</h3>
-              <p className="text-lg text-gray-600 leading-relaxed premium-text">
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Adaptive Prüfungsplattform</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Eigene Plattform mit aktuellen Prüfungsfragen und adaptiven Übungssets. 
                 Intelligente Auswertung nach Themen und Fehlerarten für gezieltes Training.
               </p>
             </div>
 
-            <div className="premium-card p-12 animate-fade-in-up">
+            <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="mb-8">
                 <Target className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6">Prüfungslogik & Anwendung</h3>
-              <p className="text-lg text-gray-600 leading-relaxed premium-text">
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Prüfungslogik & Anwendung</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Training von klinischen Entscheidungsprozessen: Next-best-step, Ausschlusskriterien 
                 und typische Fallen. Systematische Herleitung statt auswendig lernen.
               </p>
             </div>
 
-            <div className="premium-card p-12 animate-fade-in-up">
+            <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="mb-8">
                 <Shield className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6">Kontinuierliche Begleitung</h3>
-              <p className="text-lg text-gray-600 leading-relaxed premium-text">
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Kontinuierliche Begleitung</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Online 1:1-Sessions mit festen Terminen und schnellem Feedback. 
                 Kuratierte Materialien und strukturierte Begleitung bis zur Prüfung.
               </p>

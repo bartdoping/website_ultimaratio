@@ -35,7 +35,7 @@ const faqData: FAQItem[] = [
   },
   {
     question: "Gibt es eine Erfolgsgarantie?",
-    answer: "Wir können keine 100%ige Erfolgsgarantie geben, da Prüfungsergebnisse von vielen Faktoren abhängen. Aber wir haben eine 95%ige Erfolgsquote und bieten bei Bedarf kostenlose Nachbesprechungen an."
+    answer: "Wir können keine 100%ige Erfolgsgarantie geben, da Prüfungsergebnisse von vielen Faktoren abhängen. Aber wir haben eine 97%ige Erfolgsquote und bieten bei Bedarf kostenlose Nachbesprechungen an."
   },
   {
     question: "Kann ich das Coaching auch für die Kenntnisprüfung nutzen?",
