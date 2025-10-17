@@ -1,7 +1,7 @@
 'use client'
 
 import { useCookies } from '../contexts/CookieContext'
-import { Cookie, Settings, X, Shield, BarChart3, Target, Cog } from 'lucide-react'
+import { Cookie, Settings, Shield, BarChart3, Target, Cog } from 'lucide-react'
 
 export default function CookieBanner() {
   const { 

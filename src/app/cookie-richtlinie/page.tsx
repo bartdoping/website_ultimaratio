@@ -1,4 +1,4 @@
-import { Cookie, Shield, BarChart3, Target, Cog, Clock, Database, Settings } from 'lucide-react'
+import { Cookie, Shield, BarChart3, Target, Cog, Clock, Settings } from 'lucide-react'
 
 export default function CookieRichtliniePage() {
   return (
@@ -189,7 +189,7 @@ export default function CookieRichtliniePage() {
                 <div className="bg-white border border-green-300 rounded-lg p-4">
                   <h4 className="font-semibold text-green-900 mb-2">So ändern Sie Ihre Einstellungen:</h4>
                   <ol className="text-green-800 text-sm space-y-1 list-decimal list-inside">
-                    <li>Klicken Sie auf "Cookie-Einstellungen" im Cookie-Banner</li>
+                    <li>Klicken Sie auf &ldquo;Cookie-Einstellungen&rdquo; im Cookie-Banner</li>
                     <li>Wählen Sie die gewünschten Cookie-Kategorien aus</li>
                     <li>Speichern Sie Ihre Auswahl</li>
                     <li>Ihre Einstellungen werden sofort angewendet</li>
