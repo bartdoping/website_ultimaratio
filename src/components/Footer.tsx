@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
       {/* Main Footer Content */}
-      <div className="modern-container py-20">
+      <div className="modern-container py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
@@ -153,8 +153,8 @@ export default function Footer() {
         </div>
 
         {/* CTA Section */}
-        <div className="border-t border-gray-700 mt-12 pt-12 text-center">
-          <h3 className="text-2xl font-bold mb-4 modern-heading">Bereit für deine Prüfung?</h3>
+        <div className="border-t border-gray-700 mt-16 pt-16 pb-16 text-center">
+          <h3 className="text-2xl font-bold mb-4 text-white">Bereit für deine Prüfung?</h3>
           <p className="text-gray-300 mb-8 text-lg">
             Starte jetzt mit deinem kostenlosen Erstgespräch
           </p>
