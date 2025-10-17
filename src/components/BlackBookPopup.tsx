@@ -48,7 +48,7 @@ export default function BlackBookPopup() {
     <>
       {/* Backdrop */}
       <div 
-        className={`fixed inset-0 bg-black bg-opacity-50 z-50 transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-white/20 backdrop-blur-sm z-50 transition-opacity duration-300 ${
           isClosing ? 'opacity-0' : 'opacity-100'
         }`}
         onClick={handleClose}
