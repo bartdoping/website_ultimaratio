@@ -13,10 +13,10 @@ export default function TeamPage() {
               Unser Expertenteam
             </div>
             
-            <h1 className="text-6xl md:text-7xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
-              Lernen Sie unser<br />
-              <span className="text-[#0395A6]">Team kennen</span>
-            </h1>
+                    <h1 className="text-6xl md:text-7xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
+                      Lerne unser<br />
+                      <span className="text-[#0395A6]">Team kennen</span>
+                    </h1>
             
             <p className="text-2xl text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
               Erfahrene Ärzt:innen und Medizinstudierende, die selbst mit Top-Ergebnissen 
@@ -45,13 +45,13 @@ export default function TeamPage() {
                 <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6 shadow-xl">
                   <Image
                     src="/images/team/mustafa-eid.jpg"
-                    alt="Dr. Mustafa Eid"
+                    alt="Mustafa Eid"
                     width={128}
                     height={128}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-3xl font-bold text-black mb-2 modern-heading">Dr. Mustafa Eid</h3>
+                        <h3 className="text-3xl font-bold text-black mb-2 modern-heading">Mustafa Eid</h3>
                 <p className="text-xl text-[#0395A6] font-semibold mb-4">Approbierter Arzt</p>
                 <div className="flex justify-center mb-6">
                   {[...Array(5)].map((_, i) => (
@@ -102,13 +102,13 @@ export default function TeamPage() {
                 <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6 shadow-xl">
                   <Image
                     src="/images/team/ahkash-thavarajasingam.jpg"
-                    alt="Dr. Ahkash Thavarajasingam"
+                    alt="Ahkash Thavarajasingam"
                     width={128}
                     height={128}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-3xl font-bold text-black mb-2 modern-heading">Dr. Ahkash Thavarajasingam</h3>
+                        <h3 className="text-3xl font-bold text-black mb-2 modern-heading">Ahkash Thavarajasingam</h3>
                 <p className="text-xl text-[#0395A6] font-semibold mb-4">Approbierter Arzt</p>
                 <div className="flex justify-center mb-6">
                   {[...Array(5)].map((_, i) => (
@@ -225,7 +225,7 @@ export default function TeamPage() {
                 ))}
               </div>
               <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
-                &ldquo;Dr. Eid hat mir geholfen, die Kenntnisprüfung erfolgreich zu bestehen. 
+                &ldquo;Mustafa hat mir geholfen, die Kenntnisprüfung erfolgreich zu bestehen. 
                 Seine strukturierte Herangehensweise war genau das, was ich brauchte.&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">
@@ -241,7 +241,7 @@ export default function TeamPage() {
                 ))}
               </div>
               <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
-                &ldquo;Das Coaching mit Dr. Thavarajasingam war fantastisch. 
+                &ldquo;Das Coaching mit Ahkash war fantastisch. 
                 Endlich verstehe ich die Anatomie richtig, nicht nur auswendig.&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">

@@ -97,7 +97,7 @@ export default function FAQ() {
 
         <div className="text-center mt-16">
           <p className="text-xl text-gray-600 mb-8 modern-text">
-            Haben Sie weitere Fragen? Wir helfen gerne weiter!
+            Hast du weitere Fragen? Wir helfen gerne weiter!
           </p>
           <a
             href="http://wa.me/491639347633"

@@ -17,7 +17,7 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    name: "Dr. Ahmed K.",
+    name: "Ahmed K.",
     exam: "Kenntnisprüfung",
     result: "Erfolgreich bestanden",
     text: "Als ausländischer Arzt war die Kenntnisprüfung eine große Herausforderung. Das Coaching hat mir geholfen, die deutschen Standards zu verstehen und sicher zu bestehen.",
@@ -38,7 +38,7 @@ const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    name: "Dr. Maria S.",
+    name: "Maria S.",
     exam: "M3",
     result: "Bestanden mit 1,5",
     text: "Die strukturierte Vorbereitung auf das M3 war perfekt. Ich wusste genau, was auf mich zukommt und konnte gezielt lernen.",
@@ -95,7 +95,7 @@ export default function Testimonials() {
         <div className="text-center mt-16">
           <div className="modern-card p-12 max-w-4xl mx-auto modern-animate-fade-in-up">
             <h3 className="text-3xl font-bold text-black mb-6 modern-heading">
-              Werden Sie Teil unserer Erfolgsgeschichten
+              Werde Teil unserer Erfolgsgeschichten
             </h3>
             <p className="text-xl text-gray-600 mb-8 modern-text">
               Über 500 erfolgreiche Prüfungen und eine 95%ige Erfolgsquote sprechen für sich.

@@ -106,7 +106,7 @@ export default function KontaktPage() {
               </div>
               <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Telefon</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Rufen Sie uns direkt an. Mo-Fr von 9:00-18:00 Uhr.
+                Ruf uns direkt an. Mo-Fr von 9:00-18:00 Uhr.
               </p>
               <a
                 href="tel:+491639347633"

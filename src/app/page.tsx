@@ -137,7 +137,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Approbierte Ärzt:innen</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
-                Erfahrene Mediziner mit aktueller Klinikroutine leiten Sie durch komplexe medizinische Inhalte. 
+                Erfahrene Mediziner mit aktueller Klinikroutine leiten dich durch komplexe medizinische Inhalte. 
                 Praxisnahe Erklärungen anhand von Befunden, Bildern und klinischen Algorithmen.
               </p>
             </div>
