@@ -298,7 +298,7 @@ export default function CoachingPage() {
               Unser spezialisiertes Medizin-Coaching
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Individuelle Betreuung durch erfahrene Ärzt:innen mit bewährten Lernstrategien
+              Individuelle Betreuung durch erfahrene Ärzt:innen und Tutor:innen mit bewährten Lernstrategien
             </p>
           </div>
 
@@ -307,9 +307,9 @@ export default function CoachingPage() {
               <div className="mb-8">
                 <Users className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">1:1 Coaching mit Ärzt:innen</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">1:1 Coaching</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
-                Persönliche Betreuung durch approbierte Ärzt:innen, die selbst mit Bestnoten 
+                Persönliche Betreuung durch approbierte Ärzt:innen und qulifizierte Tutor:innen, die selbst mit Bestnoten 
                 durch alle Examina gegangen sind. Praxisnahe Erklärungen und klinische Bezüge.
               </p>
             </div>
@@ -516,51 +516,48 @@ export default function CoachingPage() {
             <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="mb-8">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto text-white text-2xl font-bold">
-                  A
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Anna, 3. Semester</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                &ldquo;Anatomie war mein Alptraum. Durch Retrieval Practice und die richtigen Lernstrategien 
-                habe ich meine Note von 4,0 auf 1,3 verbessert. Jetzt verstehe ich endlich, wie man effektiv lernt.&rdquo;
-              </p>
-              <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-black">Verbesserung: 2,7 Notenpunkte</p>
-                <p className="text-sm text-gray-600">Anatomie-Prüfung bestanden</p>
-              </div>
-            </div>
-
-            <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto text-white text-2xl font-bold">
                   M
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Max, 5. Semester</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Marcel M.</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                &ldquo;Ich hatte massive Prüfungsangst und Blackouts. Das Coaching hat mir geholfen, 
-                meine Ängste zu überwinden und strukturiert zu lernen. Physikum bestanden!&rdquo;
+                &ldquo;Mehr gelernt in 1 Stunde als in einer ganzen Woche alleine. Ich war total überfordert mit der prüfungsvorbereitung fürs M2 (vor allem weil ich letztendlich komplett falsch rangegangen bin und ein „dummes" Lernsystem hatte). Das Einzelcoaching war auf den Punkt, super strukturiert, mega empathisch und wirklich hilfreich.&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-black">Physikum bestanden</p>
-                <p className="text-sm text-gray-600">Prüfungsangst überwunden</p>
+                <p className="font-semibold text-black">M2 bestanden mit 2</p>
+                <p className="text-sm text-gray-600">Strukturiertes Lernen gelernt</p>
               </div>
             </div>
 
             <div className="modern-card p-12 modern-animate-fade-in-up">
               <div className="mb-8">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto text-white text-2xl font-bold">
-                  S
+                  V
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Sarah, 7. Semester</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Victoria G.</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                &ldquo;Durch Spaced Repetition und die richtige Struktur habe ich meine Lernzeit 
-                von 50 auf 30 Stunden pro Woche reduziert. Mehr Zeit für Freunde und Hobbys!&rdquo;
+                &ldquo;Ich hab den 5h-Crashkurs gemacht und bin echt zufrieden! In nur fünf Stunden wurde mir alles verständlich erklärt, und der Inhalt wurde super hilfreich vermittelt. Was mir besonders gefallen hat: Ich habe endlich eine Lernstrategie gefunden, die zu mir passt - mit Anki-Karten, sinnvoller Nachbereitung und praxisnahem Falltraining.&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-black">40% Zeitersparnis</p>
-                <p className="text-sm text-gray-600">Bessere Work-Life-Balance</p>
+                <p className="font-semibold text-black">5 Std. Crashkurs bestanden</p>
+                <p className="text-sm text-gray-600">Lernstrategie gefunden</p>
+              </div>
+            </div>
+
+            <div className="modern-card p-12 modern-animate-fade-in-up">
+              <div className="mb-8">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto text-white text-2xl font-bold">
+                  A
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Angelina P.</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
+                &ldquo;Zu Beginn meines Studiums hatte ich große Schwierigkeiten, die für mich passende Lerntechnik zu finden und die relevanten Lerninhalte richtig zu filtern. Ich war dann in einem Dritt- und zwei Zweitversuchen, die ich ohne Hilfe nicht geschafft hätte. Mit ärztlicher 'Nachhilfe' konnte ich die Wiederholungsklausuren erfolgreich bestehen!&rdquo;
+              </p>
+              <div className="border-t border-gray-200 pt-4">
+                <p className="font-semibold text-black">Anatomie und Physiologie bestanden</p>
+                <p className="text-sm text-gray-600">Wiederholungsklausuren erfolgreich</p>
               </div>
             </div>
           </div>
