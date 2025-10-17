@@ -387,7 +387,7 @@ export default function KenntnispruefungPage() {
           <div className="max-w-5xl mx-auto">
             <div className="modern-card p-16 modern-animate-fade-in-up">
               <div className="text-center mb-12">
-                <div className="text-4xl font-bold text-[#0395A6] mb-4">39€</div>
+                <div className="text-4xl md:text-6xl font-bold text-[#0395A6] mb-4 price-mobile">39€</div>
                 <p className="text-lg text-gray-600 mb-8">60 Min 1‑on‑1 · Online via Zoom</p>
                 <p className="text-lg text-gray-500">inkl. Unterlagen & Nachbereitung</p>
               </div>
@@ -433,7 +433,7 @@ export default function KenntnispruefungPage() {
               </div>
 
               <div className="text-center">
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed modern-text">
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed modern-text price-text-mobile">
                   Online über Zoom mit Screen Sharing und Whiteboard. Flexibel buchbar über WhatsApp, 
                   bezahlen erst im Anschluss!
                 </p>
@@ -441,7 +441,7 @@ export default function KenntnispruefungPage() {
                   href="http://wa.me/491639347633"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus group"
+                  className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus group price-button-mobile"
                 >
                   <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
                   Jetzt buchen

@@ -97,9 +97,9 @@ export default function TeamPage() {
             </div>
 
             {/* Ahkash Thavarajasingam */}
-            <div className="modern-card p-8 md:p-12 modern-animate-fade-in-up">
-              <div className="text-center mb-6 md:mb-8">
-                <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto mb-4 md:mb-6 shadow-xl">
+            <div className="modern-card p-6 md:p-12 modern-animate-fade-in-up">
+              <div className="text-center mb-4 md:mb-8">
+                <div className="w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto mb-3 md:mb-6 shadow-xl">
                   <Image
                     src="/images/team/ahkash-thavarajasingam.jpg"
                     alt="Ahkash Thavarajasingam"
@@ -108,8 +108,8 @@ export default function TeamPage() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                        <h3 className="text-lg md:text-xl font-bold text-black mb-2 modern-heading">Ahkash Thavarajasingam</h3>
-                <p className="text-base md:text-lg text-[#0395A6] font-semibold mb-3 md:mb-4">Approbierter Arzt</p>
+                        <h3 className="text-sm md:text-xl font-bold text-black mb-2 modern-heading">Ahkash Thavarajasingam</h3>
+                <p className="text-xs md:text-lg text-[#0395A6] font-semibold mb-2 md:mb-4">Approbierter Arzt</p>
                 <div className="flex justify-center mb-6">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />

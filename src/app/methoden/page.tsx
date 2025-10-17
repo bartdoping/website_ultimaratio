@@ -39,12 +39,12 @@ export default function MethodenPage() {
           </div>
 
           <div className="modern-grid modern-grid-2">
-            <div className="modern-card p-8 md:p-12 modern-animate-fade-in-up">
-              <div className="mb-6 md:mb-8">
-                <Brain className="w-10 h-10 md:w-12 md:h-12 text-[#0395A6]" />
+            <div className="modern-card p-6 md:p-12 modern-animate-fade-in-up">
+              <div className="mb-4 md:mb-8">
+                <Brain className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-black mb-4 md:mb-6 modern-heading">Retrieval Practice</h3>
-              <p className="text-base md:text-lg text-gray-600 leading-relaxed modern-text mb-4 md:mb-6">
+              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Retrieval Practice</h3>
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
                 Aktives Abrufen von Wissen statt passives Wiederlesen. Diese Methode 
                 stärkt das Langzeitgedächtnis und verbessert die Abrufbarkeit in Prüfungen.
               </p>
@@ -63,12 +63,12 @@ export default function MethodenPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-8 md:p-12 modern-animate-fade-in-up">
-              <div className="mb-6 md:mb-8">
-                <Clock className="w-10 h-10 md:w-12 md:h-12 text-[#0395A6]" />
+            <div className="modern-card p-6 md:p-12 modern-animate-fade-in-up">
+              <div className="mb-4 md:mb-8">
+                <Clock className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-black mb-4 md:mb-6 modern-heading">Spaced Repetition</h3>
-              <p className="text-base md:text-lg text-gray-600 leading-relaxed modern-text mb-4 md:mb-6">
+              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Spaced Repetition</h3>
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
                 Geplante Wiederholungen in optimalen Intervallen. Diese Technik 
                 maximiert die Behaltensleistung und reduziert Vergessen.
               </p>
@@ -87,12 +87,12 @@ export default function MethodenPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-8 md:p-12 modern-animate-fade-in-up">
-              <div className="mb-6 md:mb-8">
-                <Target className="w-10 h-10 md:w-12 md:h-12 text-[#0395A6]" />
+            <div className="modern-card p-6 md:p-12 modern-animate-fade-in-up">
+              <div className="mb-4 md:mb-8">
+                <Target className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-black mb-4 md:mb-6 modern-heading">Interleaving</h3>
-              <p className="text-base md:text-lg text-gray-600 leading-relaxed modern-text mb-4 md:mb-6">
+              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Interleaving</h3>
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
                 Systematisches Mischen verschiedener Themen und Aufgaben. 
                 Diese Methode verbessert die Transferleistung und Problemlösefähigkeit.
               </p>
@@ -111,12 +111,12 @@ export default function MethodenPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-8 md:p-12 modern-animate-fade-in-up">
-              <div className="mb-6 md:mb-8">
-                <Shield className="w-10 h-10 md:w-12 md:h-12 text-[#0395A6]" />
+            <div className="modern-card p-6 md:p-12 modern-animate-fade-in-up">
+              <div className="mb-4 md:mb-8">
+                <Shield className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-black mb-4 md:mb-6 modern-heading">Fehlerprotokolle</h3>
-              <p className="text-base md:text-lg text-gray-600 leading-relaxed modern-text mb-4 md:mb-6">
+              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Fehlerprotokolle</h3>
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
                 Systematische Analyse und Dokumentation von Fehlern. 
                 Diese Methode hilft, Schwächen zu identifizieren und gezielt zu beheben.
               </p>
