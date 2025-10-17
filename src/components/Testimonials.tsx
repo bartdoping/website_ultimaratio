@@ -100,7 +100,7 @@ export default function Testimonials() {
                 ))}
               </div>
               <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                "{testimonial.text.length > 120 ? testimonial.text.substring(0, 120) + '...' : testimonial.text}"
+                &ldquo;{testimonial.text.length > 120 ? testimonial.text.substring(0, 120) + '...' : testimonial.text}&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-3">
                 <div className="flex justify-between items-end">
