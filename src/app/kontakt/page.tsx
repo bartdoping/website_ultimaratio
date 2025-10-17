@@ -13,11 +13,22 @@ export default function KontaktPage() {
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Hier würde normalerweise die Formular-Logik stehen
-    setIsSubmitted(true)
-    setTimeout(() => setIsSubmitted(false), 3000)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+      const data = await res.json()
+      if (!res.ok || !data.ok) throw new Error('Senden fehlgeschlagen')
+      setIsSubmitted(true)
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
+      setTimeout(() => setIsSubmitted(false), 4000)
+    } catch {
+      alert('Senden fehlgeschlagen. Bitte versuchen Sie es später erneut oder nutzen Sie WhatsApp/E-Mail.')
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
