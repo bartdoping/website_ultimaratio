@@ -1,3 +1,5 @@
+'use client'
+
 import { CheckCircle, Users, Target, BookOpen, Clock, Zap, MessageCircle, Award, ArrowRight, Brain, Shield } from 'lucide-react'
 
 export default function CoachingPage() {
@@ -35,13 +37,18 @@ export default function CoachingPage() {
                 Kostenloses Erstgespräch
                 <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </a>
-              <a
-                href="#mehr-erfahren"
+              <button
+                onClick={() => {
+                  const element = document.getElementById('mehr-erfahren')
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                  }
+                }}
                 className="border-2 border-[#0395A6] text-[#0395A6] hover:bg-[#0395A6] hover:text-white px-12 py-5 rounded-lg text-xl font-semibold transition-all focus-ring group"
               >
                 Mehr erfahren
                 <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
-              </a>
+              </button>
             </div>
           </div>
         </div>

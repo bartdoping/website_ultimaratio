@@ -1,3 +1,5 @@
+'use client'
+
 import { CheckCircle, Users, Target, BookOpen, Clock, Zap, MessageCircle, Award, ArrowRight, Brain, FileText, Calendar } from 'lucide-react'
 
 export default function KenntnispruefungPage() {
@@ -33,13 +35,18 @@ export default function KenntnispruefungPage() {
                 Kostenloses Erstgespräch
                 <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </a>
-              <a
-                href="#mehr-erfahren"
+              <button
+                onClick={() => {
+                  const element = document.getElementById('mehr-erfahren')
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                  }
+                }}
                 className="modern-button-secondary px-12 py-5 rounded-lg text-xl font-semibold modern-focus group"
               >
                 Mehr erfahren
                 <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
-              </a>
+              </button>
             </div>
           </div>
         </div>
