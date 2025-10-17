@@ -47,7 +47,7 @@ export default function HomePage() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto modern-animate-fade-in-up">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto modern-animate-fade-in-up">
               <div className="modern-stat">
                 <div className="modern-stat-number">97%</div>
                 <p className="modern-stat-label">Erfolgsquote</p>

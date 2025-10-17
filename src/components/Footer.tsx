@@ -5,11 +5,8 @@ import { MessageCircle, Phone, Mail, MapPin, Clock, Star } from 'lucide-react'
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
-      {/* Dark Blue Background Strip */}
-      <div className="h-8 bg-gradient-to-br from-gray-900 via-gray-800 to-black"></div>
-      
       {/* Main Footer Content */}
-      <div className="modern-container pt-16 pb-24">
+      <div className="modern-container pt-24 pb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
@@ -138,7 +135,7 @@ export default function Footer() {
 
         {/* Stats Section */}
         <div className="border-t border-gray-700 mt-16 pt-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-xl font-bold text-[#0395A6] mb-2">97%</div>
               <div className="text-gray-300">Erfolgsquote</div>
