@@ -21,7 +21,7 @@ export default function Footer() {
                 />
               </div>
               <div className="ml-4">
-                <span className="text-3xl font-bold text-white block">ultima-rat.io</span>
+                <span className="text-xl font-bold text-white block">ultima-rat.io</span>
                 <span className="text-lg text-gray-300">Medizin-Nachhilfe</span>
               </div>
             </div>
@@ -57,7 +57,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-white">Navigation</h3>
+            <h3 className="text-lg font-bold mb-6 text-white">Navigation</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
@@ -94,7 +94,7 @@ export default function Footer() {
 
           {/* Services & Legal */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-white">Services</h3>
+            <h3 className="text-lg font-bold mb-6 text-white">Services</h3>
             <ul className="space-y-3 mb-8">
               <li className="text-gray-300 text-lg">Einzelcoaching (39€/60min)</li>
               <li className="text-gray-300 text-lg">Crashkurse (beliebig viele Stunden)</li>
@@ -102,7 +102,7 @@ export default function Footer() {
               <li className="text-gray-300 text-lg">Online via Zoom</li>
             </ul>
 
-            <h3 className="text-xl font-bold mb-6 text-white">Rechtliches</h3>
+            <h3 className="text-lg font-bold mb-6 text-white">Rechtliches</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/impressum" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
@@ -137,19 +137,19 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-16 pt-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-[#0395A6] mb-2">95%</div>
+              <div className="text-xl font-bold text-[#0395A6] mb-2">95%</div>
               <div className="text-gray-300">Erfolgsquote</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-[#0395A6] mb-2">500+</div>
+              <div className="text-xl font-bold text-[#0395A6] mb-2">500+</div>
               <div className="text-gray-300">Erfolgreiche Prüfungen</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-[#0395A6] mb-2">5.0</div>
+              <div className="text-xl font-bold text-[#0395A6] mb-2">5.0</div>
               <div className="text-gray-300">Durchschnittsbewertung</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-[#0395A6] mb-2">3</div>
+              <div className="text-xl font-bold text-[#0395A6] mb-2">3</div>
               <div className="text-gray-300">Jahre Erfahrung</div>
             </div>
           </div>
@@ -157,7 +157,7 @@ export default function Footer() {
 
         {/* CTA Section */}
         <div className="border-t border-gray-700 mt-16 pt-16 pb-16 text-center">
-          <h3 className="text-2xl font-bold mb-4 text-white">Bereit für deine Prüfung?</h3>
+          <h3 className="text-lg font-bold mb-4 text-white">Bereit für deine Prüfung?</h3>
           <p className="text-gray-300 mb-8 text-lg">
             Starte jetzt mit deinem kostenlosen Erstgespräch
           </p>

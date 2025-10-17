@@ -56,12 +56,12 @@ export default function KontaktPage() {
               Kontakt aufnehmen
             </div>
             
-            <h1 className="text-6xl md:text-7xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
               Lass uns<br />
               <span className="text-[#0395A6]">sprechen</span>
             </h1>
             
-            <p className="text-2xl text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
               Hast du Fragen zu unserem Coaching? Möchtest du einen Termin vereinbaren? 
               Wir sind für dich da und helfen gerne weiter.
             </p>
@@ -73,10 +73,10 @@ export default function KontaktPage() {
       <section className="modern-section bg-white">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Kontaktmöglichkeiten
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Wähle den für dich bequemsten Weg
             </p>
           </div>
@@ -86,7 +86,7 @@ export default function KontaktPage() {
               <div className="w-20 h-20 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
                 <MessageCircle className="w-10 h-10 text-[#0395A6]" />
               </div>
-              <h3 className="text-2xl font-bold text-black mb-6 modern-heading">WhatsApp</h3>
+              <h3 className="text-lg font-bold text-black mb-6 modern-heading">WhatsApp</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                 Schnell und unkompliziert. Schreib uns direkt über WhatsApp.
               </p>
@@ -104,7 +104,7 @@ export default function KontaktPage() {
               <div className="w-20 h-20 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Phone className="w-10 h-10 text-[#0395A6]" />
               </div>
-              <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Telefon</h3>
+              <h3 className="text-lg font-bold text-black mb-6 modern-heading">Telefon</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                 Ruf uns direkt an. Mo-Fr von 9:00-18:00 Uhr.
               </p>
@@ -120,7 +120,7 @@ export default function KontaktPage() {
               <div className="w-20 h-20 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Mail className="w-10 h-10 text-[#0395A6]" />
               </div>
-              <h3 className="text-2xl font-bold text-black mb-6 modern-heading">E-Mail</h3>
+              <h3 className="text-lg font-bold text-black mb-6 modern-heading">E-Mail</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                 Schreib uns eine E-Mail. Wir antworten innerhalb von 24 Stunden.
               </p>
@@ -139,10 +139,10 @@ export default function KontaktPage() {
       <section className="modern-section bg-[#F8FAFC]">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Kontaktformular
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Sende uns eine Nachricht
             </p>
           </div>
@@ -152,7 +152,7 @@ export default function KontaktPage() {
               {isSubmitted ? (
                 <div className="text-center py-12">
                   <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-6" />
-                  <h3 className="text-2xl font-bold text-black mb-4">Nachricht gesendet!</h3>
+                  <h3 className="text-lg font-bold text-black mb-4">Nachricht gesendet!</h3>
                   <p className="text-lg text-gray-600">
                     Vielen Dank für deine Nachricht. Wir melden uns schnellstmöglich bei dir.
                   </p>
@@ -266,17 +266,17 @@ export default function KontaktPage() {
       <section className="modern-section bg-white">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Kontaktdaten
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Alle wichtigen Informationen auf einen Blick
             </p>
           </div>
 
           <div className="modern-grid modern-grid-2">
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <h3 className="text-2xl font-bold text-black mb-8 modern-heading">Kontakt</h3>
+              <h3 className="text-lg font-bold text-black mb-8 modern-heading">Kontakt</h3>
               <div className="space-y-6">
                 <div className="flex items-center">
                   <MapPin className="w-6 h-6 text-[#0395A6] mr-4 flex-shrink-0" />
@@ -310,7 +310,7 @@ export default function KontaktPage() {
             </div>
 
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <h3 className="text-2xl font-bold text-black mb-8 modern-heading">Schnellkontakt</h3>
+              <h3 className="text-lg font-bold text-black mb-8 modern-heading">Schnellkontakt</h3>
               <div className="space-y-6">
                 <a
                   href="http://wa.me/491639347633"
@@ -353,13 +353,13 @@ export default function KontaktPage() {
       {/* CTA Section */}
       <section className="modern-cta modern-section">
         <div className="modern-container text-center relative z-10">
-          <h2 className="text-6xl md:text-7xl font-bold text-white mb-8 modern-heading modern-animate-fade-in-up">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 modern-heading modern-animate-fade-in-up">
             BEREIT ZU STARTEN?
           </h2>
-          <p className="text-3xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
+          <p className="text-xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
             Kontaktiere uns noch heute.
           </p>
-          <p className="text-xl text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
+          <p className="text-lg text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
             Kostenloses Erstgespräch, individuelle Beratung und flexible Terminvergabe. 
             Wir helfen dir gerne bei deiner Prüfungsvorbereitung.
           </p>
@@ -367,7 +367,7 @@ export default function KontaktPage() {
             href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-xl font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
+            className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
           >
             <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
             Kostenloses Erstgespräch

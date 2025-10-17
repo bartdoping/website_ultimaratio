@@ -12,12 +12,12 @@ export default function MethodenPage() {
               Wissenschaftlich fundiert
             </div>
             
-            <h1 className="text-6xl md:text-7xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
               Die ultima-rat.io<br />
               <span className="text-[#0395A6]">Methode</span>
             </h1>
             
-            <p className="text-2xl text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
               Wissenschaftlich fundierte Lernmethoden, die nachweislich funktionieren. 
               Bewährte Strategien aus der Kognitionsforschung für optimale Prüfungsergebnisse.
             </p>
@@ -29,10 +29,10 @@ export default function MethodenPage() {
       <section className="modern-section bg-white">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Unsere Kernprinzipien
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Wissenschaftlich belegte Lernmethoden für nachhaltigen Erfolg
             </p>
           </div>
@@ -42,7 +42,7 @@ export default function MethodenPage() {
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
                 <Brain className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Retrieval Practice</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Retrieval Practice</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                 Aktives Abrufen von Wissen statt passives Wiederlesen. Diese Methode 
                 stärkt das Langzeitgedächtnis und verbessert die Abrufbarkeit in Prüfungen.
@@ -66,7 +66,7 @@ export default function MethodenPage() {
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
                 <Clock className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Spaced Repetition</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Spaced Repetition</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                 Geplante Wiederholungen in optimalen Intervallen. Diese Technik 
                 maximiert die Behaltensleistung und reduziert Vergessen.
@@ -90,7 +90,7 @@ export default function MethodenPage() {
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
                 <Target className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Interleaving</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Interleaving</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                 Systematisches Mischen verschiedener Themen und Aufgaben. 
                 Diese Methode verbessert die Transferleistung und Problemlösefähigkeit.
@@ -114,7 +114,7 @@ export default function MethodenPage() {
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
                 <Shield className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Fehlerprotokolle</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Fehlerprotokolle</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                 Systematische Analyse und Dokumentation von Fehlern. 
                 Diese Methode hilft, Schwächen zu identifizieren und gezielt zu beheben.
@@ -141,10 +141,10 @@ export default function MethodenPage() {
       <section className="modern-section bg-[#F8FAFC]">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Wissenschaftliche Grundlage
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Bewährte Forschungsergebnisse aus der Kognitionspsychologie
             </p>
           </div>
@@ -152,14 +152,14 @@ export default function MethodenPage() {
           <div className="max-w-6xl mx-auto">
             <div className="modern-card p-16 modern-animate-fade-in-up">
               <div className="text-center mb-12">
-                <p className="text-2xl text-[#0395A6] font-semibold italic">
+                <p className="text-lg text-[#0395A6] font-semibold italic">
                   &ldquo;Du steigst nicht auf das Niveau deiner Ziele. Du fällst auf das Niveau deiner Systeme.&rdquo;
                 </p>
               </div>
               
               <div className="modern-grid modern-grid-2">
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Forschungsergebnisse</h3>
+                  <h3 className="text-lg font-bold text-black mb-6 modern-heading">Forschungsergebnisse</h3>
                   <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                     Unsere Methoden basieren auf über 100 Jahren Forschung in der Kognitionspsychologie. 
                     Studien zeigen, dass Retrieval Practice die Lernleistung um bis zu 50% verbessert.
@@ -171,7 +171,7 @@ export default function MethodenPage() {
                 </div>
                 
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Praktische Anwendung</h3>
+                  <h3 className="text-lg font-bold text-black mb-6 modern-heading">Praktische Anwendung</h3>
                   <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                     Wir übertragen diese wissenschaftlichen Erkenntnisse in praktische, 
                     anwendbare Lernstrategien für Medizinstudierende.
@@ -191,50 +191,50 @@ export default function MethodenPage() {
       <section className="modern-section bg-white">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Umsetzung in der Praxis
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Wie wir die Methoden in Ihrem Coaching anwenden
             </p>
           </div>
 
           <div className="modern-grid modern-grid-4">
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 01
               </div>
-              <h3 className="text-xl font-bold text-black mb-4 modern-heading">Analyse</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Analyse</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
                 Einschätzung Ihrer aktuellen Lernmethoden und Identifikation von Verbesserungspotenzialen.
               </p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 02
               </div>
-              <h3 className="text-xl font-bold text-black mb-4 modern-heading">Planung</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Planung</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
                 Erstellung eines individuellen Lernplans mit wissenschaftlich fundierten Methoden.
               </p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 03
               </div>
-              <h3 className="text-xl font-bold text-black mb-4 modern-heading">Training</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Training</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
                 Praktische Anwendung der Methoden mit direktem Feedback und Anpassungen.
               </p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 04
               </div>
-              <h3 className="text-xl font-bold text-black mb-4 modern-heading">Optimierung</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Optimierung</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
                 Kontinuierliche Verbesserung basierend auf Ihren Fortschritten und Ergebnissen.
               </p>
@@ -247,10 +247,10 @@ export default function MethodenPage() {
       <section className="modern-section bg-[#F8FAFC]">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Erfolgsgeschichten
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Wie unsere Methoden in der Praxis wirken
             </p>
           </div>
@@ -310,13 +310,13 @@ export default function MethodenPage() {
       {/* CTA Section */}
       <section className="modern-cta modern-section">
         <div className="modern-container text-center relative z-10">
-          <h2 className="text-6xl md:text-7xl font-bold text-white mb-8 modern-heading modern-animate-fade-in-up">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 modern-heading modern-animate-fade-in-up">
             STARTE JETZT
           </h2>
-          <p className="text-3xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
+          <p className="text-xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
             Mit wissenschaftlich fundierten Methoden zum Erfolg.
           </p>
-          <p className="text-xl text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
+          <p className="text-lg text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
             Erleben Sie selbst, wie effektiv unsere Lernmethoden sind. 
             Kostenloses Erstgespräch und individuelle Beratung.
           </p>
@@ -324,7 +324,7 @@ export default function MethodenPage() {
             href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-xl font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
+            className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
           >
             <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
             Kostenloses Erstgespräch

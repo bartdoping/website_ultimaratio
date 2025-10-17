@@ -12,12 +12,12 @@ export default function KenntnispruefungPage() {
               Spezialisiert auf Kenntnisprüfung
             </div>
             
-            <h1 className="text-6xl md:text-7xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
               Kenntnisprüfung<br />
               <span className="text-[#0395A6]">erfolgreich bestehen</span>
             </h1>
             
-            <p className="text-2xl text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
               Spezialisierte Vorbereitung für internationale Ärzt:innen. Individuelle Betreuung, 
               prüfungsnahe Simulationen und strukturierte Lernpläne für die Kenntnisprüfung.
             </p>
@@ -27,7 +27,7 @@ export default function KenntnispruefungPage() {
                 href="http://wa.me/491639347633"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="modern-button px-12 py-5 rounded-lg text-xl font-semibold modern-focus group cursor-pointer"
+                className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus group cursor-pointer"
               >
                 <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
                 Kostenloses Erstgespräch
@@ -35,7 +35,7 @@ export default function KenntnispruefungPage() {
               </a>
               <a
                 href="#mehr-erfahren"
-                className="modern-button-secondary px-12 py-5 rounded-lg text-xl font-semibold modern-focus group cursor-pointer"
+                className="modern-button-secondary px-12 py-5 rounded-lg text-lg font-semibold modern-focus group cursor-pointer"
               >
                 Mehr erfahren
                 <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
@@ -49,10 +49,10 @@ export default function KenntnispruefungPage() {
       <section id="mehr-erfahren" className="modern-section bg-white">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Die Herausforderung
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Warum die Kenntnisprüfung so anspruchsvoll ist
             </p>
           </div>
@@ -62,7 +62,7 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Brain className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Komplexe Inhalte</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Komplexe Inhalte</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Deutsche Medizinstandards, Rechtssystem und Gesundheitssystem sind komplex 
                 und unterscheiden sich stark von anderen Ländern.
@@ -73,7 +73,7 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Clock className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Zeitdruck</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Zeitdruck</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Die Prüfung ist zeitlich begrenzt und erfordert schnelle, präzise Antworten 
                 auf komplexe medizinische Fragestellungen.
@@ -84,7 +84,7 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Target className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Hohe Anforderungen</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Hohe Anforderungen</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Erwartet wird nicht nur medizinisches Wissen, sondern auch Verständnis 
                 für deutsche Behandlungsstandards und rechtliche Rahmenbedingungen.
@@ -98,10 +98,10 @@ export default function KenntnispruefungPage() {
       <section className="modern-section bg-[#F8FAFC]">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Unsere Lösung
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Spezialisierte Vorbereitung für internationale Ärzt:innen
             </p>
           </div>
@@ -111,7 +111,7 @@ export default function KenntnispruefungPage() {
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
                 <Users className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">1:1 Coaching</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">1:1 Coaching</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                 Individuelle Betreuung durch erfahrene deutsche Ärzt:innen, die selbst 
                 die Kenntnisprüfung erfolgreich absolviert haben.
@@ -135,7 +135,7 @@ export default function KenntnispruefungPage() {
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
                 <BookOpen className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Zoom Sessions</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Zoom Sessions</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                 Online-Coaching via Zoom mit Screen-Sharing und Whiteboard für 
                 interaktive Lerninhalte und direkte Kommunikation.
@@ -159,7 +159,7 @@ export default function KenntnispruefungPage() {
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
                 <FileText className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Individuelle Aufgaben</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Individuelle Aufgaben</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                 Maßgeschneiderte Lernmaterialien und Übungsaufgaben, die speziell 
                 auf deine Vorkenntnisse und Schwächen abgestimmt sind.
@@ -183,7 +183,7 @@ export default function KenntnispruefungPage() {
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
                 <Calendar className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-3xl font-bold text-black mb-6 modern-heading">Flexible Termine</h3>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Flexible Termine</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                 Anpassung an deinen Zeitplan und Prüfungstermin. Kurzfristige Buchungen 
                 und flexible Terminvergabe über WhatsApp.
@@ -210,50 +210,50 @@ export default function KenntnispruefungPage() {
       <section className="modern-section bg-white">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Unser Prozess
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Strukturierte Vorbereitung in 4 Schritten
             </p>
           </div>
 
           <div className="modern-grid modern-grid-4">
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 01
               </div>
-              <h3 className="text-xl font-bold text-black mb-4 modern-heading">Analyse</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Analyse</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
                 Einschätzung deiner Vorkenntnisse und Identifikation der wichtigsten Lernbereiche.
               </p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 02
               </div>
-              <h3 className="text-xl font-bold text-black mb-4 modern-heading">Planung</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Planung</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
                 Erstellung eines individuellen Lernplans mit Fokus auf Prüfungsrelevanz.
               </p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 03
               </div>
-              <h3 className="text-xl font-bold text-black mb-4 modern-heading">Training</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Training</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
                 Intensive Vorbereitung mit Prüfungssimulationen und direktem Feedback.
               </p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 04
               </div>
-              <h3 className="text-xl font-bold text-black mb-4 modern-heading">Prüfung</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Prüfung</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
                 Begleitung bis zur Prüfung mit finalen Tipps und Strategien.
               </p>
@@ -266,10 +266,10 @@ export default function KenntnispruefungPage() {
       <section className="modern-section bg-[#F8FAFC]">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Transparente Preise
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Faire Preise für professionelle Vorbereitung
             </p>
           </div>
@@ -277,14 +277,14 @@ export default function KenntnispruefungPage() {
           <div className="max-w-5xl mx-auto">
             <div className="modern-card p-16 modern-animate-fade-in-up">
               <div className="text-center mb-12">
-                <div className="text-6xl font-bold text-[#0395A6] mb-4">39€</div>
-                <p className="text-2xl text-gray-600 mb-8">60 Min 1‑on‑1 · Online via Zoom</p>
+                <div className="text-4xl font-bold text-[#0395A6] mb-4">39€</div>
+                <p className="text-lg text-gray-600 mb-8">60 Min 1‑on‑1 · Online via Zoom</p>
                 <p className="text-lg text-gray-500">inkl. Unterlagen & Nachbereitung</p>
               </div>
 
               <div className="modern-grid modern-grid-2 mb-12">
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Was du bekommst:</h3>
+                  <h3 className="text-lg font-bold text-black mb-6 modern-heading">Was du bekommst:</h3>
                   <ul className="space-y-4">
                     {[
                       "1‑on‑1 mit erfahrenem Arzt",
@@ -305,7 +305,7 @@ export default function KenntnispruefungPage() {
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Flexible Buchung:</h3>
+                  <h3 className="text-lg font-bold text-black mb-6 modern-heading">Flexible Buchung:</h3>
                   <ul className="space-y-4">
                     {[
                       "Einzelstunden (60 Min)",
@@ -331,7 +331,7 @@ export default function KenntnispruefungPage() {
                   href="http://wa.me/491639347633"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="modern-button px-12 py-5 rounded-lg text-xl font-semibold modern-focus group"
+                  className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus group"
                 >
                   <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
                   Jetzt buchen
@@ -346,13 +346,13 @@ export default function KenntnispruefungPage() {
       {/* CTA Section */}
       <section className="modern-cta modern-section">
         <div className="modern-container text-center relative z-10">
-          <h2 className="text-6xl md:text-7xl font-bold text-white mb-8 modern-heading modern-animate-fade-in-up">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 modern-heading modern-animate-fade-in-up">
             BEREIT FÜR DIE PRÜFUNG?
           </h2>
-          <p className="text-3xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
+          <p className="text-xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
             Starte jetzt mit deiner Kenntnisprüfungs-Vorbereitung.
           </p>
-          <p className="text-xl text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
+          <p className="text-lg text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
             Professionelle Betreuung durch erfahrene deutsche Ärzt:innen. 
             Individuelle Lernpläne und prüfungsnahe Simulationen.
           </p>
@@ -360,7 +360,7 @@ export default function KenntnispruefungPage() {
             href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-xl font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
+            className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
           >
             <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
             Kostenloses Erstgespräch

@@ -58,10 +58,10 @@ export default function Testimonials() {
     <section className="modern-section bg-[#F8FAFC]">
       <div className="modern-container">
         <div className="text-center modern-spacing">
-          <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
             Was unsere Studierenden sagen
           </h2>
-          <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
             Echte Erfolgsgeschichten von echten Studierenden
           </p>
         </div>
@@ -94,17 +94,17 @@ export default function Testimonials() {
 
         <div className="text-center mt-16">
           <div className="modern-card p-12 max-w-4xl mx-auto modern-animate-fade-in-up">
-            <h3 className="text-3xl font-bold text-black mb-6 modern-heading">
+            <h3 className="text-xl font-bold text-black mb-6 modern-heading">
               Werde Teil unserer Erfolgsgeschichten
             </h3>
-            <p className="text-xl text-gray-600 mb-8 modern-text">
+            <p className="text-lg text-gray-600 mb-8 modern-text">
               Über 500 erfolgreiche Prüfungen und eine 95%ige Erfolgsquote sprechen für sich.
             </p>
             <a
               href="http://wa.me/491639347633"
               target="_blank"
               rel="noopener noreferrer"
-              className="modern-button px-12 py-5 rounded-lg text-xl font-semibold modern-focus inline-block"
+              className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus inline-block"
             >
               Jetzt starten
             </a>

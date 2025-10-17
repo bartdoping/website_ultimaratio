@@ -13,12 +13,12 @@ export default function TeamPage() {
               Unser Expertenteam
             </div>
             
-                    <h1 className="text-6xl md:text-7xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
+                    <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
                       Lerne unser<br />
                       <span className="text-[#0395A6]">Team kennen</span>
                     </h1>
             
-            <p className="text-2xl text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
               Erfahrene Ärzt:innen und Medizinstudierende, die selbst mit Top-Ergebnissen 
               durch alle Examina gegangen sind und ihr Wissen gerne weitergeben.
             </p>
@@ -30,10 +30,10 @@ export default function TeamPage() {
       <section className="modern-section bg-white">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Unsere Coaches
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Approbierte Ärzt:innen mit aktueller Klinikroutine
             </p>
           </div>
@@ -51,8 +51,8 @@ export default function TeamPage() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                        <h3 className="text-3xl font-bold text-black mb-2 modern-heading">Mustafa Eid</h3>
-                <p className="text-xl text-[#0395A6] font-semibold mb-4">Approbierter Arzt</p>
+                        <h3 className="text-xl font-bold text-black mb-2 modern-heading">Mustafa Eid</h3>
+                <p className="text-lg text-[#0395A6] font-semibold mb-4">Approbierter Arzt</p>
                 <div className="flex justify-center mb-6">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
@@ -108,8 +108,8 @@ export default function TeamPage() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                        <h3 className="text-3xl font-bold text-black mb-2 modern-heading">Ahkash Thavarajasingam</h3>
-                <p className="text-xl text-[#0395A6] font-semibold mb-4">Approbierter Arzt</p>
+                        <h3 className="text-xl font-bold text-black mb-2 modern-heading">Ahkash Thavarajasingam</h3>
+                <p className="text-lg text-[#0395A6] font-semibold mb-4">Approbierter Arzt</p>
                 <div className="flex justify-center mb-6">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
@@ -160,10 +160,10 @@ export default function TeamPage() {
       <section className="modern-section bg-[#F8FAFC]">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Warum ultima-rat.io?
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Was uns von anderen Anbietern unterscheidet
             </p>
           </div>
@@ -173,7 +173,7 @@ export default function TeamPage() {
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Award className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Approbierte Ärzt:innen</h3>
+              <h3 className="text-lg font-bold text-black mb-6 modern-heading">Approbierte Ärzt:innen</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 Alle unsere Coaches sind approbierte Ärzt:innen mit aktueller Klinikroutine. 
                 Keine Studierenden, sondern erfahrene Mediziner.
@@ -184,7 +184,7 @@ export default function TeamPage() {
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Users className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Individuelle Betreuung</h3>
+              <h3 className="text-lg font-bold text-black mb-6 modern-heading">Individuelle Betreuung</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 1:1-Coaching statt Gruppenunterricht. Persönliche Lernpläne und 
                 direkte Betreuung durch erfahrene Coaches.
@@ -195,7 +195,7 @@ export default function TeamPage() {
               <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Heart className="w-8 h-8 text-[#0395A6]" />
               </div>
-              <h3 className="text-2xl font-bold text-black mb-6 modern-heading">Erfolgsorientiert</h3>
+              <h3 className="text-lg font-bold text-black mb-6 modern-heading">Erfolgsorientiert</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
                 95% Erfolgsquote und über 500 erfolgreiche Prüfungen sprechen für sich. 
                 Wir sind auf Ihren Erfolg fokussiert.
@@ -209,10 +209,10 @@ export default function TeamPage() {
       <section className="modern-section bg-white">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Was unsere Studierenden sagen
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Echte Erfolgsgeschichten von echten Studierenden
             </p>
           </div>
@@ -272,13 +272,13 @@ export default function TeamPage() {
       {/* CTA Section */}
       <section className="modern-cta modern-section">
         <div className="modern-container text-center relative z-10">
-          <h2 className="text-6xl md:text-7xl font-bold text-white mb-8 modern-heading modern-animate-fade-in-up">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 modern-heading modern-animate-fade-in-up">
             STARTE JETZT
           </h2>
-          <p className="text-3xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
+          <p className="text-xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
             Mit unserem Expertenteam zum Erfolg.
           </p>
-          <p className="text-xl text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
+          <p className="text-lg text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
             Erfahrene Ärzt:innen, individuelle Betreuung und wissenschaftlich fundierte Methoden. 
             Über 500 erfolgreiche Prüfungen sprechen für sich.
           </p>
@@ -286,7 +286,7 @@ export default function TeamPage() {
             href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-xl font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
+            className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
           >
             <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
             Kostenloses Erstgespräch
