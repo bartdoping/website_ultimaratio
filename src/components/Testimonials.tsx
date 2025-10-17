@@ -59,30 +59,34 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="modern-grid modern-grid-3">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="modern-testimonial modern-animate-fade-in-up">
-              <div className="flex items-center mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6 modern-text">
-                {testimonial.text}
-              </p>
-              <div className="border-t border-gray-200 pt-4">
-                <div className="flex justify-between items-center">
-                  <div>
-                    <p className="font-semibold text-black">{testimonial.name}</p>
-                    <p className="text-sm text-gray-600">{testimonial.exam}</p>
+        <div className="relative overflow-hidden">
+          <div className="flex animate-scroll">
+            {[...testimonials, ...testimonials].map((testimonial, index) => (
+              <div key={index} className="flex-shrink-0 w-80 mx-4">
+                <div className="modern-testimonial h-full flex flex-col">
+                  <div className="flex items-center mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                    ))}
                   </div>
-                  <div className="text-right">
-                    <p className="font-bold text-[#0395A6]">{testimonial.result}</p>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6 modern-text flex-grow">
+                    {testimonial.text}
+                  </p>
+                  <div className="border-t border-gray-200 pt-4 mt-auto">
+                    <div className="flex justify-between items-end">
+                      <div className="flex-1">
+                        <p className="font-semibold text-black text-base">{testimonial.name}</p>
+                        <p className="text-sm text-gray-600">{testimonial.exam}</p>
+                      </div>
+                      <div className="text-right ml-4">
+                        <p className="font-bold text-[#0395A6] text-base">{testimonial.result}</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className="text-center mt-16">

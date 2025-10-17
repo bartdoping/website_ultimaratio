@@ -36,6 +36,20 @@ body {
   font-weight: 400;
 }
 
+/* Testimonial Carousel Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
 /* Academic Design System */
 .academic-gradient {
   background: linear-gradient(135deg, #FAFAFA 0%, #FFFFFF 100%);

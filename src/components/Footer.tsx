@@ -5,8 +5,11 @@ import { MessageCircle, Phone, Mail, MapPin, Clock, Star } from 'lucide-react'
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+      {/* Spacer to create gap between content and footer */}
+      <div className="h-16"></div>
+      
       {/* Main Footer Content */}
-      <div className="modern-container pt-24 pb-24">
+      <div className="modern-container pt-8 pb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
