@@ -1,4 +1,5 @@
 import { CheckCircle, Target, Brain, Clock, Award, Shield, ArrowRight, MessageCircle, Star } from 'lucide-react'
+import Testimonials from '../../components/Testimonials'
 
 export default function MethodenPage() {
   return (
@@ -244,68 +245,7 @@ export default function MethodenPage() {
       </section>
 
       {/* Success Stories */}
-      <section className="modern-section bg-[#F8FAFC]">
-        <div className="modern-container">
-          <div className="text-center modern-spacing">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Erfolgsgeschichten
-            </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Wie unsere Methoden in der Praxis wirken
-            </p>
-          </div>
-
-          <div className="modern-grid modern-grid-3">
-            <div className="modern-testimonial modern-animate-fade-in-up">
-              <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
-                &ldquo;Durch die Retrieval Practice habe ich endlich verstanden, wie ich effektiv lerne. 
-                Meine Prüfungsergebnisse haben sich deutlich verbessert.&rdquo;
-              </p>
-              <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-black">Sarah M.</p>
-                <p className="text-sm text-gray-600">Physikum bestanden mit 1,3</p>
-              </div>
-            </div>
-
-            <div className="modern-testimonial modern-animate-fade-in-up">
-              <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
-                &ldquo;Die Spaced Repetition hat mein Lernen revolutioniert. 
-                Ich behalte jetzt viel mehr und vergesse weniger.&rdquo;
-              </p>
-              <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-black">Michael R.</p>
-                <p className="text-sm text-gray-600">M2 bestanden mit 1,7</p>
-              </div>
-            </div>
-
-            <div className="modern-testimonial modern-animate-fade-in-up">
-              <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-lg text-gray-700 leading-relaxed modern-text mb-6">
-                &ldquo;Das Interleaving hat mir geholfen, Zusammenhänge zu verstehen. 
-                Ich kann jetzt Wissen viel besser anwenden.&rdquo;
-              </p>
-              <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-black">Lisa T.</p>
-                <p className="text-sm text-gray-600">M3 bestanden mit 1,5</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Testimonials />
 
       {/* CTA Section */}
       <section className="modern-cta modern-section">
