@@ -285,13 +285,25 @@ body {
   /* Fix blue stripes behind headers for mobile - match button styling exactly */
   .bg-gradient-to-r {
     background: linear-gradient(135deg, #0395A6, #028A9A) !important;
-    border-radius: 0.5rem !important;
+    border-radius: 0.375rem !important;
     padding: 0.5rem 1rem !important;
     display: inline-block !important;
     box-shadow: 0 2px 8px 0 rgba(3, 149, 166, 0.3) !important;
     transition: all 0.3s ease !important;
     width: fit-content !important;
     min-width: auto !important;
+  }
+
+  /* Ensure blue stripes are rectangular on all pages */
+  .bg-gradient-to-r span,
+  .bg-gradient-to-r h1,
+  .bg-gradient-to-r h2,
+  .bg-gradient-to-r h3 {
+    border-radius: 0.375rem !important;
+    padding: 0.5rem 1rem !important;
+    display: inline-block !important;
+    background: linear-gradient(135deg, #0395A6, #028A9A) !important;
+    box-shadow: 0 2px 8px 0 rgba(3, 149, 166, 0.3) !important;
   }
   
   /* Mobile logo and burger menu sizing */
