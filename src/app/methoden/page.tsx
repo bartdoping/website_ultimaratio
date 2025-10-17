@@ -1,4 +1,4 @@
-import { CheckCircle, Target, Brain, Clock, Award, Shield, ArrowRight, MessageCircle, Star } from 'lucide-react'
+import { CheckCircle, Target, Brain, Clock, Award, Shield, ArrowRight, MessageCircle } from 'lucide-react'
 import Testimonials from '../../components/Testimonials'
 
 export default function MethodenPage() {

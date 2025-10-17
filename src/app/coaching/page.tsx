@@ -521,7 +521,7 @@ export default function CoachingPage() {
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Marcel M.</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                &ldquo;Mehr gelernt in 1 Stunde als in einer ganzen Woche alleine. Ich war total überfordert mit der prüfungsvorbereitung fürs M2 (vor allem weil ich letztendlich komplett falsch rangegangen bin und ein „dummes" Lernsystem hatte). Das Einzelcoaching war auf den Punkt, super strukturiert, mega empathisch und wirklich hilfreich.&rdquo;
+                &ldquo;Mehr gelernt in 1 Stunde als in einer ganzen Woche alleine. Ich war total überfordert mit der prüfungsvorbereitung fürs M2 (vor allem weil ich letztendlich komplett falsch rangegangen bin und ein &bdquo;dummes&ldquo; Lernsystem hatte). Das Einzelcoaching war auf den Punkt, super strukturiert, mega empathisch und wirklich hilfreich.&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">
                 <p className="font-semibold text-black">M2 bestanden mit 2</p>
@@ -553,7 +553,7 @@ export default function CoachingPage() {
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Angelina P.</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                &ldquo;Zu Beginn meines Studiums hatte ich große Schwierigkeiten, die für mich passende Lerntechnik zu finden und die relevanten Lerninhalte richtig zu filtern. Ich war dann in einem Dritt- und zwei Zweitversuchen, die ich ohne Hilfe nicht geschafft hätte. Mit ärztlicher 'Nachhilfe' konnte ich die Wiederholungsklausuren erfolgreich bestehen!&rdquo;
+                &ldquo;Zu Beginn meines Studiums hatte ich große Schwierigkeiten, die für mich passende Lerntechnik zu finden und die relevanten Lerninhalte richtig zu filtern. Ich war dann in einem Dritt- und zwei Zweitversuchen, die ich ohne Hilfe nicht geschafft hätte. Mit ärztlicher &lsquo;Nachhilfe&rsquo; konnte ich die Wiederholungsklausuren erfolgreich bestehen!&rdquo;
               </p>
               <div className="border-t border-gray-200 pt-4">
                 <p className="font-semibold text-black">Anatomie und Physiologie bestanden</p>
