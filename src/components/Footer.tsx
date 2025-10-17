@@ -21,7 +21,7 @@ export default function Footer() {
                 />
               </div>
               <div className="ml-4">
-                <span className="text-3xl font-bold modern-heading block">ultima-rat.io</span>
+                <span className="text-3xl font-bold text-white block">ultima-rat.io</span>
                 <span className="text-lg text-gray-300">Medizin-Nachhilfe</span>
               </div>
             </div>
@@ -54,7 +54,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-6 modern-heading">Navigation</h3>
+            <h3 className="text-xl font-bold mb-6 text-white">Navigation</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
@@ -91,7 +91,7 @@ export default function Footer() {
 
           {/* Services & Legal */}
           <div>
-            <h3 className="text-xl font-bold mb-6 modern-heading">Services</h3>
+            <h3 className="text-xl font-bold mb-6 text-white">Services</h3>
             <ul className="space-y-3 mb-8">
               <li className="text-gray-300 text-lg">Einzelcoaching (39€/60min)</li>
               <li className="text-gray-300 text-lg">Crashkurse (5h Intensiv)</li>
@@ -99,7 +99,7 @@ export default function Footer() {
               <li className="text-gray-300 text-lg">Online via Zoom</li>
             </ul>
 
-            <h3 className="text-xl font-bold mb-6 modern-heading">Rechtliches</h3>
+            <h3 className="text-xl font-bold mb-6 text-white">Rechtliches</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/impressum" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
