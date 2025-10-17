@@ -530,6 +530,31 @@ body {
   }
 }
 
+/* Mobile badge/hint removal and blue heading sizing fixes (robust selectors) */
+@media (max-width: 768px) {
+  /* Hide any gradient/pill badges that usually sit above headings */
+  .hero-section [class*="bg-gradient"],
+  .modern-hero [class*="bg-gradient"],
+  .hero-section [class*="rounded"][class*="bg-"],
+  .modern-hero [class*="rounded"][class*="bg-"],
+  h1 + [class*="bg-gradient"],
+  h2 + [class*="bg-gradient"],
+  h3 + [class*="bg-gradient"],
+  .modern-heading + [class*="bg-gradient"] {
+    display: none !important;
+  }
+
+  /* Ensure blue-highlighted words inside headings match heading size */
+  h1 [class*="text-[#0395A6]"],
+  h2 [class*="text-[#0395A6]"],
+  h3 [class*="text-[#0395A6]"],
+  .modern-heading [class*="text-[#0395A6]"] {
+    font-size: inherit !important;
+    line-height: inherit !important;
+    font-weight: inherit !important;
+  }
+}
+
 /* Testimonial Carousel Animation */
 @keyframes scroll {
   0% {
