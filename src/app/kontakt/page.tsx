@@ -143,9 +143,9 @@ export default function KontaktPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-8">
-                  <div className="modern-grid modern-grid-2">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-lg font-semibold text-black mb-3">
+                      <label htmlFor="name" className="block text-base sm:text-lg font-semibold text-black mb-2 sm:mb-3">
                         Name *
                       </label>
                       <input
@@ -155,12 +155,12 @@ export default function KontaktPage() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus"
+                        className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus text-sm sm:text-base"
                         placeholder="Dein Name"
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-lg font-semibold text-black mb-3">
+                      <label htmlFor="email" className="block text-base sm:text-lg font-semibold text-black mb-2 sm:mb-3">
                         E-Mail *
                       </label>
                       <input
@@ -170,15 +170,15 @@ export default function KontaktPage() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus"
+                        className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus text-sm sm:text-base"
                         placeholder="ihre@email.de"
                       />
                     </div>
                   </div>
 
-                  <div className="modern-grid modern-grid-2">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                     <div>
-                      <label htmlFor="phone" className="block text-lg font-semibold text-black mb-3">
+                      <label htmlFor="phone" className="block text-base sm:text-lg font-semibold text-black mb-2 sm:mb-3">
                         Telefon
                       </label>
                       <input
@@ -187,12 +187,12 @@ export default function KontaktPage() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus"
+                        className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus text-sm sm:text-base"
                         placeholder="+49 123 456789"
                       />
                     </div>
                     <div>
-                      <label htmlFor="subject" className="block text-lg font-semibold text-black mb-3">
+                      <label htmlFor="subject" className="block text-base sm:text-lg font-semibold text-black mb-2 sm:mb-3">
                         Betreff *
                       </label>
                       <select
@@ -201,7 +201,7 @@ export default function KontaktPage() {
                         value={formData.subject}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus"
+                        className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus text-sm sm:text-base"
                       >
                         <option value="">Bitte wählen</option>
                         <option value="coaching">Coaching buchen</option>
@@ -215,7 +215,7 @@ export default function KontaktPage() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-lg font-semibold text-black mb-3">
+                    <label htmlFor="message" className="block text-base sm:text-lg font-semibold text-black mb-2 sm:mb-3">
                       Nachricht *
                     </label>
                     <textarea
@@ -224,8 +224,8 @@ export default function KontaktPage() {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      rows={6}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus"
+                      rows={4}
+                      className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus text-sm sm:text-base resize-none"
                       placeholder="Beschreibe dein Anliegen..."
                     />
                   </div>
@@ -233,9 +233,9 @@ export default function KontaktPage() {
                   <div className="text-center">
                     <button
                       type="submit"
-                      className="modern-button px-12 py-4 rounded-lg text-lg font-semibold modern-focus group"
+                      className="w-full sm:w-auto modern-button px-6 sm:px-12 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold modern-focus group"
                     >
-                      <Send className="w-5 h-5 mr-3 inline-block group-hover:translate-x-1 transition-transform" />
+                      <Send className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 inline-block group-hover:translate-x-1 transition-transform" />
                       Nachricht senden
                     </button>
                   </div>

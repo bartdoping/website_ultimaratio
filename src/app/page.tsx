@@ -26,23 +26,25 @@ export default function HomePage() {
               die nachweislich funktionieren. Strukturierte Prüfungsvorbereitung von der Vorklinik bis zum M3 sowie auch für die Kenntnisprüfung.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center mb-16 sm:mb-20 modern-animate-fade-in-up px-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-8 justify-center mb-16 sm:mb-20 modern-animate-fade-in-up px-4">
               <a
                 href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-                className="modern-button px-8 sm:px-12 py-4 sm:py-5 rounded-lg text-base sm:text-lg font-semibold modern-focus group w-full sm:w-auto"
+                className="modern-button px-6 sm:px-12 py-3 sm:py-5 rounded-lg text-sm sm:text-lg font-semibold modern-focus group w-full sm:w-auto whitespace-nowrap"
               >
-                <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 inline-block group-hover:animate-pulse" />
-                Kostenloses Erstgespräch
-                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 ml-2 sm:ml-3 inline-block group-hover:translate-x-1 transition-transform" />
+                <MessageCircle className="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3 inline-block group-hover:animate-pulse" />
+                <span className="hidden xs:inline">Kostenloses Erstgespräch</span>
+                <span className="xs:hidden">Erstgespräch</span>
+                <ArrowRight className="w-4 h-4 sm:w-6 sm:h-6 ml-2 sm:ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </a>
               <Link
                 href="/coaching"
-                className="modern-button-secondary px-8 sm:px-12 py-4 sm:py-5 rounded-lg text-base sm:text-lg font-semibold modern-focus group w-full sm:w-auto"
+                className="modern-button-secondary px-6 sm:px-12 py-3 sm:py-5 rounded-lg text-sm sm:text-lg font-semibold modern-focus group w-full sm:w-auto whitespace-nowrap"
               >
-                Coaching entdecken
-                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 ml-2 sm:ml-3 inline-block group-hover:translate-x-1 transition-transform" />
+                <span className="hidden xs:inline">Coaching entdecken</span>
+                <span className="xs:hidden">Coaching</span>
+                <ArrowRight className="w-4 h-4 sm:w-6 sm:h-6 ml-2 sm:ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
 

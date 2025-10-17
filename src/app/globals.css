@@ -34,6 +34,77 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.7;
   font-weight: 400;
+  overflow-x: hidden;
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 768px) {
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .modern-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  .modern-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .modern-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .modern-grid-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .modern-card {
+    padding: 1rem;
+    margin: 0;
+    max-width: 100%;
+  }
+  
+  .modern-button,
+  .modern-button-secondary {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+  }
+  
+  /* Prevent horizontal overflow */
+  .hero-section,
+  .academic-section,
+  .modern-section {
+    overflow-x: hidden;
+  }
+  
+  /* Fix form elements */
+  input, textarea, select {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Fix button text wrapping */
+  .modern-button span,
+  .modern-button-secondary span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 /* Testimonial Carousel Animation */
