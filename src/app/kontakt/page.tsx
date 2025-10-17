@@ -83,8 +83,8 @@ export default function KontaktPage() {
 
           <div className="modern-grid modern-grid-2">
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
-                <MessageSquare className="w-10 h-10 text-[#0395A6]" />
+              <div className="flex items-center justify-center mx-auto mb-8">
+                <MessageSquare className="w-16 h-16 text-[#0395A6]" />
               </div>
               <h3 className="text-lg font-bold text-black mb-6 modern-heading">WhatsApp</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
@@ -101,8 +101,8 @@ export default function KontaktPage() {
             </div>
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-8">
-                <MailOpen className="w-10 h-10 text-[#0395A6]" />
+              <div className="flex items-center justify-center mx-auto mb-8">
+                <MailOpen className="w-16 h-16 text-[#0395A6]" />
               </div>
               <h3 className="text-lg font-bold text-black mb-6 modern-heading">E-Mail</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
