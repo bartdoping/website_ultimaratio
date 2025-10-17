@@ -22,8 +22,8 @@ export default function HomePage() {
             </h1>
             
             <p className="body-text-large text-gray-600 mb-16 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Professionelle Medizin-Nachhilfe mit approbierten Ärzt:innen. Wissenschaftlich fundierte Lernmethoden, 
-              die nachweislich funktionieren. Strukturierte Prüfungsvorbereitung für Physikum, M2, M3 und Kenntnisprüfung.
+              Professionelle Medizin-Nachhilfe mit approbierten Ärzt:innen und qualifizierten Tutor:innen. Wissenschaftlich fundierte Lernmethoden, 
+              die nachweislich funktionieren. Strukturierte Prüfungsvorbereitung von der Vorklinik bis zum M3 sowie auch für die Kenntnisprüfung.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-8 justify-center mb-20 modern-animate-fade-in-up">
@@ -49,7 +49,7 @@ export default function HomePage() {
             {/* Trust Indicators */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto modern-animate-fade-in-up">
               <div className="modern-stat">
-                <div className="modern-stat-number">95%</div>
+                <div className="modern-stat-number">97%</div>
                 <p className="modern-stat-label">Erfolgsquote</p>
               </div>
               <div className="modern-stat">
@@ -57,11 +57,7 @@ export default function HomePage() {
                 <p className="modern-stat-label">Erfolgreiche Prüfungen</p>
               </div>
               <div className="modern-stat">
-                <div className="modern-stat-number">5.0</div>
-                <p className="modern-stat-label">Durchschnittsbewertung</p>
-              </div>
-              <div className="modern-stat">
-                <div className="modern-stat-number">3</div>
+                <div className="modern-stat-number">6+</div>
                 <p className="modern-stat-label">Jahre Erfahrung</p>
               </div>
             </div>
@@ -132,8 +128,8 @@ export default function HomePage() {
 
           <div className="modern-grid modern-grid-3">
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Users className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Users className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Approbierte Ärzt:innen</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
@@ -143,8 +139,8 @@ export default function HomePage() {
             </div>
 
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <BookOpen className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <BookOpen className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Strukturierte Lernpläne</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
@@ -154,8 +150,8 @@ export default function HomePage() {
             </div>
 
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Brain className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Brain className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Fokussiertes Lernen</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
@@ -165,8 +161,8 @@ export default function HomePage() {
             </div>
 
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Zap className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Zap className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Adaptive Prüfungsplattform</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
@@ -176,8 +172,8 @@ export default function HomePage() {
             </div>
 
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Target className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Target className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Prüfungslogik & Anwendung</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
@@ -187,8 +183,8 @@ export default function HomePage() {
             </div>
 
             <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="w-16 h-16 bg-[#0395A6] bg-opacity-10 rounded-full flex items-center justify-center mb-8">
-                <Shield className="w-8 h-8 text-[#0395A6]" />
+              <div className="mb-8">
+                <Shield className="w-12 h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Kontinuierliche Begleitung</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">
