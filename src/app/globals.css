@@ -1153,6 +1153,12 @@ body {
   font-size: 1.1rem;
 }
 
+/* Mobile adjustments for home stats */
+@media (max-width: 768px) {
+  .modern-stat-number { font-size: 3rem !important; }
+  .modern-stat-label { font-size: 1rem !important; }
+}
+
 /* Modern Testimonials */
 .modern-testimonial {
   background: white;
