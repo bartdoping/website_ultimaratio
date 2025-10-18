@@ -76,7 +76,7 @@ body {
   }
   
   .modern-card {
-    padding: 1rem;
+    padding: 1.25rem; /* a bit more side padding for safe text inset */
     margin: 0 0 1rem 0;
     max-width: 100%;
     width: 100%;
@@ -406,8 +406,6 @@ body {
     overflow-wrap: anywhere !important;
     word-break: break-word !important;
     hyphens: auto !important;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
   }
 
   /* Remove custom header height; revert to default via component */
