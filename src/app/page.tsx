@@ -221,12 +221,12 @@ export default function HomePage() {
               <div className="modern-grid modern-grid-2">
                 <div>
                   <h3 className="text-sm md:text-lg font-bold text-black mb-3 md:mb-6 modern-heading break-words">Wissenschaftliche Grundlage</h3>
-                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6 px-2 break-words">
+                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6 px-4 md:px-0 break-words">
                     Wir arbeiten mit bewährten Lernmethoden aus der Kognitionsforschung: Retrieval Practice 
                     (aktives Abrufen), Spaced Repetition (geplante Wiederholung), Interleaving (systematisches 
                     Mischen von Themen) und gezieltes Feedback.
                   </p>
-                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text px-2 break-words">
+                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text px-4 md:px-0 break-words">
                     Diese Methoden sind wissenschaftlich belegt und führen nachweislich zu besseren 
                     Prüfungsergebnissen.
                   </p>
@@ -234,11 +234,11 @@ export default function HomePage() {
                 
                 <div>
                   <h3 className="text-sm md:text-lg font-bold text-black mb-3 md:mb-6 modern-heading break-words">Strukturierte Herangehensweise</h3>
-                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6 px-2 break-words">
+                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6 px-4 md:px-0 break-words">
                     Statt beim Altbewährten zu bleiben und verzweifelt die letzten Energiereserven auszuschöpfen, 
                     gehen wir deine Defizite strukturiert an.
                   </p>
-                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text px-2 break-words">
+                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text px-4 md:px-0 break-words">
                     Unsere Coaches sind approbierte Ärzt:innen und erfahrene Medizinstudierende, die selbst 
                     mit Top-Ergebnissen durch alle Examina gegangen sind.
                   </p>
