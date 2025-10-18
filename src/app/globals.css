@@ -39,6 +39,10 @@ body {
 
 /* Mobile-specific fixes */
 @media (max-width: 768px) {
+  /* Extend price card height on mobile by ~1cm (~38px) */
+  .price-card-mobile-extend {
+    padding-bottom: calc(4rem + 38px) !important;
+  }
   /* Narrow reading measure for dense paragraphs on mobile */
   /* paragraph-only reading width so box width stays original */
   .mobile-readable-text {

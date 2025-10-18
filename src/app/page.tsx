@@ -262,7 +262,7 @@ export default function HomePage() {
           </div>
 
           <div className="max-w-5xl mx-auto">
-            <div className="modern-card p-16 modern-animate-fade-in-up">
+            <div className="modern-card p-16 modern-animate-fade-in-up price-card-mobile-extend">
               <div className="text-center mb-12">
                 <div className="text-4xl md:text-6xl font-bold text-[#0395A6] mb-4 price-mobile">39€</div>
                 <p className="text-lg text-gray-600 mb-8">60 Min 1‑on‑1 · Online via Zoom</p>
