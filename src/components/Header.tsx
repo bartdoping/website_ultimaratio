@@ -51,7 +51,7 @@ export default function Header() {
       </div>
 
       {/* Main Header */}
-      <header className="bg-white border-b border-gray-200 shadow-sm">
+      <header className="bg-white border-b border-gray-200 shadow-sm fixed top-0 left-0 right-0 z-50 md:sticky md:top-0">
         <div className="modern-container">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
@@ -178,6 +178,8 @@ export default function Header() {
           </div>
         )}
       </header>
+      {/* Spacer to offset fixed header on mobile */}
+      <div className="md:hidden h-20"></div>
       </div>
     </>
   )
