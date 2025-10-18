@@ -41,7 +41,7 @@ body {
 @media (max-width: 768px) {
   /* Narrow reading measure for dense paragraphs on mobile */
   .mobile-readable {
-    max-width: 38ch !important; /* optimal reading width */
+    max-width: 32ch !important; /* narrower reading width for earlier line breaks */
     margin-left: auto !important;
     margin-right: auto !important;
   }
