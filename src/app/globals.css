@@ -80,8 +80,7 @@ body {
     margin: 0 0 1rem 0;
     max-width: 100%;
     width: 100%;
-    overflow-x: clip; /* block horizontal spill while allowing vertical */
-    overflow-y: visible;
+    overflow: visible; /* allow glyph painting to avoid right-edge clipping */
     border-radius: 0.75rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
@@ -405,10 +404,10 @@ body {
   .modern-card h4,
   .modern-card .modern-text {
     overflow-wrap: break-word !important;
-    word-break: normal !important;
+    word-break: break-word !important;
     hyphens: auto !important;
-    padding-right: 0.25rem;
-    padding-left: 0.25rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 
   /* Remove custom header height; revert to default via component */
