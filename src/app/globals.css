@@ -384,6 +384,8 @@ body {
     width: auto !important;               /* make button narrower on mobile */
     padding-left: 1rem !important;        /* reduce horizontal padding */
     padding-right: 1rem !important;
+    justify-content: center !important;   /* center the content (text) */
+    text-align: center !important;        /* ensure text itself is centered */
   }
   
   /* Mobile-optimized circles and decorative elements */
