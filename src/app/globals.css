@@ -403,11 +403,11 @@ body {
   .modern-card h3,
   .modern-card h4,
   .modern-card .modern-text {
-    overflow-wrap: break-word !important;
+    overflow-wrap: anywhere !important;
     word-break: break-word !important;
     hyphens: auto !important;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
   }
 
   /* Remove custom header height; revert to default via component */
