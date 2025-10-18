@@ -52,7 +52,7 @@ export default function Header() {
       {/* Main Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="modern-container">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center h-20 header-row">
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center group">
