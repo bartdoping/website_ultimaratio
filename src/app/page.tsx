@@ -211,22 +211,22 @@ export default function HomePage() {
           </div>
 
           <div className="max-w-6xl mx-auto">
-            <div className="modern-card p-6 md:p-16 modern-animate-fade-in-up mobile-readable">
+            <div className="modern-card p-6 md:p-16 modern-animate-fade-in-up">
               <div className="text-center mb-6 md:mb-12">
                 <p className="text-sm md:text-lg text-[#0395A6] font-semibold italic px-2 break-words">
                   &ldquo;Du steigst nicht auf das Niveau deiner Ziele. Du fällst auf das Niveau deiner Systeme.&rdquo;
                 </p>
               </div>
               
-              <div className="modern-grid modern-grid-2 px-3 md:px-0">
+              <div className="modern-grid modern-grid-2 px-4 md:px-0">
                 <div>
                   <h3 className="text-sm md:text-lg font-bold text-black mb-3 md:mb-6 modern-heading break-words">Wissenschaftliche Grundlage</h3>
-                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6 break-words">
+                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6 break-words mobile-readable-text">
                     Wir arbeiten mit bewährten Lernmethoden aus der Kognitionsforschung: Retrieval Practice 
                     (aktives Abrufen), Spaced Repetition (geplante Wiederholung), Interleaving (systematisches 
                     Mischen von Themen) und gezieltes Feedback.
                   </p>
-                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text break-words">
+                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text break-words mobile-readable-text">
                     Diese Methoden sind wissenschaftlich belegt und führen nachweislich zu besseren 
                     Prüfungsergebnissen.
                   </p>
@@ -234,11 +234,11 @@ export default function HomePage() {
                 
                 <div>
                   <h3 className="text-sm md:text-lg font-bold text-black mb-3 md:mb-6 modern-heading break-words">Strukturierte Herangehensweise</h3>
-                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6 break-words">
+                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6 break-words mobile-readable-text">
                     Statt beim Altbewährten zu bleiben und verzweifelt die letzten Energiereserven auszuschöpfen, 
                     gehen wir deine Defizite strukturiert an.
                   </p>
-                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text break-words">
+                  <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text break-words mobile-readable-text">
                     Unsere Coaches sind approbierte Ärzt:innen und erfahrene Medizinstudierende, die selbst 
                     mit Top-Ergebnissen durch alle Examina gegangen sind.
                   </p>
