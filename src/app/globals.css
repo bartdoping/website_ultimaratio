@@ -80,7 +80,7 @@ body {
     margin: 0 0 1rem 0;
     max-width: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: visible; /* prevent clipping of glyphs at right edge on iOS */
     border-radius: 0.75rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
@@ -396,6 +396,15 @@ body {
     margin: 0 0 1rem 0 !important;
     border-radius: 0.75rem !important;
     overflow: hidden !important;
+  }
+
+  /* Ensure long text never clips and wraps inside cards on mobile */
+  .modern-card p,
+  .modern-card h3,
+  .modern-card h4,
+  .modern-card .modern-text {
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
   }
 
   /* Remove custom header height; revert to default via component */

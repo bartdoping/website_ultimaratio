@@ -211,7 +211,7 @@ export default function HomePage() {
           </div>
 
           <div className="max-w-6xl mx-auto">
-            <div className="modern-card p-6 md:p-16 modern-animate-fade-in-up">
+            <div className="modern-card p-6 md:p-16 modern-animate-fade-in-up overflow-visible">
               <div className="text-center mb-6 md:mb-12">
                 <p className="text-sm md:text-lg text-[#0395A6] font-semibold italic px-2 break-words">
                   &ldquo;Du steigst nicht auf das Niveau deiner Ziele. Du fällst auf das Niveau deiner Systeme.&rdquo;
