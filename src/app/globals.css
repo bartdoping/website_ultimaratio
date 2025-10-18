@@ -160,6 +160,14 @@ body {
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
+
+  /* Ensure all heading helper classes inherit element sizes on mobile */
+  .modern-heading,
+  .premium-heading,
+  .academic-heading {
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
   
   /* Mobile-optimized text sizes */
   .text-sm {
@@ -378,12 +386,22 @@ body {
   .modern-button-secondary {
     padding: 0.75rem 1rem !important;
     font-size: 0.875rem !important;
+    width: 100% !important;
+    white-space: nowrap !important;
   }
 
   /* Utility to inset cards slightly from screen edges */
   .mobile-inset {
     margin-left: 0.5rem !important;
     margin-right: 0.5rem !important;
+  }
+
+  /* Utility to normalize mobile card layout */
+  .mobile-card {
+    width: 100% !important;
+    margin: 0 0 1rem 0 !important;
+    border-radius: 0.75rem !important;
+    overflow: hidden !important;
   }
 
   /* Remove custom header height; revert to default via component */
