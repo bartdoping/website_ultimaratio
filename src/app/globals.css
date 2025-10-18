@@ -39,6 +39,12 @@ body {
 
 /* Mobile-specific fixes */
 @media (max-width: 768px) {
+  /* Narrow reading measure for dense paragraphs on mobile */
+  .mobile-readable {
+    max-width: 38ch !important; /* optimal reading width */
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
   * {
     max-width: 100%;
     box-sizing: border-box;
