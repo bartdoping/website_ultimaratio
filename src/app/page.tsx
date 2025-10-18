@@ -218,7 +218,7 @@ export default function HomePage() {
                 </p>
               </div>
               
-              <div className="modern-grid modern-grid-2">
+              <div className="modern-grid modern-grid-2 px-4 md:px-0">
                 <div>
                   <h3 className="text-sm md:text-lg font-bold text-black mb-3 md:mb-6 modern-heading break-words">Wissenschaftliche Grundlage</h3>
                   <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6 px-4 md:px-0 break-words">
