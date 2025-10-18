@@ -21,6 +21,7 @@ export default function Header() {
 
   return (
     <>
+      <div className="sticky top-0 z-50">
       {/* Top Bar */}
       <div className="bg-[#0395A6] text-white py-2">
         <div className="modern-container">
@@ -50,7 +51,7 @@ export default function Header() {
       </div>
 
       {/* Main Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+      <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="modern-container">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
@@ -177,6 +178,7 @@ export default function Header() {
           </div>
         )}
       </header>
+      </div>
     </>
   )
 }
