@@ -41,7 +41,7 @@ body {
 @media (max-width: 768px) {
   /* Extend price card height on mobile by additional ~1cm to avoid inner scroll */
   .price-card-mobile-extend {
-    padding-bottom: calc(4rem + 76px) !important;
+    padding-bottom: calc(4rem + 112px) !important; /* add ~1 more cm */
     overflow: visible !important;
   }
   /* Narrow reading measure for dense paragraphs on mobile */
@@ -374,10 +374,13 @@ body {
   }
   
   .price-button-mobile {
-    margin-top: 3rem !important;
-    margin-bottom: 3rem !important;
+    margin-top: 3.5rem !important;
+    margin-bottom: 3.5rem !important;
     padding-top: 1.25rem !important;
     padding-bottom: 1.25rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    white-space: nowrap !important;
   }
   
   /* Mobile-optimized circles and decorative elements */
