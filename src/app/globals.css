@@ -307,14 +307,7 @@ body {
       display: inline !important;
     }
 
-    /* Remove all gradient backgrounds on mobile */
-    [class*="bg-gradient"],
-    *[class*="gradient"] {
-      background: none !important;
-      border-radius: 0 !important;
-      padding: 0 !important;
-      box-shadow: none !important;
-    }
+    /* Note: Do NOT remove all gradients globally on mobile to preserve footer/backgrounds */
 
     /* Make blue text in headers same size as black text on mobile */
     .text-[#0395A6] {
