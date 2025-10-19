@@ -83,8 +83,8 @@ body {
   }
   
   .modern-grid-2 {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
     width: 100% !important;
   }
   
