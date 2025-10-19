@@ -48,7 +48,7 @@ export default function MethodenPage() {
                 Aktives Abrufen von Wissen statt passives Wiederlesen. Diese Methode 
                 stärkt das Langzeitgedächtnis und verbessert die Abrufbarkeit in Prüfungen.
               </p>
-              <ul className="space-y-3">
+              <ul className="space-y-3 pr-0 mr-0">
                 {[
                   "Aktive Wissensabfrage",
                   "Selbsttest-Übungen",
@@ -72,7 +72,7 @@ export default function MethodenPage() {
                 Geplante Wiederholungen in optimalen Intervallen. Diese Technik 
                 maximiert die Behaltensleistung und reduziert Vergessen.
               </p>
-              <ul className="space-y-3">
+              <ul className="space-y-3 pr-0 mr-0">
                 {[
                   "Optimale Wiederholungsintervalle",
                   "Adaptive Lernpläne",
@@ -96,7 +96,7 @@ export default function MethodenPage() {
                 Systematisches Mischen verschiedener Themen und Aufgaben. 
                 Diese Methode verbessert die Transferleistung und Problemlösefähigkeit.
               </p>
-              <ul className="space-y-3">
+              <ul className="space-y-3 pr-0 mr-0">
                 {[
                   "Themenübergreifendes Lernen",
                   "Transfer-Training",
@@ -120,7 +120,7 @@ export default function MethodenPage() {
                 Systematische Analyse und Dokumentation von Fehlern. 
                 Diese Methode hilft, Schwächen zu identifizieren und gezielt zu beheben.
               </p>
-              <ul className="space-y-3">
+              <ul className="space-y-3 pr-0 mr-0">
                 {[
                   "Fehleranalyse",
                   "Schwächen-Identifikation",

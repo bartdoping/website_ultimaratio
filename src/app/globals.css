@@ -39,6 +39,18 @@ body {
 
 /* Mobile-specific fixes */
 @media (max-width: 768px) {
+  /* Strong clamp for 2-column grids on mobile (e.g., Methoden page) */
+  .modern-grid-2 .modern-card {
+    max-width: calc(100% - 2rem) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .modern-grid-2 .modern-card ul,
+  .modern-grid-2 .modern-card li {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+  }
   /* Extend price card height on mobile by additional ~1cm to avoid inner scroll */
   .price-card-mobile-extend {
     padding-bottom: calc(4rem + 36px) !important; /* shorten by ~2cm from previous */
