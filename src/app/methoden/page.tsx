@@ -44,7 +44,7 @@ export default function MethodenPage() {
                 <Brain className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">Retrieval Practice</h3>
-              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6">
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6 break-words mobile-readable-text">
                 Aktives Abrufen von Wissen statt passives Wiederlesen. Diese Methode 
                 stärkt das Langzeitgedächtnis und verbessert die Abrufbarkeit in Prüfungen.
               </p>
@@ -68,7 +68,7 @@ export default function MethodenPage() {
                 <Clock className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">Spaced Repetition</h3>
-              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6">
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6 break-words mobile-readable-text">
                 Geplante Wiederholungen in optimalen Intervallen. Diese Technik 
                 maximiert die Behaltensleistung und reduziert Vergessen.
               </p>
@@ -92,7 +92,7 @@ export default function MethodenPage() {
                 <Target className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">Interleaving</h3>
-              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6">
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6 break-words mobile-readable-text">
                 Systematisches Mischen verschiedener Themen und Aufgaben. 
                 Diese Methode verbessert die Transferleistung und Problemlösefähigkeit.
               </p>
@@ -116,7 +116,7 @@ export default function MethodenPage() {
                 <Shield className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">Fehlerprotokolle</h3>
-              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6">
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6 break-words mobile-readable-text">
                 Systematische Analyse und Dokumentation von Fehlern. 
                 Diese Methode hilft, Schwächen zu identifizieren und gezielt zu beheben.
               </p>
