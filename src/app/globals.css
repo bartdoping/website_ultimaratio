@@ -39,12 +39,7 @@ body {
 
 /* Mobile-specific fixes */
 @media (max-width: 768px) {
-  /* Strong clamp for 2-column grids on mobile (e.g., Methoden page) */
-  .modern-grid-2 .modern-card {
-    max-width: calc(100% - 2rem) !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
+  /* Remove mobile centering clamp for Methoden cards to match homepage */
 
   .modern-grid-2 .modern-card ul,
   .modern-grid-2 .modern-card li {
@@ -101,7 +96,7 @@ body {
   .modern-card {
     padding: 1rem; /* symmetric, avoids pushing content right */
     margin: 0 0 1rem 0;
-    max-width: calc(100vw - 1.5rem);
+    max-width: 100% !important;
     width: 100%;
     overflow: visible; /* allow glyph painting to avoid right-edge clipping */
     border-radius: 0.75rem;
