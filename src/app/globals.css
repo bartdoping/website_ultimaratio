@@ -408,6 +408,12 @@ body {
     margin-right: 0.5rem !important;
   }
 
+  /* Stronger inset for cards that still touch screen edges on mobile */
+  .mobile-inset-lg {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
   /* Utility to normalize mobile card layout */
   .mobile-card {
     width: 100% !important;
