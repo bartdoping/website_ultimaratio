@@ -414,6 +414,11 @@ body {
     margin-right: 1rem !important;
   }
 
+  .mobile-inset-xl {
+    margin-left: 1.25rem !important;
+    margin-right: 1.25rem !important;
+  }
+
   /* Utility to normalize mobile card layout */
   .mobile-card {
     width: 100% !important;
