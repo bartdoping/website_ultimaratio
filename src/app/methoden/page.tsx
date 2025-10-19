@@ -38,8 +38,8 @@ export default function MethodenPage() {
             </p>
           </div>
 
-          <div className="modern-grid modern-grid-2 max-w-6xl mx-auto pl-4 pr-6 md:pl-0 md:pr-0">
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mx-4 md:mx-0">
+          <div className="modern-grid modern-grid-2 max-w-6xl mx-auto px-4 md:px-0">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
               <div className="mb-3 md:mb-8">
                 <Brain className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
@@ -63,7 +63,7 @@ export default function MethodenPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mx-4 md:mx-0">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
               <div className="mb-3 md:mb-8">
                 <Clock className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
@@ -87,7 +87,7 @@ export default function MethodenPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mx-4 md:mx-0">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
               <div className="mb-3 md:mb-8">
                 <Target className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
@@ -111,7 +111,7 @@ export default function MethodenPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mx-4 md:mx-0">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
               <div className="mb-3 md:mb-8">
                 <Shield className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>

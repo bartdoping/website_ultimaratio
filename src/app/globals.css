@@ -78,6 +78,7 @@ body {
   .modern-grid-2 {
     grid-template-columns: 1fr;
     gap: 1rem;
+    width: 100% !important;
   }
   
   .modern-grid-3 {
@@ -88,7 +89,7 @@ body {
   .modern-card {
     padding: 1rem; /* symmetric, avoids pushing content right */
     margin: 0 0 1rem 0;
-    max-width: 100%;
+    max-width: calc(100vw - 1.5rem);
     width: 100%;
     overflow: visible; /* allow glyph painting to avoid right-edge clipping */
     border-radius: 0.75rem;
