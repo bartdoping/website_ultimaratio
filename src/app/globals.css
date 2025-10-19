@@ -437,6 +437,7 @@ body {
     hyphens: auto !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    margin-right: 0 !important; /* prevent right growth */
   }
 
   /* Remove custom header height; revert to default via component */
