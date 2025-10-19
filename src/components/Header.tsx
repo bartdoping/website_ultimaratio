@@ -3,17 +3,26 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
-import { Menu, X, MessageCircle, Phone, Mail, Settings } from 'lucide-react'
+import { Menu, X, MessageCircle, Phone, Mail, Settings, ChevronDown } from 'lucide-react'
 import { useCookies } from '../contexts/CookieContext'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isCoachingOpen, setIsCoachingOpen] = useState(false)
   const { openCookieSettings } = useCookies()
 
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Unsere Methoden', href: '/methoden' },
-    { name: 'Coaching', href: '/coaching' },
+    { 
+      name: 'Coaching', 
+      href: '/coaching',
+      submenu: [
+        { name: 'Vorklinik', href: '/vorklinik' },
+        { name: 'Klinik', href: '/klinik' },
+        { name: 'Medical Skills', href: '/medicalskills' }
+      ]
+    },
     { name: 'Kenntnisprüfung', href: '/kenntnispruefung' },
     { name: 'Team', href: '/team' },
     { name: 'Kontakt', href: '/kontakt' },
@@ -77,14 +86,48 @@ export default function Header() {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex space-x-6">
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-700 hover:text-[#0395A6] px-3 py-2 text-sm font-medium transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] modern-focus relative group"
-                >
-                  {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0395A6] transition-all duration-300 group-hover:w-full"></span>
-                </Link>
+                <div key={item.name} className="relative">
+                  {item.submenu ? (
+                    <div className="relative group">
+                      <button
+                        onClick={() => setIsCoachingOpen(!isCoachingOpen)}
+                        className="text-gray-700 hover:text-[#0395A6] px-3 py-2 text-sm font-medium transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] modern-focus flex items-center"
+                      >
+                        {item.name}
+                        <ChevronDown className="w-4 h-4 ml-1" />
+                      </button>
+                      {isCoachingOpen && (
+                        <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                          <Link
+                            href={item.href}
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] transition-colors"
+                            onClick={() => setIsCoachingOpen(false)}
+                          >
+                            Übersicht
+                          </Link>
+                          {item.submenu.map((subItem) => (
+                            <Link
+                              key={subItem.name}
+                              href={subItem.href}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] transition-colors"
+                              onClick={() => setIsCoachingOpen(false)}
+                            >
+                              {subItem.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="text-gray-700 hover:text-[#0395A6] px-3 py-2 text-sm font-medium transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] modern-focus relative group"
+                    >
+                      {item.name}
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0395A6] transition-all duration-300 group-hover:w-full"></span>
+                    </Link>
+                  )}
+                </div>
               ))}
             </nav>
 
@@ -136,14 +179,37 @@ export default function Header() {
           <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
             <div className="px-4 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] block px-3 py-2.5 rounded-lg text-sm font-medium transition-all"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
+                <div key={item.name}>
+                  {item.submenu ? (
+                    <div>
+                      <Link
+                        href={item.href}
+                        className="text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] block px-3 py-2.5 rounded-lg text-sm font-medium transition-all"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {item.name} - Übersicht
+                      </Link>
+                      {item.submenu.map((subItem) => (
+                        <Link
+                          key={subItem.name}
+                          href={subItem.href}
+                          className="text-gray-600 hover:bg-gray-50 hover:text-[#0395A6] block px-6 py-2 rounded-lg text-sm font-medium transition-all"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {subItem.name}
+                        </Link>
+                      ))}
+                    </div>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] block px-3 py-2.5 rounded-lg text-sm font-medium transition-all"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </div>
               ))}
               <div className="pt-3 border-t border-gray-200">
                 <button
