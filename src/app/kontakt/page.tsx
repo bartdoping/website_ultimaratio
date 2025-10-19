@@ -81,7 +81,7 @@ export default function KontaktPage() {
             </p>
           </div>
 
-          <div className="max-w-6xl mx-auto px-4 md:px-0">
+          <div className="max-w-6xl mx-auto pl-4 pr-8 md:px-0">
             <div className="modern-grid modern-grid-2 gap-2 md:gap-8">
               <div className="modern-card p-2 md:p-12 text-center modern-animate-fade-in-up">
               <div className="flex items-center justify-center mx-auto mb-3 md:mb-8">
@@ -260,7 +260,7 @@ export default function KontaktPage() {
             </p>
           </div>
 
-          <div className="max-w-6xl mx-auto px-4 md:px-0">
+          <div className="max-w-6xl mx-auto pl-4 pr-8 md:px-0">
             <div className="modern-grid modern-grid-2 gap-2 md:gap-8">
               <div className="modern-card p-2 md:p-12 modern-animate-fade-in-up">
               <h3 className="text-xs md:text-lg font-bold text-black mb-3 md:mb-8 modern-heading">Kontakt</h3>
