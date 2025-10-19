@@ -81,8 +81,9 @@ export default function KontaktPage() {
             </p>
           </div>
 
-          <div className="modern-grid modern-grid-2">
-            <div className="modern-card p-4 md:p-12 text-center modern-animate-fade-in-up mobile-inset">
+          <div className="max-w-6xl mx-auto px-4 md:px-0">
+            <div className="modern-grid modern-grid-2 gap-4 md:gap-8">
+              <div className="modern-card p-4 md:p-12 text-center modern-animate-fade-in-up">
               <div className="flex items-center justify-center mx-auto mb-3 md:mb-8">
                 <MessageSquare className="w-8 h-8 md:w-16 md:h-16 text-[#0395A6]" />
               </div>
@@ -100,7 +101,7 @@ export default function KontaktPage() {
               </a>
             </div>
 
-            <div className="modern-card p-4 md:p-12 text-center modern-animate-fade-in-up mobile-inset">
+              <div className="modern-card p-4 md:p-12 text-center modern-animate-fade-in-up">
               <div className="flex items-center justify-center mx-auto mb-3 md:mb-8">
                 <MailOpen className="w-8 h-8 md:w-16 md:h-16 text-[#0395A6]" />
               </div>
@@ -114,6 +115,7 @@ export default function KontaktPage() {
               >
                 info@ultima-rat.io
               </a>
+              </div>
             </div>
           </div>
         </div>
@@ -258,8 +260,9 @@ export default function KontaktPage() {
             </p>
           </div>
 
-          <div className="modern-grid modern-grid-2">
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mobile-inset">
+          <div className="max-w-6xl mx-auto px-4 md:px-0">
+            <div className="modern-grid modern-grid-2 gap-4 md:gap-8">
+              <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
               <h3 className="text-xs md:text-lg font-bold text-black mb-3 md:mb-8 modern-heading">Kontakt</h3>
               <div className="space-y-2 md:space-y-6">
                 <div className="flex items-center">
@@ -293,7 +296,7 @@ export default function KontaktPage() {
               </div>
             </div>
 
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mobile-inset">
+              <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
               <h3 className="text-xs md:text-lg font-bold text-black mb-3 md:mb-8 modern-heading">Schnellkontakt</h3>
               <div className="space-y-2 md:space-y-6">
                 <a
@@ -330,6 +333,7 @@ export default function KontaktPage() {
                     <p className="text-gray-600 text-xs md:text-sm">Detaillierte Anfrage</p>
                   </div>
                 </a>
+              </div>
               </div>
             </div>
           </div>
