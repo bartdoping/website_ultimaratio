@@ -139,10 +139,10 @@ body {
     text-overflow: ellipsis;
   }
   
-  /* Mobile typography scale (readability-first) */
+  /* Mobile typography scale (aligned with subpages) */
   h1 {
-    font-size: 2.5rem !important; /* 40px - larger for mobile hero */
-    line-height: 1.2 !important;
+    font-size: 3rem !important; /* 48px */
+    line-height: 1.15 !important;
     word-wrap: break-word;
     overflow-wrap: break-word;
     font-weight: 800 !important;
@@ -152,14 +152,14 @@ body {
   /* Specific mobile hero heading override */
   .modern-hero h1,
   .hero-section h1 {
-    font-size: 2.5rem !important; /* 40px for mobile hero */
-    line-height: 1.2 !important;
+    font-size: 3rem !important; /* 48px */
+    line-height: 1.15 !important;
     font-weight: 800 !important;
   }
 
   h2 {
-    font-size: 2rem !important; /* 32px - larger for mobile */
-    line-height: 1.25 !important;
+    font-size: 2.25rem !important; /* 36px */
+    line-height: 1.22 !important;
     word-wrap: break-word;
     overflow-wrap: break-word;
     font-weight: 700 !important;
@@ -167,16 +167,16 @@ body {
   }
 
   h3 {
-    font-size: 1.75rem !important; /* 28px - larger for mobile */
-    line-height: 1.3 !important;
+    font-size: 2rem !important; /* 32px */
+    line-height: 1.28 !important;
     word-wrap: break-word;
     overflow-wrap: break-word;
     font-weight: 700 !important;
   }
 
   h4 {
-    font-size: 1.5rem !important; /* 24px - larger for mobile */
-    line-height: 1.35 !important;
+    font-size: 1.75rem !important; /* 28px */
+    line-height: 1.32 !important;
     word-wrap: break-word;
     overflow-wrap: break-word;
     font-weight: 600 !important;
