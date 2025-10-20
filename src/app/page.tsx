@@ -119,7 +119,7 @@ export default function HomePage() {
                 <Users className="w-20 h-20 text-[#0395A6] mx-auto" />
               </div>
               <h3 className="text-2xl font-bold text-black mb-8 modern-heading">Gruppencoaching</h3>
-              <div className="text-6xl font-bold text-[#0395A6] mb-8">25€</div>
+              <div className="text-6xl font-bold text-[#0395A6] mb-8 price-mobile">25€</div>
               <p className="text-lg text-gray-600 mb-10 modern-text">
                 Kleingruppen mit max. 4 Teilnehmern. Ideal für gemeinsames Lernen und gegenseitige Motivation.
               </p>
