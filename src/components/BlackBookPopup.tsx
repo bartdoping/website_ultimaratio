@@ -12,6 +12,11 @@ export default function BlackBookPopup() {
     const popupShown = sessionStorage.getItem('blackBookPopupShown')
     if (popupShown) return
 
+    // Do not auto-open on mobile viewports
+    if (typeof window !== 'undefined' && window.matchMedia('(max-width: 768px)').matches) {
+      return
+    }
+
     // Show popup after 15 seconds
     const timer = setTimeout(() => {
       setIsVisible(true)
