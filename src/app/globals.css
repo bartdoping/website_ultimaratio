@@ -1187,6 +1187,25 @@ body {
   [data-popup="blackbook"] {
     display: none !important;
   }
+  
+  /* Ensure top bar is visible on mobile */
+  .mobile-top-bar {
+    position: relative !important;
+    z-index: 60 !important;
+    display: block !important;
+    padding: 0.5rem 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    min-height: 2.5rem !important;
+  }
+  
+  /* Adjust main header positioning on mobile */
+  header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 50 !important;
+  }
 }
 
 .modern-container {
