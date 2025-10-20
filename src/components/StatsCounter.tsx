@@ -108,32 +108,32 @@ export default function StatsCounter() {
   return (
     <section ref={sectionRef} className="modern-section bg-[#F8FAFC] text-black">
       <div className="modern-container">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 modern-heading modern-animate-fade-in-up">
+        <div className="text-center mb-20">
+          <h2 className="text-5xl md:text-6xl font-bold mb-8 modern-heading modern-animate-fade-in-up">
             <span className="text-black">Bewiesene</span> <span className="text-[#0395A6]">Erfolge</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto modern-text modern-animate-fade-in-up">
+          <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
             Zahlen, die für sich sprechen. Über 6 Jahre Erfahrung, 500+ erfolgreiche Prüfungen.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {stats.map((stat, index) => (
             <div key={index} className="modern-card bg-white border border-gray-200 text-center modern-animate-fade-in-up">
-              <div className="p-8">
-                <div className="w-16 h-16 bg-[#0395A6] rounded-full flex items-center justify-center text-white mx-auto mb-6">
+              <div className="p-10">
+                <div className="w-20 h-20 bg-[#0395A6] rounded-full flex items-center justify-center text-white mx-auto mb-8">
                   {stat.icon}
                 </div>
                 
-                <div className="text-5xl md:text-6xl font-bold text-[#0395A6] mb-4">
+                <div className="text-6xl md:text-7xl font-bold text-[#0395A6] mb-6">
                   {stat.number}
                 </div>
                 
-                <h3 className="text-xl font-bold text-black mb-2">
+                <h3 className="text-2xl font-bold text-black mb-4">
                   {stat.label}
                 </h3>
                 
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-lg">
                   {stat.description}
                 </p>
               </div>
@@ -142,17 +142,17 @@ export default function StatsCounter() {
         </div>
 
         {/* Before/After Comparison */}
-        <div className="mt-16 modern-animate-fade-in-up">
-          <div className="bg-white rounded-2xl p-8 border border-gray-200">
-            <h3 className="text-2xl font-bold text-center text-black mb-8">
+        <div className="mt-20 modern-animate-fade-in-up">
+          <div className="bg-white rounded-2xl p-10 border border-gray-200">
+            <h3 className="text-3xl font-bold text-center text-black mb-12">
               Vorher vs. Nachher - Typische Entwicklung
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="text-center">
-                <div className="bg-red-500/20 rounded-lg p-6 border border-red-500/30">
-                  <h4 className="text-xl font-bold text-red-600 mb-4">Vor ultima-rat.io</h4>
-                  <ul className="text-red-700 space-y-2 text-left">
+                <div className="bg-red-500/20 rounded-lg p-8 border border-red-500/30">
+                  <h4 className="text-2xl font-bold text-red-600 mb-6">Vor ultima-rat.io</h4>
+                  <ul className="text-red-700 space-y-3 text-left text-lg">
                     <li>• Durchschnittsnote: 3,7</li>
                     <li>• Lernzeit: 8h/Tag</li>
                     <li>• Prüfungsangst: Hoch</li>
@@ -163,9 +163,9 @@ export default function StatsCounter() {
               </div>
               
               <div className="text-center">
-                <div className="bg-green-500/20 rounded-lg p-6 border border-green-500/30">
-                  <h4 className="text-xl font-bold text-green-600 mb-4">Nach ultima-rat.io</h4>
-                  <ul className="text-green-700 space-y-2 text-left">
+                <div className="bg-green-500/20 rounded-lg p-8 border border-green-500/30">
+                  <h4 className="text-2xl font-bold text-green-600 mb-6">Nach ultima-rat.io</h4>
+                  <ul className="text-green-700 space-y-3 text-left text-lg">
                     <li>• Durchschnittsnote: 1,4</li>
                     <li>• Lernzeit: 4h/Tag</li>
                     <li>• Prüfungsangst: Minimal</li>
@@ -176,8 +176,8 @@ export default function StatsCounter() {
               </div>
             </div>
 
-            <div className="text-center mt-8">
-              <div className="bg-[#0395A6] text-white px-8 py-4 rounded-lg text-lg font-bold inline-block">
+            <div className="text-center mt-12">
+              <div className="bg-[#0395A6] text-white px-10 py-6 rounded-lg text-xl font-bold inline-block">
                 Durchschnittliche Verbesserung: +2,3 Notenpunkte
               </div>
             </div>
@@ -185,14 +185,14 @@ export default function StatsCounter() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12 modern-animate-fade-in-up">
+        <div className="text-center mt-16 modern-animate-fade-in-up">
           <a
             href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-12 py-6 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center space-x-3"
+            className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-16 py-8 rounded-lg text-2xl font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center space-x-4"
           >
-            <Users className="w-6 h-6" />
+            <Users className="w-8 h-8" />
             <span>Werde Teil unserer Erfolgsgeschichte</span>
           </a>
         </div>
