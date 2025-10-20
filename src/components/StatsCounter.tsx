@@ -1,0 +1,202 @@
+'use client'
+
+import { useState, useEffect, useRef } from 'react'
+import { TrendingUp, Users, Award, Target } from 'lucide-react'
+
+export default function StatsCounter() {
+  const [isVisible, setIsVisible] = useState(false)
+  const [counts, setCounts] = useState({
+    success: 0,
+    students: 0,
+    years: 0,
+    improvement: 0
+  })
+  
+  const sectionRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+        }
+      },
+      { threshold: 0.3 }
+    )
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current)
+    }
+
+    return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
+    if (!isVisible) return
+
+    const targets = {
+      success: 97,
+      students: 500,
+      years: 6,
+      improvement: 2.3
+    }
+
+    const duration = 2000 // 2 seconds
+    const steps = 60
+    const stepDuration = duration / steps
+
+    let currentStep = 0
+    const timer = setInterval(() => {
+      currentStep++
+      const progress = currentStep / steps
+      
+      setCounts({
+        success: Math.floor(targets.success * progress),
+        students: Math.floor(targets.students * progress),
+        years: Math.floor(targets.years * progress),
+        improvement: Math.floor(targets.improvement * progress * 10) / 10
+      })
+
+      if (currentStep >= steps) {
+        clearInterval(timer)
+        setCounts(targets)
+      }
+    }, stepDuration)
+
+    return () => clearInterval(timer)
+  }, [isVisible])
+
+  const stats = [
+    {
+      icon: <Award className="w-8 h-8" />,
+      number: `${counts.success}%`,
+      label: "Erfolgsquote",
+      description: "Bewiesen durch 500+ Prüfungen",
+      color: "from-green-500 to-emerald-600",
+      bgColor: "bg-green-50",
+      textColor: "text-green-800"
+    },
+    {
+      icon: <Users className="w-8 h-8" />,
+      number: `${counts.students}+`,
+      label: "Erfolgreiche Prüfungen",
+      description: "Von Vorklinik bis M3",
+      color: "from-blue-500 to-cyan-600",
+      bgColor: "bg-blue-50",
+      textColor: "text-blue-800"
+    },
+    {
+      icon: <Target className="w-8 h-8" />,
+      number: `${counts.years}+`,
+      label: "Jahre Erfahrung",
+      description: "Approbierte Ärzte als Coaches",
+      color: "from-purple-500 to-violet-600",
+      bgColor: "bg-purple-50",
+      textColor: "text-purple-800"
+    },
+    {
+      icon: <TrendingUp className="w-8 h-8" />,
+      number: `+${counts.improvement}`,
+      label: "Notenverbesserung",
+      description: "Durchschnittliche Steigerung",
+      color: "from-orange-500 to-red-600",
+      bgColor: "bg-orange-50",
+      textColor: "text-orange-800"
+    }
+  ]
+
+  return (
+    <section ref={sectionRef} className="modern-section bg-gradient-to-br from-gray-900 to-black text-white">
+      <div className="modern-container">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 modern-heading modern-animate-fade-in-up">
+            <span className="text-white">Bewiesene</span> <span className="text-[#0395A6]">Erfolge</span>
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto modern-text modern-animate-fade-in-up">
+            Zahlen, die für sich sprechen. Über 6 Jahre Erfahrung, 500+ erfolgreiche Prüfungen.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {stats.map((stat, index) => (
+            <div key={index} className="modern-card bg-white/10 backdrop-blur-sm border border-white/20 text-center modern-animate-fade-in-up">
+              <div className="p-8">
+                <div className={`w-16 h-16 bg-gradient-to-r ${stat.color} rounded-full flex items-center justify-center text-white mx-auto mb-6`}>
+                  {stat.icon}
+                </div>
+                
+                <div className="text-5xl md:text-6xl font-bold text-white mb-4">
+                  {stat.number}
+                </div>
+                
+                <h3 className="text-xl font-bold text-white mb-2">
+                  {stat.label}
+                </h3>
+                
+                <p className="text-gray-300 text-sm">
+                  {stat.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Before/After Comparison */}
+        <div className="mt-16 modern-animate-fade-in-up">
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <h3 className="text-2xl font-bold text-center text-white mb-8">
+              📊 Vorher vs. Nachher - Typische Entwicklung
+            </h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="text-center">
+                <div className="bg-red-500/20 rounded-lg p-6 border border-red-500/30">
+                  <h4 className="text-xl font-bold text-red-400 mb-4">❌ Vor ultima-rat.io</h4>
+                  <ul className="text-red-300 space-y-2 text-left">
+                    <li>• Durchschnittsnote: 3,7</li>
+                    <li>• Lernzeit: 8h/Tag</li>
+                    <li>• Prüfungsangst: Hoch</li>
+                    <li>• Selbstvertrauen: Niedrig</li>
+                    <li>• Durchfallrisiko: 40%</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <div className="bg-green-500/20 rounded-lg p-6 border border-green-500/30">
+                  <h4 className="text-xl font-bold text-green-400 mb-4">✅ Nach ultima-rat.io</h4>
+                  <ul className="text-green-300 space-y-2 text-left">
+                    <li>• Durchschnittsnote: 1,4</li>
+                    <li>• Lernzeit: 4h/Tag</li>
+                    <li>• Prüfungsangst: Minimal</li>
+                    <li>• Selbstvertrauen: Hoch</li>
+                    <li>• Erfolgsquote: 97%</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center mt-8">
+              <div className="bg-gradient-to-r from-[#0395A6] to-blue-600 text-white px-8 py-4 rounded-lg text-lg font-bold inline-block">
+                🎯 Durchschnittliche Verbesserung: +2,3 Notenpunkte
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-12 modern-animate-fade-in-up">
+          <a
+            href="http://wa.me/491639347633"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-green-500 hover:bg-green-600 text-white px-12 py-6 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-105 shadow-2xl inline-flex items-center space-x-3"
+          >
+            <Users className="w-6 h-6" />
+            <span>Werde Teil unserer Erfolgsgeschichte</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  )
+}
