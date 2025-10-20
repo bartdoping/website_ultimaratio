@@ -132,6 +132,20 @@ export default function Footer() {
                   Widerruf
                 </Link>
               </li>
+              <li>
+                <button
+                  onClick={(e) => {
+                    e.preventDefault()
+                    if (typeof window !== 'undefined') {
+                      const evt = new CustomEvent('open-cookie-settings')
+                      window.dispatchEvent(evt)
+                    }
+                  }}
+                  className="text-left text-gray-300 hover:text-[#0395A6] transition-colors text-lg"
+                >
+                  Cookie-Einstellungen öffnen
+                </button>
+              </li>
             </ul>
           </div>
         </div>
