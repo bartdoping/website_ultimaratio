@@ -23,11 +23,7 @@ export default function HeroWithImage() {
 
       {/* Content */}
       <div className="relative z-10 modern-container text-center text-white">
-        {/* Trust Badge */}
-        <div className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#0395A6] text-white font-semibold mb-8 modern-animate-fade-in">
-          <Award className="w-5 h-5 mr-2" />
-          Über 500 erfolgreiche Prüfungen
-        </div>
+        
         
         {/* Main Headline */}
             <h1 className="text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold mb-6 sm:mb-8 md:mb-12 modern-heading leading-tight modern-animate-fade-in-up">
