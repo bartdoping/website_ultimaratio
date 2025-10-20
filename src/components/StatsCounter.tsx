@@ -113,10 +113,10 @@ export default function StatsCounter() {
     <section ref={sectionRef} className="modern-section bg-[#F8FAFC] text-black">
       <div className="modern-container">
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 modern-heading modern-animate-fade-in-up">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 modern-heading modern-animate-fade-in-up">
             <span className="text-black">Bewiesene</span> <span className="text-[#0395A6]">Erfolge</span>
           </h2>
-          <p className="text-2xl text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
             Zahlen, die für sich sprechen. Über 6 Jahre Erfahrung, 500+ erfolgreiche Prüfungen.
           </p>
         </div>
@@ -129,15 +129,15 @@ export default function StatsCounter() {
                   {stat.icon}
                 </div>
                 
-                <div className="text-6xl md:text-7xl font-bold text-[#0395A6] mb-6">
+                <div className="text-4xl md:text-5xl font-bold text-[#0395A6] mb-6">
                   {stat.number}
                 </div>
                 
-                <h3 className="text-2xl font-bold text-black mb-4">
+                <h3 className="text-xl font-bold text-black mb-4">
                   {stat.label}
                 </h3>
                 
-                <p className="text-gray-600 text-lg">
+                <p className="text-gray-600 text-base">
                   {stat.description}
                 </p>
               </div>
@@ -148,15 +148,15 @@ export default function StatsCounter() {
         {/* Before/After Comparison */}
         <div className="mt-20 modern-animate-fade-in-up">
           <div className="bg-white rounded-2xl p-10 border border-gray-200">
-            <h3 className="text-3xl font-bold text-center text-black mb-12">
+            <h3 className="text-2xl font-bold text-center text-black mb-12">
               Vorher vs. Nachher - Typische Entwicklung
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="text-center">
                 <div className="bg-red-500/20 rounded-lg p-8 border border-red-500/30">
-                  <h4 className="text-2xl font-bold text-red-600 mb-6">Vor ultima-rat.io</h4>
-                  <ul className="text-red-700 space-y-3 text-left text-lg">
+                  <h4 className="text-xl font-bold text-red-600 mb-6">Vor ultima-rat.io</h4>
+                  <ul className="text-red-700 space-y-3 text-left text-base">
                     <li>• Durchschnittsnote: 3,7</li>
                     <li>• Lernzeit: 8h/Tag</li>
                     <li>• Prüfungsangst: Hoch</li>
@@ -168,8 +168,8 @@ export default function StatsCounter() {
               
               <div className="text-center">
                 <div className="bg-green-500/20 rounded-lg p-8 border border-green-500/30">
-                  <h4 className="text-2xl font-bold text-green-600 mb-6">Nach ultima-rat.io</h4>
-                  <ul className="text-green-700 space-y-3 text-left text-lg">
+                  <h4 className="text-xl font-bold text-green-600 mb-6">Nach ultima-rat.io</h4>
+                  <ul className="text-green-700 space-y-3 text-left text-base">
                     <li>• Durchschnittsnote: 1,4</li>
                     <li>• Lernzeit: 4h/Tag</li>
                     <li>• Prüfungsangst: Minimal</li>
@@ -181,7 +181,7 @@ export default function StatsCounter() {
             </div>
 
             <div className="text-center mt-12">
-              <div className="bg-[#0395A6] text-white px-10 py-6 rounded-lg text-xl font-bold inline-block">
+              <div className="bg-[#0395A6] text-white px-10 py-6 rounded-lg text-lg font-bold inline-block">
                 Durchschnittliche Verbesserung: +2,3 Notenpunkte
               </div>
             </div>
@@ -194,7 +194,7 @@ export default function StatsCounter() {
             href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-16 py-8 rounded-lg text-2xl font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center space-x-4"
+            className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-16 py-8 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center space-x-4"
           >
             <Users className="w-8 h-8" />
             <span>Werde Teil unserer Erfolgsgeschichte</span>

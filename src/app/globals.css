@@ -39,8 +39,39 @@ body {
 
 /* Mobile-specific fixes */
 @media (max-width: 768px) {
-  /* Remove mobile centering clamp for Methoden cards to match homepage */
+  /* Mobile Typography Scale - Harmonized */
+  h1 {
+    font-size: 2rem !important; /* 32px - Mobile H1 */
+    line-height: 1.22 !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important; /* 24px - Mobile H2 */
+    line-height: 1.25 !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em !important;
+  }
 
+  h3 {
+    font-size: 1.25rem !important; /* 20px - Mobile H3 */
+    line-height: 1.3 !important;
+    font-weight: 700 !important;
+  }
+
+  h4 {
+    font-size: 1.125rem !important; /* 18px - Mobile H4 */
+    line-height: 1.32 !important;
+    font-weight: 600 !important;
+  }
+  
+  p, span, div {
+    font-size: 1rem !important; /* 16px - Mobile Body */
+    line-height: 1.6 !important;
+  }
+
+  /* Remove mobile centering clamp for Methoden cards to match homepage */
   .modern-grid-2 .modern-card ul,
   .modern-grid-2 .modern-card li {
     padding-right: 0 !important;
@@ -139,42 +170,36 @@ body {
     text-overflow: ellipsis;
   }
   
-  /* Mobile typography scale (match Methodenseite utilities) */
+  /* Desktop Typography Scale - Harmonized */
   h1 {
-    font-size: 2rem !important; /* 32px compact mobile scale */
-    line-height: 1.22 !important;
+    font-size: 3rem !important; /* 48px - Desktop H1 */
+    line-height: 1.2 !important;
     font-weight: 800 !important;
     letter-spacing: -0.02em !important;
   }
   
-  
-
   h2 {
-    font-size: 1.5rem !important; /* 24px */
+    font-size: 2rem !important; /* 32px - Desktop H2 */
     line-height: 1.25 !important;
     font-weight: 700 !important;
     letter-spacing: -0.01em !important;
   }
 
   h3 {
-    font-size: 1.25rem !important; /* 20px */
+    font-size: 1.5rem !important; /* 24px - Desktop H3 */
     line-height: 1.3 !important;
     font-weight: 700 !important;
   }
 
   h4 {
-    font-size: 1.125rem !important; /* 18px */
-    line-height: 1.32 !important;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    font-size: 1.25rem !important; /* 20px - Desktop H4 */
+    line-height: 1.35 !important;
     font-weight: 600 !important;
   }
   
   p, span, div {
-    font-size: 1rem !important; /* 16px body for better density */
-    line-height: 1.6 !important;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    font-size: 1rem !important; /* 16px - Desktop Body */
+    line-height: 1.7 !important;
   }
 
   /* Ensure all heading helper classes inherit element sizes on mobile */
@@ -215,14 +240,21 @@ body {
     line-height: inherit !important;
   }
   
-  /* Mobile-optimized text sizes */
+  /* Mobile-optimized text sizes - Harmonized */
   .text-sm {
     font-size: 0.875rem !important; /* 14px */
   }
   
-  .text-base { font-size: 1rem !important; }
-  .text-lg { font-size: 1.125rem !important; /* 18px */ }
-  .text-xl { font-size: 1.25rem !important; /* 20px */ }
+  .text-base { font-size: 1rem !important; /* 16px - Mobile Body */
+  }
+  .text-lg { font-size: 1.125rem !important; /* 18px - Mobile Large */
+  }
+  .text-xl { font-size: 1.25rem !important; /* 20px - Mobile XL */
+  }
+  .text-2xl { font-size: 1.5rem !important; /* 24px - Mobile 2XL */
+  }
+  .text-3xl { font-size: 1.75rem !important; /* 28px - Mobile 3XL */
+  }
   
   /* Reduce spacing for mobile */
   .modern-spacing {

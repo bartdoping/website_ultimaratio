@@ -18,7 +18,7 @@ export default function CoachingPage() {
               <span className="text-[#0395A6]">Prüfungen bestehen?</span>
             </h1>
             
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-8 sm:mb-12 md:mb-16 max-w-5xl mx-auto leading-relaxed premium-text animate-fade-in-up px-2 sm:px-4">
+            <p className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-12 md:mb-16 max-w-5xl mx-auto leading-relaxed premium-text animate-fade-in-up px-2 sm:px-4">
               Mit unserem spezialisierten Medizin-Coaching verwandelst du komplexe Lerninhalte in verständliches Wissen. 
               Von Anatomie bis Biochemie, von Physikum bis M3 – wir zeigen dir die effektivsten Lernstrategien und 
               helfen dir, jede Prüfung mit Bestnoten zu bestehen.

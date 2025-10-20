@@ -18,7 +18,7 @@ export default function TeamPage() {
                       <span className="text-[#0395A6]">Team kennen</span>
                     </h1>
             
-            <p className="text-lg text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
+            <p className="text-base text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
               Erfahrene Ärzt:innen und Medizinstudierende, die selbst mit Top-Ergebnissen 
               durch alle Examina gegangen sind und ihr Wissen gerne weitergeben.
             </p>
@@ -30,10 +30,10 @@ export default function TeamPage() {
       <section className="modern-section bg-white">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-2xl md:text-3xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Unsere Coaches
             </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-base text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Approbierte Ärzt:innen mit aktueller Klinikroutine
             </p>
           </div>

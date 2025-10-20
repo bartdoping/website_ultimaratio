@@ -18,7 +18,7 @@ export default function MethodenPage() {
               <span className="text-[#0395A6]">Methode</span>
             </h1>
             
-            <p className="text-lg text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
+            <p className="text-base text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
               Wissenschaftlich fundierte Lernmethoden, die nachweislich funktionieren. 
               Bewährte Strategien aus der Kognitionsforschung für optimale Prüfungsergebnisse.
             </p>
@@ -30,10 +30,10 @@ export default function MethodenPage() {
       <section className="modern-section bg-white">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h2 className="text-2xl md:text-3xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
               Unsere Kernprinzipien
             </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+            <p className="text-base text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
               Wissenschaftlich belegte Lernmethoden für nachhaltigen Erfolg
             </p>
           </div>
