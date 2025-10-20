@@ -7,7 +7,7 @@ export default function CoachingPage() {
       <section className="hero-section academic-section">
         <div className="academic-container">
           <div className="text-center">
-            <div className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#0395A6] text-white font-semibold mb-8 animate-fade-in-up">
+            <div className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#0395A6] text-white font-semibold mb-8 animate-fade-in-up">
               <Award className="w-5 h-5 mr-2" />
               Individuelles 1:1 Coaching
             </div>

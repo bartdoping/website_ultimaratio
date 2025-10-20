@@ -24,7 +24,7 @@ export default function HeroWithImage() {
       {/* Content */}
       <div className="relative z-10 modern-container text-center text-white">
         {/* Trust Badge */}
-        <div className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#0395A6] text-white font-semibold mb-8 modern-animate-fade-in">
+        <div className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#0395A6] text-white font-semibold mb-8 modern-animate-fade-in">
           <Award className="w-5 h-5 mr-2" />
           Über 500 erfolgreiche Prüfungen
         </div>
@@ -94,12 +94,7 @@ export default function HeroWithImage() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
-        </div>
-      </div>
+      {/* Scroll Indicator removed on mobile for better UX */}
     </section>
   )
 }

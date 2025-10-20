@@ -87,7 +87,7 @@ export default function UrgencyBanner() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 {/* Mustafa Eid */}
                 <div className="bg-white/20 rounded-lg p-6 flex items-center space-x-4">
-                  <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                  <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
                     <img 
                       src="/images/team/mustafa-eid.jpg" 
                       alt="Mustafa Eid - Gründer & Coach"
@@ -95,15 +95,15 @@ export default function UrgencyBanner() {
                     />
                   </div>
                   <div>
-                    <h4 className="font-bold text-black text-lg">Mustafa Eid</h4>
-                    <p className="text-sm text-black mb-2">Approbierter Arzt</p>
-                    <p className="text-xs text-black">6+ Jahre Coaching-Erfahrung, Top-Ergebnisse in allen Examina</p>
+                    <h4 className="font-bold text-black text-xl">Mustafa Eid</h4>
+                    <p className="text-base text-black mb-2">Approbierter Arzt</p>
+                    <p className="text-sm text-black">6+ Jahre Coaching-Erfahrung, Top-Ergebnisse in allen Examina</p>
                   </div>
                 </div>
 
                 {/* Ahkash Thavarajasingam */}
                 <div className="bg-white/20 rounded-lg p-6 flex items-center space-x-4">
-                  <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                  <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
                     <img 
                       src="/images/team/ahkash-thavarajasingam.jpg" 
                       alt="Ahkash Thavarajasingam - Senior Coach"
@@ -111,9 +111,9 @@ export default function UrgencyBanner() {
                     />
                   </div>
                   <div>
-                    <h4 className="font-bold text-black text-lg">Ahkash Thavarajasingam</h4>
-                    <p className="text-sm text-black mb-2">Approbierter Arzt</p>
-                    <p className="text-xs text-black">Erfahrener Tutor, Spezialist für Prüfungsvorbereitung und Lernstrategien</p>
+                    <h4 className="font-bold text-black text-xl">Ahkash Thavarajasingam</h4>
+                    <p className="text-base text-black mb-2">Approbierter Arzt</p>
+                    <p className="text-sm text-black">Erfahrener Tutor, Spezialist für Prüfungsvorbereitung und Lernstrategien</p>
                   </div>
                 </div>
               </div>

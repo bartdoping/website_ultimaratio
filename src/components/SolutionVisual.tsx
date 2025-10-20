@@ -70,7 +70,7 @@ export default function SolutionVisual() {
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-black mb-2">{solution.title}</h3>
-                      <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                      <div className="bg-green-100 text-green-800 px-3 py-1 rounded-lg text-sm font-semibold">
                         Wissenschaftlich bewiesen
                       </div>
                     </div>

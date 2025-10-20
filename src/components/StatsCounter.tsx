@@ -13,11 +13,13 @@ export default function StatsCounter() {
   })
   
   const sectionRef = useRef<HTMLDivElement>(null)
+  const hasAnimatedRef = useRef(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && !hasAnimatedRef.current) {
+          hasAnimatedRef.current = true
           setIsVisible(true)
         }
       },
@@ -32,7 +34,9 @@ export default function StatsCounter() {
   }, [])
 
   useEffect(() => {
-    if (!isVisible) return
+    if (!isVisible) {
+      return
+    }
 
     const targets = {
       success: 97,
@@ -41,7 +45,7 @@ export default function StatsCounter() {
       improvement: 2.3
     }
 
-    const duration = 2000 // 2 seconds
+    const duration = 1500 // a bit faster for mobile
     const steps = 60
     const stepDuration = duration / steps
 

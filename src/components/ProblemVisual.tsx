@@ -76,7 +76,7 @@ export default function ProblemVisual() {
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-black mb-2">{problem.title}</h3>
-                      <div className="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-semibold">
+                      <div className="bg-red-100 text-red-800 px-3 py-1 rounded-lg text-sm font-semibold">
                         {problem.stats}
                       </div>
                     </div>
@@ -126,7 +126,7 @@ export default function ProblemVisual() {
         </div>
 
         {/* Transition CTA */}
-        <div className="text-center mt-16 modern-animate-fade-in-up">
+            <div className="text-center mt-16 modern-animate-fade-in-up">
           <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-red-200 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-black mb-4">
               Kennst du diese Gefühle?
@@ -137,7 +137,7 @@ export default function ProblemVisual() {
             </p>
             <a
               href="#solution"
-              className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl"
+              className="hidden sm:inline-flex bg-[#0395A6] hover:bg-[#028A9A] text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl"
             >
               → Die ultima-rat.io Lösung entdecken
             </a>

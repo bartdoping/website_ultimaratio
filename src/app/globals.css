@@ -313,26 +313,38 @@ body {
     height: 2rem !important;
   }
   
-  /* MOBILE ONLY: Remove blue stripes completely */
+  /* MOBILE ONLY: Fix blue stripes to be rectangular and properly sized */
   @media (max-width: 768px) {
     .bg-gradient-to-r {
-      background: none !important;
-      border-radius: 0 !important;
-      padding: 0 !important;
+      background: #0395A6 !important;
+      border-radius: 0.5rem !important;
+      padding: 0.75rem 1.5rem !important;
       box-shadow: none !important;
-      display: inline !important;
+      display: inline-block !important;
+      white-space: nowrap !important;
+      overflow: visible !important;
+      min-width: fit-content !important;
+      width: auto !important;
     }
 
-    /* Remove blue background from all gradient elements on mobile */
+    /* Ensure blue background elements are properly styled on mobile */
     .bg-gradient-to-r *,
     .bg-gradient-to-r span,
     .bg-gradient-to-r div,
     .bg-gradient-to-r p {
-      background: none !important;
+      background: transparent !important;
       border-radius: 0 !important;
       padding: 0 !important;
       box-shadow: none !important;
       display: inline !important;
+      color: white !important;
+      font-weight: inherit !important;
+      white-space: nowrap !important;
+    }
+
+    /* Fix rounded-full elements on mobile to be rectangular */
+    .rounded-full {
+      border-radius: 0.5rem !important;
     }
 
     /* Note: Do NOT remove all gradients globally on mobile to preserve footer/backgrounds */
