@@ -12,18 +12,33 @@ export default function BlackBookPopup() {
     const popupShown = sessionStorage.getItem('blackBookPopupShown')
     if (popupShown) return
 
-    // Do not auto-open on mobile viewports (≤768px)
-    if (typeof window !== 'undefined' && window.matchMedia('(max-width: 768px)').matches) {
+    // COMPLETELY DISABLE on mobile viewports (≤768px) - no popup at all
+    if (typeof window !== 'undefined' && window.innerWidth <= 768) {
       return
     }
 
+    // Also check on resize
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setIsVisible(false)
+        return
+      }
+    }
+
+    window.addEventListener('resize', handleResize)
+
     // Show popup after 15 seconds on desktop only
     const timer = setTimeout(() => {
-      setIsVisible(true)
-      sessionStorage.setItem('blackBookPopupShown', 'true')
+      if (window.innerWidth > 768) {
+        setIsVisible(true)
+        sessionStorage.setItem('blackBookPopupShown', 'true')
+      }
     }, 15000)
 
-    return () => clearTimeout(timer)
+    return () => {
+      clearTimeout(timer)
+      window.removeEventListener('resize', handleResize)
+    }
   }, [])
 
   const handleClose = () => {
@@ -61,6 +76,7 @@ export default function BlackBookPopup() {
       
       {/* Popup */}
       <div 
+        data-popup="blackbook"
         className={`fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 transition-all duration-300 ${
           isClosing ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
         }`}

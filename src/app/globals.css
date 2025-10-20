@@ -1177,9 +1177,15 @@ body {
   
   /* HeroWithImage component - adjust height and positioning */
   .mobile-hero-section {
-    min-height: calc(100vh - 4rem) !important; /* Full height minus small gap */
-    padding-top: 1rem !important; /* Minimal top padding */
-    padding-bottom: 2rem !important; /* Small bottom padding */
+    min-height: 100vh !important; /* Full viewport height */
+    padding-top: 0 !important; /* No top padding - align with header */
+    padding-bottom: 0 !important; /* No bottom padding */
+    margin-top: 0 !important; /* No margin */
+  }
+  
+  /* Completely hide popup on mobile */
+  [data-popup="blackbook"] {
+    display: none !important;
   }
 }
 
