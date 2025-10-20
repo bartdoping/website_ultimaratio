@@ -161,7 +161,7 @@ export default function KlinikPage() {
       <section className="modern-section">
         <div className="modern-container">
           <div className="text-center mb-16">
-            <h1 className="modern-heading text-4xl md:text-5xl leading-tight mb-6">
+            <h1 className="text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold modern-heading leading-tight mb-6">
               <span className="text-black">M2 & M3 meistern mit</span>
               <br />
               <span className="text-[#0395A6]">ärztlicher Expertise</span>

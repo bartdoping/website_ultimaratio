@@ -12,7 +12,7 @@ export default function KenntnispruefungPage() {
               Spezialisiert auf Kenntnisprüfung
             </div>
             
-            <h1 className="heading-primary text-black mb-8 modern-heading modern-animate-fade-in-up">
+            <h1 className="text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
               Kenntnisprüfung<br />
               <span className="text-[#0395A6]">erfolgreich bestehen</span>
             </h1>

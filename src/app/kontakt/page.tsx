@@ -56,7 +56,7 @@ export default function KontaktPage() {
               Kontakt aufnehmen
             </div>
             
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 sm:mb-8 modern-heading leading-tight modern-animate-fade-in-up px-2 sm:px-4">
+            <h1 className="text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold text-black mb-6 sm:mb-8 modern-heading leading-tight modern-animate-fade-in-up px-2 sm:px-4">
               Lass uns gemeinsam<br />
               <span className="text-[#0395A6]">deine Prüfung bestehen</span>
             </h1>
