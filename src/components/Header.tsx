@@ -91,7 +91,7 @@ export default function Header() {
                     <div className="relative group">
                       <button
                         onClick={() => setIsCoachingOpen(!isCoachingOpen)}
-                        className="text-gray-700 hover:text-[#0395A6] px-3 py-2 text-sm font-medium transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] modern-focus flex items-center"
+                        className="text-gray-700 hover:text-[#0395A6] px-3 py-2 text-sm font-medium leading-none transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] modern-focus flex items-center"
                       >
                         {item.name}
                         <ChevronDown className="w-4 h-4 ml-1" />
@@ -121,7 +121,7 @@ export default function Header() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="text-gray-700 hover:text-[#0395A6] px-3 py-2 text-sm font-medium transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] modern-focus relative group"
+                      className="inline-flex items-center text-gray-700 hover:text-[#0395A6] px-3 py-2 text-sm font-medium leading-none transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] modern-focus relative group"
                     >
                       {item.name}
                       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0395A6] transition-all duration-300 group-hover:w-full"></span>
