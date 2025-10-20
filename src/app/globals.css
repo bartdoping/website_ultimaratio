@@ -1174,6 +1174,13 @@ body {
     padding-top: 2rem !important; /* 32px - minimal gap from header */
     padding-bottom: 3rem !important; /* 48px - maintain bottom spacing */
   }
+  
+  /* HeroWithImage component - adjust height and positioning */
+  .mobile-hero-section {
+    min-height: calc(100vh - 4rem) !important; /* Full height minus small gap */
+    padding-top: 1rem !important; /* Minimal top padding */
+    padding-bottom: 2rem !important; /* Small bottom padding */
+  }
 }
 
 .modern-container {
