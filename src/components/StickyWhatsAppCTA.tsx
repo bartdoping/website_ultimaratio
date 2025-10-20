@@ -4,17 +4,8 @@ import { useState, useEffect } from 'react'
 import { MessageCircle, X } from 'lucide-react'
 
 export default function StickyWhatsAppCTA() {
-  const [isVisible, setIsVisible] = useState(false)
-  const [isMinimized, setIsMinimized] = useState(false)
-
-  useEffect(() => {
-    // Show CTA after 3 seconds
-    const timer = setTimeout(() => {
-      setIsVisible(true)
-    }, 3000)
-
-    return () => clearTimeout(timer)
-  }, [])
+  const [isVisible, setIsVisible] = useState(true)
+  const [isMinimized, setIsMinimized] = useState(true)
 
   if (!isVisible) return null
 
