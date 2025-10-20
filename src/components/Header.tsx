@@ -60,7 +60,7 @@ export default function Header() {
       </div>
 
       {/* Main Header */}
-      <header className="bg-white border-b border-gray-200 shadow-sm sticky top-0 left-0 right-0 z-40">
+      <header className="bg-white border-b border-gray-200 shadow-sm relative z-40">
         <div className="modern-container">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
