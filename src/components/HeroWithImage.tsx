@@ -8,7 +8,7 @@ export default function HeroWithImage() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden mobile-hero-section">
       {/* Background Image with Overlay */}
-      <div className="absolute left-0 right-0 bottom-0 top-[-6rem] md:inset-0 z-0">
+      <div className="absolute left-0 right-0 bottom-0 top-0 md:inset-0 z-0">
         <Image
           src="/images/hero/hero-medical.jpg"
           alt="Medizinstudent beim Lernen - Verzweiflung und Überforderung"

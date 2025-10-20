@@ -1181,6 +1181,8 @@ body {
     padding-top: 0 !important; /* No top padding - align with header */
     padding-bottom: 0 !important; /* No bottom padding */
     margin-top: 0 !important; /* No margin */
+    position: relative !important;
+    top: 0 !important;
   }
   
   /* Completely hide popup on mobile */
@@ -1205,6 +1207,35 @@ body {
     position: sticky !important;
     top: 0 !important;
     z-index: 50 !important;
+  }
+  
+  /* Ensure header container is sticky on mobile */
+  .sticky.top-0 {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 50 !important;
+  }
+  
+  /* Remove any spacing between header and hero on mobile */
+  .mobile-hero-section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    position: relative !important;
+    top: 0 !important;
+  }
+  
+  /* Ensure no gap between sticky header and hero */
+  .sticky + .mobile-hero-section,
+  .sticky + section[class*="mobile-hero-section"] {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Force hero to start immediately after header */
+  section.mobile-hero-section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    transform: translateY(0) !important;
   }
 }
 
