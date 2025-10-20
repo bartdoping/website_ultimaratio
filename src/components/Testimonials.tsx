@@ -70,7 +70,7 @@ export default function Testimonials() {
                       <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-lg text-gray-700 leading-relaxed mb-6 modern-text flex-grow">
+                  <p className="text-base text-gray-700 leading-relaxed mb-6 modern-text flex-grow">
                     {testimonial.text}
                   </p>
                   <div className="border-t border-gray-200 pt-4 mt-auto">
@@ -119,17 +119,17 @@ export default function Testimonials() {
 
         <div className="text-center mt-16">
           <div className="modern-card p-12 max-w-4xl mx-auto modern-animate-fade-in-up">
-            <h3 className="text-xl font-bold text-black mb-6 modern-heading">
+            <h3 className="text-lg font-bold text-black mb-5 modern-heading">
               Werde Teil unserer Erfolgsgeschichten
             </h3>
-            <p className="text-lg text-gray-600 mb-8 modern-text">
+            <p className="text-base text-gray-600 mb-6 modern-text">
               Über 500 erfolgreiche Prüfungen und eine 97%ige Erfolgsquote sprechen für sich.
             </p>
             <a
               href="http://wa.me/491639347633"
               target="_blank"
               rel="noopener noreferrer"
-              className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus inline-block"
+              className="modern-button px-10 py-4 rounded-lg text-base font-semibold modern-focus inline-block"
             >
               Jetzt starten
             </a>
