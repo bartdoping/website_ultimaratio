@@ -56,7 +56,7 @@ export default function ProblemVisual() {
     <section className="modern-section bg-white">
       <div className="modern-container">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-black mb-6 modern-heading modern-animate-fade-in-up">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6 modern-heading modern-animate-fade-in-up">
             Das Problem: <span className="text-red-600">Falsche Lernstrategien</span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto modern-text modern-animate-fade-in-up">

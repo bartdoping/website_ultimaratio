@@ -30,7 +30,7 @@ export default function HeroWithImage() {
         </div>
         
         {/* Main Headline */}
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold mb-6 sm:mb-8 md:mb-12 modern-heading leading-tight modern-animate-fade-in-up">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 md:mb-12 modern-heading leading-tight modern-animate-fade-in-up">
               <span className="block text-white">Schluss mit</span>
               <span className="block text-white">Prüfungsangst</span>
               <span className="block text-white">und Durchfallen!</span>
