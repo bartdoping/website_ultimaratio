@@ -50,7 +50,7 @@ export default function SolutionVisual() {
     <section id="solution" className="modern-section bg-[#F8FAFC]">
       <div className="modern-container">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6 modern-heading modern-animate-fade-in-up">
+          <h2 className="text-5xl md:text-6xl font-bold text-black mb-6 modern-heading modern-animate-fade-in-up">
             Die <span className="text-[#0395A6]">ultima-rat.io</span> Lösung
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto modern-text modern-animate-fade-in-up">

@@ -6,7 +6,7 @@ import { Award, MessageCircle, ArrowRight, Target } from 'lucide-react'
 
 export default function HeroWithImage() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -30,7 +30,7 @@ export default function HeroWithImage() {
         </div>
         
         {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 sm:mb-8 md:mb-12 modern-heading leading-tight modern-animate-fade-in-up">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold mb-6 sm:mb-8 md:mb-12 modern-heading leading-tight modern-animate-fade-in-up">
               <span className="block text-white">Schluss mit</span>
               <span className="block text-white">Prüfungsangst</span>
               <span className="block text-white">und Durchfallen!</span>
