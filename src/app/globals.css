@@ -147,13 +147,7 @@ body {
     letter-spacing: -0.02em !important;
   }
   
-  /* Specific mobile hero heading override: keep h1 largest */
-  .modern-hero h1,
-  .hero-section h1 {
-    font-size: 2rem !important; /* match global mobile h1 */
-    line-height: 1.22 !important;
-    font-weight: 800 !important;
-  }
+  
 
   h2 {
     font-size: 1.5rem !important; /* 24px */
@@ -645,22 +639,10 @@ body {
   }
 }
 
-/* Do not force hero heading size on mobile; let components control */
-@media (max-width: 768px) {
-  .modern-hero h1,
-  .hero-section h1 {
-    font-size: inherit !important;
-    line-height: inherit !important;
-    letter-spacing: inherit !important;
-  }
-}
+/* Remove hero heading hard overrides; let utilities control size */
 
 @media (max-width: 480px) {
-  .modern-hero h1,
-  .hero-section h1 {
-    font-size: inherit !important;
-    line-height: inherit !important;
-  }
+  /* No hero h1 overrides on XS either */
 }
 
 /* Mobile badge/hint removal and blue heading sizing fixes (robust selectors) */
