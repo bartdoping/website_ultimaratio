@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
 import { MessageCircle, Phone, Mail, MapPin, Clock, Star } from 'lucide-react'
