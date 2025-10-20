@@ -12,7 +12,7 @@ export default function CoachingPage() {
               Individuelles 1:1 Coaching
             </div>
             
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4 sm:mb-6 md:mb-8 premium-heading leading-tight animate-fade-in-up px-2 sm:px-4">
+            <h1 className="text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold text-black mb-4 sm:mb-6 md:mb-8 premium-heading leading-tight animate-fade-in-up px-2 sm:px-4">
               Anatomie verstehen?<br />
               Physiologie begreifen?<br />
               <span className="text-[#0395A6]">Prüfungen bestehen?</span>

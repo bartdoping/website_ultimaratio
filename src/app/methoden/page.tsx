@@ -13,7 +13,7 @@ export default function MethodenPage() {
               Wissenschaftlich fundiert
             </div>
             
-            <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
+            <h1 className="text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
               Die ultima-rat.io<br />
               <span className="text-[#0395A6]">Methode</span>
             </h1>
