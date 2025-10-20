@@ -246,7 +246,7 @@ export default function Header() {
       </header>
       {/* Spacer to offset fixed header on mobile */}
       {/* Mobile spacer equal to header height so content starts below fixed header */}
-      <div className="md:hidden h-24"></div>
+      
       </div>
     </>
   )
