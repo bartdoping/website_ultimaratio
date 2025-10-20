@@ -1164,6 +1164,18 @@ body {
   padding: 120px 0;
 }
 
+/* Mobile Hero Section - Reduce top padding to align with header */
+@media (max-width: 768px) {
+  .modern-hero.modern-section,
+  .hero-section.modern-section,
+  .hero-section.academic-section,
+  .modern-hero,
+  .hero-section {
+    padding-top: 2rem !important; /* 32px - minimal gap from header */
+    padding-bottom: 3rem !important; /* 48px - maintain bottom spacing */
+  }
+}
+
 .modern-container {
   max-width: 1280px;
   margin: 0 auto;
