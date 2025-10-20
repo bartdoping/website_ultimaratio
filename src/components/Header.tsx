@@ -245,7 +245,8 @@ export default function Header() {
         )}
       </header>
       {/* Spacer to offset fixed header on mobile */}
-      <div className="md:hidden h-20"></div>
+      {/* Mobile spacer removed to allow hero to start directly under header */}
+      <div className="md:hidden h-0"></div>
       </div>
     </>
   )
