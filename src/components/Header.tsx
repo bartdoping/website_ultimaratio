@@ -66,7 +66,7 @@ export default function Header() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center group">
-                <div className="h-24 w-24 sm:h-12 sm:w-12 rounded-xl overflow-hidden group-hover:scale-110 transition-all duration-300 shadow-lg logo-mobile">
+                <div className="h-24 w-24 sm:h-12 sm:w-12 rounded-xl overflow-hidden shadow-lg logo-mobile">
                   <Image
                     src="/images/logo/logo.png"
                     alt="ultima-rat.io Logo"
