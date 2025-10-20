@@ -164,7 +164,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-12 modern-heading">
               Bereit für deinen <span className="text-white">Prüfungserfolg?</span>
             </h2>
-            <p className="text-lg text-white mb-16 max-w-4xl mx-auto modern-text">
+            <p className="text-lg text-white mb-16 max-w-4xl mx-auto">
               Starte jetzt mit deinem kostenlosen Erstgespräch. Keine Verpflichtungen, nur ehrliche Beratung.
             </p>
             
