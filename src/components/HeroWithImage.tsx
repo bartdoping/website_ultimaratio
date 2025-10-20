@@ -22,7 +22,7 @@ export default function HeroWithImage() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 modern-container text-center text-white pt-12 sm:pt-16 md:pt-20">
+      <div className="relative z-10 modern-container text-center text-white pt-16 sm:pt-24 md:pt-32 lg:pt-36">
         
         
         {/* Main Headline */}
