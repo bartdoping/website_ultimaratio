@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { Award, MessageCircle, ArrowRight, Target } from 'lucide-react'
+import { MessageCircle, ArrowRight, Target } from 'lucide-react'
 
 export default function HeroWithImage() {
   return (

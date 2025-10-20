@@ -149,7 +149,7 @@ export function CookieProvider({ children }: { children: ReactNode }) {
 
   const initializeAnalytics = () => {
     if (typeof window === 'undefined') return
-    const GA_ID = (process as any).env.NEXT_PUBLIC_GA_ID
+    const GA_ID: string | undefined = process.env.NEXT_PUBLIC_GA_ID
     if (!GA_ID) return
     if (document.getElementById('ga4-script')) return
     

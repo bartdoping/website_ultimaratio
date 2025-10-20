@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Clock, Users, AlertCircle, Zap, CheckCircle } from 'lucide-react'
+import { Clock, Users, Zap, CheckCircle } from 'lucide-react'
 
 export default function UrgencyBanner() {
   const [timeLeft, setTimeLeft] = useState({
@@ -10,8 +10,7 @@ export default function UrgencyBanner() {
     minutes: 0,
     seconds: 0
   })
-
-  const [spotsLeft] = useState(3)
+  // spotsLeft removed as unused
 
   useEffect(() => {
     // Set end date (30 days from now)

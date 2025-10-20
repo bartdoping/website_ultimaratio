@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { MessageCircle, X } from 'lucide-react'
 
 export default function StickyWhatsAppCTA() {
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible] = useState(true)
   const [isMinimized, setIsMinimized] = useState(true)
 
   if (!isVisible) return null
