@@ -38,70 +38,44 @@ export default function UrgencyBanner() {
   }, [])
 
   return (
-    <section className="modern-section bg-gradient-to-r from-red-500 to-orange-500 text-white">
+    <section className="modern-section bg-[#0395A6] text-white">
       <div className="modern-container">
         <div className="modern-card bg-white/10 backdrop-blur-sm border border-white/20 text-center modern-animate-fade-in-up">
           <div className="p-8">
             {/* Header */}
             <div className="flex items-center justify-center space-x-2 mb-6">
-              <AlertCircle className="w-6 h-6 text-yellow-300" />
+              <CheckCircle className="w-6 h-6 text-white" />
               <h2 className="text-2xl md:text-3xl font-bold">
-                ⚡ BEGRENZTES ANGEBOT
+                ✓ KOSTENLOSES ERSTGESPRÄCH
               </h2>
-              <AlertCircle className="w-6 h-6 text-yellow-300" />
+              <CheckCircle className="w-6 h-6 text-white" />
             </div>
 
-            {/* Spots Left */}
-            <div className="bg-red-600/30 rounded-lg p-4 mb-6 max-w-md mx-auto">
+            {/* Trust Message */}
+            <div className="bg-white/20 rounded-lg p-4 mb-6 max-w-md mx-auto">
               <div className="flex items-center justify-center space-x-2 mb-2">
                 <Users className="w-5 h-5" />
-                <span className="text-lg font-bold">Nur noch {spotsLeft} Plätze frei!</span>
+                <span className="text-lg font-bold">Für alle Studenten verfügbar!</span>
               </div>
-              <div className="w-full bg-red-200 rounded-full h-3">
-                <div 
-                  className="bg-yellow-400 h-3 rounded-full transition-all duration-1000"
-                  style={{ width: `${((10 - spotsLeft) / 10) * 100}%` }}
-                ></div>
-              </div>
-              <p className="text-sm text-red-100 mt-2">
-                {10 - spotsLeft} von 10 Plätzen bereits vergeben
+              <p className="text-sm text-white/90">
+                Unverbindlich, professionell, sofort buchbar
               </p>
-            </div>
-
-            {/* Countdown Timer */}
-            <div className="grid grid-cols-4 gap-4 max-w-lg mx-auto mb-6">
-              <div className="bg-white/20 rounded-lg p-4">
-                <div className="text-3xl font-bold">{timeLeft.days}</div>
-                <div className="text-sm">Tage</div>
-              </div>
-              <div className="bg-white/20 rounded-lg p-4">
-                <div className="text-3xl font-bold">{timeLeft.hours}</div>
-                <div className="text-sm">Stunden</div>
-              </div>
-              <div className="bg-white/20 rounded-lg p-4">
-                <div className="text-3xl font-bold">{timeLeft.minutes}</div>
-                <div className="text-sm">Minuten</div>
-              </div>
-              <div className="bg-white/20 rounded-lg p-4">
-                <div className="text-3xl font-bold">{timeLeft.seconds}</div>
-                <div className="text-sm">Sekunden</div>
-              </div>
             </div>
 
             {/* Benefits */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
               <div className="bg-white/10 rounded-lg p-4">
-                <Clock className="w-6 h-6 mx-auto mb-2 text-yellow-300" />
+                <Clock className="w-6 h-6 mx-auto mb-2 text-white" />
                 <h3 className="font-bold mb-1">Kostenloses Erstgespräch</h3>
-                <p className="text-sm">Wert: 150€ - Jetzt GRATIS</p>
+                <p className="text-sm">Unverbindlich und professionell</p>
               </div>
               <div className="bg-white/10 rounded-lg p-4">
-                <Zap className="w-6 h-6 mx-auto mb-2 text-yellow-300" />
+                <Zap className="w-6 h-6 mx-auto mb-2 text-white" />
                 <h3 className="font-bold mb-1">Sofortiger Start</h3>
-                <p className="text-sm">Erste Sitzung noch diese Woche</p>
+                <p className="text-sm">Termine nach deinem Zeitplan</p>
               </div>
               <div className="bg-white/10 rounded-lg p-4">
-                <Users className="w-6 h-6 mx-auto mb-2 text-yellow-300" />
+                <Users className="w-6 h-6 mx-auto mb-2 text-white" />
                 <h3 className="font-bold mb-1">Persönlicher Coach</h3>
                 <p className="text-sm">1:1 Betreuung garantiert</p>
               </div>
@@ -113,14 +87,14 @@ export default function UrgencyBanner() {
                 href="http://wa.me/491639347633"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-yellow-400 hover:bg-yellow-500 text-black px-12 py-6 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-105 shadow-2xl inline-flex items-center space-x-3"
+                className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-6 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-105 shadow-2xl inline-flex items-center space-x-3"
               >
                 <Zap className="w-6 h-6" />
-                <span>JETZT PLATZ SICHERN</span>
+                <span>JETZT KOSTENLOS STARTEN</span>
               </a>
               
-              <p className="text-sm text-yellow-100">
-                ⚠️ Nach Ablauf des Angebots: Regulärer Preis 150€ für Erstgespräch
+              <p className="text-sm text-white/90">
+                ✓ Immer kostenlos ✓ Unverbindlich ✓ Professionell
               </p>
             </div>
           </div>

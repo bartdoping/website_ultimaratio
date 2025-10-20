@@ -44,7 +44,7 @@ export default function SolutionVisual() {
   ]
 
   return (
-    <section id="solution" className="modern-section bg-gradient-to-br from-blue-50 to-green-50">
+    <section id="solution" className="modern-section bg-[#F8FAFC]">
       <div className="modern-container">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6 modern-heading modern-animate-fade-in-up">
@@ -94,7 +94,7 @@ export default function SolutionVisual() {
                   </div>
 
                   {/* Success Indicator */}
-                  <div className="bg-gradient-to-r from-[#0395A6] to-blue-600 text-white p-4 rounded-lg">
+                  <div className="bg-[#0395A6] text-white p-4 rounded-lg">
                     <div className="flex items-center space-x-2">
                       <TrendingUp className="w-5 h-5" />
                       <span className="font-bold">Nachweisbare Verbesserung in 4 Wochen!</span>

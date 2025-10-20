@@ -32,7 +32,7 @@ export default function ProblemVisual() {
   ]
 
   return (
-    <section className="modern-section bg-gradient-to-br from-red-50 to-orange-50">
+    <section className="modern-section bg-white">
       <div className="modern-container">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6 modern-heading modern-animate-fade-in-up">
@@ -80,9 +80,9 @@ export default function ProblemVisual() {
                   </div>
 
                   {/* Mini CTA */}
-                  <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white p-4 rounded-lg">
+                  <div className="bg-[#0395A6] text-white p-4 rounded-lg">
                     <p className="font-bold text-center">
-                      🚫 Schluss damit! Es gibt einen besseren Weg...
+                      ✓ Es gibt einen besseren Weg...
                     </p>
                   </div>
                 </div>

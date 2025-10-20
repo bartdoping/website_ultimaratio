@@ -158,11 +158,11 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="modern-section bg-gradient-to-br from-[#0395A6] to-blue-600 text-white">
+      <section className="modern-section bg-[#0395A6] text-white">
         <div className="modern-container">
           <div className="text-center modern-animate-fade-in-up">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 modern-heading">
-              Bereit für deinen <span className="text-yellow-400">Prüfungserfolg?</span>
+              Bereit für deinen <span className="text-white">Prüfungserfolg?</span>
             </h2>
             <p className="text-xl text-white/90 mb-12 max-w-3xl mx-auto modern-text">
               Starte jetzt mit deinem kostenlosen Erstgespräch. Keine Verpflichtungen, nur ehrliche Beratung.
@@ -189,17 +189,17 @@ export default function HomePage() {
 
             <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
-                <CheckCircle className="w-8 h-8 text-yellow-400 mx-auto mb-4" />
+                <CheckCircle className="w-8 h-8 text-white mx-auto mb-4" />
                 <h3 className="font-bold text-lg mb-2">Kostenlos</h3>
                 <p className="text-white/80">Erstgespräch ohne Verpflichtung</p>
               </div>
               <div className="text-center">
-                <CheckCircle className="w-8 h-8 text-yellow-400 mx-auto mb-4" />
+                <CheckCircle className="w-8 h-8 text-white mx-auto mb-4" />
                 <h3 className="font-bold text-lg mb-2">Flexibel</h3>
                 <p className="text-white/80">Termine nach deinem Zeitplan</p>
               </div>
               <div className="text-center">
-                <CheckCircle className="w-8 h-8 text-yellow-400 mx-auto mb-4" />
+                <CheckCircle className="w-8 h-8 text-white mx-auto mb-4" />
                 <h3 className="font-bold text-lg mb-2">Erfolgreich</h3>
                 <p className="text-white/80">97% bestehen ihre Prüfungen</p>
               </div>

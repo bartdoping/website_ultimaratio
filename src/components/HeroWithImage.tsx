@@ -30,11 +30,11 @@ export default function HeroWithImage() {
         </div>
         
         {/* Main Headline */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 md:mb-12 modern-heading leading-tight modern-animate-fade-in-up">
-          <span className="block">Schluss mit</span>
-          <span className="block text-red-400">Prüfungsangst</span>
-          <span className="block">und Durchfall!</span>
-        </h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 md:mb-12 modern-heading leading-tight modern-animate-fade-in-up">
+              <span className="block">Schluss mit</span>
+              <span className="block text-red-400">Prüfungsangst</span>
+              <span className="block">und Durchfallen!</span>
+            </h1>
         
         {/* Subheadline */}
         <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 sm:mb-12 md:mb-16 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
@@ -82,14 +82,14 @@ export default function HeroWithImage() {
           </div>
         </div>
 
-        {/* Urgency Banner */}
-        <div className="mt-12 bg-red-500/90 backdrop-blur-sm rounded-xl p-4 border border-red-400/50 max-w-2xl mx-auto modern-animate-fade-in-up">
+        {/* Trust Banner */}
+        <div className="mt-12 bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 max-w-2xl mx-auto modern-animate-fade-in-up">
           <div className="flex items-center justify-center space-x-2 text-white font-bold">
             <Target className="w-5 h-5" />
-            <span>⚡ Nur noch 3 Plätze frei diesen Monat!</span>
+            <span>✓ Kostenloses Erstgespräch für alle</span>
           </div>
           <p className="text-white/90 text-sm mt-2">
-            Sichere dir jetzt deinen Platz für das kostenlose Erstgespräch
+            Unverbindlich, professionell, sofort verfügbar
           </p>
         </div>
       </div>
