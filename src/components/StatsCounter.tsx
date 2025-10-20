@@ -124,7 +124,7 @@ export default function StatsCounter() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {stats.map((stat, index) => (
             <div key={index} className="modern-card bg-white border border-gray-200 text-center modern-animate-fade-in-up">
-              <div className="p-10">
+              <div className="p-10 flex flex-col items-center">
                 <div className="w-20 h-20 bg-[#0395A6] rounded-full flex items-center justify-center text-white mx-auto mb-8">
                   {stat.icon}
                 </div>
