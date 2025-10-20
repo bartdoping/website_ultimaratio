@@ -79,7 +79,7 @@ export default function HeroWithImage() {
         </div>
 
         {/* Trust Banner */}
-        <div className="mt-16 bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 max-w-2xl mx-auto modern-animate-fade-in-up">
+        <div className="mt-16 mb-[3cm] bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 max-w-2xl mx-auto modern-animate-fade-in-up">
           <div className="flex items-center justify-center space-x-2 text-white font-bold text-lg">
             <Target className="w-6 h-6" />
             <span>✓ Kostenloses Erstgespräch für alle</span>
