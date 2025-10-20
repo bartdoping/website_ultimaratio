@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Clock, Users, AlertCircle, Zap } from 'lucide-react'
+import { Clock, Users, AlertCircle, Zap, CheckCircle } from 'lucide-react'
 
 export default function UrgencyBanner() {
   const [timeLeft, setTimeLeft] = useState({
