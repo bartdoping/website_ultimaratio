@@ -45,7 +45,7 @@ export default function UrgencyBanner() {
             {/* Header */}
             <div className="flex items-center justify-center space-x-2 mb-6">
               <CheckCircle className="w-6 h-6 text-white" />
-              <h2 className="text-2xl md:text-3xl font-bold">
+              <h2 className="text-2xl md:text-3xl font-bold text-black">
                 ✓ KOSTENLOSES ERSTGESPRÄCH
               </h2>
               <CheckCircle className="w-6 h-6 text-white" />
@@ -54,10 +54,10 @@ export default function UrgencyBanner() {
             {/* Trust Message */}
             <div className="bg-white/20 rounded-lg p-4 mb-6 max-w-md mx-auto">
               <div className="flex items-center justify-center space-x-2 mb-2">
-                <Users className="w-5 h-5" />
-                <span className="text-lg font-bold">Für alle Studenten verfügbar!</span>
+                <Users className="w-5 h-5 text-black" />
+                <span className="text-lg font-bold text-black">Für alle Studenten verfügbar!</span>
               </div>
-              <p className="text-sm text-white/90">
+              <p className="text-sm text-black">
                 Unverbindlich, professionell, sofort buchbar
               </p>
             </div>
@@ -65,19 +65,57 @@ export default function UrgencyBanner() {
             {/* Benefits */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
               <div className="bg-white/10 rounded-lg p-4">
-                <Clock className="w-6 h-6 mx-auto mb-2 text-white" />
-                <h3 className="font-bold mb-1">Kostenloses Erstgespräch</h3>
-                <p className="text-sm">Unverbindlich und professionell</p>
+                <Clock className="w-6 h-6 mx-auto mb-2 text-black" />
+                <h3 className="font-bold mb-1 text-black">Kostenloses Erstgespräch</h3>
+                <p className="text-sm text-black">Unverbindlich und professionell</p>
               </div>
               <div className="bg-white/10 rounded-lg p-4">
-                <Zap className="w-6 h-6 mx-auto mb-2 text-white" />
-                <h3 className="font-bold mb-1">Sofortiger Start</h3>
-                <p className="text-sm">Termine nach deinem Zeitplan</p>
+                <Zap className="w-6 h-6 mx-auto mb-2 text-black" />
+                <h3 className="font-bold mb-1 text-black">Sofortiger Start</h3>
+                <p className="text-sm text-black">Termine nach deinem Zeitplan</p>
               </div>
               <div className="bg-white/10 rounded-lg p-4">
-                <Users className="w-6 h-6 mx-auto mb-2 text-white" />
-                <h3 className="font-bold mb-1">Persönlicher Coach</h3>
-                <p className="text-sm">1:1 Betreuung garantiert</p>
+                <Users className="w-6 h-6 mx-auto mb-2 text-black" />
+                <h3 className="font-bold mb-1 text-black">Persönlicher Coach</h3>
+                <p className="text-sm text-black">1:1 Betreuung garantiert</p>
+              </div>
+            </div>
+
+            {/* Team Section */}
+            <div className="mb-8">
+              <h3 className="text-xl font-bold text-black mb-6">Deine erfahrenen Coaches</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                {/* Mustafa Eid */}
+                <div className="bg-white/20 rounded-lg p-6 flex items-center space-x-4">
+                  <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                    <img 
+                      src="/images/team/mustafa-eid.jpg" 
+                      alt="Mustafa Eid - Gründer & Coach"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-black text-lg">Mustafa Eid</h4>
+                    <p className="text-sm text-black mb-2">Approbierter Arzt</p>
+                    <p className="text-xs text-black">6+ Jahre Coaching-Erfahrung, Top-Ergebnisse in allen Examina</p>
+                  </div>
+                </div>
+
+                {/* Ahkash Thavarajasingam */}
+                <div className="bg-white/20 rounded-lg p-6 flex items-center space-x-4">
+                  <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                    <img 
+                      src="/images/team/ahkash-thavarajasingam.jpg" 
+                      alt="Ahkash Thavarajasingam - Senior Coach"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-black text-lg">Ahkash Thavarajasingam</h4>
+                    <p className="text-sm text-black mb-2">Approbierter Arzt</p>
+                    <p className="text-xs text-black">Erfahrener Tutor, Spezialist für Prüfungsvorbereitung und Lernstrategien</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -87,7 +125,7 @@ export default function UrgencyBanner() {
                 href="http://wa.me/491639347633"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-6 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-105 shadow-2xl inline-flex items-center space-x-3"
+                className="bg-white text-[#0395A6] hover:bg-gray-50 px-12 py-6 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center space-x-3"
               >
                 <Zap className="w-6 h-6" />
                 <span>JETZT KOSTENLOS STARTEN</span>

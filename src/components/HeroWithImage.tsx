@@ -10,7 +10,7 @@ export default function HeroWithImage() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero/hero-student-struggling.jpg"
+          src="/images/hero/hero-medical.jpg"
           alt="Medizinstudent beim Lernen - Verzweiflung und Überforderung"
           fill
           className="object-cover"
@@ -18,7 +18,7 @@ export default function HeroWithImage() {
           placeholder="blur"
           blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
         />
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
       </div>
 
       {/* Content */}
@@ -31,9 +31,9 @@ export default function HeroWithImage() {
         
         {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 md:mb-12 modern-heading leading-tight modern-animate-fade-in-up">
-              <span className="block">Schluss mit</span>
-              <span className="block text-red-400">Prüfungsangst</span>
-              <span className="block">und Durchfallen!</span>
+              <span className="block text-white">Schluss mit</span>
+              <span className="block text-white">Prüfungsangst</span>
+              <span className="block text-white">und Durchfallen!</span>
             </h1>
         
         {/* Subheadline */}
@@ -44,12 +44,12 @@ export default function HeroWithImage() {
         
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-16 sm:mb-20 modern-animate-fade-in-up">
-          <a
-            href="http://wa.me/491639347633"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-green-500 hover:bg-green-600 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-lg text-lg sm:text-xl font-bold transition-all duration-300 flex items-center justify-center space-x-3 group shadow-2xl hover:shadow-green-500/25 hover:scale-105"
-          >
+            <a
+              href="http://wa.me/491639347633"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-8 sm:px-12 py-4 sm:py-6 rounded-lg text-lg sm:text-xl font-bold transition-all duration-300 flex items-center justify-center space-x-3 group shadow-2xl hover:shadow-lg hover:scale-[1.02]"
+            >
             <MessageCircle className="w-6 h-6 group-hover:animate-pulse" />
             <span>JETZT KOSTENLOS STARTEN</span>
             <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />

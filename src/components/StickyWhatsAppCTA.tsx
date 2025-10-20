@@ -25,7 +25,7 @@ export default function StickyWhatsAppCTA() {
           {/* Header */}
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-[#0395A6] rounded-full flex items-center justify-center">
                 <MessageCircle className="w-4 h-4 text-white" />
               </div>
               <div>
@@ -44,12 +44,12 @@ export default function StickyWhatsAppCTA() {
           {/* Content */}
           <div className="mb-4">
             <p className="text-sm text-gray-700 mb-3">
-              🎯 <strong>Kostenloses Erstgespräch</strong><br />
+              <strong>Kostenloses Erstgespräch</strong><br />
               📚 <strong>97% Erfolgsquote</strong><br />
               ⚡ <strong>Sofortige Hilfe</strong>
             </p>
-            <div className="bg-green-50 rounded-lg p-3 mb-3">
-              <p className="text-xs text-green-800 font-medium">
+            <div className="bg-blue-50 rounded-lg p-3 mb-3">
+              <p className="text-xs text-blue-800 font-medium">
                 💬 Schreib uns auf WhatsApp - wir antworten sofort!
               </p>
             </div>
@@ -60,7 +60,7 @@ export default function StickyWhatsAppCTA() {
             href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 group"
+            className="w-full bg-[#0395A6] hover:bg-[#028A9A] text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 group hover:scale-[1.02]"
           >
             <MessageCircle className="w-4 h-4 group-hover:animate-pulse" />
             <span>Jetzt schreiben</span>
@@ -76,7 +76,7 @@ export default function StickyWhatsAppCTA() {
       ) : (
         <button
           onClick={() => setIsMinimized(false)}
-          className="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+          className="w-14 h-14 bg-[#0395A6] hover:bg-[#028A9A] text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-105 group hover:shadow-xl"
           title="WhatsApp Chat öffnen"
         >
           <MessageCircle className="w-6 h-6 group-hover:animate-pulse" />

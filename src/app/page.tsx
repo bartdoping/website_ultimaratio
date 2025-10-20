@@ -164,7 +164,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 modern-heading">
               Bereit für deinen <span className="text-white">Prüfungserfolg?</span>
             </h2>
-            <p className="text-xl text-white/90 mb-12 max-w-3xl mx-auto modern-text">
+            <p className="text-xl text-white mb-12 max-w-3xl mx-auto modern-text">
               Starte jetzt mit deinem kostenlosen Erstgespräch. Keine Verpflichtungen, nur ehrliche Beratung.
             </p>
             
@@ -173,7 +173,7 @@ export default function HomePage() {
                 href="http://wa.me/491639347633"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white px-12 py-6 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-105 shadow-2xl inline-flex items-center justify-center space-x-3"
+                className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-12 py-6 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center justify-center space-x-3"
               >
                 <MessageCircle className="w-6 h-6" />
                 <span>KOSTENLOSES ERSTGESPRÄCH</span>

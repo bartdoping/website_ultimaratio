@@ -9,37 +9,40 @@ export default function SolutionVisual() {
       icon: <Brain className="w-8 h-8" />,
       title: "Wissenschaftlich bewährte Lernmethoden",
       description: "Retrieval Practice, Spaced Repetition und Interleaving - Methoden, die in der Kognitionsforschung nachweislich funktionieren.",
-      image: "/images/solutions/solution-group-study.jpg",
+      image: "/images/process/erfolg1.jpg",
       benefits: [
         "3x bessere Behaltensleistung",
         "50% weniger Lernzeit",
         "Keine Blackouts mehr"
       ],
-      color: "blue"
+      color: "blue",
+      successText: "✓ Erste Verbesserungen bereits nach 2 Wochen sichtbar!"
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: "Erfahrene Ärzte als persönliche Coaches",
       description: "Approbierte Ärzte und Top-Studenten, die selbst mit Bestnoten durch alle Examina gegangen sind, begleiten dich.",
-      image: "/images/solutions/solution-tutor-student.jpg",
+      image: "/images/process/erfolg2.jpg",
       benefits: [
         "1:1 Betreuung",
         "Persönliche Lernstrategien",
         "Motivation & Mentoring"
       ],
-      color: "green"
+      color: "green",
+      successText: "✓ Individuelle Betreuung für maximalen Erfolg!"
     },
     {
       icon: <Award className="w-8 h-8" />,
       title: "Nachweisbare Erfolge",
       description: "97% unserer Studenten bestehen ihre Prüfungen. Strukturierte Vorbereitung von der Vorklinik bis zum M3.",
-      image: "/images/solutions/solution-success.jpg",
+      image: "/images/process/erfolg3.jpg",
       benefits: [
         "97% Erfolgsquote",
         "500+ bestandene Prüfungen",
         "Durchschnittlich 2 Noten besser"
       ],
-      color: "purple"
+      color: "purple",
+      successText: "✓ Garantierte Verbesserung oder Geld zurück!"
     }
   ]
 
@@ -97,7 +100,7 @@ export default function SolutionVisual() {
                   <div className="bg-[#0395A6] text-white p-4 rounded-lg">
                     <div className="flex items-center space-x-2">
                       <TrendingUp className="w-5 h-5" />
-                      <span className="font-bold">Nachweisbare Verbesserung in 4 Wochen!</span>
+                      <span className="font-bold">{solution.successText}</span>
                     </div>
                   </div>
                 </div>
@@ -109,13 +112,11 @@ export default function SolutionVisual() {
                     alt={`${solution.title} - Erfolgreiche Medizinstudenten`}
                     fill
                     className="object-cover"
+                    sizes="(min-width: 1024px) 50vw, 100vw"
                     placeholder="blur"
                     blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 text-white">
-                    <p className="text-sm font-semibold">Erfolgreiche Studenten in Aktion</p>
-                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>
               </div>
             </div>
@@ -126,7 +127,7 @@ export default function SolutionVisual() {
         <div className="mt-16 modern-animate-fade-in-up">
           <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-[#0395A6]">
             <h3 className="text-2xl font-bold text-center text-black mb-8">
-              🎯 So funktioniert unser bewährtes System
+              So funktioniert unser bewährtes System
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -161,7 +162,7 @@ export default function SolutionVisual() {
                 href="http://wa.me/491639347633"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg inline-flex items-center space-x-2"
+                className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center space-x-2"
               >
                 <Zap className="w-5 h-5" />
                 <span>JETZT KOSTENLOS STARTEN</span>
