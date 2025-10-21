@@ -30,9 +30,9 @@ export default function Header() {
 
   return (
     <>
-      <div className="sticky top-0 z-50">
-      {/* Top Bar */}
-      <div className="bg-[#0395A6] text-white py-2 relative z-50 mobile-top-bar">
+      <div className="fixed top-0 left-0 right-0 z-50">
+      {/* Top Bar (scrolls away) */}
+      <div className="bg-[#0395A6] text-white h-10 flex items-center mobile-top-bar">
         <div className="modern-container">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center space-x-2 sm:space-x-4">
@@ -58,9 +58,9 @@ export default function Header() {
           </div>
         </div>
       </div>
-
-      {/* Main Header */}
-      <header className="bg-white border-b border-gray-200 shadow-sm relative z-40">
+ 
+      {/* Main Header (white) */}
+      <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="modern-container">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
@@ -82,7 +82,7 @@ export default function Header() {
                 </div>
               </Link>
             </div>
-
+ 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex space-x-6">
               {navigation.map((item) => (
@@ -130,7 +130,7 @@ export default function Header() {
                 </div>
               ))}
             </nav>
-
+ 
             {/* CTA Buttons */}
             <div className="hidden md:flex items-center space-x-3">
               <button
@@ -156,7 +156,7 @@ export default function Header() {
                 Coaching
               </Link>
             </div>
-
+ 
             {/* Mobile menu button */}
             <div className="md:hidden">
               <button
@@ -173,7 +173,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-
+ 
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
@@ -244,9 +244,9 @@ export default function Header() {
           </div>
         )}
       </header>
-      {/* Spacer to offset fixed header on mobile */}
-      {/* Mobile spacer equal to header height so content starts below fixed header */}
-      
+ 
+      {/* Spacer: top bar (2.5rem) + header (5rem) */}
+      <div className="h-[7.5rem]"></div>
       </div>
     </>
   )

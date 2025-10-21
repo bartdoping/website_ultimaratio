@@ -1202,9 +1202,20 @@ body {
     min-height: 2.5rem !important;
   }
   
-  /* Adjust main header positioning on mobile: only outer wrapper is sticky */
+  /* Ensure white header remains sticky on mobile */
   header {
-    position: relative !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 50 !important;
+  }
+  
+  /* Force white header sticky */
+  .site-header {
+    position: -webkit-sticky; /* Safari/iOS */
+    position: sticky;
+    top: 0 !important;
+    z-index: 1000 !important;
+    background: #ffffff;
   }
   
   /* Ensure header container is sticky on mobile */
