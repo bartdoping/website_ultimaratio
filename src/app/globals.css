@@ -1490,20 +1490,6 @@ body {
   }
 }
 
-/* Subpages: increase spacing above the first element in hero sections (exclude homepage) */
-.modern-hero .modern-container > *:first-child,
-.hero-section .modern-container > *:first-child,
-/* Coaching and academic layouts */
-.hero-section .academic-container > *:first-child,
-.modern-hero .academic-container > *:first-child,
-.academic-section .academic-container > *:first-child,
-/* Fallback for sections without container wrapper (e.g., some subpages) */
-.modern-hero > *:first-child,
-.hero-section > *:first-child,
-.academic-section > *:first-child {
-  margin-top: 4cm !important;
-}
-
 /* Subpages: add extra top padding to hero sections so first element sits 4cm lower */
 .modern-hero.modern-section,
 .hero-section.modern-section,
