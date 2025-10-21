@@ -245,8 +245,8 @@ export default function Header() {
         )}
       </header>
  
-      {/* Spacer: top bar (2.5rem) + header (5rem) */}
-      <div className="h-[7.5rem]"></div>
+      {/* Spacer: header only on mobile (5rem), plus blue bar on md+ (7.5rem) */}
+      <div className="h-20 md:h-[7.5rem]"></div>
       </div>
     </>
   )

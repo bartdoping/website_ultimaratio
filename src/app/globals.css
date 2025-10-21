@@ -54,6 +54,11 @@ body {
     letter-spacing: -0.01em !important;
   }
 
+  /* Hide blue top bar on mobile */
+  .mobile-top-bar {
+    display: none !important;
+  }
+
   h3 {
     font-size: 1.25rem !important; /* 20px - Mobile H3 */
     line-height: 1.3 !important;
