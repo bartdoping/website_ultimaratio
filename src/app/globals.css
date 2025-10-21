@@ -1194,12 +1194,14 @@ body {
   .mobile-top-bar {
     position: relative !important;
     z-index: 60 !important;
-    display: block !important;
-    padding: 0.5rem 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
     visibility: visible !important;
     opacity: 1 !important;
-    height: auto !important;
+    height: 2.5rem !important; /* 40px */
     min-height: 2.5rem !important;
+    line-height: 1 !important;
   }
   
   /* Ensure white header remains sticky on mobile */
