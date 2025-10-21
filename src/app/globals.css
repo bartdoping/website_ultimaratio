@@ -1479,3 +1479,13 @@ body {
 .modern-animate-fade-in {
   animation: fadeIn 0.8s ease-out;
 }
+
+/* Final mobile override: hide blue top bar completely */
+@media (max-width: 768px) {
+  .mobile-top-bar {
+    display: none !important;
+    height: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+}

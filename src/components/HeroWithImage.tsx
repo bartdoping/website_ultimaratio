@@ -26,7 +26,7 @@ export default function HeroWithImage() {
         
         
         {/* Main Headline */}
-            <h1 className="mt-[2cm] text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold mb-6 sm:mb-8 md:mb-12 modern-heading leading-tight modern-animate-fade-in-up">
+            <h1 className="mt-[5cm] text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold mb-6 sm:mb-8 md:mb-12 modern-heading leading-tight modern-animate-fade-in-up">
               <span className="block text-white">Schluss mit</span>
               <span className="block text-white">Prüfungsangst</span>
               <span className="block text-white">und Durchfallen!</span>
