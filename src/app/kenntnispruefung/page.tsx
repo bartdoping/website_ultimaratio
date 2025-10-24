@@ -18,10 +18,11 @@ export default function KenntnispruefungPage() {
             </h1>
             
             <p className="body-text-large text-gray-600 mb-16 max-w-5xl mx-auto modern-text modern-animate-fade-in-up">
-              Spezialisierte Vorbereitung für internationale Ärzt:innen auf die deutsche Kenntnisprüfung. 
-              Vollständige Abdeckung aller Prüfungsinhalte: Innere Medizin, Chirurgie, Notfallmedizin, 
-              Klinische Pharmakologie, Bildgebende Verfahren und Rechtsfragen. Individuelle Betreuung 
-              durch erfahrene deutsche Ärzt:innen mit Prüfungssimulationen und strukturierten Lernplänen.
+              Spezialisierte Vorbereitung für internationale Ärzt:innen auf die deutsche Kenntnisprüfung –
+              die mündlich‑praktische, fallbasierte Prüfung im Anerkennungsverfahren zur Approbation. Wir trainieren
+              gezielt Innere Medizin und Chirurgie samt Querschnittsbereichen (Notfallmedizin, Klinische Pharmakologie,
+              Bildgebung/Strahlenschutz, Hygiene und relevante Rechtsfragen). Hinweis: Umfang und Dauer der Prüfung
+              variieren je nach Bundesland.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-8 justify-center modern-animate-fade-in-up">
@@ -104,7 +105,7 @@ export default function KenntnispruefungPage() {
               Die Kenntnisprüfung im Detail
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Struktur und Ablauf der deutschen Kenntnisprüfung
+              Struktur, Inhalte und typische Dauer (abhängig vom Bundesland)
             </p>
           </div>
 
@@ -113,16 +114,16 @@ export default function KenntnispruefungPage() {
               <div className="mb-4 md:mb-8">
                 <FileText className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Klinische Prüfung (60 Min)</h3>
+              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Mündlich‑praktische, fallbasierte Prüfung</h3>
               <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
-                Praktische Fertigkeiten unter Beweis stellen:
+                Typische Dauer: 60–90 Min (in einigen Bundesländern bis zu 120 Min).
               </p>
               <ul className="space-y-3">
                 {[
-                  "Anamneseerhebung mit Patienten",
-                  "Körperliche Untersuchung durchführen",
-                  "Arztbericht schreiben (Diagnose, Differentialdiagnose, Therapieplan)",
-                  "Klinische Entscheidungsfindung demonstrieren"
+                  "Anamnese und körperliche Untersuchung (realer Patient oder Fallvignette)",
+                  "Arztbrief/Patientenbericht mit Diagnose, DD, Befunden und Therapieplan",
+                  "Fallpräsentation vor der Kommission und strukturierte Falldiskussion",
+                  "Querschnittsthemen: Notfallmanagement, Hygiene, Arzneimitteltherapie, Strahlenschutz"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -136,19 +137,95 @@ export default function KenntnispruefungPage() {
               <div className="mb-4 md:mb-8">
                 <Users className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Mündlich-praktische Prüfung (90 Min)</h3>
+              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Prüfungsinhalte & Schwerpunkte</h3>
               <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
-                Fachwissen und Kommunikationsfähigkeit:
+                Orientiert an der deutschen ärztlichen Ausbildung; Schwerpunkte variieren regional.
               </p>
               <ul className="space-y-3">
                 {[
-                  "Patientenvorstellung vor Prüfungskommission",
-                  "Fachfragen aus allen Bereichen beantworten",
-                  "Klinische Fälle diskutieren",
-                  "Rechtliche und ethische Aspekte erläutern"
+                  "Innere Medizin und Chirurgie (Kernfächer)",
+                  "Notfallmedizin und klinische Pharmakologie",
+                  "Bildgebung & Strahlenschutz, Hygiene/Infektiologie",
+                  "Rechtliche Grundlagen (Aufklärung, Dokumentation, Schweigepflicht)"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Legal basis & prerequisites */}
+      <section className="modern-section bg-white">
+        <div className="modern-container">
+          <div className="text-center modern-spacing">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+              Rechtliche Grundlage & Voraussetzungen
+            </h2>
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+              Die Kenntnisprüfung ist gesetzlich im Rahmen des Approbationsverfahrens vorgesehen (BÄO §3).
+              Sie wird verlangt, wenn die Gleichwertigkeit der außerhalb der EU/EWR erworbenen Ausbildung
+              nicht vollständig nachgewiesen werden kann.
+            </p>
+          </div>
+
+          <div className="modern-grid modern-grid-3">
+            <div className="modern-card p-8 modern-animate-fade-in-up">
+              <div className="mb-6">
+                <FileText className="w-10 h-10 text-[#0395A6]" />
+              </div>
+              <h3 className="text-xl font-bold text-black mb-4 modern-heading">Sprachvoraussetzungen</h3>
+              <ul className="space-y-3">
+                {[
+                  "Deutsch B2 (allgemein)",
+                  "Fachsprachprüfung Medizin (C1 Medizin), i. d. R. verpflichtend",
+                  "FSP ist unabhängig von der Kenntnisprüfung"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-[#0395A6] mr-3 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="modern-card p-8 modern-animate-fade-in-up">
+              <div className="mb-6">
+                <BookOpen className="w-10 h-10 text-[#0395A6]" />
+              </div>
+              <h3 className="text-xl font-bold text-black mb-4 modern-heading">Unterlagen (Auszug)</h3>
+              <ul className="space-y-3">
+                {[
+                  "Ärztliches Diplom/Abschluss und Fächer‑/Stundennachweise",
+                  "Curriculum/Syllabi (falls gefordert)",
+                  "Berufszulassung/Good‑Standing, Lebenslauf, Identitätsnachweis",
+                  "Übersetzungen und ggf. Beglaubigungen gemäß Landesvorgaben"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-[#0395A6] mr-3 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="modern-card p-8 modern-animate-fade-in-up">
+              <div className="mb-6">
+                <Award className="w-10 h-10 text-[#0395A6]" />
+              </div>
+              <h3 className="text-xl font-bold text-black mb-4 modern-heading">Ergebnis & Approbation</h3>
+              <ul className="space-y-3">
+                {[
+                  "Bestehen der Kenntnisprüfung + bestandene FSP",
+                  "Erfüllte Zuverlässigkeits‑/Gesundheitsnachweise",
+                  "führt zur Erteilung der Approbation (zuständige Landesbehörde)"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-[#0395A6] mr-3 flex-shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -312,27 +389,26 @@ export default function KenntnispruefungPage() {
         </div>
       </section>
 
-      {/* Process Section */}
+      {/* Recognition Procedure Section */}
       <section className="modern-section bg-white">
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Unser Kenntnisprüfungs-Prozess
+              Behördlicher Ablauf bis zur Approbation
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Strukturierte Vorbereitung auf alle Prüfungsanforderungen
+              Der genaue Ablauf, Zuständigkeiten und Fristen unterscheiden sich je nach Bundesland.
             </p>
           </div>
 
-          <div className="modern-grid modern-grid-4">
+          <div className="modern-grid modern-grid-3">
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 01
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Defizitanalyse</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Bundesland wählen</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
-                Einschätzung deiner medizinischen Vorkenntnisse und Identifikation der 
-                wichtigsten Lernbereiche für die Kenntnisprüfung.
+                Zuständige Behörde ermitteln (Approbationsbehörde/Landesamt). Anforderungen prüfen.
               </p>
             </div>
 
@@ -340,10 +416,9 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 02
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Fachliche Vorbereitung</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Antrag & Unterlagen</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
-                Systematische Vorbereitung auf alle Prüfungsfächer: Innere Medizin, Chirurgie, 
-                Notfallmedizin, Pharmakologie und Rechtsfragen.
+                Approbation beantragen, erforderliche Dokumente einreichen, Übersetzungen/Beglaubigungen.
               </p>
             </div>
 
@@ -351,10 +426,9 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 03
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Praktisches Training</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Gleichwertigkeitsprüfung</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
-                Training der klinischen Fertigkeiten: Anamnese, Untersuchung, 
-                Arztberichte und Patientenvorstellung simulieren.
+                Behörde vergleicht Ausbildung. Bei Unterschieden: Auflage zur Kenntnisprüfung.
               </p>
             </div>
 
@@ -362,12 +436,91 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 04
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Prüfungssimulation</h3>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Fachsprachprüfung (C1)</h3>
               <p className="text-gray-600 leading-relaxed modern-text">
-                Realistische Prüfungssimulationen mit Zeitdruck und finalen 
-                Strategien für die erfolgreiche Prüfung.
+                Medizinische Sprachprüfung (separat zur Kenntnisprüfung); Reihenfolge variiert je Land.
               </p>
             </div>
+
+            <div className="modern-card p-8 text-center modern-animate-fade-in-up">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
+                05
+              </div>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Berufserlaubnis (optional)</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">
+                Zeitlich befristete Tätigkeit unter Aufsicht möglich; Regelungen sind landesspezifisch.
+              </p>
+            </div>
+
+            <div className="modern-card p-8 text-center modern-animate-fade-in-up">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
+                06
+              </div>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Kenntnisprüfung & Approbation</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">
+                Bestehen der KP und FSP führt (bei erfüllten Voraussetzungen) zur Approbation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="modern-section bg-[#F8FAFC]">
+        <div className="modern-container">
+          <div className="text-center modern-spacing">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
+              Häufige Fragen (FAQ)
+            </h2>
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
+              Kurze, verlässliche Antworten rund um die Kenntnisprüfung und die Approbation.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto space-y-4">
+            {[
+              {
+                q: "Was ist der Unterschied zwischen Fachsprachprüfung und Kenntnisprüfung?",
+                a: "Die Fachsprachprüfung (FSP) prüft die medizinische Sprachkompetenz (C1 Medizin). Die Kenntnisprüfung (KP) ist eine mündlich‑praktische, fallbasierte Fachprüfung zu medizinischen Inhalten. Beides ist in der Regel erforderlich, aber organisatorisch getrennt."
+              },
+              {
+                q: "Wie lange dauert die Kenntnisprüfung?",
+                a: "Üblich sind 60–90 Minuten. In einigen Bundesländern kann die Dauer bis zu ca. 120 Minuten betragen. Der genaue Ablauf variiert regional."
+              },
+              {
+                q: "Welche Fächer werden geprüft?",
+                a: "Kernfächer sind Innere Medizin und Chirurgie. Zusätzlich werden Querschnittsbereiche wie Notfallmedizin, Klinische Pharmakologie/Arzneimitteltherapie, Bildgebung/Strahlenschutz, Hygiene/Infektiologie sowie rechtliche Grundlagen abgefragt."
+              },
+              {
+                q: "Wie oft kann ich die Prüfung wiederholen?",
+                a: "Die Anzahl der Versuche und Wartezeiten sind landesabhängig. In vielen Ländern sind mehrere Versuche möglich; informieren Sie sich bei der zuständigen Behörde."
+              },
+              {
+                q: "Brauche ich zuerst die FSP oder zuerst die Kenntnisprüfung?",
+                a: "Die Reihenfolge unterscheidet sich je nach Bundesland. Häufig wird die FSP vor der KP abgelegt. Maßgeblich sind die Vorgaben der Approbationsbehörde."
+              },
+              {
+                q: "Kann ich mit Berufserlaubnis arbeiten?",
+                a: "Eine befristete Berufserlaubnis ist in manchen Ländern möglich, meist unter ärztlicher Aufsicht und mit Auflagen. Details, Dauer und Voraussetzungen legt das jeweilige Bundesland fest."
+              },
+              {
+                q: "Welche Unterlagen brauche ich für den Antrag?",
+                a: "Typisch sind Abschlussurkunden, Fächer‑/Stundennachweise, ggf. Curricula, Nachweise der Berufszulassung/Good‑Standing, Identitätsnachweise, Lebenslauf sowie beglaubigte Übersetzungen. Die exakten Listen veröffentlichen die Landesbehörden."
+              },
+              {
+                q: "Was passiert, wenn ich nicht bestehe?",
+                a: "Sie erhalten ein Protokoll/Feedback. Eine Wiederholung ist häufig möglich; Fristen und Anzahl der Versuche sind landesspezifisch. Gezielte Vorbereitung auf die festgestellten Defizite ist sinnvoll."
+              }
+            ].map((item, idx) => (
+              <details key={idx} className="modern-faq">
+                <summary className="modern-faq-question">
+                  {item.q}
+                </summary>
+                <div className="modern-faq-answer open">
+                  <p className="modern-text">{item.a}</p>
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>
