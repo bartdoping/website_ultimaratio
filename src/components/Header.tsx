@@ -48,10 +48,10 @@ export default function Header() {
 
   return (
     <>
-      <div className="md:fixed top-0 left-0 right-0 z-50" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+      <div className="fixed top-0 left-0 right-0 z-50" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
       {/* Top Bar (hidden on mobile) */}
       <div className="bg-[#0395A6] text-white h-10 items-center mobile-top-bar hidden md:flex">
-        <div className="modern-container">
+        <div className="modern-container px-4">
           <div className="flex justify-between items-center text-sm gap-3 md:gap-6 lg:gap-10">
             <div className="flex items-center space-x-2 sm:space-x-4">
               <div className="flex items-center">
@@ -274,8 +274,8 @@ export default function Header() {
         )}
       </header>
       </div>
-      {/* Spacer only for md+ where header is fixed */}
-      <div className="hidden md:block h-[7rem]"></div>
+      {/* Spacer for fixed header */}
+      <div className="h-[4.5rem] md:h-[7rem]"></div>
     </>
   )
 }
