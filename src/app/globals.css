@@ -336,8 +336,8 @@ body {
     max-width: 100%;
   }
   
-  /* Fix any remaining overflow issues */
-  .flex {
+  /* Fix any remaining overflow issues - but not for header */
+  .flex:not(header .flex):not(.header-flex) {
     flex-wrap: wrap;
   }
   
@@ -704,8 +704,8 @@ body {
     max-width: 100% !important;
   }
   
-  /* Ensure all flex containers wrap */
-  .flex {
+  /* Ensure all flex containers wrap - but not header */
+  .flex:not(header .flex):not(.header-flex) {
     flex-wrap: wrap !important;
   }
   
@@ -1531,6 +1531,19 @@ body {
     min-height: 2.5rem !important;
     padding: 0 !important;
     overflow: visible !important;
+  }
+  
+  /* Ensure header never wraps on mobile */
+  header .flex,
+  .header-flex {
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+  }
+  
+  /* Ensure mobile controls stay horizontal */
+  .md\\:hidden.flex {
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
   }
 }
 

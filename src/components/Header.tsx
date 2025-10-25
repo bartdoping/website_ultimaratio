@@ -52,7 +52,7 @@ export default function Header() {
       {/* Top Bar (visible on mobile) */}
       <div className="bg-[#0395A6] text-white h-10 items-center mobile-top-bar flex">
         <div className="modern-container px-4">
-          <div className="flex justify-between items-center text-sm gap-3 md:gap-6 lg:gap-10">
+          <div className="flex flex-nowrap justify-between items-center text-sm gap-3 md:gap-6 lg:gap-10">
             <div className="flex items-center space-x-2 sm:space-x-4">
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-1 sm:mr-2" />
@@ -80,10 +80,10 @@ export default function Header() {
       {/* Main Header (white) */}
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="modern-container">
-          <div className="flex justify-between items-center h-16 md:h-16 min-h-[4rem]">
+          <div className="flex flex-nowrap justify-between items-center h-16 md:h-16 min-h-[4rem]">
             {/* Logo */}
             <div className="flex-shrink-0 min-w-0">
-              <Link href="/" className="flex items-center group min-w-0">
+              <Link href="/" className="flex flex-nowrap items-center group min-w-0">
                 <div className="h-10 w-10 sm:h-11 sm:w-11 md:h-12 md:w-12 rounded-xl overflow-hidden shadow-lg logo-mobile flex-shrink-0">
                   <Image
                     src="/images/logo/logo.png"
@@ -184,7 +184,7 @@ export default function Header() {
  
             {/* Mobile menu button */}
             {/* Mobile Controls: language, cookie settings, burger */}
-            <div className="md:hidden flex items-center gap-2 flex-shrink-0">
+            <div className="md:hidden flex flex-nowrap items-center gap-2 flex-shrink-0">
               <select
                 value={locale}
                 onChange={(e) => setLang(e.target.value as 'de' | 'en' | 'ar')}
