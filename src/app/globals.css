@@ -73,11 +73,17 @@ body {
     letter-spacing: -0.01em !important;
   }
 
-  /* Show blue top bar on mobile with proper height */
+  /* Mobile top bar - clean structure */
   .mobile-top-bar {
     display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
     height: 2.5rem !important;
     min-height: 2.5rem !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background: #0395A6 !important;
+    color: white !important;
   }
 
   h3 {
@@ -126,12 +132,13 @@ body {
   }
   
   .modern-container {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     max-width: 100vw;
     overflow-x: hidden;
     margin-left: auto !important;
     margin-right: auto !important;
+    width: 100% !important;
   }
   
   .modern-grid {
@@ -464,7 +471,6 @@ body {
 }
 
 /* Fixed header safe-area support for iOS notch */
-.mobile-top-bar { height: 2.5rem; }
 @supports (padding-top: env(safe-area-inset-top)) {
   .mobile-safe { padding-top: env(safe-area-inset-top); }
 }
@@ -1243,6 +1249,8 @@ body {
     position: relative !important;
     z-index: 60 !important;
     display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
     align-items: center !important;
     padding: 0 !important;
     visibility: visible !important;
@@ -1527,10 +1535,18 @@ body {
 @media (max-width: 768px) {
   .mobile-top-bar {
     display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
     height: 2.5rem !important;
     min-height: 2.5rem !important;
     padding: 0 !important;
     overflow: visible !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background: #0395A6 !important;
+    color: white !important;
+    position: relative !important;
+    z-index: 60 !important;
   }
   
   /* Ensure header never wraps on mobile */
@@ -1544,6 +1560,24 @@ body {
   .md\\:hidden.flex {
     flex-wrap: nowrap !important;
     white-space: nowrap !important;
+  }
+  
+  /* Force header to be visible and properly sized on mobile */
+  header {
+    display: block !important;
+    width: 100% !important;
+    min-height: 4rem !important;
+    background: white !important;
+    position: relative !important;
+    z-index: 50 !important;
+  }
+  
+  /* Ensure header container is full width */
+  header .modern-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 }
 

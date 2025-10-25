@@ -50,9 +50,9 @@ export default function Header() {
     <>
       <div className="fixed top-0 left-0 right-0 z-50" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
       {/* Top Bar (visible on mobile) */}
-      <div className="bg-[#0395A6] text-white h-10 items-center mobile-top-bar flex">
-        <div className="modern-container px-4">
-          <div className="flex flex-nowrap justify-between items-center text-sm gap-3 md:gap-6 lg:gap-10">
+      <div className="bg-[#0395A6] text-white mobile-top-bar w-full">
+        <div className="modern-container px-4 h-full">
+          <div className="flex flex-nowrap justify-between items-center text-sm gap-3 md:gap-6 lg:gap-10 h-full">
             <div className="flex items-center space-x-2 sm:space-x-4">
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-1 sm:mr-2" />
@@ -78,9 +78,9 @@ export default function Header() {
       </div>
  
       {/* Main Header (white) */}
-      <header className="bg-white border-b border-gray-200 shadow-sm">
-        <div className="modern-container">
-          <div className="flex flex-nowrap justify-between items-center h-16 md:h-16 min-h-[4rem]">
+      <header className="bg-white border-b border-gray-200 shadow-sm w-full">
+        <div className="modern-container w-full">
+          <div className="flex flex-nowrap justify-between items-center h-16 md:h-16 min-h-[4rem] w-full">
             {/* Logo */}
             <div className="flex-shrink-0 min-w-0">
               <Link href="/" className="flex flex-nowrap items-center group min-w-0">
@@ -283,7 +283,7 @@ export default function Header() {
       </header>
       </div>
       {/* Spacer for fixed header */}
-      <div className="h-[5.5rem] md:h-[7rem]"></div>
+      <div className="h-[6.5rem] md:h-[7rem]"></div>
     </>
   )
 }
