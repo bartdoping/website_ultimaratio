@@ -2,7 +2,6 @@ import { CheckCircle, Users, Target, BookOpen, Clock, Zap, MessageCircle, Award,
 import { cookies } from 'next/headers'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { t } from '@/i18n/dictionaries'
-import Testimonials from '../../components/Testimonials'
 
 export default async function CoachingPage() {
   const cookieStore = await cookies()

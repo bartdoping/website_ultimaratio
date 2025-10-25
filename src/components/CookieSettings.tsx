@@ -228,13 +228,13 @@ export default function CookieSettings() {
           <div className="bg-gray-50 rounded-xl p-4">
             <p className="text-sm text-gray-600 leading-relaxed">
               Weitere Informationen über unsere Verwendung von Cookies finden Sie in unserer{' '}
-              <a href="/datenschutz" className="text-[#0395A6] hover:underline font-medium">
+              <Link href="/datenschutz" className="text-[#0395A6] hover:underline font-medium">
                 Datenschutzerklärung
-              </a>
+              </Link>
               {' '}und unserer{' '}
-              <a href="/cookie-richtlinie" className="text-[#0395A6] hover:underline font-medium">
+              <Link href="/cookie-richtlinie" className="text-[#0395A6] hover:underline font-medium">
                 Cookie-Richtlinie
-              </a>
+              </Link>
               .
             </p>
           </div>

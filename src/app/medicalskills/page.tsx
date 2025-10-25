@@ -395,13 +395,13 @@ export default async function MedicalSkillsPage() {
                   <Users className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
                   {t(locale, 'ms_cta_start')}
                 </a>
-                <a
+                <Link
                   href="/coaching"
                   className="modern-button-secondary px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
                 >
                   <Stethoscope className="w-6 h-6 mr-3 inline-block group-hover:translate-x-1 transition-transform" />
                   {t(locale, 'ms_cta_overview')}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

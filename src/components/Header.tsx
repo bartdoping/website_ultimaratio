@@ -130,7 +130,7 @@ export default function Header() {
                               className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] transition-colors"
                               onClick={() => setIsCoachingOpen(false)}
                             >
-                              {t(locale, subItem.nameKey as any)}
+                              {t(locale, subItem.nameKey)}
                             </Link>
                           ))}
                         </div>
@@ -231,7 +231,7 @@ export default function Header() {
                           className="text-gray-600 hover:bg-gray-50 hover:text-[#0395A6] block px-6 py-2 rounded-lg text-sm font-medium transition-all"
                           onClick={() => setIsMenuOpen(false)}
                         >
-                          {t(locale, subItem.nameKey as any)}
+                          {t(locale, subItem.nameKey)}
                         </Link>
                       ))}
                     </div>

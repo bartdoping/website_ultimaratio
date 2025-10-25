@@ -81,19 +81,19 @@ export default function CookieBanner() {
           <div className="mt-6 pt-4 border-t border-gray-200">
             <p className="cookie-text text-gray-600 text-center">
               Weitere Informationen finden Sie in unserer{' '}
-              <a 
+              <Link 
                 href="/datenschutz" 
                 className="text-[#0395A6] hover:underline font-medium"
               >
                 Datenschutzerklärung
-              </a>
+              </Link>
               {' '}und{' '}
-              <a 
+              <Link 
                 href="/cookie-richtlinie" 
                 className="text-[#0395A6] hover:underline font-medium"
               >
                 Cookie-Richtlinie
-              </a>
+              </Link>
               .
             </p>
           </div>
