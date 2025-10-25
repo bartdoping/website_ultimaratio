@@ -17,14 +17,14 @@ export const metadata: Metadata = {
   description: 'Bestnoten im Medizinstudium durch echtes Verstehen. Medizin-Nachhilfe mit approbierten Ärzt:innen und qualifizierten Tutor:innen.',
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode
-  params: { locale: 'de' | 'en' | 'ar' }
+  params: Promise<{ locale: 'de' | 'en' | 'ar' }>
 }) {
-  const locale = params.locale
+  const { locale } = await params
   const dir = locale === 'ar' ? 'rtl' : 'ltr'
   const messages = messagesByLocale[locale]
 
