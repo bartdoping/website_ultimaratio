@@ -200,9 +200,9 @@ export default function Header() {
               >
                 <span className="sr-only">Open main menu</span>
                 {isMenuOpen ? (
-                  <X className="block h-10 w-10 sm:h-6 sm:w-6 burger-mobile" aria-hidden="true" />
+                  <X className="block h-8 w-8 sm:h-6 sm:w-6 burger-mobile" aria-hidden="true" />
                 ) : (
-                  <Menu className="block h-10 w-10 sm:h-6 sm:w-6 burger-mobile" aria-hidden="true" />
+                  <Menu className="block h-8 w-8 sm:h-6 sm:w-6 burger-mobile" aria-hidden="true" />
                 )}
               </button>
             </div>
@@ -267,21 +267,15 @@ export default function Header() {
                   <MessageCircle className="w-4 h-4 mr-1.5 inline-block" />
                   Erstgespräch
                 </a>
-                <Link
-                  href="/coaching"
-                  className="modern-button-secondary block w-full text-center px-4 py-2.5 rounded-lg text-sm font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Coaching
-                </Link>
+                {/* Coaching CTA im mobilen Footer entfernt */}
               </div>
             </div>
           </div>
         )}
       </header>
  
-      {/* Spacer: header only on mobile (5rem), plus blue bar on md+ (7.5rem) */}
-      <div className="h-16 md:h-[7rem]"></div>
+      {/* Spacer: mobile (blue bar 2.5rem + header 4rem = 6.5rem), md+ 7rem */}
+      <div className="h-[6.5rem] md:h-[7rem]"></div>
       </div>
     </>
   )

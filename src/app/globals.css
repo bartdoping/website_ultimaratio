@@ -454,9 +454,16 @@ body {
     width: 3.5rem !important;
   }
 
+@media (max-width: 360px) {
+  .logo-mobile {
+    height: 2.25rem !important;
+    width: 2.25rem !important;
+  }
+}
+
   .burger-mobile {
-    width: 3rem !important;
-    height: 3rem !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
   }
   
   /* Desktop price emphasis */
