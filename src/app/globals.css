@@ -456,8 +456,8 @@ body {
 
 @media (max-width: 360px) {
   .logo-mobile {
-    height: 2.25rem !important;
-    width: 2.25rem !important;
+    height: 2rem !important;
+    width: 2rem !important;
   }
 }
 

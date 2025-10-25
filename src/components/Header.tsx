@@ -49,8 +49,8 @@ export default function Header() {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-50">
-      {/* Top Bar (scrolls away) */}
-      <div className="bg-[#0395A6] text-white h-10 flex items-center mobile-top-bar">
+      {/* Top Bar (hidden on mobile) */}
+      <div className="bg-[#0395A6] text-white h-10 items-center mobile-top-bar hidden md:flex">
         <div className="modern-container">
           <div className="flex justify-between items-center text-sm gap-3 md:gap-6 lg:gap-10">
             <div className="flex items-center space-x-2 sm:space-x-4">
@@ -82,9 +82,9 @@ export default function Header() {
         <div className="modern-container">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <div className="flex-shrink-0">
-              <Link href="/" className="flex items-center group">
-                <div className="h-10 w-10 sm:h-11 sm:w-11 rounded-xl overflow-hidden shadow-lg logo-mobile">
+            <div className="flex-shrink-0 min-w-0">
+              <Link href="/" className="flex items-center group min-w-0">
+                <div className="h-9 w-9 sm:h-11 sm:w-11 rounded-xl overflow-hidden shadow-lg logo-mobile flex-shrink-0">
                   <Image
                     src="/images/logo/logo.png"
                     alt="ultima-rat.io Logo"
@@ -94,9 +94,9 @@ export default function Header() {
                     priority
                   />
                 </div>
-                <div className="ml-2 sm:ml-3">
-                  <span className="text-base sm:text-lg font-bold text-black modern-heading block">ultima-rat.io</span>
-                  <span className="text-[10px] sm:text-xs text-gray-500 hidden sm:block">Medizin-Nachhilfe</span>
+                <div className="ml-2 sm:ml-3 truncate">
+                  <span className="text-sm sm:text-lg font-bold text-black modern-heading block leading-5 truncate">ultima-rat.io</span>
+                  <span className="text-[10px] sm:text-xs text-gray-500 hidden sm:block leading-4 truncate">Medizin-Nachhilfe</span>
                 </div>
               </Link>
             </div>
@@ -183,7 +183,7 @@ export default function Header() {
             </div>
  
             {/* Mobile menu button */}
-            <div className="md:hidden flex items-center gap-1.5">
+            <div className="md:hidden flex items-center gap-1.5 flex-shrink-0">
               <select
                 value={locale}
                 onChange={(e) => setLang(e.target.value as 'de' | 'en' | 'ar')}
@@ -274,8 +274,8 @@ export default function Header() {
         )}
       </header>
  
-      {/* Spacer: mobile (blue bar 2.5rem + header 4rem = 6.5rem), md+ 7rem */}
-      <div className="h-[6.5rem] md:h-[7rem]"></div>
+      {/* Spacer: mobile header height, md+ includes blue bar + header */}
+      <div className="h-16 md:h-[7rem]"></div>
       </div>
     </>
   )
