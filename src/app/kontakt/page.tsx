@@ -1,9 +1,18 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { normalizeLocale, type Locale } from '@/i18n/locales'
+import { t } from '@/i18n/dictionaries'
 import { MessageCircle, Phone, Mail, MapPin, Clock, Send, CheckCircle, Instagram, MessageSquare, MailOpen } from 'lucide-react'
 
 export default function KontaktPage() {
+  const [locale, setLocale] = useState<Locale>('de')
+  useEffect(() => {
+    try {
+      const v = document.cookie.split('; ').find((c) => c.startsWith('lang='))?.split('=')[1]
+      setLocale(normalizeLocale(v))
+    } catch {}
+  }, [])
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -24,8 +33,8 @@ export default function KontaktPage() {
       const data = await res.json()
       
       if (!res.ok || !data.ok) {
-        const errorMessage = data.message || 'Senden fehlgeschlagen'
-        alert(`${errorMessage}\n\nBitte nutzen Sie stattdessen:\n• WhatsApp: http://wa.me/491639347633\n• E-Mail: info@ultima-rat.io`)
+        const errorMessage = data.message || t(locale, 'contact_send_failed')
+        alert(`${errorMessage}\n\n${t(locale, 'contact_use_instead')}`)
         return
       }
       
@@ -34,7 +43,7 @@ export default function KontaktPage() {
       setTimeout(() => setIsSubmitted(false), 4000)
     } catch (error) {
       console.error('Contact form error:', error)
-      alert('Verbindungsfehler. Bitte nutzen Sie stattdessen:\n• WhatsApp: http://wa.me/491639347633\n• E-Mail: info@ultima-rat.io')
+      alert(`${t(locale, 'contact_connection_error')}\n\n${t(locale, 'contact_use_instead')}`)
     }
   }
 
@@ -53,17 +62,15 @@ export default function KontaktPage() {
           <div className="text-center">
             <div className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#0395A6] text-white font-semibold mb-12 modern-animate-fade-in">
               <MessageCircle className="w-5 h-5 mr-2" />
-              Kontakt aufnehmen
+              {t(locale, 'contact_badge')}
             </div>
             
             <h1 className="text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold text-black mb-6 sm:mb-8 modern-heading leading-tight modern-animate-fade-in-up px-2 sm:px-4">
-              Lass uns gemeinsam<br />
-              <span className="text-[#0395A6]">deine Prüfung bestehen</span>
+              {t(locale, 'contact_hero_heading')}
             </h1>
             
             <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-8 sm:mb-12 md:mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up px-2 sm:px-4">
-              Hast du Fragen zu unserem Coaching? Möchtest du einen Termin vereinbaren? 
-              Wir sind für dich da und helfen gerne weiter.
+              {t(locale, 'contact_hero_p')}
             </p>
           </div>
         </div>
@@ -74,10 +81,10 @@ export default function KontaktPage() {
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Kontaktmöglichkeiten
+              {t(locale, 'contact_methods_title')}
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Wähle den für dich bequemsten Weg
+              {t(locale, 'contact_methods_sub')}
             </p>
           </div>
 
@@ -87,9 +94,9 @@ export default function KontaktPage() {
               <div className="flex items-center justify-center mx-auto mb-3 md:mb-8">
                 <MessageSquare className="w-8 h-8 md:w-16 md:h-16 text-[#0395A6]" />
               </div>
-              <h3 className="text-xs md:text-lg font-bold text-black mb-2 md:mb-6 modern-heading">WhatsApp</h3>
+              <h3 className="text-xs md:text-lg font-bold text-black mb-2 md:mb-6 modern-heading">{t(locale, 'contact_whatsapp_title')}</h3>
               <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6">
-                Schnell und unkompliziert. Schreib uns direkt über WhatsApp.
+                {t(locale, 'contact_whatsapp_p')}
               </p>
               <a
                 href="http://wa.me/491639347633"
@@ -97,7 +104,7 @@ export default function KontaktPage() {
                 rel="noopener noreferrer"
                 className="modern-button px-3 md:px-8 py-2 md:py-4 rounded-lg text-xs md:text-lg font-semibold modern-focus inline-block"
               >
-                WhatsApp öffnen
+                {t(locale, 'contact_whatsapp_cta')}
               </a>
             </div>
 
@@ -105,9 +112,9 @@ export default function KontaktPage() {
               <div className="flex items-center justify-center mx-auto mb-3 md:mb-8">
                 <MailOpen className="w-8 h-8 md:w-16 md:h-16 text-[#0395A6]" />
               </div>
-              <h3 className="text-xs md:text-lg font-bold text-black mb-2 md:mb-6 modern-heading">E-Mail</h3>
+              <h3 className="text-xs md:text-lg font-bold text-black mb-2 md:mb-6 modern-heading">{t(locale, 'contact_email_title')}</h3>
               <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6">
-                Schreib uns eine E-Mail. Wir antworten innerhalb von 24 Stunden.
+                {t(locale, 'contact_email_p')}
               </p>
               <a
                 href="mailto:info@ultima-rat.io"
@@ -126,10 +133,10 @@ export default function KontaktPage() {
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Kontaktformular
+              {t(locale, 'contact_form_title')}
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Sende uns eine Nachricht
+              {t(locale, 'contact_form_sub')}
             </p>
           </div>
 
@@ -138,17 +145,15 @@ export default function KontaktPage() {
               {isSubmitted ? (
                 <div className="text-center py-12">
                   <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-6" />
-                  <h3 className="text-lg font-bold text-black mb-4">Nachricht gesendet!</h3>
-                  <p className="text-lg text-gray-600">
-                    Vielen Dank für deine Nachricht. Wir melden uns schnellstmöglich bei dir.
-                  </p>
+                  <h3 className="text-lg font-bold text-black mb-4">{t(locale, 'contact_sent_title')}</h3>
+                  <p className="text-lg text-gray-600">{t(locale, 'contact_sent_p')}</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                     <div>
                       <label htmlFor="name" className="block text-base sm:text-lg font-semibold text-black mb-2 sm:mb-3">
-                        Name *
+                        {t(locale, 'contact_name')}
                       </label>
                       <input
                         type="text"
@@ -158,12 +163,12 @@ export default function KontaktPage() {
                         onChange={handleChange}
                         required
                         className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus text-sm sm:text-base"
-                        placeholder="Dein Name"
+                        placeholder={t(locale, 'contact_name')}
                       />
                     </div>
                     <div>
                       <label htmlFor="email" className="block text-base sm:text-lg font-semibold text-black mb-2 sm:mb-3">
-                        E-Mail *
+                        {t(locale, 'contact_email')}
                       </label>
                       <input
                         type="email"
@@ -173,7 +178,7 @@ export default function KontaktPage() {
                         onChange={handleChange}
                         required
                         className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus text-sm sm:text-base"
-                        placeholder="ihre@email.de"
+                      placeholder={t(locale, 'contact_email_ph')}
                       />
                     </div>
                   </div>
@@ -181,7 +186,7 @@ export default function KontaktPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                     <div>
                       <label htmlFor="phone" className="block text-base sm:text-lg font-semibold text-black mb-2 sm:mb-3">
-                        Telefon
+                        {t(locale, 'contact_phone')}
                       </label>
                       <input
                         type="tel"
@@ -190,12 +195,12 @@ export default function KontaktPage() {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus text-sm sm:text-base"
-                        placeholder="+49 123 456789"
+                        placeholder={t(locale, 'contact_phone_ph')}
                       />
                     </div>
                     <div>
                       <label htmlFor="subject" className="block text-base sm:text-lg font-semibold text-black mb-2 sm:mb-3">
-                        Betreff *
+                        {t(locale, 'contact_subject')}
                       </label>
                       <select
                         id="subject"
@@ -205,20 +210,20 @@ export default function KontaktPage() {
                         required
                         className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus text-sm sm:text-base"
                       >
-                        <option value="">Bitte wählen</option>
-                        <option value="coaching">Coaching buchen</option>
-                        <option value="kenntnispruefung">Kenntnisprüfung</option>
-                        <option value="physikum">Physikum</option>
-                        <option value="m2">M2</option>
-                        <option value="m3">M3</option>
-                        <option value="fragen">Allgemeine Fragen</option>
+                        <option value="">{t(locale, 'contact_subject_choose')}</option>
+                        <option value="coaching">{t(locale, 'contact_subject_coaching')}</option>
+                        <option value="kenntnispruefung">{t(locale, 'contact_subject_kp')}</option>
+                        <option value="physikum">{t(locale, 'contact_subject_physikum')}</option>
+                        <option value="m2">{t(locale, 'contact_subject_m2')}</option>
+                        <option value="m3">{t(locale, 'contact_subject_m3')}</option>
+                        <option value="fragen">{t(locale, 'contact_subject_general')}</option>
                       </select>
                     </div>
                   </div>
 
                   <div>
                     <label htmlFor="message" className="block text-base sm:text-lg font-semibold text-black mb-2 sm:mb-3">
-                      Nachricht *
+                      {t(locale, 'contact_message')}
                     </label>
                     <textarea
                       id="message"
@@ -228,7 +233,7 @@ export default function KontaktPage() {
                       required
                       rows={4}
                       className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0395A6] focus:border-transparent transition-all modern-focus text-sm sm:text-base resize-none"
-                      placeholder="Beschreibe dein Anliegen..."
+                      placeholder={t(locale, 'contact_message_ph')}
                     />
                   </div>
 
@@ -238,7 +243,7 @@ export default function KontaktPage() {
                       className="w-full sm:w-auto modern-button px-6 sm:px-12 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold modern-focus group"
                     >
                       <Send className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 inline-block group-hover:translate-x-1 transition-transform" />
-                      Nachricht senden
+                      {t(locale, 'contact_send')}
                     </button>
                   </div>
                 </form>
@@ -253,51 +258,51 @@ export default function KontaktPage() {
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Kontaktdaten
+              {t(locale, 'contact_info_title')}
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Alle wichtigen Informationen auf einen Blick
+              {t(locale, 'contact_info_sub')}
             </p>
           </div>
 
           <div className="w-full px-4 md:max-w-6xl md:mx-auto md:px-0">
             <div className="modern-grid modern-grid-2 gap-4 md:gap-8">
               <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
-              <h3 className="text-xs md:text-lg font-bold text-black mb-3 md:mb-8 modern-heading">Kontakt</h3>
+              <h3 className="text-xs md:text-lg font-bold text-black mb-3 md:mb-8 modern-heading">{t(locale, 'contact_box_title')}</h3>
               <div className="space-y-2 md:space-y-6">
                 <div className="flex items-center">
                   <MapPin className="w-3 h-3 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-4 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-black text-xs md:text-base">Adresse</p>
-                    <p className="text-gray-600 text-xs md:text-base">Warburghof 14, 30627 Hannover, Deutschland</p>
+                    <p className="font-semibold text-black text-xs md:text-base">{t(locale, 'contact_address')}</p>
+                    <p className="text-gray-600 text-xs md:text-base">{t(locale, 'contact_address_value')}</p>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-3 h-3 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-4 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-black text-xs md:text-base">Telefon</p>
+                    <p className="font-semibold text-black text-xs md:text-base">{t(locale, 'contact_phone_label')}</p>
                     <p className="text-gray-600 text-xs md:text-base">+49 163 9347633</p>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-3 h-3 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-4 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-black text-xs md:text-base">E-Mail</p>
+                    <p className="font-semibold text-black text-xs md:text-base">{t(locale, 'contact_email_label')}</p>
                     <p className="text-gray-600 text-xs md:text-base">info@ultima-rat.io</p>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <Clock className="w-3 h-3 md:w-6 md:h-6 text-[#0395A6] mr-2 md:mr-4 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-black text-xs md:text-base">Erreichbarkeit</p>
-                    <p className="text-gray-600 text-xs md:text-base">Mo-So: 00:00-24:00 Uhr</p>
+                    <p className="font-semibold text-black text-xs md:text-base">{t(locale, 'contact_hours')}</p>
+                    <p className="text-gray-600 text-xs md:text-base">{t(locale, 'contact_hours_value')}</p>
                   </div>
                 </div>
               </div>
             </div>
 
               <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
-              <h3 className="text-xs md:text-lg font-bold text-black mb-3 md:mb-8 modern-heading">Schnellkontakt</h3>
+              <h3 className="text-xs md:text-lg font-bold text-black mb-3 md:mb-8 modern-heading">{t(locale, 'contact_quick_title')}</h3>
               <div className="space-y-2 md:space-y-6">
                 <a
                   href="http://wa.me/491639347633"
@@ -307,8 +312,8 @@ export default function KontaktPage() {
                 >
                   <MessageCircle className="w-3 h-3 md:w-6 md:h-6 text-green-600 mr-1.5 md:mr-4" />
                   <div>
-                    <p className="font-semibold text-black text-xs md:text-base">WhatsApp</p>
-                    <p className="text-gray-600 text-xs md:text-sm">Sofortige Antwort</p>
+                    <p className="font-semibold text-black text-xs md:text-base">{t(locale, 'contact_quick_whatsapp')}</p>
+                    <p className="text-gray-600 text-xs md:text-sm">{t(locale, 'contact_quick_whatsapp_sub')}</p>
                   </div>
                 </a>
                 <a
@@ -319,8 +324,8 @@ export default function KontaktPage() {
                 >
                   <Instagram className="w-3 h-3 md:w-6 md:h-6 text-pink-600 mr-1.5 md:mr-4" />
                   <div>
-                    <p className="font-semibold text-black text-xs md:text-base">Instagram</p>
-                    <p className="text-gray-600 text-xs md:text-sm">Direkter Kontakt</p>
+                    <p className="font-semibold text-black text-xs md:text-base">{t(locale, 'contact_quick_instagram')}</p>
+                    <p className="text-gray-600 text-xs md:text-sm">{t(locale, 'contact_quick_instagram_sub')}</p>
                   </div>
                 </a>
                 <a
@@ -329,8 +334,8 @@ export default function KontaktPage() {
                 >
                   <Mail className="w-3 h-3 md:w-6 md:h-6 text-purple-600 mr-1.5 md:mr-4" />
                   <div>
-                    <p className="font-semibold text-black text-xs md:text-base">E-Mail</p>
-                    <p className="text-gray-600 text-xs md:text-sm">Detaillierte Anfrage</p>
+                    <p className="font-semibold text-black text-xs md:text-base">{t(locale, 'contact_quick_email')}</p>
+                    <p className="text-gray-600 text-xs md:text-sm">{t(locale, 'contact_quick_email_sub')}</p>
                   </div>
                 </a>
               </div>
@@ -344,14 +349,13 @@ export default function KontaktPage() {
       <section className="modern-cta modern-section">
         <div className="modern-container text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 modern-heading modern-animate-fade-in-up">
-            BEREIT ZU STARTEN?
+            {t(locale, 'contact_cta_title')}
           </h2>
           <p className="text-xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
-            Kontaktiere uns noch heute.
+            {t(locale, 'contact_cta_p1')}
           </p>
           <p className="text-lg text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
-            Kostenloses Erstgespräch, individuelle Beratung und flexible Terminvergabe. 
-            Wir helfen dir gerne bei deiner Prüfungsvorbereitung.
+            {t(locale, 'contact_cta_p2')}
           </p>
           <a
             href="http://wa.me/491639347633"
@@ -360,7 +364,7 @@ export default function KontaktPage() {
             className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
           >
             <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
-            Kostenloses Erstgespräch
+            {t(locale, 'contact_cta_button')}
           </a>
         </div>
       </section>

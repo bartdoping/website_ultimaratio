@@ -1,16 +1,33 @@
-export default function AGBPage() {
+import { cookies } from 'next/headers'
+import { normalizeLocale, type Locale } from '@/i18n/locales'
+
+export default async function AGBPage() {
+  const cookieStore = await cookies()
+  const locale: Locale = normalizeLocale(cookieStore.get('lang')?.value)
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Allgemeine Geschäftsbedingungen
-            </h1>
-            <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-              für die Erbringung von Dienstleistungen
-            </p>
+            {locale === 'de' && (
+              <>
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Allgemeine Geschäftsbedingungen</h1>
+                <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">für die Erbringung von Dienstleistungen</p>
+              </>
+            )}
+            {locale === 'en' && (
+              <>
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">General Terms and Conditions</h1>
+                <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">for the provision of services</p>
+              </>
+            )}
+            {locale === 'ar' && (
+              <>
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">الشروط والأحكام العامة</h1>
+                <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">لتقديم الخدمات</p>
+              </>
+            )}
           </div>
         </div>
       </section>

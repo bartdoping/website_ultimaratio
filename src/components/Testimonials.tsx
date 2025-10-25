@@ -1,4 +1,9 @@
+'use client'
+
 import { Star } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { t } from '@/i18n/dictionaries'
+import { normalizeLocale, type Locale } from '@/i18n/locales'
 
 interface Testimonial {
   name: string
@@ -8,54 +13,63 @@ interface Testimonial {
   rating: number
 }
 
-const testimonials: Testimonial[] = [
-  {
-    name: "Marcel M.",
-    exam: "M2",
-    result: "Bestanden mit 2",
-    text: "Mehr gelernt in 1 Stunde als in einer ganzen Woche alleine. Ich war total überfordert mit der prüfungsvorbereitung fürs M2 (vor allem weil ich letztendlich komplett falsch rangegangen bin und ein „dummes“ Lernsystem hatte). Das Einzelcoaching war auf den Punkt, super strukturiert, mega empathisch und wirklich hilfreich. Besonders die PDF mit den Strategien danach war gold wert (wusste gar nicht dass man eine bekommt 😅). Würde ich jederzeit wieder buchen! Auch der Preis echt fair",
-    rating: 5
-  },
-  {
-    name: "Bushra B.",
-    exam: "60 Minuten Coaching",
-    result: "Bestanden",
-    text: "Hatte das 1-Stunden Coaching – echt top! Alles super und verständlich erklärt, sodass ich endlich einen roten Faden bei dem Thema habe. Hat mir richtig geholfen, den Überblick zu bekommen und Sicherheit zu gewinnen. Kann ich absolut weiterempfehlen!",
-    rating: 5
-  },
-  {
-    name: "Victoria G.",
-    exam: "5 Std. Crashkurs",
-    result: "Bestanden",
-    text: "Ich hab den 5h-Crashkurs gemacht und bin echt zufrieden! Ich muss sagen: Es hat sich total gelohnt! In nur fünf Stunden wurde mir alles verständlich erklärt, und der Inhalt wurde super hilfreich vermittelt. Was mir besonders gefallen hat: Ich habe endlich eine Lernstrategie gefunden, die zu mir passt - mit Anki-Karten, sinnvoller Nachbereitung und praxisnahem Falltraining. Perfekt für alle, die schnell und effektiv lernen wollen!",
-    rating: 5
-  },
-  {
-    name: "Marten K.",
-    exam: "Physikum",
-    result: "Bestanden",
-    text: "Super Erfahrung gemacht, konnte für das Physikum viel aus dem Coaching mitnehmen und werde definitiv fürs Examen wiederkommen.",
-    rating: 5
-  },
-  {
-    name: "Angelina P.",
-    exam: "Anatomie und Physiologie",
-    result: "Bestanden",
-    text: "Zu Beginn meines Studiums hatte ich große Schwierigkeiten, die für mich passende Lerntechnik zu finden und die relevanten Lerninhalte richtig zu filtern. Ich war dann in einem Dritt- und zwei Zweitversuchen, die ich ohne Hilfe nicht geschafft hätte. Mit ärztlicher 'Nachhilfe' konnte ich die Wiederholungsklausuren erfolgreich bestehen und sozusagen wieder bei null starten! :)",
-    rating: 5
-  }
-]
-
 export default function Testimonials() {
+  const [locale, setLocale] = useState<Locale>('de')
+  useEffect(() => {
+    try {
+      const v = document.cookie.split('; ').find((c) => c.startsWith('lang='))?.split('=')[1]
+      setLocale(normalizeLocale(v))
+    } catch {}
+  }, [])
+
+  const testimonials: Testimonial[] = [
+    {
+      name: 'Marcel M.',
+      exam: t(locale, 'home_testimonial_marcel_exam'),
+      result: t(locale, 'home_testimonial_marcel_result'),
+      text: t(locale, 'home_testimonial_marcel_text'),
+      rating: 5,
+    },
+    {
+      name: 'Bushra B.',
+      exam: t(locale, 'home_testimonial_bushra_exam'),
+      result: t(locale, 'home_testimonial_bushra_result'),
+      text: t(locale, 'home_testimonial_bushra_text'),
+      rating: 5,
+    },
+    {
+      name: 'Victoria G.',
+      exam: t(locale, 'home_testimonial_victoria_exam'),
+      result: t(locale, 'home_testimonial_victoria_result'),
+      text: t(locale, 'home_testimonial_victoria_text'),
+      rating: 5,
+    },
+    {
+      name: 'Marten K.',
+      exam: t(locale, 'home_testimonial_marten_exam'),
+      result: t(locale, 'home_testimonial_marten_result'),
+      text: t(locale, 'home_testimonial_marten_text'),
+      rating: 5,
+    },
+    {
+      name: 'Angelina P.',
+      exam: t(locale, 'home_testimonial_angelina_exam'),
+      result: t(locale, 'home_testimonial_angelina_result'),
+      text: t(locale, 'home_testimonial_angelina_text'),
+      rating: 5,
+    },
+  ]
+
+// (Entfernt doppelte Export-Deklaration – return gehört zum obigen Funktionskörper)
   return (
     <section className="modern-section bg-[#F8FAFC]">
       <div className="modern-container">
         <div className="text-center modern-spacing">
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-            Was unsere Studierenden sagen
+            {t(locale, 'home_testimonials_title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-            Echte Erfolgsgeschichten von echten Studierenden
+            {t(locale, 'home_testimonials_sub')}
           </p>
         </div>
 
@@ -120,10 +134,10 @@ export default function Testimonials() {
         <div className="text-center mt-16">
           <div className="modern-card p-12 max-w-4xl mx-auto modern-animate-fade-in-up">
             <h3 className="text-lg font-bold text-black mb-5 modern-heading">
-              Werde Teil unserer Erfolgsgeschichten
+              {t(locale, 'home_testimonials_cta_title')}
             </h3>
             <p className="text-base text-gray-600 mb-6 modern-text">
-              Über 500 erfolgreiche Prüfungen und eine 97%ige Erfolgsquote sprechen für sich.
+              {t(locale, 'home_testimonials_cta_sub')}
             </p>
             <a
               href="http://wa.me/491639347633"
@@ -131,7 +145,7 @@ export default function Testimonials() {
               rel="noopener noreferrer"
               className="modern-button px-10 py-4 rounded-lg text-base font-semibold modern-focus inline-block"
             >
-              Jetzt starten
+              {t(locale, 'home_testimonials_cta_button')}
             </a>
           </div>
         </div>

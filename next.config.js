@@ -9,9 +9,13 @@ const nextConfig = {
     formats: ['image/webp', 'image/avif'],
   },
   
-  // Performance optimizations
+  // next-intl config path
   experimental: {
-    // optimizeCss: true, // Disabled due to critters module issue
+    // optimizeCss: true,
+    nextIntl: {
+      // ensure next-intl finds config file
+      localeDetection: true
+    }
   },
   
   // Security headers

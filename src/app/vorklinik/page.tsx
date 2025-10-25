@@ -14,6 +14,9 @@ import {
   Activity
 } from 'lucide-react'
 import Testimonials from '@/components/Testimonials'
+import { cookies } from 'next/headers'
+import { t } from '@/i18n/dictionaries'
+import { normalizeLocale, type Locale } from '@/i18n/locales'
 
 export const metadata: Metadata = {
   title: 'Vorklinik Coaching - Physikum erfolgreich bestehen | ultima-rat.io',
@@ -21,107 +24,110 @@ export const metadata: Metadata = {
   keywords: 'Physikum, Vorklinik, Medizinstudium, Anatomie, Biochemie, Physiologie, 1. Staatsexamen, Lernstrategien',
 }
 
-export default function VorklinikPage() {
+export default async function VorklinikPage() {
+  const cookieStore = await cookies()
+  const locale: Locale = normalizeLocale(cookieStore.get('lang')?.value)
+
   const subjects = [
     {
       icon: <Heart className="w-6 h-6" />,
-      title: "Anatomie",
-      description: "Strukturiertes Lernen der menschlichen Anatomie mit Fokus auf klinisch relevante Strukturen und Zusammenhänge.",
-      focus: "Präpkurse, Atlasarbeit, klinische Bezüge"
+      title: t(locale, 'pre_sub_anatomy_title'),
+      description: t(locale, 'pre_sub_anatomy_desc'),
+      focus: t(locale, 'pre_sub_anatomy_focus')
     },
     {
       icon: <Activity className="w-6 h-6" />,
-      title: "Physiologie", 
-      description: "Verständnis der Körperfunktionen und deren Regulation. Von Zellbiologie bis Organsysteme.",
-      focus: "Mechanismen verstehen, nicht auswendig lernen"
+      title: t(locale, 'pre_sub_physiology_title'), 
+      description: t(locale, 'pre_sub_physiology_desc'),
+      focus: t(locale, 'pre_sub_physiology_focus')
     },
     {
       icon: <Microscope className="w-6 h-6" />,
-      title: "Biochemie",
-      description: "Molekulare Grundlagen des Lebens. Stoffwechselwege, Enzymkinetik und molekulare Medizin.",
-      focus: "Stoffwechselwege visualisieren, Zusammenhänge erkennen"
+      title: t(locale, 'pre_sub_biochem_title'),
+      description: t(locale, 'pre_sub_biochem_desc'),
+      focus: t(locale, 'pre_sub_biochem_focus')
     },
     {
       icon: <BookMarked className="w-6 h-6" />,
-      title: "Histologie",
-      description: "Mikroskopische Anatomie und Gewebelehre. Struktur-Funktions-Beziehungen verstehen.",
-      focus: "Mikroskopieren, Gewebetypen unterscheiden"
+      title: t(locale, 'pre_sub_histology_title'),
+      description: t(locale, 'pre_sub_histology_desc'),
+      focus: t(locale, 'pre_sub_histology_focus')
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Physik",
-      description: "Physikalische Grundlagen in der Medizin. Biomechanik, Elektrophysiologie und medizinische Technik.",
-      focus: "Klinische Anwendungen, praktische Beispiele"
+      title: t(locale, 'pre_sub_physik_title'),
+      description: t(locale, 'pre_sub_physik_desc'),
+      focus: t(locale, 'pre_sub_physik_focus')
     },
     {
       icon: <Brain className="w-6 h-6" />,
-      title: "Psychologie/Soziologie",
-      description: "Menschliches Verhalten und soziale Faktoren in der Medizin. Kommunikation und Patientengespräche.",
-      focus: "Praktische Anwendung, Fallbeispiele"
+      title: t(locale, 'pre_sub_psych_title'),
+      description: t(locale, 'pre_sub_psych_desc'),
+      focus: t(locale, 'pre_sub_psych_focus')
     }
   ]
 
   const challenges = [
     {
       icon: <BookOpen className="w-5 h-5" />,
-      title: "Enorme Stoffmenge",
-      description: "Die Vorklinik umfasst 6 Hauptfächer mit jeweils tausenden von Fakten, die in kurzer Zeit gelernt werden müssen."
+      title: t(locale, 'pre_chal1_title'),
+      description: t(locale, 'pre_chal1_desc')
     },
     {
       icon: <Brain className="w-5 h-5" />,
-      title: "Verständnisprobleme", 
-      description: "Komplexe Zusammenhänge zwischen Anatomie, Physiologie und Biochemie erschweren das Lernen."
+      title: t(locale, 'pre_chal2_title'), 
+      description: t(locale, 'pre_chal2_desc')
     },
     {
       icon: <Target className="w-5 h-5" />,
-      title: "Prüfungsangst",
-      description: "Das Physikum als erstes großes Examen erzeugt enormen Druck und Lernstress."
+      title: t(locale, 'pre_chal3_title'),
+      description: t(locale, 'pre_chal3_desc')
     },
     {
       icon: <Clock className="w-5 h-5" />,
-      title: "Zeitmanagement",
-      description: "Effiziente Lernstrategien fehlen, wodurch wertvolle Zeit mit ineffektiven Methoden verschwendet wird."
+      title: t(locale, 'pre_chal4_title'),
+      description: t(locale, 'pre_chal4_desc')
     }
   ]
 
   const strategies = [
     {
       icon: <CheckCircle className="w-5 h-5" />,
-      title: "Aktives Abrufen (Retrieval Practice)",
-      description: "Statt passives Wiederlesen: Regelmäßiges Abfragen des Gelernten stärkt das Langzeitgedächtnis nachweislich."
+      title: t(locale, 'pre_strat1_title'),
+      description: t(locale, 'pre_strat1_desc')
     },
     {
       icon: <Clock className="w-5 h-5" />,
-      title: "Spaced Repetition",
-      description: "Geplante Wiederholungen in optimalen Intervallen maximieren die Behaltensleistung und reduzieren Vergessen."
+      title: t(locale, 'pre_strat2_title'),
+      description: t(locale, 'pre_strat2_desc')
     },
     {
       icon: <Zap className="w-5 h-5" />,
-      title: "Interleaving",
-      description: "Systematisches Mischen verschiedener Themen verbessert die Transferleistung und Problemlösefähigkeit."
+      title: t(locale, 'pre_strat3_title'),
+      description: t(locale, 'pre_strat3_desc')
     },
     {
       icon: <Lightbulb className="w-5 h-5" />,
-      title: "Elaboration",
-      description: "Tiefes Durchdenken und Verknüpfen neuer Informationen mit bereits bekanntem Wissen fördert das Verständnis."
+      title: t(locale, 'pre_strat4_title'),
+      description: t(locale, 'pre_strat4_desc')
     }
   ]
 
   const examPrep = [
     {
-      phase: "Grundlagen (1. - 3. Semester)",
-      description: "Systematischer Aufbau der Grundlagen in allen Fächern mit Fokus auf Verständnis statt Auswendiglernen.",
-      duration: "6 Monate"
+      phase: t(locale, 'pre_phase1_title'),
+      description: t(locale, 'pre_phase1_desc'),
+      duration: t(locale, 'pre_phase1_duration')
     },
     {
-      phase: "Vertiefung (4. - 5. Semester)", 
-      description: "Intensive Vertiefung und Verknüpfung der Fächer untereinander. Klinische Bezüge herstellen.",
-      duration: "4 Monate"
+      phase: t(locale, 'pre_phase2_title'), 
+      description: t(locale, 'pre_phase2_desc'),
+      duration: t(locale, 'pre_phase2_duration')
     },
     {
-      phase: "Physikum-Vorbereitung (6. Semester)",
-      description: "Gezielte Prüfungsvorbereitung mit Altklausuren, mündlich-praktischer Vorbereitung und Zeitmanagement.",
-      duration: "3 Monate"
+      phase: t(locale, 'pre_phase3_title'),
+      description: t(locale, 'pre_phase3_desc'),
+      duration: t(locale, 'pre_phase3_duration')
     }
   ]
 
@@ -132,13 +138,12 @@ export default function VorklinikPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h1 className="text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold modern-heading leading-tight mb-6">
-              <span className="text-black">Physikum-Erfolg durch</span>
+              <span className="text-black">{t(locale, 'pre_hero_title1')}</span>
               <br />
-              <span className="text-[#0395A6]">strukturiertes Lernen</span>
+              <span className="text-[#0395A6]">{t(locale, 'pre_hero_title2')}</span>
             </h1>
             <p className="modern-text text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-              Meistere die Vorklinik mit bewährten Lernmethoden. Von Anatomie bis Biochemie - 
-              wir bereiten dich optimal auf das 1. Staatsexamen vor.
+              {t(locale, 'pre_hero_sub')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -148,14 +153,14 @@ export default function VorklinikPage() {
                 className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
               >
                 <Users className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
-                Kostenloses Erstgespräch
+                {t(locale, 'home_cta_primary')}
               </a>
               <a
                 href="#fächer"
                 className="modern-button-secondary px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
               >
                 <BookOpen className="w-6 h-6 mr-3 inline-block group-hover:translate-x-1 transition-transform" />
-                Fächer entdecken
+                {t(locale, 'pre_hero_cta_secondary')}
               </a>
             </div>
           </div>
@@ -167,11 +172,9 @@ export default function VorklinikPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Die größten <span className="text-[#0395A6]">Herausforderungen</span> in der Vorklinik
+              {t(locale, 'pre_challenges_title_1')} <span className="text-[#0395A6]">{t(locale, 'pre_challenges_title_2')}</span>
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Wir kennen die typischen Probleme und haben bewährte Lösungen entwickelt.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'pre_challenges_sub')}</p>
           </div>
           
           <div className="modern-grid modern-grid-2 gap-8">
@@ -197,11 +200,9 @@ export default function VorklinikPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Deine <span className="text-[#0395A6]">Vorklinik-Fächer</span> im Überblick
+              {t(locale, 'pre_subjects_title_1')} <span className="text-[#0395A6]">{t(locale, 'pre_subjects_title_2')}</span> {t(locale, 'pre_subjects_title_3')}
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Strukturiertes Lernen in allen 6 Hauptfächern mit klinischen Bezügen.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'pre_subjects_sub')}</p>
           </div>
           
           <div className="modern-grid modern-grid-2 gap-8">
@@ -212,9 +213,9 @@ export default function VorklinikPage() {
                     {subject.icon}
                   </div>
                   <h3 className="modern-heading text-2xl mb-3">{subject.title}</h3>
-                  <p className="modern-text text-gray-600 mb-4">{subject.description}</p>
+                    <p className="modern-text text-gray-600 mb-4">{subject.description}</p>
                   <div className="bg-[#F8FAFC] rounded-lg p-4">
-                    <p className="text-sm font-semibold text-[#0395A6]">Fokus: {subject.focus}</p>
+                    <p className="text-sm font-semibold text-[#0395A6]">{t(locale, 'pre_focus_label')}: {subject.focus}</p>
                   </div>
                 </div>
               </div>
@@ -228,11 +229,9 @@ export default function VorklinikPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Wissenschaftlich bewährte <span className="text-[#0395A6]">Lernstrategien</span>
+              {t(locale, 'pre_strategies_title_1')} <span className="text-[#0395A6]">{t(locale, 'pre_strategies_title_2')}</span>
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Basierend auf aktueller Kognitionsforschung für maximale Lerneffizienz.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'pre_strategies_sub')}</p>
           </div>
           
           <div className="modern-grid modern-grid-2 gap-8">
@@ -258,11 +257,9 @@ export default function VorklinikPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Strukturierte <span className="text-[#0395A6]">Physikum-Vorbereitung</span>
+              {t(locale, 'pre_exam_title_1')} <span className="text-[#0395A6]">{t(locale, 'pre_exam_title_2')}</span>
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Von den Grundlagen bis zur Prüfung - dein Weg zum 1. Staatsexamen.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'pre_exam_sub')}</p>
           </div>
           
           <div className="space-y-8">
@@ -295,11 +292,9 @@ export default function VorklinikPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Erfolgsgeschichten unserer <span className="text-[#0395A6]">Vorklinik-Studenten</span>
+              {t(locale, 'pre_testimonials_title_1')} <span className="text-[#0395A6]">{t(locale, 'pre_testimonials_title_2')}</span>
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Über 500 Studierende haben mit uns das Physikum erfolgreich bestanden.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'pre_testimonials_sub')}</p>
           </div>
           
           <Testimonials />
@@ -312,12 +307,9 @@ export default function VorklinikPage() {
           <div className="modern-card text-center modern-animate-fade-in-up">
             <div className="max-w-4xl mx-auto">
               <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-                Bereit für dein <span className="text-[#0395A6]">Physikum?</span>
+                {t(locale, 'pre_cta_title_1')} <span className="text-[#0395A6]">{t(locale, 'pre_cta_title_2')}</span>
               </h2>
-              <p className="modern-text text-lg text-gray-600 mb-8">
-                Starte jetzt mit deiner strukturierten Vorklinik-Vorbereitung. 
-                Kostenloses Erstgespräch über WhatsApp - bezahlen erst im Anschluss!
-              </p>
+              <p className="modern-text text-lg text-gray-600 mb-8">{t(locale, 'pre_cta_sub')}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="http://wa.me/491639347633"
@@ -326,14 +318,14 @@ export default function VorklinikPage() {
                   className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
                 >
                   <Users className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
-                  Jetzt starten
+                  {t(locale, 'pre_cta_start')}
                 </a>
                 <a
                   href="/coaching"
                   className="modern-button-secondary px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
                 >
                   <BookOpen className="w-6 h-6 mr-3 inline-block group-hover:translate-x-1 transition-transform" />
-                  Coaching-Übersicht
+                  {t(locale, 'pre_cta_overview')}
                 </a>
               </div>
             </div>

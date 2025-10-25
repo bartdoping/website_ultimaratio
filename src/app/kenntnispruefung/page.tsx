@@ -1,6 +1,11 @@
 import { CheckCircle, Users, Target, BookOpen, Clock, Zap, MessageCircle, Award, ArrowRight, Brain, FileText, Calendar } from 'lucide-react'
+import { cookies } from 'next/headers'
+import { normalizeLocale, type Locale } from '@/i18n/locales'
+import { t } from '@/i18n/dictionaries'
 
-export default function KenntnispruefungPage() {
+export default async function KenntnispruefungPage() {
+  const cookieStore = await cookies()
+  const locale: Locale = normalizeLocale(cookieStore.get('lang')?.value)
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -9,20 +14,15 @@ export default function KenntnispruefungPage() {
           <div className="text-center">
             <div className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#0395A6] text-white font-semibold mb-12 modern-animate-fade-in">
               <Award className="w-5 h-5 mr-2" />
-              Spezialisiert auf Kenntnisprüfung
+              {t(locale, 'kp_badge')}
             </div>
             
             <h1 className="text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
-              Kenntnisprüfung<br />
-              <span className="text-[#0395A6]">erfolgreich bestehen</span>
+              {t(locale, 'hero_kp_heading')}
             </h1>
             
             <p className="body-text-large text-gray-600 mb-16 max-w-5xl mx-auto modern-text modern-animate-fade-in-up">
-              Spezialisierte Vorbereitung für internationale Ärzt:innen auf die deutsche Kenntnisprüfung –
-              die mündlich‑praktische, fallbasierte Prüfung im Anerkennungsverfahren zur Approbation. Wir trainieren
-              gezielt Innere Medizin und Chirurgie samt Querschnittsbereichen (Notfallmedizin, Klinische Pharmakologie,
-              Bildgebung/Strahlenschutz, Hygiene und relevante Rechtsfragen). Hinweis: Umfang und Dauer der Prüfung
-              variieren je nach Bundesland.
+              {t(locale, 'hero_kp_sub')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-8 justify-center modern-animate-fade-in-up">
@@ -33,14 +33,14 @@ export default function KenntnispruefungPage() {
                 className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus group cursor-pointer"
               >
                 <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
-                Kostenloses Erstgespräch
+                {t(locale, 'cta_intro_call')}
                 <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </a>
               <a
                 href="#mehr-erfahren"
                 className="modern-button-secondary px-12 py-5 rounded-lg text-lg font-semibold modern-focus group cursor-pointer"
               >
-                Mehr erfahren
+                {t(locale, 'kp_learn_more')}
                 <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
@@ -53,10 +53,10 @@ export default function KenntnispruefungPage() {
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Die Herausforderung der Kenntnisprüfung
+              {t(locale, 'kp_challenge_title')}
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Warum die Kenntnisprüfung für internationale Ärzt:innen so anspruchsvoll ist
+              {t(locale, 'kp_challenge_subtitle')}
             </p>
           </div>
 
@@ -65,33 +65,24 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Brain className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Breites Themenspektrum</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text">
-                Innere Medizin, Chirurgie, Notfallmedizin, Klinische Pharmakologie, Bildgebende Verfahren, 
-                Strahlenschutz und Rechtsfragen - alle Bereiche müssen beherrscht werden.
-              </p>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'kp_ch_card1_title')}</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'kp_ch_card1_desc')}</p>
             </div>
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Clock className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Praktische Fertigkeiten</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text">
-                Anamneseerhebung, körperliche Untersuchung, Patientenberichte schreiben und 
-                klinische Entscheidungsfindung - alles unter Zeitdruck und auf Deutsch.
-              </p>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'kp_ch_card2_title')}</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'kp_ch_card2_desc')}</p>
             </div>
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Target className="w-10 h-10 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Sprachliche Kompetenz</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text">
-                Medizinische Fachsprache auf C1-Niveau, Patientenkommunikation und 
-                präzise Dokumentation - alles in deutscher Sprache.
-              </p>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'kp_ch_card3_title')}</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'kp_ch_card3_desc')}</p>
             </div>
           </div>
         </div>
@@ -102,10 +93,10 @@ export default function KenntnispruefungPage() {
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Die Kenntnisprüfung im Detail
+              {t(locale, 'kp_detail_title')}
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Struktur, Inhalte und typische Dauer (abhängig vom Bundesland)
+              {t(locale, 'kp_detail_subtitle')}
             </p>
           </div>
 
@@ -114,16 +105,14 @@ export default function KenntnispruefungPage() {
               <div className="mb-4 md:mb-8">
                 <FileText className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Mündlich‑praktische, fallbasierte Prüfung</h3>
-              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
-                Typische Dauer: 60–90 Min (in einigen Bundesländern bis zu 120 Min).
-              </p>
+              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">{t(locale, 'kp_exam_card1_title')}</h3>
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">{t(locale, 'kp_exam_card1_duration')}</p>
               <ul className="space-y-3">
                 {[
-                  "Anamnese und körperliche Untersuchung (realer Patient oder Fallvignette)",
-                  "Arztbrief/Patientenbericht mit Diagnose, DD, Befunden und Therapieplan",
-                  "Fallpräsentation vor der Kommission und strukturierte Falldiskussion",
-                  "Querschnittsthemen: Notfallmanagement, Hygiene, Arzneimitteltherapie, Strahlenschutz"
+                  t(locale, 'kp_exam_card1_item1'),
+                  t(locale, 'kp_exam_card1_item2'),
+                  t(locale, 'kp_exam_card1_item3'),
+                  t(locale, 'kp_exam_card1_item4')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -137,16 +126,14 @@ export default function KenntnispruefungPage() {
               <div className="mb-4 md:mb-8">
                 <Users className="w-8 h-8 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">Prüfungsinhalte & Schwerpunkte</h3>
-              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">
-                Orientiert an der deutschen ärztlichen Ausbildung; Schwerpunkte variieren regional.
-              </p>
+              <h3 className="text-sm md:text-xl font-bold text-black mb-3 md:mb-6 modern-heading">{t(locale, 'kp_exam_card2_title')}</h3>
+              <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-3 md:mb-6">{t(locale, 'kp_exam_card2_desc')}</p>
               <ul className="space-y-3">
                 {[
-                  "Innere Medizin und Chirurgie (Kernfächer)",
-                  "Notfallmedizin und klinische Pharmakologie",
-                  "Bildgebung & Strahlenschutz, Hygiene/Infektiologie",
-                  "Rechtliche Grundlagen (Aufklärung, Dokumentation, Schweigepflicht)"
+                  t(locale, 'kp_exam_card2_item1'),
+                  t(locale, 'kp_exam_card2_item2'),
+                  t(locale, 'kp_exam_card2_item3'),
+                  t(locale, 'kp_exam_card2_item4')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -164,13 +151,9 @@ export default function KenntnispruefungPage() {
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Rechtliche Grundlage & Voraussetzungen
+              {t(locale, 'kp_legal_title')}
             </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Die Kenntnisprüfung ist gesetzlich im Rahmen des Approbationsverfahrens vorgesehen (BÄO §3).
-              Sie wird verlangt, wenn die Gleichwertigkeit der außerhalb der EU/EWR erworbenen Ausbildung
-              nicht vollständig nachgewiesen werden kann.
-            </p>
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">{t(locale, 'kp_legal_intro')}</p>
           </div>
 
           <div className="modern-grid modern-grid-3">
@@ -178,12 +161,12 @@ export default function KenntnispruefungPage() {
               <div className="mb-6">
                 <FileText className="w-10 h-10 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-4 modern-heading">Sprachvoraussetzungen</h3>
+              <h3 className="text-xl font-bold text-black mb-4 modern-heading">{t(locale, 'kp_legal_lang_title')}</h3>
               <ul className="space-y-3">
                 {[
-                  "Deutsch B2 (allgemein)",
-                  "Fachsprachprüfung Medizin (C1 Medizin), i. d. R. verpflichtend",
-                  "FSP ist unabhängig von der Kenntnisprüfung"
+                  t(locale, 'kp_legal_lang_item1'),
+                  t(locale, 'kp_legal_lang_item2'),
+                  t(locale, 'kp_legal_lang_item3')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -197,13 +180,13 @@ export default function KenntnispruefungPage() {
               <div className="mb-6">
                 <BookOpen className="w-10 h-10 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-4 modern-heading">Unterlagen (Auszug)</h3>
+              <h3 className="text-xl font-bold text-black mb-4 modern-heading">{t(locale, 'kp_legal_docs_title')}</h3>
               <ul className="space-y-3">
                 {[
-                  "Ärztliches Diplom/Abschluss und Fächer‑/Stundennachweise",
-                  "Curriculum/Syllabi (falls gefordert)",
-                  "Berufszulassung/Good‑Standing, Lebenslauf, Identitätsnachweis",
-                  "Übersetzungen und ggf. Beglaubigungen gemäß Landesvorgaben"
+                  t(locale, 'kp_legal_docs_item1'),
+                  t(locale, 'kp_legal_docs_item2'),
+                  t(locale, 'kp_legal_docs_item3'),
+                  t(locale, 'kp_legal_docs_item4')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -217,12 +200,12 @@ export default function KenntnispruefungPage() {
               <div className="mb-6">
                 <Award className="w-10 h-10 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-4 modern-heading">Ergebnis & Approbation</h3>
+              <h3 className="text-xl font-bold text-black mb-4 modern-heading">{t(locale, 'kp_legal_result_title')}</h3>
               <ul className="space-y-3">
                 {[
-                  "Bestehen der Kenntnisprüfung + bestandene FSP",
-                  "Erfüllte Zuverlässigkeits‑/Gesundheitsnachweise",
-                  "führt zur Erteilung der Approbation (zuständige Landesbehörde)"
+                  t(locale, 'kp_legal_result_item1'),
+                  t(locale, 'kp_legal_result_item2'),
+                  t(locale, 'kp_legal_result_item3')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -240,11 +223,9 @@ export default function KenntnispruefungPage() {
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Unsere spezialisierte Kenntnisprüfungs-Vorbereitung
+              {t(locale, 'kp_solution_title')}
             </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Vollständige Abdeckung aller Prüfungsinhalte und Herausforderungen
-            </p>
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">{t(locale, 'kp_solution_sub')}</p>
           </div>
 
           <div className="modern-grid modern-grid-3">
@@ -252,16 +233,14 @@ export default function KenntnispruefungPage() {
               <div className="mb-8">
                 <Users className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Alle Prüfungsfächer</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Vollständige Vorbereitung auf alle Kenntnisprüfungs-Inhalte:
-              </p>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'kp_sol1_title')}</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">{t(locale, 'kp_sol1_desc')}</p>
               <ul className="space-y-3">
                 {[
-                  "Innere Medizin & Chirurgie",
-                  "Notfallmedizin & Pharmakologie",
-                  "Bildgebende Verfahren & Strahlenschutz",
-                  "Rechtsfragen des ärztlichen Berufs"
+                  t(locale, 'kp_sol1_item1'),
+                  t(locale, 'kp_sol1_item2'),
+                  t(locale, 'kp_sol1_item3'),
+                  t(locale, 'kp_sol1_item4')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -275,16 +254,14 @@ export default function KenntnispruefungPage() {
               <div className="mb-8">
                 <FileText className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Praktische Fertigkeiten</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Training der klinischen Prüfungsteile:
-              </p>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'kp_sol2_title')}</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">{t(locale, 'kp_sol2_desc')}</p>
               <ul className="space-y-3">
                 {[
-                  "Anamneseerhebung üben",
-                  "Körperliche Untersuchung trainieren",
-                  "Arztberichte schreiben",
-                  "Patientenvorstellung simulieren"
+                  t(locale, 'kp_sol2_item1'),
+                  t(locale, 'kp_sol2_item2'),
+                  t(locale, 'kp_sol2_item3'),
+                  t(locale, 'kp_sol2_item4')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -298,16 +275,14 @@ export default function KenntnispruefungPage() {
               <div className="mb-8">
                 <Brain className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Sprachliche Kompetenz</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Medizinische Fachsprache und Kommunikation:
-              </p>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'kp_sol3_title')}</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">{t(locale, 'kp_sol3_desc')}</p>
               <ul className="space-y-3">
                 {[
-                  "Fachsprache auf C1-Niveau",
-                  "Patientenkommunikation",
-                  "Präzise Dokumentation",
-                  "Mündliche Präsentation"
+                  t(locale, 'kp_sol3_item1'),
+                  t(locale, 'kp_sol3_item2'),
+                  t(locale, 'kp_sol3_item3'),
+                  t(locale, 'kp_sol3_item4')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -321,16 +296,14 @@ export default function KenntnispruefungPage() {
               <div className="mb-8">
                 <Target className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Prüfungssimulationen</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Realistische Prüfungssituationen trainieren:
-              </p>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'kp_sol4_title')}</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">{t(locale, 'kp_sol4_desc')}</p>
               <ul className="space-y-3">
                 {[
-                  "Klinische Prüfung simulieren",
-                  "Mündliche Prüfung üben",
-                  "Zeitdruck trainieren",
-                  "Prüfungsstrategien entwickeln"
+                  t(locale, 'kp_sol4_item1'),
+                  t(locale, 'kp_sol4_item2'),
+                  t(locale, 'kp_sol4_item3'),
+                  t(locale, 'kp_sol4_item4')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -344,16 +317,14 @@ export default function KenntnispruefungPage() {
               <div className="mb-8">
                 <BookOpen className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Individuelle Betreuung</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Persönliche Unterstützung durch erfahrene Ärzt:innen:
-              </p>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'kp_sol5_title')}</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">{t(locale, 'kp_sol5_desc')}</p>
               <ul className="space-y-3">
                 {[
-                  "1:1 Coaching mit deutschen Ärzt:innen",
-                  "Individuelle Lernpläne",
-                  "Direktes Feedback",
-                  "Kontinuierliche Begleitung"
+                  t(locale, 'kp_sol5_item1'),
+                  t(locale, 'kp_sol5_item2'),
+                  t(locale, 'kp_sol5_item3'),
+                  t(locale, 'kp_sol5_item4')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -367,16 +338,14 @@ export default function KenntnispruefungPage() {
               <div className="mb-8">
                 <Calendar className="w-12 h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">Flexible Termine</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                Anpassung an deinen Zeitplan:
-              </p>
+              <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'kp_sol6_title')}</h3>
+              <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">{t(locale, 'kp_sol6_desc')}</p>
               <ul className="space-y-3">
                 {[
-                  "Online via Zoom",
-                  "Flexible Buchung",
-                  "Kurzfristige Termine",
-                  "WhatsApp-Kommunikation"
+                  t(locale, 'kp_sol6_item1'),
+                  t(locale, 'kp_sol6_item2'),
+                  t(locale, 'kp_sol6_item3'),
+                  t(locale, 'kp_sol6_item4')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -393,12 +362,8 @@ export default function KenntnispruefungPage() {
       <section className="modern-section bg-white">
         <div className="modern-container">
           <div className="text-center modern-spacing">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Behördlicher Ablauf bis zur Approbation
-            </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Der genaue Ablauf, Zuständigkeiten und Fristen unterscheiden sich je nach Bundesland.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">{t(locale, 'kp_process_title')}</h2>
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">{t(locale, 'kp_process_sub')}</p>
           </div>
 
           <div className="modern-grid modern-grid-3">
@@ -406,60 +371,48 @@ export default function KenntnispruefungPage() {
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 01
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Bundesland wählen</h3>
-              <p className="text-gray-600 leading-relaxed modern-text">
-                Zuständige Behörde ermitteln (Approbationsbehörde/Landesamt). Anforderungen prüfen.
-              </p>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'kp_process_step1_title')}</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'kp_process_step1_desc')}</p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 02
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Antrag & Unterlagen</h3>
-              <p className="text-gray-600 leading-relaxed modern-text">
-                Approbation beantragen, erforderliche Dokumente einreichen, Übersetzungen/Beglaubigungen.
-              </p>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'kp_process_step2_title')}</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'kp_process_step2_desc')}</p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 03
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Gleichwertigkeitsprüfung</h3>
-              <p className="text-gray-600 leading-relaxed modern-text">
-                Behörde vergleicht Ausbildung. Bei Unterschieden: Auflage zur Kenntnisprüfung.
-              </p>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'kp_process_step3_title')}</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'kp_process_step3_desc')}</p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 04
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Fachsprachprüfung (C1)</h3>
-              <p className="text-gray-600 leading-relaxed modern-text">
-                Medizinische Sprachprüfung (separat zur Kenntnisprüfung); Reihenfolge variiert je Land.
-              </p>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'kp_process_step4_title')}</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'kp_process_step4_desc')}</p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 05
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Berufserlaubnis (optional)</h3>
-              <p className="text-gray-600 leading-relaxed modern-text">
-                Zeitlich befristete Tätigkeit unter Aufsicht möglich; Regelungen sind landesspezifisch.
-              </p>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'kp_process_step5_title')}</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'kp_process_step5_desc')}</p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 06
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Kenntnisprüfung & Approbation</h3>
-              <p className="text-gray-600 leading-relaxed modern-text">
-                Bestehen der KP und FSP führt (bei erfüllten Voraussetzungen) zur Approbation.
-              </p>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'kp_process_step6_title')}</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'kp_process_step6_desc')}</p>
             </div>
           </div>
         </div>
@@ -470,47 +423,23 @@ export default function KenntnispruefungPage() {
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Häufige Fragen (FAQ)
+              {t(locale, 'faq_title')}
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Kurze, verlässliche Antworten rund um die Kenntnisprüfung und die Approbation.
+              {t(locale, 'faq_intro')}
             </p>
           </div>
 
           <div className="max-w-5xl mx-auto space-y-4">
             {[
-              {
-                q: "Was ist der Unterschied zwischen Fachsprachprüfung und Kenntnisprüfung?",
-                a: "Die Fachsprachprüfung (FSP) prüft die medizinische Sprachkompetenz (C1 Medizin). Die Kenntnisprüfung (KP) ist eine mündlich‑praktische, fallbasierte Fachprüfung zu medizinischen Inhalten. Beides ist in der Regel erforderlich, aber organisatorisch getrennt."
-              },
-              {
-                q: "Wie lange dauert die Kenntnisprüfung?",
-                a: "Üblich sind 60–90 Minuten. In einigen Bundesländern kann die Dauer bis zu ca. 120 Minuten betragen. Der genaue Ablauf variiert regional."
-              },
-              {
-                q: "Welche Fächer werden geprüft?",
-                a: "Kernfächer sind Innere Medizin und Chirurgie. Zusätzlich werden Querschnittsbereiche wie Notfallmedizin, Klinische Pharmakologie/Arzneimitteltherapie, Bildgebung/Strahlenschutz, Hygiene/Infektiologie sowie rechtliche Grundlagen abgefragt."
-              },
-              {
-                q: "Wie oft kann ich die Prüfung wiederholen?",
-                a: "Die Anzahl der Versuche und Wartezeiten sind landesabhängig. In vielen Ländern sind mehrere Versuche möglich; informieren Sie sich bei der zuständigen Behörde."
-              },
-              {
-                q: "Brauche ich zuerst die FSP oder zuerst die Kenntnisprüfung?",
-                a: "Die Reihenfolge unterscheidet sich je nach Bundesland. Häufig wird die FSP vor der KP abgelegt. Maßgeblich sind die Vorgaben der Approbationsbehörde."
-              },
-              {
-                q: "Kann ich mit Berufserlaubnis arbeiten?",
-                a: "Eine befristete Berufserlaubnis ist in manchen Ländern möglich, meist unter ärztlicher Aufsicht und mit Auflagen. Details, Dauer und Voraussetzungen legt das jeweilige Bundesland fest."
-              },
-              {
-                q: "Welche Unterlagen brauche ich für den Antrag?",
-                a: "Typisch sind Abschlussurkunden, Fächer‑/Stundennachweise, ggf. Curricula, Nachweise der Berufszulassung/Good‑Standing, Identitätsnachweise, Lebenslauf sowie beglaubigte Übersetzungen. Die exakten Listen veröffentlichen die Landesbehörden."
-              },
-              {
-                q: "Was passiert, wenn ich nicht bestehe?",
-                a: "Sie erhalten ein Protokoll/Feedback. Eine Wiederholung ist häufig möglich; Fristen und Anzahl der Versuche sind landesspezifisch. Gezielte Vorbereitung auf die festgestellten Defizite ist sinnvoll."
-              }
+              { q: t(locale, 'kp_faq_q1'), a: t(locale, 'kp_faq_a1') },
+              { q: t(locale, 'kp_faq_q2'), a: t(locale, 'kp_faq_a2') },
+              { q: t(locale, 'kp_faq_q3'), a: t(locale, 'kp_faq_a3') },
+              { q: t(locale, 'kp_faq_q4'), a: t(locale, 'kp_faq_a4') },
+              { q: t(locale, 'kp_faq_q5'), a: t(locale, 'kp_faq_a5') },
+              { q: t(locale, 'kp_faq_q6'), a: t(locale, 'kp_faq_a6') },
+              { q: t(locale, 'kp_faq_q7'), a: t(locale, 'kp_faq_a7') },
+              { q: t(locale, 'kp_faq_q8'), a: t(locale, 'kp_faq_a8') }
             ].map((item, idx) => (
               <details key={idx} className="modern-faq">
                 <summary className="modern-faq-question">
@@ -530,10 +459,10 @@ export default function KenntnispruefungPage() {
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Transparente Preise
+              {t(locale, 'pricing_title')}
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Faire Preise für professionelle Vorbereitung
+              {t(locale, 'pricing_subtitle')}
             </p>
           </div>
 
@@ -541,23 +470,23 @@ export default function KenntnispruefungPage() {
             <div className="modern-card p-16 modern-animate-fade-in-up">
               <div className="text-center mb-12">
                 <div className="text-4xl md:text-6xl font-bold text-[#0395A6] mb-4 price-mobile">39€</div>
-                <p className="text-lg text-gray-600 mb-8">60 Min 1‑on‑1 · Online via Zoom</p>
-                <p className="text-lg text-gray-500">inkl. Unterlagen & Nachbereitung</p>
+                <p className="text-lg text-gray-600 mb-8">{t(locale, 'kp_price_line1')}</p>
+                <p className="text-lg text-gray-500">{t(locale, 'kp_price_line2')}</p>
               </div>
 
               <div className="modern-grid modern-grid-2 mb-12">
                 <div>
-                  <h3 className="text-lg font-bold text-black mb-6 modern-heading">Was du bekommst:</h3>
+                  <h3 className="text-lg font-bold text-black mb-6 modern-heading">{t(locale, 'kp_price_what_title')}</h3>
                   <ul className="space-y-4">
                     {[
-                      "1‑on‑1 mit deutschen Ärzt:innen",
-                      "Alle Prüfungsfächer abgedeckt",
-                      "Praktische Fertigkeiten trainieren",
-                      "Sprachliche Kompetenz fördern",
-                      "Prüfungssimulationen",
-                      "Individuelle Lernpläne",
-                      "Direktes Feedback",
-                      "Begleitung bis zur Prüfung"
+                      t(locale, 'kp_price_what_item1'),
+                      t(locale, 'kp_price_what_item2'),
+                      t(locale, 'kp_price_what_item3'),
+                      t(locale, 'kp_price_what_item4'),
+                      t(locale, 'kp_price_what_item5'),
+                      t(locale, 'kp_price_what_item6'),
+                      t(locale, 'kp_price_what_item7'),
+                      t(locale, 'kp_price_what_item8')
                     ].map((item, index) => (
                       <li key={index} className="flex items-center text-lg text-gray-700">
                         <CheckCircle className="w-6 h-6 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -568,13 +497,13 @@ export default function KenntnispruefungPage() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-bold text-black mb-6 modern-heading">Flexible Buchung:</h3>
+                  <h3 className="text-lg font-bold text-black mb-6 modern-heading">{t(locale, 'kp_price_flex_title')}</h3>
                   <ul className="space-y-4">
                     {[
-                      "Einzelstunden (60 Min)",
-                      "Intensivkurse (beliebig viele Stunden)",
-                      "Regelmäßige Betreuung",
-                      "Prüfungsvorbereitung"
+                      t(locale, 'kp_price_flex_item1'),
+                      t(locale, 'kp_price_flex_item2'),
+                      t(locale, 'kp_price_flex_item3'),
+                      t(locale, 'kp_price_flex_item4')
                     ].map((item, index) => (
                       <li key={index} className="flex items-center text-lg text-gray-700">
                         <Zap className="w-6 h-6 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -587,8 +516,7 @@ export default function KenntnispruefungPage() {
 
               <div className="text-center">
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed modern-text price-text-mobile">
-                  Online über Zoom mit Screen Sharing und Whiteboard. Flexibel buchbar über WhatsApp, 
-                  bezahlen erst im Anschluss!
+                  {t(locale, 'kp_price_info')}
                 </p>
                 <a
                   href="http://wa.me/491639347633"
@@ -597,7 +525,7 @@ export default function KenntnispruefungPage() {
                   className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus group price-button-mobile"
                 >
                   <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
-                  Jetzt buchen
+                  {t(locale, 'kp_price_cta_book_now')}
                   <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
@@ -610,14 +538,13 @@ export default function KenntnispruefungPage() {
       <section className="modern-cta modern-section">
         <div className="modern-container text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 modern-heading modern-animate-fade-in-up">
-            BEREIT FÜR DIE KENNTNISPRÜFUNG?
+            {t(locale, 'cta_ready_title')}
           </h2>
           <p className="text-xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
-            Starte jetzt mit deiner spezialisierten Kenntnisprüfungs-Vorbereitung.
+            {t(locale, 'cta_ready_sub1')}
           </p>
           <p className="text-lg text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
-            Vollständige Abdeckung aller Prüfungsinhalte: Innere Medizin, Chirurgie, Notfallmedizin, 
-            Pharmakologie und Rechtsfragen. Praktische Fertigkeiten und sprachliche Kompetenz trainieren.
+            {t(locale, 'cta_ready_sub2')}
           </p>
           <a
             href="http://wa.me/491639347633"

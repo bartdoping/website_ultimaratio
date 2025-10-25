@@ -2,9 +2,12 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { TrendingUp, Users, Award, Target } from 'lucide-react'
+import { normalizeLocale, type Locale } from '@/i18n/locales'
+import { t } from '@/i18n/dictionaries'
 
 export default function StatsCounter() {
   const [isVisible, setIsVisible] = useState(false)
+  const [locale, setLocale] = useState<Locale>('de')
   const [counts, setCounts] = useState({
     success: 0,
     students: 0,
@@ -16,6 +19,10 @@ export default function StatsCounter() {
   const hasAnimatedRef = useRef(false)
 
   useEffect(() => {
+    try {
+      const v = document.cookie.split('; ').find((c) => c.startsWith('lang='))?.split('=')[1]
+      setLocale(normalizeLocale(v))
+    } catch {}
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimatedRef.current) {
@@ -74,8 +81,8 @@ export default function StatsCounter() {
     {
       icon: <Award className="w-8 h-8" />,
       number: `${counts.success}%`,
-      label: "Erfolgsquote",
-      description: "Bewiesen durch 500+ Prüfungen",
+      label: t(locale, 'stats_label_success'),
+      description: t(locale, 'stats_desc_success'),
       color: "from-green-500 to-emerald-600",
       bgColor: "bg-green-50",
       textColor: "text-green-800"
@@ -83,8 +90,8 @@ export default function StatsCounter() {
     {
       icon: <Users className="w-8 h-8" />,
       number: `${counts.students}+`,
-      label: "Erfolgreiche Prüfungen",
-      description: "Von Vorklinik bis M3",
+      label: t(locale, 'stats_label_students'),
+      description: t(locale, 'stats_desc_students'),
       color: "from-blue-500 to-cyan-600",
       bgColor: "bg-blue-50",
       textColor: "text-blue-800"
@@ -92,8 +99,8 @@ export default function StatsCounter() {
     {
       icon: <Target className="w-8 h-8" />,
       number: `${counts.years}+`,
-      label: "Jahre Erfahrung",
-      description: "Approbierte Ärzte als Coaches",
+      label: t(locale, 'stats_label_years'),
+      description: t(locale, 'stats_desc_years'),
       color: "from-purple-500 to-violet-600",
       bgColor: "bg-purple-50",
       textColor: "text-purple-800"
@@ -101,8 +108,8 @@ export default function StatsCounter() {
     {
       icon: <TrendingUp className="w-8 h-8" />,
       number: `+${counts.improvement}`,
-      label: "Notenverbesserung",
-      description: "Durchschnittliche Steigerung",
+      label: t(locale, 'stats_label_improvement'),
+      description: t(locale, 'stats_desc_improvement'),
       color: "from-orange-500 to-red-600",
       bgColor: "bg-orange-50",
       textColor: "text-orange-800"
@@ -114,10 +121,10 @@ export default function StatsCounter() {
       <div className="modern-container">
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 modern-heading modern-animate-fade-in-up">
-            <span className="text-black">Bewiesene</span> <span className="text-[#0395A6]">Erfolge</span>
+            {t(locale, 'stats_title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-            Zahlen, die für sich sprechen. Über 6 Jahre Erfahrung, 500+ erfolgreiche Prüfungen.
+            {t(locale, 'stats_sub')}
           </p>
         </div>
 
@@ -149,32 +156,32 @@ export default function StatsCounter() {
         <div className="mt-20 modern-animate-fade-in-up">
           <div className="bg-white rounded-2xl p-10 border border-gray-200">
             <h3 className="text-2xl font-bold text-center text-black mb-12">
-              Vorher vs. Nachher - Typische Entwicklung
+              {t(locale, 'stats_before_after_title')}
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="text-center">
                 <div className="bg-red-500/20 rounded-lg p-8 border border-red-500/30">
-                  <h4 className="text-xl font-bold text-red-600 mb-6">Vor ultima-rat.io</h4>
+                  <h4 className="text-xl font-bold text-red-600 mb-6">{t(locale, 'stats_before_title')}</h4>
                   <ul className="text-red-700 space-y-3 text-left text-base">
-                    <li>• Durchschnittsnote: 3,7</li>
-                    <li>• Lernzeit: 8h/Tag</li>
-                    <li>• Prüfungsangst: Hoch</li>
-                    <li>• Selbstvertrauen: Niedrig</li>
-                    <li>• Durchfallrisiko: 40%</li>
+                    <li>{t(locale, 'stats_before_avg')}</li>
+                    <li>{t(locale, 'stats_before_time')}</li>
+                    <li>{t(locale, 'stats_before_fear')}</li>
+                    <li>{t(locale, 'stats_before_conf')}</li>
+                    <li>{t(locale, 'stats_before_fail')}</li>
                   </ul>
                 </div>
               </div>
               
               <div className="text-center">
                 <div className="bg-green-500/20 rounded-lg p-8 border border-green-500/30">
-                  <h4 className="text-xl font-bold text-green-600 mb-6">Nach ultima-rat.io</h4>
+                  <h4 className="text-xl font-bold text-green-600 mb-6">{t(locale, 'stats_after_title')}</h4>
                   <ul className="text-green-700 space-y-3 text-left text-base">
-                    <li>• Durchschnittsnote: 1,4</li>
-                    <li>• Lernzeit: 4h/Tag</li>
-                    <li>• Prüfungsangst: Minimal</li>
-                    <li>• Selbstvertrauen: Hoch</li>
-                    <li>• Erfolgsquote: 97%</li>
+                    <li>{t(locale, 'stats_after_avg')}</li>
+                    <li>{t(locale, 'stats_after_time')}</li>
+                    <li>{t(locale, 'stats_after_fear')}</li>
+                    <li>{t(locale, 'stats_after_conf')}</li>
+                    <li>{t(locale, 'stats_after_success')}</li>
                   </ul>
                 </div>
               </div>
@@ -182,7 +189,7 @@ export default function StatsCounter() {
 
             <div className="text-center mt-12">
               <div className="bg-[#0395A6] text-white px-10 py-6 rounded-lg text-lg font-bold inline-block">
-                Durchschnittliche Verbesserung: +2,3 Notenpunkte
+                {t(locale, 'stats_avg_improvement')}: +2,3 {t(locale, 'stats_grade_points')}
               </div>
             </div>
           </div>
@@ -197,7 +204,7 @@ export default function StatsCounter() {
             className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-16 py-8 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center space-x-4"
           >
             <Users className="w-8 h-8" />
-            <span>Werde Teil unserer Erfolgsgeschichte</span>
+            <span>{t(locale, 'stats_cta_join')}</span>
           </a>
         </div>
       </div>

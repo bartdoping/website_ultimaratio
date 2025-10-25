@@ -2,47 +2,58 @@
 
 import Image from 'next/image'
 import { CheckCircle, Users, Award, TrendingUp, Brain, Zap } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { t } from '@/i18n/dictionaries'
+import { normalizeLocale, type Locale } from '@/i18n/locales'
 
 export default function SolutionVisual() {
+  const [locale, setLocale] = useState<Locale>('de')
+  useEffect(() => {
+    try {
+      const v = document.cookie.split('; ').find((c) => c.startsWith('lang='))?.split('=')[1]
+      setLocale(normalizeLocale(v))
+    } catch {}
+  }, [])
+
   const solutions = [
     {
       icon: <Brain className="w-8 h-8" />,
-      title: "Wissenschaftlich bewährte Lernmethoden",
-      description: "Retrieval Practice, Spaced Repetition und Interleaving - Methoden, die in der Kognitionsforschung nachweislich funktionieren.",
+      title: t(locale, 'home_sol1_title'),
+      description: t(locale, 'home_sol1_desc'),
       image: "/images/process/erfolg1.jpg",
       benefits: [
-        "3x bessere Behaltensleistung",
-        "50% weniger Lernzeit",
-        "Keine Blackouts mehr"
+        t(locale, 'home_sol1_b1'),
+        t(locale, 'home_sol1_b2'),
+        t(locale, 'home_sol1_b3')
       ],
       color: "blue",
-      successText: "✓ Erste Verbesserungen bereits nach 2 Wochen sichtbar!"
+      successText: t(locale, 'home_sol1_success')
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Erfahrene Ärzte als persönliche Coaches",
-      description: "Approbierte Ärzte und Top-Studenten, die selbst mit Bestnoten durch alle Examina gegangen sind, begleiten dich.",
+      title: t(locale, 'home_sol2_title'),
+      description: t(locale, 'home_sol2_desc'),
       image: "/images/process/erfolg2.jpg",
       benefits: [
-        "1:1 Betreuung",
-        "Persönliche Lernstrategien",
-        "Motivation & Mentoring"
+        t(locale, 'home_sol2_b1'),
+        t(locale, 'home_sol2_b2'),
+        t(locale, 'home_sol2_b3')
       ],
       color: "green",
-      successText: "✓ Individuelle Betreuung für maximalen Erfolg!"
+      successText: t(locale, 'home_sol2_success')
     },
     {
       icon: <Award className="w-8 h-8" />,
-      title: "Nachweisbare Erfolge",
-      description: "97% unserer Studenten bestehen ihre Prüfungen. Strukturierte Vorbereitung von der Vorklinik bis zum M3.",
+      title: t(locale, 'home_sol3_title'),
+      description: t(locale, 'home_sol3_desc'),
       image: "/images/process/erfolg3.jpg",
       benefits: [
-        "97% Erfolgsquote",
-        "500+ bestandene Prüfungen",
-        "Durchschnittlich 2 Noten besser"
+        t(locale, 'home_sol3_b1'),
+        t(locale, 'home_sol3_b2'),
+        t(locale, 'home_sol3_b3')
       ],
       color: "purple",
-      successText: "✓ Garantierte Verbesserung oder Geld zurück!"
+      successText: t(locale, 'home_sol3_success')
     }
   ]
 
@@ -51,10 +62,10 @@ export default function SolutionVisual() {
       <div className="modern-container">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-6 modern-heading modern-animate-fade-in-up">
-            Die <span className="text-[#0395A6]">ultima-rat.io</span> Lösung
+            {t(locale, 'home_solution_title')}
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto modern-text modern-animate-fade-in-up">
-            Wissenschaftlich fundierte Methoden + persönliche Betreuung = garantierten Prüfungserfolg
+            {t(locale, 'home_solution_sub')}
           </p>
         </div>
 
@@ -71,7 +82,7 @@ export default function SolutionVisual() {
                     <div>
                       <h3 className="text-2xl font-bold text-black mb-2">{solution.title}</h3>
                       <div className="bg-green-100 text-green-800 px-3 py-1 rounded-lg text-sm font-semibold">
-                        Wissenschaftlich bewiesen
+                        {t(locale, 'home_scientifically_proven')}
                       </div>
                     </div>
                   </div>
@@ -84,7 +95,7 @@ export default function SolutionVisual() {
                   <div className="bg-green-50 rounded-lg p-4 mb-6">
                     <div className="flex items-center space-x-2 text-green-800 mb-3">
                       <CheckCircle className="w-5 h-5" />
-                      <span className="font-semibold">Deine Vorteile:</span>
+                      <span className="font-semibold">{t(locale, 'home_benefits_title')}</span>
                     </div>
                     <ul className="space-y-2">
                       {solution.benefits.map((benefit, benefitIndex) => (
@@ -127,7 +138,7 @@ export default function SolutionVisual() {
         <div className="mt-16 modern-animate-fade-in-up">
           <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-[#0395A6]">
             <h3 className="text-2xl font-bold text-center text-black mb-8">
-              So funktioniert unser bewährtes System
+              {t(locale, 'home_process_title')}
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -135,24 +146,24 @@ export default function SolutionVisual() {
                 <div className="w-16 h-16 bg-[#0395A6] rounded-full flex items-center justify-center text-white mx-auto mb-4">
                   <span className="text-2xl font-bold">1</span>
                 </div>
-                <h4 className="font-bold text-lg mb-2">Kostenloses Erstgespräch</h4>
-                <p className="text-gray-600">Wir analysieren deine Situation und erstellen einen individuellen Plan</p>
+                <h4 className="font-bold text-lg mb-2">{t(locale, 'home_process_step1_title')}</h4>
+                <p className="text-gray-600">{t(locale, 'home_process_step1_text')}</p>
               </div>
               
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#0395A6] rounded-full flex items-center justify-center text-white mx-auto mb-4">
                   <span className="text-2xl font-bold">2</span>
                 </div>
-                <h4 className="font-bold text-lg mb-2">Strukturiertes Training</h4>
-                <p className="text-gray-600">Wissenschaftliche Methoden + persönliche Betreuung = schnelle Fortschritte</p>
+                <h4 className="font-bold text-lg mb-2">{t(locale, 'home_process_step2_title')}</h4>
+                <p className="text-gray-600">{t(locale, 'home_process_step2_text')}</p>
               </div>
               
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#0395A6] rounded-full flex items-center justify-center text-white mx-auto mb-4">
                   <span className="text-2xl font-bold">3</span>
                 </div>
-                <h4 className="font-bold text-lg mb-2">Prüfungserfolg</h4>
-                <p className="text-gray-600">Mit Selbstvertrauen und der richtigen Vorbereitung zur bestandenen Prüfung</p>
+                <h4 className="font-bold text-lg mb-2">{t(locale, 'home_process_step3_title')}</h4>
+                <p className="text-gray-600">{t(locale, 'home_process_step3_text')}</p>
               </div>
             </div>
 
@@ -165,7 +176,7 @@ export default function SolutionVisual() {
                 className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center space-x-2"
               >
                 <Zap className="w-5 h-5" />
-                <span>JETZT KOSTENLOS STARTEN</span>
+                <span>{t(locale, 'home_hero_cta_start_now')}</span>
               </a>
             </div>
           </div>

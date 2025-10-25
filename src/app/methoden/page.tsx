@@ -1,7 +1,12 @@
 import { CheckCircle, Target, Brain, Clock, Award, Shield, ArrowRight, MessageCircle } from 'lucide-react'
+import { cookies } from 'next/headers'
+import { normalizeLocale, type Locale } from '@/i18n/locales'
+import { t } from '@/i18n/dictionaries'
 import Testimonials from '../../components/Testimonials'
 
-export default function MethodenPage() {
+export default async function MethodenPage() {
+  const cookieStore = await cookies()
+  const locale: Locale = normalizeLocale(cookieStore.get('lang')?.value)
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -10,17 +15,15 @@ export default function MethodenPage() {
           <div className="text-center">
             <div className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#0395A6] text-white font-semibold mb-12 modern-animate-fade-in">
               <Award className="w-5 h-5 mr-2" />
-              Wissenschaftlich fundiert
+              {t(locale, 'method_badge')}
             </div>
             
             <h1 className="text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold text-black mb-8 modern-heading leading-tight modern-animate-fade-in-up">
-              Die ultima-rat.io<br />
-              <span className="text-[#0395A6]">Methode</span>
+              {t(locale, 'method_hero_heading')}
             </h1>
             
             <p className="text-base text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed modern-text modern-animate-fade-in-up">
-              Wissenschaftlich fundierte Lernmethoden, die nachweislich funktionieren. 
-              Bewährte Strategien aus der Kognitionsforschung für optimale Prüfungsergebnisse.
+              {t(locale, 'method_hero_p')}
             </p>
           </div>
         </div>
@@ -31,10 +34,10 @@ export default function MethodenPage() {
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-2xl md:text-3xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Unsere Kernprinzipien
+              {t(locale, 'method_core_title')}
             </h2>
             <p className="text-base text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Wissenschaftlich belegte Lernmethoden für nachhaltigen Erfolg
+              {t(locale, 'method_core_sub')}
             </p>
           </div>
 
@@ -44,17 +47,16 @@ export default function MethodenPage() {
               <div className="mb-3 md:mb-8">
                 <Brain className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">Retrieval Practice</h3>
+              <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">{t(locale, 'method_retrieval_title')}</h3>
               <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6 break-words mobile-readable-text">
-                Aktives Abrufen von Wissen statt passives Wiederlesen. Diese Methode 
-                stärkt das Langzeitgedächtnis und verbessert die Abrufbarkeit in Prüfungen.
+                {t(locale, 'method_retrieval_text')}
               </p>
               <ul className="space-y-3 pr-0 mr-0">
                 {[
-                  "Aktive Wissensabfrage",
-                  "Selbsttest-Übungen",
-                  "Prüfungssimulationen",
-                  "Spaced Repetition"
+                  t(locale, 'method_retrieval_item1'),
+                  t(locale, 'method_retrieval_item2'),
+                  t(locale, 'method_retrieval_item3'),
+                  t(locale, 'method_retrieval_item4')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -68,17 +70,16 @@ export default function MethodenPage() {
               <div className="mb-3 md:mb-8">
                 <Clock className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">Spaced Repetition</h3>
+              <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">{t(locale, 'method_spaced_title')}</h3>
               <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6 break-words mobile-readable-text">
-                Geplante Wiederholungen in optimalen Intervallen. Diese Technik 
-                maximiert die Behaltensleistung und reduziert Vergessen.
+                {t(locale, 'method_spaced_text')}
               </p>
               <ul className="space-y-3 pr-0 mr-0">
                 {[
-                  "Optimale Wiederholungsintervalle",
-                  "Adaptive Lernpläne",
-                  "Langzeitgedächtnis-Training",
-                  "Vergessenskurve berücksichtigen"
+                  t(locale, 'method_spaced_item1'),
+                  t(locale, 'method_spaced_item2'),
+                  t(locale, 'method_spaced_item3'),
+                  t(locale, 'method_spaced_item4')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -92,17 +93,16 @@ export default function MethodenPage() {
               <div className="mb-3 md:mb-8">
                 <Target className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">Interleaving</h3>
+              <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">{t(locale, 'method_interleaving_title')}</h3>
               <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6 break-words mobile-readable-text">
-                Systematisches Mischen verschiedener Themen und Aufgaben. 
-                Diese Methode verbessert die Transferleistung und Problemlösefähigkeit.
+                {t(locale, 'method_interleaving_text')}
               </p>
               <ul className="space-y-3 pr-0 mr-0">
                 {[
-                  "Themenübergreifendes Lernen",
-                  "Transfer-Training",
-                  "Problemlösefähigkeit",
-                  "Flexible Anwendung"
+                  t(locale, 'method_interleaving_item1'),
+                  t(locale, 'method_interleaving_item2'),
+                  t(locale, 'method_interleaving_item3'),
+                  t(locale, 'method_interleaving_item4')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -116,17 +116,16 @@ export default function MethodenPage() {
               <div className="mb-3 md:mb-8">
                 <Shield className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
-              <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">Fehlerprotokolle</h3>
+              <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">{t(locale, 'method_errorlogs_title')}</h3>
               <p className="text-xs md:text-lg text-gray-600 leading-relaxed modern-text mb-2 md:mb-6 break-words mobile-readable-text">
-                Systematische Analyse und Dokumentation von Fehlern. 
-                Diese Methode hilft, Schwächen zu identifizieren und gezielt zu beheben.
+                {t(locale, 'method_errorlogs_text')}
               </p>
               <ul className="space-y-3 pr-0 mr-0">
                 {[
-                  "Fehleranalyse",
-                  "Schwächen-Identifikation",
-                  "Zielgerichtete Verbesserung",
-                  "Lernfortschritt-Tracking"
+                  t(locale, 'method_errorlogs_item1'),
+                  t(locale, 'method_errorlogs_item2'),
+                  t(locale, 'method_errorlogs_item3'),
+                  t(locale, 'method_errorlogs_item4')
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
@@ -145,10 +144,10 @@ export default function MethodenPage() {
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Wissenschaftliche Grundlage
+              {t(locale, 'method_science_title')}
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Bewährte Forschungsergebnisse aus der Kognitionspsychologie
+              {t(locale, 'method_science_sub')}
             </p>
           </div>
 
@@ -156,32 +155,28 @@ export default function MethodenPage() {
             <div className="modern-card p-16 modern-animate-fade-in-up">
               <div className="text-center mb-12">
                 <p className="text-lg text-[#0395A6] font-semibold italic">
-                  &ldquo;Du steigst nicht auf das Niveau deiner Ziele. Du fällst auf das Niveau deiner Systeme.&rdquo;
+                  {t(locale, 'method_science_quote')}
                 </p>
               </div>
               
               <div className="modern-grid modern-grid-2">
                 <div>
-                  <h3 className="text-lg font-bold text-black mb-6 modern-heading">Forschungsergebnisse</h3>
+                  <h3 className="text-lg font-bold text-black mb-6 modern-heading">{t(locale, 'method_research_title')}</h3>
                   <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                    Unsere Methoden basieren auf über 100 Jahren Forschung in der Kognitionspsychologie. 
-                    Studien zeigen, dass Retrieval Practice die Lernleistung um bis zu 50% verbessert.
+                    {t(locale, 'method_research_text1')}
                   </p>
                   <p className="text-lg text-gray-600 leading-relaxed modern-text">
-                    Spaced Repetition kann die Behaltensleistung um bis zu 200% steigern, 
-                    während Interleaving die Transferleistung deutlich verbessert.
+                    {t(locale, 'method_research_text2')}
                   </p>
                 </div>
                 
                 <div>
-                  <h3 className="text-lg font-bold text-black mb-6 modern-heading">Praktische Anwendung</h3>
+                  <h3 className="text-lg font-bold text-black mb-6 modern-heading">{t(locale, 'method_practical_title')}</h3>
                   <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
-                    Wir übertragen diese wissenschaftlichen Erkenntnisse in praktische, 
-                    anwendbare Lernstrategien für Medizinstudierende.
+                    {t(locale, 'method_practical_text1')}
                   </p>
                   <p className="text-lg text-gray-600 leading-relaxed modern-text">
-                    Jede Methode wird individuell an Ihre Lernziele und Prüfungsanforderungen 
-                    angepasst und kontinuierlich optimiert.
+                    {t(locale, 'method_practical_text2')}
                   </p>
                 </div>
               </div>
@@ -195,10 +190,10 @@ export default function MethodenPage() {
         <div className="modern-container">
           <div className="text-center modern-spacing">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
-              Umsetzung in der Praxis
+              {t(locale, 'method_impl_title')}
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-              Wie wir die Methoden in Ihrem Coaching anwenden
+              {t(locale, 'method_impl_sub')}
             </p>
           </div>
 
@@ -207,60 +202,44 @@ export default function MethodenPage() {
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 01
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Analyse</h3>
-              <p className="text-gray-600 leading-relaxed modern-text">
-                Einschätzung deiner aktuellen Lernmethoden und Identifikation von Problemen und Verbesserungspotenzialen.
-              </p>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'method_process_step1_title')}</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'method_process_step1_text')}</p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 02
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Zielsetzung</h3>
-              <p className="text-gray-600 leading-relaxed modern-text">
-              Gemeinsame Definition klarer, realistischer Lernziele basierend auf Ihrem Wissensstand, Zeitrahmen und Prüfungsformat.
-              </p>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'method_process_step2_title')}</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'method_process_step2_text')}</p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
-                02
-              </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Planung</h3>
-              <p className="text-gray-600 leading-relaxed modern-text">
-                Erstellung eines individuellen Lernplans mit wissenschaftlich fundierten Methoden.
-              </p>
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">02</div>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'method_process_step3_title')}</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'method_process_step3_text')}</p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 03
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Training</h3>
-              <p className="text-gray-600 leading-relaxed modern-text">
-                Praktische Anwendung der Methoden mit direktem Feedback und Anpassungen.
-              </p>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'method_process_step4_title')}</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'method_process_step4_text')}</p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
                 04
               </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Feedback & Anpassung</h3>
-              <p className="text-gray-600 leading-relaxed modern-text">
-              Regelmäßige Auswertung Ihrer Fortschritte mit gezieltem Feedback - Anpassung der Strategien für maximalen Lernerfolg.
-              </p>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'method_process_step5_title')}</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'method_process_step5_text')}</p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
-                04
-              </div>
-              <h3 className="text-lg font-bold text-black mb-4 modern-heading">Ergebnisse & Transfer</h3>
-              <p className="text-gray-600 leading-relaxed modern-text">
-              Messbare Verbesserungen, gestärktes Langzeitgedächtnis und sicherer Wissenstransfer in Prüfung und Praxis.
-              </p>
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">04</div>
+              <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'method_process_step6_title')}</h3>
+              <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'method_process_step6_text')}</p>
             </div>
           </div>
         </div>
@@ -273,14 +252,13 @@ export default function MethodenPage() {
       <section className="modern-cta modern-section">
         <div className="modern-container text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 modern-heading modern-animate-fade-in-up">
-            STARTE JETZT
+            {t(locale, 'method_cta_title')}
           </h2>
           <p className="text-xl text-white text-opacity-90 mb-8 modern-animate-fade-in-up">
-            Mit wissenschaftlich fundierten Methoden zum Erfolg.
+            {t(locale, 'method_cta_sub1')}
           </p>
           <p className="text-lg text-white text-opacity-80 mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
-            Erleben Sie selbst, wie effektiv unsere Lernmethoden sind. 
-            Kostenloses Erstgespräch und individuelle Beratung.
+            {t(locale, 'method_cta_sub2')}
           </p>
           <a
             href="http://wa.me/491639347633"
@@ -289,7 +267,7 @@ export default function MethodenPage() {
             className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
           >
             <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
-            Kostenloses Erstgespräch
+            {t(locale, 'home_cta_primary')}
             <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
           </a>
         </div>

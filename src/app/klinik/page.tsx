@@ -18,6 +18,9 @@ import {
   Scan
 } from 'lucide-react'
 import Testimonials from '@/components/Testimonials'
+import { cookies } from 'next/headers'
+import { t } from '@/i18n/dictionaries'
+import { normalizeLocale, type Locale } from '@/i18n/locales'
 
 export const metadata: Metadata = {
   title: 'Klinik Coaching - M2 & M3 erfolgreich bestehen | ultima-rat.io',
@@ -25,42 +28,45 @@ export const metadata: Metadata = {
   keywords: 'M2, M3, Klinik, Medizinstudium, Innere Medizin, Chirurgie, Neurologie, Hammerexamen, OSCE, klinisches Denken',
 }
 
-export default function KlinikPage() {
+export default async function KlinikPage() {
+  const cookieStore = await cookies()
+  const locale: Locale = normalizeLocale(cookieStore.get('lang')?.value)
+
   const subjects = [
     {
       icon: <Heart className="w-6 h-6" />,
-      title: "Innere Medizin",
-      description: "Herz-Kreislauf, Gastroenterologie, Pneumologie, Nephrologie, Endokrinologie und Hämatologie.",
+      title: t(locale, 'cl_sub_im_title'),
+      description: t(locale, 'cl_sub_im_desc'),
       relevance: "M2: 40% | M3: 35% | OSCE: 30%"
     },
     {
       icon: <Target className="w-6 h-6" />,
-      title: "Chirurgie", 
-      description: "Allgemein-, Viszeral-, Unfall- und Herzchirurgie. Operationsindikationen und perioperative Medizin.",
+      title: t(locale, 'cl_sub_ch_title'), 
+      description: t(locale, 'cl_sub_ch_desc'),
       relevance: "M2: 25% | M3: 30% | OSCE: 25%"
     },
     {
       icon: <BrainIcon className="w-6 h-6" />,
-      title: "Neurologie",
-      description: "ZNS-Erkrankungen, Schlaganfall, Epilepsie, Multiple Sklerose und neurodegenerative Erkrankungen.",
+      title: t(locale, 'cl_sub_neuro_title'),
+      description: t(locale, 'cl_sub_neuro_desc'),
       relevance: "M2: 15% | M3: 20% | OSCE: 15%"
     },
     {
       icon: <Baby className="w-6 h-6" />,
-      title: "Pädiatrie",
-      description: "Kinderheilkunde von der Neonatologie bis zur Adoleszenz. Entwicklungsstörungen und Impfungen.",
+      title: t(locale, 'cl_sub_paed_title'),
+      description: t(locale, 'cl_sub_paed_desc'),
       relevance: "M2: 10% | M3: 15% | OSCE: 10%"
     },
     {
       icon: <User className="w-6 h-6" />,
-      title: "Gynäkologie",
-      description: "Frauenheilkunde, Schwangerschaft, Geburtshilfe und gynäkologische Onkologie.",
+      title: t(locale, 'cl_sub_gyn_title'),
+      description: t(locale, 'cl_sub_gyn_desc'),
       relevance: "M2: 8% | M3: 12% | OSCE: 8%"
     },
     {
       icon: <Brain className="w-6 h-6" />,
-      title: "Psychiatrie",
-      description: "Psychische Erkrankungen, Psychopharmaka und psychotherapeutische Ansätze.",
+      title: t(locale, 'cl_sub_psy_title'),
+      description: t(locale, 'cl_sub_psy_desc'),
       relevance: "M2: 5% | M3: 8% | OSCE: 5%"
     }
   ]
@@ -68,90 +74,90 @@ export default function KlinikPage() {
   const challenges = [
     {
       icon: <Brain className="w-5 h-5" />,
-      title: "Klinisches Denken",
-      description: "Von der Anamnese über die körperliche Untersuchung bis zur Differentialdiagnose - komplexe Entscheidungsprozesse erlernen."
+      title: t(locale, 'cl_chal1_title'),
+      description: t(locale, 'cl_chal1_desc')
     },
     {
       icon: <BookOpen className="w-5 h-5" />,
-      title: "Fallbeispiele", 
-      description: "Hunderte von Krankheitsbildern mit unterschiedlichen Präsentationen und Verläufen verstehen und einordnen."
+      title: t(locale, 'cl_chal2_title'), 
+      description: t(locale, 'cl_chal2_desc')
     },
     {
       icon: <Target className="w-5 h-5" />,
-      title: "Differentialdiagnosen",
-      description: "Systematisches Vorgehen bei unklaren Symptomen und die richtige Priorisierung möglicher Diagnosen."
+      title: t(locale, 'cl_chal3_title'),
+      description: t(locale, 'cl_chal3_desc')
     },
     {
       icon: <Clock className="w-5 h-5" />,
-      title: "Zeitdruck in Prüfungen",
-      description: "Schnelle und präzise Antworten unter Zeitdruck - eine Fähigkeit, die gezielt trainiert werden muss."
+      title: t(locale, 'cl_chal4_title'),
+      description: t(locale, 'cl_chal4_desc')
     }
   ]
 
   const examPreparation = [
     {
-      exam: "M2 - Hammerexamen",
-      description: "Schriftliche Prüfung mit 320 Fragen in 5 Stunden. Alle klinischen Fächer mit Fokus auf praktische Anwendung.",
-      duration: "6-8 Monate Vorbereitung",
-      format: "Multiple Choice, 5 Stunden, 320 Fragen"
+      exam: t(locale, 'cl_exam_m2_title'),
+      description: t(locale, 'cl_exam_m2_desc'),
+      duration: t(locale, 'cl_exam_m2_duration'),
+      format: t(locale, 'cl_exam_m2_format')
     },
     {
-      exam: "M3 - Mündliche Prüfung", 
-      description: "Mündlich-praktische Prüfung mit Fallvorstellungen, klinischen Untersuchungen und Fachgesprächen.",
-      duration: "3-4 Monate Vorbereitung",
-      format: "Mündlich, 45-60 Min, Fallvorstellung + Fachgespräch"
+      exam: t(locale, 'cl_exam_m3_title'), 
+      description: t(locale, 'cl_exam_m3_desc'),
+      duration: t(locale, 'cl_exam_m3_duration'),
+      format: t(locale, 'cl_exam_m3_format')
     },
     {
-      exam: "OSCE - Objective Structured Clinical Examination",
-      description: "Praktische Prüfung mit standardisierten Stationen zu Anamnese, Untersuchung und Kommunikation.",
-      duration: "2-3 Monate Vorbereitung",
-      format: "Praktisch, 8-12 Stationen, je 5-10 Min"
+      exam: t(locale, 'cl_exam_osce_title'),
+      description: t(locale, 'cl_exam_osce_desc'),
+      duration: t(locale, 'cl_exam_osce_duration'),
+      format: t(locale, 'cl_exam_osce_format')
     }
   ]
 
   const clinicalSkills = [
     {
       icon: <Stethoscope className="w-5 h-5" />,
-      title: "Körperliche Untersuchung",
-      description: "Systematische Untersuchung aller Organsysteme mit korrekter Technik und Interpretation."
+      title: t(locale, 'cl_skill_exam_title'),
+      description: t(locale, 'cl_skill_exam_desc')
     },
     {
       icon: <Eye className="w-5 h-5" />,
-      title: "Anamnese-Erhebung",
-      description: "Strukturierte Gesprächsführung zur systematischen Erfassung von Symptomen und Beschwerden."
+      title: t(locale, 'cl_skill_anam_title'),
+      description: t(locale, 'cl_skill_anam_desc')
     },
     {
       icon: <Scan className="w-5 h-5" />,
-      title: "Bildgebende Verfahren",
-      description: "Interpretation von Röntgen, CT, MRT und Ultraschall mit Fokus auf häufige Pathologien."
+      title: t(locale, 'cl_skill_imaging_title'),
+      description: t(locale, 'cl_skill_imaging_desc')
     },
     {
       icon: <Activity className="w-5 h-5" />,
-      title: "EKG-Interpretation",
-      description: "Rhythmusstörungen, Infarktzeichen und andere kardiale Pathologien im EKG erkennen."
+      title: t(locale, 'cl_skill_ekg_title'),
+      description: t(locale, 'cl_skill_ekg_desc')
     }
   ]
 
   const studyMethods = [
     {
       icon: <CheckCircle className="w-5 h-5" />,
-      title: "Fallbasiertes Lernen",
-      description: "Lernen anhand realer Patientenfälle fördert das klinische Denken und die Anwendung des Wissens."
+      title: t(locale, 'cl_method_case_title'),
+      description: t(locale, 'cl_method_case_desc')
     },
     {
       icon: <Users className="w-5 h-5" />,
-      title: "Gruppenarbeit",
-      description: "Diskussion von Fällen in der Gruppe schärft das diagnostische Denken und erweitert den Horizont."
+      title: t(locale, 'cl_method_group_title'),
+      description: t(locale, 'cl_method_group_desc')
     },
     {
       icon: <Zap className="w-5 h-5" />,
-      title: "Simulationstraining",
-      description: "Praktische Übungen mit Simulationspatienten für realitätsnahe Prüfungsvorbereitung."
+      title: t(locale, 'cl_method_sim_title'),
+      description: t(locale, 'cl_method_sim_desc')
     },
     {
       icon: <Lightbulb className="w-5 h-5" />,
-      title: "Differentialdiagnose-Training",
-      description: "Systematisches Erlernen von Entscheidungsbäumen für häufige Leitsymptome."
+      title: t(locale, 'cl_method_ddx_title'),
+      description: t(locale, 'cl_method_ddx_desc')
     }
   ]
 
@@ -162,14 +168,11 @@ export default function KlinikPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h1 className="text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold modern-heading leading-tight mb-6">
-              <span className="text-black">M2 & M3 meistern mit</span>
+              <span className="text-black">{t(locale, 'cl_hero_title1')}</span>
               <br />
-              <span className="text-[#0395A6]">ärztlicher Expertise</span>
+              <span className="text-[#0395A6]">{t(locale, 'cl_hero_title2')}</span>
             </h1>
-            <p className="modern-text text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-              Entwickle klinisches Denken für das 2. und 3. Staatsexamen. 
-              Von der Anamnese bis zur Differentialdiagnose - wir bereiten dich optimal vor.
-            </p>
+            <p className="modern-text text-lg text-gray-600 mb-8 max-w-3xl mx-auto">{t(locale, 'cl_hero_sub')}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="http://wa.me/491639347633"
@@ -178,14 +181,14 @@ export default function KlinikPage() {
                 className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
               >
                 <Users className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
-                Kostenloses Erstgespräch
+                {t(locale, 'home_cta_primary')}
               </a>
               <a
                 href="#fächer"
                 className="modern-button-secondary px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
               >
                 <BookOpen className="w-6 h-6 mr-3 inline-block group-hover:translate-x-1 transition-transform" />
-                Klinische Fächer
+                {t(locale, 'cl_hero_cta_secondary')}
               </a>
             </div>
           </div>
@@ -197,11 +200,9 @@ export default function KlinikPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Die größten <span className="text-[#0395A6]">Herausforderungen</span> in der Klinik
+              {t(locale, 'cl_challenges_title1')} <span className="text-[#0395A6]">{t(locale, 'cl_challenges_title2')}</span> {t(locale, 'cl_challenges_title3')}
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Der Sprung von der Theorie zur Praxis erfordert neue Lernansätze und Denkweisen.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'cl_challenges_sub')}</p>
           </div>
           
           <div className="modern-grid modern-grid-2 gap-8">
@@ -227,11 +228,9 @@ export default function KlinikPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Deine <span className="text-[#0395A6]">klinischen Fächer</span> im Überblick
+              {t(locale, 'cl_subjects_title1')} <span className="text-[#0395A6]">{t(locale, 'cl_subjects_title2')}</span> {t(locale, 'cl_subjects_title3')}
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Alle wichtigen Fachgebiete mit Prüfungsrelevanz für M2, M3 und OSCE.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'cl_subjects_sub')}</p>
           </div>
           
           <div className="modern-grid modern-grid-2 gap-8">
@@ -243,8 +242,8 @@ export default function KlinikPage() {
                   </div>
                   <h3 className="modern-heading text-2xl mb-3">{subject.title}</h3>
                   <p className="modern-text text-gray-600 mb-4">{subject.description}</p>
-                  <div className="bg-[#F8FAFC] rounded-lg p-4">
-                    <p className="text-sm font-semibold text-[#0395A6]">Prüfungsrelevanz: {subject.relevance}</p>
+                    <div className="bg-[#F8FAFC] rounded-lg p-4">
+                      <p className="text-sm font-semibold text-[#0395A6]">{t(locale, 'cl_relevance_label')}: {subject.relevance}</p>
                   </div>
                 </div>
               </div>
@@ -258,11 +257,9 @@ export default function KlinikPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Gezielte <span className="text-[#0395A6]">Prüfungsvorbereitung</span>
+              {t(locale, 'cl_exam_title1')} <span className="text-[#0395A6]">{t(locale, 'cl_exam_title2')}</span>
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Spezifische Vorbereitung auf M2, M3 und OSCE mit bewährten Strategien.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'cl_exam_sub')}</p>
           </div>
           
           <div className="space-y-8">
@@ -283,7 +280,7 @@ export default function KlinikPage() {
                     </div>
                     <p className="modern-text text-gray-600 mb-3">{exam.description}</p>
                     <div className="bg-[#F8FAFC] rounded-lg p-3">
-                      <p className="text-sm font-semibold text-[#0395A6]">Format: {exam.format}</p>
+                      <p className="text-sm font-semibold text-[#0395A6]">{t(locale, 'cl_format_label')}: {exam.format}</p>
                     </div>
                   </div>
                 </div>
@@ -298,11 +295,9 @@ export default function KlinikPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              <span className="text-[#0395A6]">Klinische Fertigkeiten</span> trainieren
+              <span className="text-[#0395A6]">{t(locale, 'cl_skills_title2')}</span> {t(locale, 'cl_skills_title3')}
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Praktische Fähigkeiten für OSCE, M3 und den klinischen Alltag.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'cl_skills_sub')}</p>
           </div>
           
           <div className="modern-grid modern-grid-2 gap-8">
@@ -328,11 +323,9 @@ export default function KlinikPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Bewährte <span className="text-[#0395A6]">Lernmethoden</span> für die Klinik
+              {t(locale, 'cl_methods_title1')} <span className="text-[#0395A6]">{t(locale, 'cl_methods_title2')}</span> {t(locale, 'cl_methods_title3')}
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Speziell entwickelt für klinisches Lernen und praktische Anwendung.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'cl_methods_sub')}</p>
           </div>
           
           <div className="modern-grid modern-grid-2 gap-8">
@@ -358,11 +351,9 @@ export default function KlinikPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Erfolgsgeschichten unserer <span className="text-[#0395A6]">Klinik-Studenten</span>
+              {t(locale, 'cl_testimonials_title1')} <span className="text-[#0395A6]">{t(locale, 'cl_testimonials_title2')}</span>
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Über 300 Studierende haben mit uns M2 und M3 erfolgreich bestanden.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'cl_testimonials_sub')}</p>
           </div>
           
           <Testimonials />
@@ -375,12 +366,9 @@ export default function KlinikPage() {
           <div className="modern-card text-center modern-animate-fade-in-up">
             <div className="max-w-4xl mx-auto">
               <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-                Bereit für <span className="text-[#0395A6]">M2 & M3?</span>
+                {t(locale, 'cl_cta_title1')} <span className="text-[#0395A6]">{t(locale, 'cl_cta_title2')}</span>
               </h2>
-              <p className="modern-text text-lg text-gray-600 mb-8">
-                Starte jetzt mit deiner klinischen Ausbildung. 
-                Kostenloses Erstgespräch über WhatsApp - bezahlen erst im Anschluss!
-              </p>
+              <p className="modern-text text-lg text-gray-600 mb-8">{t(locale, 'cl_cta_sub')}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="http://wa.me/491639347633"
@@ -389,14 +377,14 @@ export default function KlinikPage() {
                   className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
                 >
                   <Users className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
-                  Jetzt starten
+                  {t(locale, 'cl_cta_start')}
                 </a>
                 <a
                   href="/coaching"
                   className="modern-button-secondary px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
                 >
                   <BookOpen className="w-6 h-6 mr-3 inline-block group-hover:translate-x-1 transition-transform" />
-                  Coaching-Übersicht
+                  {t(locale, 'cl_cta_overview')}
                 </a>
               </div>
             </div>

@@ -17,6 +17,9 @@ import {
   BookMarked
 } from 'lucide-react'
 import Testimonials from '@/components/Testimonials'
+import { cookies } from 'next/headers'
+import { t } from '@/i18n/dictionaries'
+import { normalizeLocale, type Locale } from '@/i18n/locales'
 
 export const metadata: Metadata = {
   title: 'Medical Skills Training - EKG, Röntgen, Labor & Co. | ultima-rat.io',
@@ -24,128 +27,131 @@ export const metadata: Metadata = {
   keywords: 'Medical Skills, EKG, Röntgen, Laborwerte, BGA, OSCE, M2, M3, klinische Fertigkeiten, Untersuchungstechniken',
 }
 
-export default function MedicalSkillsPage() {
+export default async function MedicalSkillsPage() {
+  const cookieStore = await cookies()
+  const locale: Locale = normalizeLocale(cookieStore.get('lang')?.value)
+
   const skills = [
     {
       icon: <Activity className="w-6 h-6" />,
-      title: "EKG-Interpretation",
-      description: "Rhythmusstörungen, Infarktzeichen, Hypertrophie und andere kardiale Pathologien systematisch erkennen.",
+      title: t(locale, 'ms_skill_ekg_title'),
+      description: t(locale, 'ms_skill_ekg_desc'),
       examRelevance: "OSCE: 20% | M2: 15% | M3: 25%",
-      keyPoints: ["Rhythmusanalyse", "Infarktzeichen", "Hypertrophie", "Leitungsstörungen"]
+      keyPoints: [t(locale, 'ms_ekg_p1'), t(locale, 'ms_ekg_p2'), t(locale, 'ms_ekg_p3'), t(locale, 'ms_ekg_p4')]
     },
     {
       icon: <Scan className="w-6 h-6" />,
-      title: "Röntgen-Thorax",
-      description: "Pneumonie, Pneumothorax, Herzinsuffizienz und andere thorakale Pathologien im Röntgenbild identifizieren.",
+      title: t(locale, 'ms_skill_cxr_title'),
+      description: t(locale, 'ms_skill_cxr_desc'),
       examRelevance: "OSCE: 25% | M2: 20% | M3: 30%",
-      keyPoints: ["Lungenfelder", "Herzgröße", "Pleuraerguss", "Pneumothorax"]
+      keyPoints: [t(locale, 'ms_cxr_p1'), t(locale, 'ms_cxr_p2'), t(locale, 'ms_cxr_p3'), t(locale, 'ms_cxr_p4')]
     },
     {
       icon: <TestTube className="w-6 h-6" />,
-      title: "Laborwerte",
-      description: "Blutbild, Entzündungsparameter, Nieren- und Leberwerte interpretieren und klinische Konsequenzen ableiten.",
+      title: t(locale, 'ms_skill_lab_title'),
+      description: t(locale, 'ms_skill_lab_desc'),
       examRelevance: "OSCE: 15% | M2: 25% | M3: 20%",
-      keyPoints: ["Blutbild", "Entzündung", "Nierenwerte", "Leberwerte"]
+      keyPoints: [t(locale, 'ms_lab_p1'), t(locale, 'ms_lab_p2'), t(locale, 'ms_lab_p3'), t(locale, 'ms_lab_p4')]
     },
     {
       icon: <Droplets className="w-6 h-6" />,
-      title: "Blutgasanalyse (BGA)",
-      description: "Säure-Basen-Haushalt, Oxygenierung und Ventilation beurteilen. Metabolische vs. respiratorische Störungen.",
+      title: t(locale, 'ms_skill_bga_title'),
+      description: t(locale, 'ms_skill_bga_desc'),
       examRelevance: "OSCE: 10% | M2: 10% | M3: 15%",
-      keyPoints: ["pH-Wert", "pCO2", "HCO3", "Säure-Basen-Störungen"]
+      keyPoints: [t(locale, 'ms_bga_p1'), t(locale, 'ms_bga_p2'), t(locale, 'ms_bga_p3'), t(locale, 'ms_bga_p4')]
     },
     {
       icon: <Scan className="w-6 h-6" />,
-      title: "Ultraschall",
-      description: "Abdomensonographie, Echokardiographie und andere sonographische Untersuchungen verstehen und interpretieren.",
+      title: t(locale, 'ms_skill_us_title'),
+      description: t(locale, 'ms_skill_us_desc'),
       examRelevance: "OSCE: 10% | M2: 10% | M3: 15%",
-      keyPoints: ["Abdomensonographie", "Echokardiographie", "Doppler", "Pathologien"]
+      keyPoints: [t(locale, 'ms_us_p1'), t(locale, 'ms_us_p2'), t(locale, 'ms_us_p3'), t(locale, 'ms_us_p4')]
     },
     {
       icon: <Stethoscope className="w-6 h-6" />,
-      title: "Körperliche Untersuchung",
-      description: "Systematische Untersuchung aller Organsysteme mit korrekter Technik und klinischer Interpretation.",
+      title: t(locale, 'ms_skill_exam_title'),
+      description: t(locale, 'ms_skill_exam_desc'),
       examRelevance: "OSCE: 30% | M2: 20% | M3: 35%",
-      keyPoints: ["Inspektion", "Palpation", "Perkussion", "Auskultation"]
+      keyPoints: [t(locale, 'ms_exam_p1'), t(locale, 'ms_exam_p2'), t(locale, 'ms_exam_p3'), t(locale, 'ms_exam_p4')]
     }
   ]
 
   const challenges = [
     {
       icon: <Eye className="w-5 h-5" />,
-      title: "Bildinterpretation",
-      description: "EKG, Röntgen und Ultraschall-Bilder systematisch analysieren und Pathologien sicher erkennen."
+      title: t(locale, 'ms_chal1_title'),
+      description: t(locale, 'ms_chal1_desc')
     },
     {
       icon: <Brain className="w-5 h-5" />,
-      title: "Klinische Korrelation", 
-      description: "Befunde mit der Klinik verknüpfen und differentialdiagnostische Überlegungen anstellen."
+      title: t(locale, 'ms_chal2_title'), 
+      description: t(locale, 'ms_chal2_desc')
     },
     {
       icon: <Clock className="w-5 h-5" />,
-      title: "Zeitdruck in Prüfungen",
-      description: "Schnelle und präzise Befundung unter Zeitdruck - eine Fähigkeit, die gezielt trainiert werden muss."
+      title: t(locale, 'ms_chal3_title'),
+      description: t(locale, 'ms_chal3_desc')
     },
     {
       icon: <Target className="w-5 h-5" />,
-      title: "Systematisches Vorgehen",
-      description: "Strukturierte Herangehensweise an komplexe Befunde ohne wichtige Details zu übersehen."
+      title: t(locale, 'ms_chal4_title'),
+      description: t(locale, 'ms_chal4_desc')
     }
   ]
 
   const trainingMethods = [
     {
       icon: <BookOpen className="w-5 h-5" />,
-      title: "Fallbasiertes Training",
-      description: "Lernen anhand realer Patientenfälle mit verschiedenen Pathologien und Schwierigkeitsgraden."
+      title: t(locale, 'ms_train_case_title'),
+      description: t(locale, 'ms_train_case_desc')
     },
     {
       icon: <Users className="w-5 h-5" />,
-      title: "Gruppenübungen",
-      description: "Gemeinsame Befundung und Diskussion fördert das Verständnis und die Sicherheit."
+      title: t(locale, 'ms_train_group_title'),
+      description: t(locale, 'ms_train_group_desc')
     },
     {
       icon: <Zap className="w-5 h-5" />,
-      title: "Simulationstraining",
-      description: "Praktische Übungen mit Simulationspatienten und realitätsnahen Prüfungssituationen."
+      title: t(locale, 'ms_train_sim_title'),
+      description: t(locale, 'ms_train_sim_desc')
     },
     {
       icon: <Lightbulb className="w-5 h-5" />,
-      title: "Systematische Befundung",
-      description: "Strukturierte Herangehensweise an jeden Befund für maximale Sicherheit und Vollständigkeit."
+      title: t(locale, 'ms_train_sys_title'),
+      description: t(locale, 'ms_train_sys_desc')
     }
   ]
 
   const examPreparation = [
     {
-      exam: "OSCE - Objective Structured Clinical Examination",
-      description: "Praktische Prüfung mit standardisierten Stationen zu allen wichtigen Medical Skills.",
-      skills: ["EKG", "Röntgen", "Labor", "Untersuchung", "Kommunikation"],
-      duration: "2-3 Monate Training"
+      exam: t(locale, 'ms_exam_osce_title'),
+      description: t(locale, 'ms_exam_osce_desc'),
+      skills: [t(locale, 'ms_exam_osce_s1'), t(locale, 'ms_exam_osce_s2'), t(locale, 'ms_exam_osce_s3'), t(locale, 'ms_exam_osce_s4'), t(locale, 'ms_exam_osce_s5')],
+      duration: t(locale, 'ms_exam_osce_duration')
     },
     {
-      exam: "M2 - Hammerexamen", 
-      description: "Schriftliche Prüfung mit Bildern und Fallbeschreibungen zu allen klinischen Fertigkeiten.",
-      skills: ["Bildinterpretation", "Laborwerte", "Klinische Korrelation"],
-      duration: "4-6 Monate Training"
+      exam: t(locale, 'ms_exam_m2_title'), 
+      description: t(locale, 'ms_exam_m2_desc'),
+      skills: [t(locale, 'ms_exam_m2_s1'), t(locale, 'ms_exam_m2_s2'), t(locale, 'ms_exam_m2_s3')],
+      duration: t(locale, 'ms_exam_m2_duration')
     },
     {
-      exam: "M3 - Mündliche Prüfung",
-      description: "Mündliche Präsentation von Befunden und klinischer Interpretation vor dem Prüfungsausschuss.",
-      skills: ["Befundpräsentation", "Differentialdiagnose", "Therapieplanung"],
-      duration: "3-4 Monate Training"
+      exam: t(locale, 'ms_exam_m3_title'),
+      description: t(locale, 'ms_exam_m3_desc'),
+      skills: [t(locale, 'ms_exam_m3_s1'), t(locale, 'ms_exam_m3_s2'), t(locale, 'ms_exam_m3_s3')],
+      duration: t(locale, 'ms_exam_m3_duration')
     }
   ]
 
   const blackBookMention = {
-    title: "Unser Black Book - EKG & Röntgen",
-    description: "Über 100 EKG- und Röntgen-Thorax-Bilder mit detaillierten Erläuterungen aller klinisch und prüfungsrelevanten Pathologien.",
+    title: t(locale, 'ms_bb_title'),
+    description: t(locale, 'ms_bb_desc'),
     features: [
-      "100+ EKG-Bilder mit Interpretation",
-      "100+ Röntgen-Thorax-Bilder mit Befundung", 
-      "Systematische Aufbereitung nach Pathologien",
-      "Prüfungsrelevante Fälle markiert",
-      "Kostenloser Download verfügbar"
+      t(locale, 'ms_bb_f1'),
+      t(locale, 'ms_bb_f2'), 
+      t(locale, 'ms_bb_f3'),
+      t(locale, 'ms_bb_f4'),
+      t(locale, 'ms_bb_f5')
     ]
   }
 
@@ -156,14 +162,11 @@ export default function MedicalSkillsPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h1 className="text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold modern-heading leading-tight mb-6">
-              <span className="text-black">Klinische Fertigkeiten für</span>
+              <span className="text-black">{t(locale, 'ms_hero_title1')}</span>
               <br />
-              <span className="text-[#0395A6]">OSCE, M2 & M3</span>
+              <span className="text-[#0395A6]">{t(locale, 'ms_hero_title2')}</span>
             </h1>
-            <p className="modern-text text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-              EKG, Röntgen, Laborwerte, BGA und mehr. Alle wichtigen Medical Skills 
-              systematisch trainieren für maximale Prüfungssicherheit.
-            </p>
+            <p className="modern-text text-lg text-gray-600 mb-8 max-w-3xl mx-auto">{t(locale, 'ms_hero_sub')}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="http://wa.me/491639347633"
@@ -172,14 +175,14 @@ export default function MedicalSkillsPage() {
                 className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
               >
                 <Users className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
-                Kostenloses Erstgespräch
+                {t(locale, 'home_cta_primary')}
               </a>
               <a
                 href="#skills"
                 className="modern-button-secondary px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
               >
                 <Stethoscope className="w-6 h-6 mr-3 inline-block group-hover:translate-x-1 transition-transform" />
-                Skills entdecken
+                {t(locale, 'ms_hero_cta_secondary')}
               </a>
             </div>
           </div>
@@ -191,11 +194,9 @@ export default function MedicalSkillsPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Die größten <span className="text-[#0395A6]">Herausforderungen</span> bei Medical Skills
+              {t(locale, 'ms_challenges_title1')} <span className="text-[#0395A6]">{t(locale, 'ms_challenges_title2')}</span> {t(locale, 'ms_challenges_title3')}
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Klinische Fertigkeiten erfordern praktische Übung und systematisches Vorgehen.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'ms_challenges_sub')}</p>
           </div>
           
           <div className="modern-grid modern-grid-2 gap-8">
@@ -221,11 +222,9 @@ export default function MedicalSkillsPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Alle wichtigen <span className="text-[#0395A6]">Medical Skills</span> im Überblick
+              {t(locale, 'ms_skills_title1')} <span className="text-[#0395A6]">{t(locale, 'ms_skills_title2')}</span> {t(locale, 'ms_skills_title3')}
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Systematisches Training aller klinischen Fertigkeiten mit Prüfungsrelevanz.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'ms_skills_sub')}</p>
           </div>
           
           <div className="modern-grid modern-grid-2 gap-8">
@@ -238,7 +237,7 @@ export default function MedicalSkillsPage() {
                   <h3 className="modern-heading text-2xl mb-3">{skill.title}</h3>
                   <p className="modern-text text-gray-600 mb-4">{skill.description}</p>
                   <div className="bg-[#F8FAFC] rounded-lg p-4 mb-4">
-                    <p className="text-sm font-semibold text-[#0395A6] mb-2">Prüfungsrelevanz: {skill.examRelevance}</p>
+                    <p className="text-sm font-semibold text-[#0395A6] mb-2">{t(locale, 'ms_relevance_label')}: {skill.examRelevance}</p>
                     <div className="flex flex-wrap gap-2">
                       {skill.keyPoints.map((point, pointIndex) => (
                         <span key={pointIndex} className="text-xs bg-white px-2 py-1 rounded-full text-[#0395A6]">
@@ -259,11 +258,9 @@ export default function MedicalSkillsPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Gezielte <span className="text-[#0395A6]">Prüfungsvorbereitung</span>
+              {t(locale, 'ms_exam_title1')} <span className="text-[#0395A6]">{t(locale, 'ms_exam_title2')}</span>
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Spezifische Vorbereitung auf OSCE, M2 und M3 mit praktischen Übungen.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'ms_exam_sub')}</p>
           </div>
           
           <div className="space-y-8">
@@ -284,7 +281,7 @@ export default function MedicalSkillsPage() {
                     </div>
                     <p className="modern-text text-gray-600 mb-4">{exam.description}</p>
                     <div className="bg-[#F8FAFC] rounded-lg p-4">
-                      <p className="text-sm font-semibold text-[#0395A6] mb-2">Trainierte Skills:</p>
+                      <p className="text-sm font-semibold text-[#0395A6] mb-2">{t(locale, 'ms_trained_label')}:</p>
                       <div className="flex flex-wrap gap-2">
                         {exam.skills.map((skill, skillIndex) => (
                           <span key={skillIndex} className="text-xs bg-white px-2 py-1 rounded-full text-[#0395A6]">
@@ -306,11 +303,9 @@ export default function MedicalSkillsPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Bewährte <span className="text-[#0395A6]">Training-Methoden</span>
+              {t(locale, 'ms_training_title1')} <span className="text-[#0395A6]">{t(locale, 'ms_training_title2')}</span>
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Praktische Übungen und realitätsnahe Simulationen für maximale Prüfungssicherheit.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'ms_training_sub')}</p>
           </div>
           
           <div className="modern-grid modern-grid-2 gap-8">
@@ -360,7 +355,7 @@ export default function MedicalSkillsPage() {
                 className="modern-button px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
               >
                 <BookMarked className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
-                Kostenlos herunterladen
+                {t(locale, 'ms_bb_cta')}
               </a>
             </div>
           </div>
@@ -372,11 +367,9 @@ export default function MedicalSkillsPage() {
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-              Erfolgsgeschichten unserer <span className="text-[#0395A6]">Medical Skills-Teilnehmer</span>
+              {t(locale, 'ms_testimonials_title1')} <span className="text-[#0395A6]">{t(locale, 'ms_testimonials_title2')}</span>
             </h2>
-            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
-              Über 200 Studierende haben mit uns ihre klinischen Fertigkeiten perfektioniert.
-            </p>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">{t(locale, 'ms_testimonials_sub')}</p>
           </div>
           
           <Testimonials />
@@ -389,12 +382,9 @@ export default function MedicalSkillsPage() {
           <div className="modern-card text-center modern-animate-fade-in-up">
             <div className="max-w-4xl mx-auto">
               <h2 className="modern-heading text-3xl md:text-4xl mb-6">
-                Bereit für deine <span className="text-[#0395A6]">Medical Skills?</span>
+                {t(locale, 'ms_cta_title1')} <span className="text-[#0395A6]">{t(locale, 'ms_cta_title2')}</span>
               </h2>
-              <p className="modern-text text-lg text-gray-600 mb-8">
-                Starte jetzt mit dem Training deiner klinischen Fertigkeiten. 
-                Kostenloses Erstgespräch über WhatsApp - bezahlen erst im Anschluss!
-              </p>
+              <p className="modern-text text-lg text-gray-600 mb-8">{t(locale, 'ms_cta_sub')}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="http://wa.me/491639347633"
@@ -403,14 +393,14 @@ export default function MedicalSkillsPage() {
                   className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
                 >
                   <Users className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
-                  Jetzt starten
+                  {t(locale, 'ms_cta_start')}
                 </a>
                 <a
                   href="/coaching"
                   className="modern-button-secondary px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
                 >
                   <Stethoscope className="w-6 h-6 mr-3 inline-block group-hover:translate-x-1 transition-transform" />
-                  Coaching-Übersicht
+                  {t(locale, 'ms_cta_overview')}
                 </a>
               </div>
             </div>

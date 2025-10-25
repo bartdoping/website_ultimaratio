@@ -2,8 +2,11 @@
 
 import { useState, useEffect } from 'react'
 import { Clock, Users, Zap, CheckCircle } from 'lucide-react'
+import { t } from '@/i18n/dictionaries'
+import { normalizeLocale, type Locale } from '@/i18n/locales'
 
 export default function UrgencyBanner() {
+  const [locale, setLocale] = useState<Locale>('de')
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -13,6 +16,11 @@ export default function UrgencyBanner() {
   // spotsLeft removed as unused
 
   useEffect(() => {
+    try {
+      const v = document.cookie.split('; ').find((c) => c.startsWith('lang='))?.split('=')[1]
+      setLocale(normalizeLocale(v))
+    } catch {}
+    
     // Set end date (30 days from now)
     const endDate = new Date()
     endDate.setDate(endDate.getDate() + 30)
@@ -45,7 +53,7 @@ export default function UrgencyBanner() {
             <div className="flex items-center justify-center space-x-2 mb-6">
               <CheckCircle className="w-6 h-6 text-white" />
               <h2 className="text-2xl md:text-3xl font-bold text-black">
-                ✓ KOSTENLOSES ERSTGESPRÄCH
+                {t(locale, 'home_urgency_title')}
               </h2>
               <CheckCircle className="w-6 h-6 text-white" />
             </div>
@@ -54,10 +62,10 @@ export default function UrgencyBanner() {
             <div className="bg-white/20 rounded-lg p-4 mb-6 max-w-md mx-auto">
               <div className="flex items-center justify-center space-x-2 mb-2">
                 <Users className="w-5 h-5 text-black" />
-                <span className="text-lg font-bold text-black">Für alle Studenten verfügbar!</span>
+                <span className="text-lg font-bold text-black">{t(locale, 'home_urgency_trust_title')}</span>
               </div>
               <p className="text-sm text-black">
-                Unverbindlich, professionell, sofort buchbar
+                {t(locale, 'home_urgency_trust_sub')}
               </p>
             </div>
 
@@ -65,24 +73,24 @@ export default function UrgencyBanner() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
               <div className="bg-white/10 rounded-lg p-4">
                 <Clock className="w-6 h-6 mx-auto mb-2 text-black" />
-                <h3 className="font-bold mb-1 text-black">Kostenloses Erstgespräch</h3>
-                <p className="text-sm text-black">Unverbindlich und professionell</p>
+                <h3 className="font-bold mb-1 text-black">{t(locale, 'home_urgency_b1_title')}</h3>
+                <p className="text-sm text-black">{t(locale, 'home_urgency_b1_sub')}</p>
               </div>
               <div className="bg-white/10 rounded-lg p-4">
                 <Zap className="w-6 h-6 mx-auto mb-2 text-black" />
-                <h3 className="font-bold mb-1 text-black">Sofortiger Start</h3>
-                <p className="text-sm text-black">Termine nach deinem Zeitplan</p>
+                <h3 className="font-bold mb-1 text-black">{t(locale, 'home_urgency_b2_title')}</h3>
+                <p className="text-sm text-black">{t(locale, 'home_urgency_b2_sub')}</p>
               </div>
               <div className="bg-white/10 rounded-lg p-4">
                 <Users className="w-6 h-6 mx-auto mb-2 text-black" />
-                <h3 className="font-bold mb-1 text-black">Persönlicher Coach</h3>
-                <p className="text-sm text-black">1:1 Betreuung garantiert</p>
+                <h3 className="font-bold mb-1 text-black">{t(locale, 'home_urgency_b3_title')}</h3>
+                <p className="text-sm text-black">{t(locale, 'home_urgency_b3_sub')}</p>
               </div>
             </div>
 
             {/* Team Section */}
             <div className="mb-8">
-              <h3 className="text-xl font-bold text-black mb-6">Deine erfahrenen Coaches</h3>
+              <h3 className="text-xl font-bold text-black mb-6">{t(locale, 'home_urgency_team_title')}</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 {/* Mustafa Eid */}
                 <div className="bg-white/20 rounded-lg p-6 flex items-center space-x-4">
@@ -95,8 +103,8 @@ export default function UrgencyBanner() {
                   </div>
                   <div>
                     <h4 className="font-bold text-black text-xl">Mustafa Eid</h4>
-                    <p className="text-base text-black mb-2">Approbierter Arzt</p>
-                    <p className="text-sm text-black">6+ Jahre Coaching-Erfahrung, Top-Ergebnisse in allen Examina</p>
+                    <p className="text-base text-black mb-2">{t(locale, 'home_urgency_mustafa_role')}</p>
+                    <p className="text-sm text-black">{t(locale, 'home_urgency_mustafa_blurb')}</p>
                   </div>
                 </div>
 
@@ -111,8 +119,8 @@ export default function UrgencyBanner() {
                   </div>
                   <div>
                     <h4 className="font-bold text-black text-xl">Ahkash Thavarajasingam</h4>
-                    <p className="text-base text-black mb-2">Approbierter Arzt</p>
-                    <p className="text-sm text-black">Erfahrener Tutor, Spezialist für Prüfungsvorbereitung und Lernstrategien</p>
+                    <p className="text-base text-black mb-2">{t(locale, 'home_urgency_ahkash_role')}</p>
+                    <p className="text-sm text-black">{t(locale, 'home_urgency_ahkash_blurb')}</p>
                   </div>
                 </div>
               </div>
@@ -127,11 +135,11 @@ export default function UrgencyBanner() {
                 className="bg-white text-[#0395A6] hover:bg-gray-50 px-12 py-6 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center space-x-3"
               >
                 <Zap className="w-6 h-6" />
-                <span>JETZT KOSTENLOS STARTEN</span>
+                <span>{t(locale, 'home_urgency_cta')}</span>
               </a>
               
               <p className="text-sm text-white/90">
-                ✓ Immer kostenlos ✓ Unverbindlich ✓ Professionell
+                {t(locale, 'home_urgency_tagline')}
               </p>
             </div>
           </div>
