@@ -73,9 +73,11 @@ body {
     letter-spacing: -0.01em !important;
   }
 
-  /* Hide blue top bar on mobile */
+  /* Show blue top bar on mobile with proper height */
   .mobile-top-bar {
-    display: none !important;
+    display: flex !important;
+    height: 2.5rem !important;
+    min-height: 2.5rem !important;
   }
 
   h3 {
@@ -450,8 +452,8 @@ body {
   /* Mobile logo and burger menu sizing */
   /* Use explicit Tailwind sizes in component; keep minimal bump here */
   .logo-mobile {
-    height: 3.5rem !important;
-    width: 3.5rem !important;
+    height: 2.5rem !important;
+    width: 2.5rem !important;
   }
 
 @media (max-width: 390px) {
@@ -477,8 +479,8 @@ body {
 }
 
   .burger-mobile {
-  width: 2.5rem !important;
-  height: 2.5rem !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
   }
   
   /* Desktop price emphasis */
@@ -1521,13 +1523,14 @@ body {
   animation: fadeIn 0.8s ease-out;
 }
 
-/* Final mobile override: hide blue top bar completely */
+/* Final mobile override: ensure blue top bar is visible and properly sized */
 @media (max-width: 768px) {
   .mobile-top-bar {
-    display: none !important;
-    height: 0 !important;
+    display: flex !important;
+    height: 2.5rem !important;
+    min-height: 2.5rem !important;
     padding: 0 !important;
-    overflow: hidden !important;
+    overflow: visible !important;
   }
 }
 

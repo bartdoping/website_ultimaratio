@@ -49,8 +49,8 @@ export default function Header() {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-50" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
-      {/* Top Bar (hidden on mobile) */}
-      <div className="bg-[#0395A6] text-white h-10 items-center mobile-top-bar hidden md:flex">
+      {/* Top Bar (visible on mobile) */}
+      <div className="bg-[#0395A6] text-white h-10 items-center mobile-top-bar flex">
         <div className="modern-container px-4">
           <div className="flex justify-between items-center text-sm gap-3 md:gap-6 lg:gap-10">
             <div className="flex items-center space-x-2 sm:space-x-4">
@@ -80,11 +80,11 @@ export default function Header() {
       {/* Main Header (white) */}
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="modern-container">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-16 md:h-16 min-h-[4rem]">
             {/* Logo */}
             <div className="flex-shrink-0 min-w-0">
               <Link href="/" className="flex items-center group min-w-0">
-                <div className="h-9 w-9 sm:h-11 sm:w-11 rounded-xl overflow-hidden shadow-lg logo-mobile flex-shrink-0">
+                <div className="h-10 w-10 sm:h-11 sm:w-11 md:h-12 md:w-12 rounded-xl overflow-hidden shadow-lg logo-mobile flex-shrink-0">
                   <Image
                     src="/images/logo/logo.png"
                     alt="ultima-rat.io Logo"
@@ -95,8 +95,8 @@ export default function Header() {
                   />
                 </div>
                 <div className="ml-2 sm:ml-3 truncate">
-                  <span className="text-sm sm:text-lg font-bold text-black modern-heading block leading-5 truncate">ultima-rat.io</span>
-                  <span className="text-[10px] sm:text-xs text-gray-500 hidden sm:block leading-4 truncate">Medizin-Nachhilfe</span>
+                  <span className="text-base sm:text-lg font-bold text-black modern-heading block leading-5 truncate">ultima-rat.io</span>
+                  <span className="text-xs sm:text-xs text-gray-500 hidden sm:block leading-4 truncate">Medizin-Nachhilfe</span>
                 </div>
               </Link>
             </div>
@@ -188,7 +188,7 @@ export default function Header() {
               <select
                 value={locale}
                 onChange={(e) => setLang(e.target.value as 'de' | 'en' | 'ar')}
-                className="border border-gray-200 rounded-lg text-xs px-2 py-1 bg-white"
+                className="border border-gray-200 rounded-lg text-xs px-2 py-1.5 bg-white min-w-[3rem]"
                 aria-label="Sprache wählen"
               >
                 <option value="de">DE</option>
@@ -208,9 +208,9 @@ export default function Header() {
               >
                 <span className="sr-only">Open main menu</span>
                 {isMenuOpen ? (
-                  <X className="block h-8 w-8 sm:h-6 sm:w-6 burger-mobile" aria-hidden="true" />
+                  <X className="block h-6 w-6 burger-mobile" aria-hidden="true" />
                 ) : (
-                  <Menu className="block h-8 w-8 sm:h-6 sm:w-6 burger-mobile" aria-hidden="true" />
+                  <Menu className="block h-6 w-6 burger-mobile" aria-hidden="true" />
                 )}
               </button>
             </div>
@@ -283,7 +283,7 @@ export default function Header() {
       </header>
       </div>
       {/* Spacer for fixed header */}
-      <div className="h-[4.5rem] md:h-[7rem]"></div>
+      <div className="h-[5.5rem] md:h-[7rem]"></div>
     </>
   )
 }
