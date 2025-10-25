@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useCookies } from '../contexts/CookieContext'
 import { Cookie, Settings, Shield, BarChart3, Target, Cog } from 'lucide-react'
 
