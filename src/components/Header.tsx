@@ -183,17 +183,25 @@ export default function Header() {
             </div>
  
             {/* Mobile menu button */}
-            <div className="md:hidden flex items-center gap-1.5 flex-shrink-0">
+            {/* Mobile Controls: language, cookie settings, burger */}
+            <div className="md:hidden flex items-center gap-2 flex-shrink-0">
               <select
                 value={locale}
                 onChange={(e) => setLang(e.target.value as 'de' | 'en' | 'ar')}
-                className="border border-gray-200 rounded-lg text-xs px-2 py-1"
+                className="border border-gray-200 rounded-lg text-xs px-2 py-1 bg-white"
                 aria-label="Sprache wählen"
               >
                 <option value="de">DE</option>
                 <option value="en">EN</option>
                 <option value="ar">AR</option>
               </select>
+              <button
+                onClick={openCookieSettings}
+                className="p-2 text-gray-600 hover:text-[#0395A6] hover:bg-gray-100 rounded-lg transition-colors"
+                aria-label="Cookie-Einstellungen"
+              >
+                <Settings className="w-5 h-5" />
+              </button>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="inline-flex items-center justify-center p-2 rounded-lg text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#0395A6] transition-all"
