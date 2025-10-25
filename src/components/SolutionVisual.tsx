@@ -176,7 +176,7 @@ export default function SolutionVisual() {
                 className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center space-x-2"
               >
                 <Zap className="w-5 h-5" />
-                <span>{t(locale, 'home_hero_cta_start_now')}</span>
+                <span>{t(locale, 'home_hero_cta_primary')}</span>
               </a>
             </div>
           </div>
