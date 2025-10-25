@@ -9,6 +9,7 @@ import CookieSettings from '@/components/CookieSettings'
 import BlackBookPopup from '@/components/BlackBookPopup'
 import { NextIntlClientProvider } from 'next-intl'
 import { messagesByLocale } from '@/i18n/dictionaries'
+import { normalizeLocale, type Locale } from '@/i18n/locales'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,13 +26,14 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const dir = locale === 'ar' ? 'rtl' : 'ltr'
-  const messages = messagesByLocale[locale]
+  const loc: Locale = normalizeLocale(locale)
+  const dir = loc === 'ar' ? 'rtl' : 'ltr'
+  const messages = messagesByLocale[loc]
 
   return (
-    <html lang={locale} dir={dir} suppressHydrationWarning>
+    <html lang={loc} dir={dir} suppressHydrationWarning>
       <body className={inter.className}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={loc} messages={messages}>
           <CookieProvider>
             <Header />
             <main>{children}</main>
