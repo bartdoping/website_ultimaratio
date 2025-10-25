@@ -461,6 +461,12 @@ body {
   }
 }
 
+/* Fixed header safe-area support for iOS notch */
+.mobile-top-bar { height: 2.5rem; }
+@supports (padding-top: env(safe-area-inset-top)) {
+  .mobile-safe { padding-top: env(safe-area-inset-top); }
+}
+
   .burger-mobile {
   width: 2.5rem !important;
   height: 2.5rem !important;

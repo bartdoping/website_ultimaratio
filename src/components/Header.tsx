@@ -48,7 +48,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-50">
+      <div className="fixed top-0 left-0 right-0 z-50" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
       {/* Top Bar (hidden on mobile) */}
       <div className="bg-[#0395A6] text-white h-10 items-center mobile-top-bar hidden md:flex">
         <div className="modern-container">
@@ -273,10 +273,9 @@ export default function Header() {
           </div>
         )}
       </header>
- 
-      {/* Spacer: mobile header height, md+ includes blue bar + header */}
-      <div className="h-16 md:h-[7rem]"></div>
       </div>
+      {/* Spacer outside fixed wrapper to offset page content */}
+      <div className="h-16 md:h-[7rem]"></div>
     </>
   )
 }
