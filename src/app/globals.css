@@ -467,6 +467,15 @@ body {
   .mobile-safe { padding-top: env(safe-area-inset-top); }
 }
 
+/* Ensure main hero content isn't covered on mobile */
+@media (max-width: 767px) {
+  header + .hero-section,
+  header + section,
+  .modern-hero {
+    scroll-margin-top: 4rem;
+  }
+}
+
   .burger-mobile {
   width: 2.5rem !important;
   height: 2.5rem !important;
