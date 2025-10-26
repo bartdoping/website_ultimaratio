@@ -88,6 +88,15 @@ export default function FAQ() {
             {t(locale, 'home_cta_primary')}
           </a>
         </div>
+
+        {/* Legal Disclaimer */}
+        <div className="mt-12 pt-8 border-t border-gray-200">
+          <div className="text-center">
+            <p className="text-gray-500 text-sm leading-relaxed max-w-4xl mx-auto">
+              {t(locale, 'legal_disclaimer')}
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   )

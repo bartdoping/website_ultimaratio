@@ -885,6 +885,8 @@ const de: Dict = {
   coach_process_step3_text: 'Altklausuren, Prüfungssimulationen und Strategien gegen Blackouts. Optimale Vorbereitung auf jede Prüfung.',
   coach_process_step4_title: 'Erfolg & Nachhaltigkeit',
   coach_process_step4_text: 'Du bestehst nicht nur die Prüfung, sondern entwickelst nachhaltige Lernstrategien – für Studium und darüber hinaus.',
+  // Legal Disclaimer
+  legal_disclaimer: 'Hinweis: Wir bieten Beratung und Nachhilfe, keine strukturierten Fernlehrgänge im Sinne des Fernunterrichtsschutzgesetzes (FernUSG). Keine Lernerfolgskontrolle oder Zertifizierung.',
 }
 
 const en: Dict = {
@@ -1753,6 +1755,8 @@ const en: Dict = {
   coach_process_step3_text: 'Past papers, exam simulations and strategies against blackouts. Optimal prep for every exam.',
   coach_process_step4_title: 'Success & sustainability',
   coach_process_step4_text: 'You not only pass but develop sustainable strategies – for your studies and beyond.',
+  // Legal Disclaimer
+  legal_disclaimer: 'Note: We provide consultation and tutoring, not structured distance learning courses under the German Distance Learning Protection Act (FernUSG). No learning progress monitoring or certification.',
 }
 
 const ar: Dict = {
@@ -2566,6 +2570,8 @@ const ar: Dict = {
   coach_process_step3_text: 'امتحانات سابقة ومحاكاة واستراتيجيات ضد النسيان المفاجئ. تحضير أمثل لكل امتحان.',
   coach_process_step4_title: 'النجاح والاستدامة',
   coach_process_step4_text: 'لا تنجح فقط، بل تطوّر استراتيجيات مستدامة – لدراستك وما بعدها.',
+  // Legal Disclaimer
+  legal_disclaimer: 'ملاحظة: نقدم استشارة ودروس خصوصية، وليس دورات تعليم عن بُعد منظمة وفقاً لقانون حماية التعليم عن بُعد الألماني (FernUSG). لا يوجد مراقبة للتقدم أو شهادات.',
   // Contact
   contact_badge: 'اتصل بنا',
   contact_hero_heading: 'دعنا نجتاز امتحانك معًا',

@@ -2,8 +2,23 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { MessageCircle, Phone, Mail, MapPin, Clock, Star } from 'lucide-react'
+import { useLocale } from 'next-intl'
+import { t } from '@/i18n/dictionaries'
+import { normalizeLocale, type Locale } from '@/i18n/locales'
+import { useEffect, useState } from 'react'
 
 export default function Footer() {
+  const [locale, setLocale] = useState<Locale>('de')
+  
+  useEffect(() => {
+    try {
+      const cookieLocale = document.cookie.split('; ').find((c) => c.startsWith('lang='))?.split('=')[1]
+      setLocale(normalizeLocale(cookieLocale))
+    } catch {
+      setLocale('de')
+    }
+  }, [])
+  
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
       {/* Spacer to create gap between content and footer */}
@@ -184,6 +199,15 @@ export default function Footer() {
             <MessageCircle className="w-5 h-5 mr-3 inline-block group-hover:animate-pulse" />
             Kostenloses Erstgespräch
           </a>
+        </div>
+
+        {/* Legal Disclaimer */}
+        <div className="border-t border-gray-700 pt-8 pb-8">
+          <div className="text-center">
+            <p className="text-gray-400 text-sm leading-relaxed max-w-4xl mx-auto">
+              {t(locale, 'legal_disclaimer')}
+            </p>
+          </div>
         </div>
       </div>
 
