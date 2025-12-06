@@ -1557,9 +1557,11 @@ body {
   }
   
   /* Ensure mobile controls stay horizontal */
-  .md\\:hidden.flex {
-    flex-wrap: nowrap !important;
-    white-space: nowrap !important;
+  @media (max-width: 768px) {
+    .flex[class*="md:hidden"] {
+      flex-wrap: nowrap !important;
+      white-space: nowrap !important;
+    }
   }
   
   /* Force header to be visible and properly sized on mobile */
