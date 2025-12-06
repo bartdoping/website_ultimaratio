@@ -5,17 +5,17 @@ const nextConfig = {
   
   // Image optimization
   images: {
-    domains: ['localhost'],
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+      },
+      {
+        protocol: 'https',
+        hostname: 'localhost',
+      },
+    ],
     formats: ['image/webp', 'image/avif'],
-  },
-  
-  // next-intl config path
-  experimental: {
-    // optimizeCss: true,
-    nextIntl: {
-      // ensure next-intl finds config file
-      localeDetection: true
-    }
   },
   
   // Security headers
