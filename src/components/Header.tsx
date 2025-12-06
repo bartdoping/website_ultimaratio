@@ -10,6 +10,7 @@ import { useCookies } from '../contexts/CookieContext'
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isCoachingOpen, setIsCoachingOpen] = useState(false)
+  const [isHumanmedizinOpen, setIsHumanmedizinOpen] = useState(false)
   const { openCookieSettings } = useCookies()
   const [locale, setLocale] = useState<'de' | 'en' | 'ar'>('de')
   const [isLangOpen, setIsLangOpen] = useState(false)
@@ -36,9 +37,17 @@ export default function Header() {
       nameKey: 'nav_coaching', fallback: 'Coaching',
       href: '/coaching',
       submenu: [
-        { nameKey: 'nav_vorklinik', href: '/vorklinik' },
-        { nameKey: 'nav_klinik', href: '/klinik' },
-        { nameKey: 'nav_medical_skills', href: '/medicalskills' }
+        { nameKey: 'nav_overview', href: '/coaching', isOverview: true },
+        { 
+          nameKey: 'nav_humanmedizin', 
+          href: '#',
+          submenu: [
+            { nameKey: 'nav_vorklinik', href: '/vorklinik' },
+            { nameKey: 'nav_klinik', href: '/klinik' },
+            { nameKey: 'nav_medical_skills', href: '/medicalskills' }
+          ]
+        },
+        { nameKey: 'nav_zahnmedizin', href: '/zahnmedizin' }
       ]
     },
     { nameKey: 'nav_knowledge_exam', fallback: 'Kenntnisprüfung', href: '/kenntnispruefung' },
@@ -115,23 +124,54 @@ export default function Header() {
                         <ChevronDown className="w-4 h-4 ml-1" />
                       </button>
                       {isCoachingOpen && (
-                        <div className="absolute top-full left-0 mt-1 w-44 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
-                      <Link
-                        href={item.href}
-                            className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] transition-colors"
-                            onClick={() => setIsCoachingOpen(false)}
-                          >
-                            {t(locale, 'nav_overview')}
-                          </Link>
+                        <div 
+                          className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50"
+                          onMouseLeave={() => {
+                            setIsCoachingOpen(false)
+                            setIsHumanmedizinOpen(false)
+                          }}
+                        >
                           {item.submenu.map((subItem) => (
-                            <Link
-                              key={subItem.href}
-                              href={subItem.href}
-                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] transition-colors"
-                              onClick={() => setIsCoachingOpen(false)}
-                            >
-                              {t(locale, subItem.nameKey)}
-                            </Link>
+                            subItem.submenu ? (
+                              <div key={subItem.nameKey} className="relative group/submenu">
+                                <div
+                                  onMouseEnter={() => setIsHumanmedizinOpen(true)}
+                                  className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] transition-colors flex items-center justify-between cursor-pointer"
+                                >
+                                  <span>{t(locale, subItem.nameKey)}</span>
+                                  <ChevronDown className="w-3 h-3 ml-2 rotate-[-90deg]" />
+                                </div>
+                                {isHumanmedizinOpen && (
+                                  <div className="absolute left-full top-0 ml-1 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                                    {subItem.submenu.map((subSubItem) => (
+                                      <Link
+                                        key={subSubItem.href}
+                                        href={subSubItem.href}
+                                        className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] transition-colors"
+                                        onClick={() => {
+                                          setIsCoachingOpen(false)
+                                          setIsHumanmedizinOpen(false)
+                                        }}
+                                      >
+                                        {t(locale, subSubItem.nameKey)}
+                                      </Link>
+                                    ))}
+                                  </div>
+                                )}
+                              </div>
+                            ) : (
+                              <Link
+                                key={subItem.href}
+                                href={subItem.href}
+                                className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] transition-colors"
+                                onClick={() => {
+                                  setIsCoachingOpen(false)
+                                  setIsHumanmedizinOpen(false)
+                                }}
+                              >
+                                {t(locale, subItem.nameKey)}
+                              </Link>
+                            )
                           ))}
                         </div>
                       )}
@@ -233,14 +273,32 @@ export default function Header() {
                         {t(locale, item.nameKey)} - {t(locale, 'nav_overview')}
                       </Link>
                       {item.submenu.map((subItem) => (
-                        <Link
-                          key={subItem.href}
-                          href={subItem.href}
-                          className="text-gray-600 hover:bg-gray-50 hover:text-[#0395A6] block px-6 py-2 rounded-lg text-sm font-medium transition-all"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          {t(locale, subItem.nameKey)}
-                        </Link>
+                        subItem.submenu ? (
+                          <div key={subItem.nameKey}>
+                            <div className="text-gray-600 px-6 py-2 text-sm font-semibold">
+                              {t(locale, subItem.nameKey)}
+                            </div>
+                            {subItem.submenu.map((subSubItem) => (
+                              <Link
+                                key={subSubItem.href}
+                                href={subSubItem.href}
+                                className="text-gray-500 hover:bg-gray-50 hover:text-[#0395A6] block px-9 py-2 rounded-lg text-sm font-medium transition-all"
+                                onClick={() => setIsMenuOpen(false)}
+                              >
+                                {t(locale, subSubItem.nameKey)}
+                              </Link>
+                            ))}
+                          </div>
+                        ) : (
+                          <Link
+                            key={subItem.href}
+                            href={subItem.href}
+                            className="text-gray-600 hover:bg-gray-50 hover:text-[#0395A6] block px-6 py-2 rounded-lg text-sm font-medium transition-all"
+                            onClick={() => setIsMenuOpen(false)}
+                          >
+                            {t(locale, subItem.nameKey)}
+                          </Link>
+                        )
                       ))}
                     </div>
                   ) : (

@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/medicalskills',
     '/vorklinik',
     '/widerruf',
+    '/zahnmedizin',
   ]
 
   // Locale-spezifische Routen (existieren unter [locale])
