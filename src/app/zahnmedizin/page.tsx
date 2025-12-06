@@ -9,7 +9,6 @@ import {
   Clock, 
   Zap,
   Lightbulb,
-  Award,
   MessageCircle,
   ArrowRight,
   Heart,

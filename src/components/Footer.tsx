@@ -2,7 +2,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { MessageCircle, Phone, Mail, MapPin, Clock, Star } from 'lucide-react'
-import { useLocale } from 'next-intl'
 import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { useEffect, useState } from 'react'
