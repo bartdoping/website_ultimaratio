@@ -11,6 +11,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isCoachingOpen, setIsCoachingOpen] = useState(false)
   const [isHumanmedizinOpen, setIsHumanmedizinOpen] = useState(false)
+  const [isApprobationOpen, setIsApprobationOpen] = useState(false)
   const { openCookieSettings } = useCookies()
   const [locale, setLocale] = useState<'de' | 'en' | 'ar'>('de')
   const [isLangOpen, setIsLangOpen] = useState(false)
@@ -50,7 +51,14 @@ export default function Header() {
         { nameKey: 'nav_zahnmedizin', href: '/zahnmedizin' }
       ]
     },
-    { nameKey: 'nav_knowledge_exam', fallback: 'Kenntnisprüfung', href: '/kenntnispruefung' },
+    { 
+      nameKey: 'nav_approbation', fallback: 'Approbation',
+      href: '#',
+      submenu: [
+        { nameKey: 'nav_knowledge_exam', href: '/kenntnispruefung' },
+        { nameKey: 'nav_fachsprachpruefung', href: '/fachsprachpruefung' }
+      ]
+    },
     { nameKey: 'nav_team', fallback: 'Team', href: '/team' },
     { nameKey: 'nav_contact', fallback: 'Kontakt', href: '/kontakt' },
   ]
@@ -117,18 +125,31 @@ export default function Header() {
                   {item.submenu ? (
                     <div className="relative group">
                       <button
-                        onClick={() => setIsCoachingOpen(!isCoachingOpen)}
+                        onClick={() => {
+                          if (item.nameKey === 'nav_coaching') {
+                            setIsCoachingOpen(!isCoachingOpen)
+                            setIsApprobationOpen(false)
+                          } else if (item.nameKey === 'nav_approbation') {
+                            setIsApprobationOpen(!isApprobationOpen)
+                            setIsCoachingOpen(false)
+                            setIsHumanmedizinOpen(false)
+                          }
+                        }}
                         className="text-gray-700 hover:text-[#0395A6] px-2.5 py-1.5 text-sm font-medium leading-none transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] modern-focus flex items-center"
                       >
                         {t(locale, item.nameKey)}
                         <ChevronDown className="w-4 h-4 ml-1" />
                       </button>
-                      {isCoachingOpen && (
+                      {(item.nameKey === 'nav_coaching' && isCoachingOpen) || (item.nameKey === 'nav_approbation' && isApprobationOpen) ? (
                         <div 
                           className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50"
                           onMouseLeave={() => {
-                            setIsCoachingOpen(false)
-                            setIsHumanmedizinOpen(false)
+                            if (item.nameKey === 'nav_coaching') {
+                              setIsCoachingOpen(false)
+                              setIsHumanmedizinOpen(false)
+                            } else if (item.nameKey === 'nav_approbation') {
+                              setIsApprobationOpen(false)
+                            }
                           }}
                         >
                           {item.submenu.map((subItem) => (
@@ -167,6 +188,7 @@ export default function Header() {
                                 onClick={() => {
                                   setIsCoachingOpen(false)
                                   setIsHumanmedizinOpen(false)
+                                  setIsApprobationOpen(false)
                                 }}
                               >
                                 {t(locale, subItem.nameKey)}
@@ -174,7 +196,7 @@ export default function Header() {
                             )
                           ))}
                         </div>
-                      )}
+                      ) : null}
                     </div>
                   ) : (
                     <Link
@@ -265,13 +287,19 @@ export default function Header() {
                 <div key={item.href}>
                   {item.submenu ? (
                     <div>
-                      <Link
-                        href={item.href}
-                        className="text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] block px-3 py-2.5 rounded-lg text-sm font-medium transition-all"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        {t(locale, item.nameKey)} - {t(locale, 'nav_overview')}
-                      </Link>
+                      {item.nameKey === 'nav_coaching' ? (
+                        <Link
+                          href={item.href}
+                          className="text-gray-700 hover:bg-gray-50 hover:text-[#0395A6] block px-3 py-2.5 rounded-lg text-sm font-medium transition-all"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {t(locale, item.nameKey)} - {t(locale, 'nav_overview')}
+                        </Link>
+                      ) : (
+                        <div className="text-gray-700 px-3 py-2.5 text-sm font-semibold">
+                          {t(locale, item.nameKey)}
+                        </div>
+                      )}
                       {item.submenu.map((subItem) => (
                         subItem.submenu ? (
                           <div key={subItem.nameKey}>

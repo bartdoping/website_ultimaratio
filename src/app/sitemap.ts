@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/vorklinik',
     '/widerruf',
     '/zahnmedizin',
+    '/fachsprachpruefung',
   ]
 
   // Locale-spezifische Routen (existieren unter [locale])
