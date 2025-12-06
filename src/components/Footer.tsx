@@ -114,7 +114,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-6 text-white">Services</h3>
             <ul className="space-y-3 mb-8">
-              <li className="text-gray-300 text-lg">Einzelcoaching (39€/60min)</li>
+              <li className="text-gray-300 text-lg">Einzelcoaching (<span className="text-xs">ab </span>49€/60min)</li>
               <li className="text-gray-300 text-lg">Crashkurse (beliebig viele Stunden)</li>
               <li className="text-gray-300 text-lg">Prüfungsvorbereitung</li>
               <li className="text-gray-300 text-lg">Online via Zoom</li>

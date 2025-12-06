@@ -99,7 +99,7 @@ export default async function HomePage() {
                 <Award className="w-20 h-20 text-[#0395A6] mx-auto" />
               </div>
               <h3 className="text-2xl font-bold text-black mb-8 modern-heading">{t(locale, 'home_singlecoaching')}</h3>
-              <div className="text-6xl font-bold text-[#0395A6] mb-8 price-mobile">39€</div>
+              <div className="text-6xl font-bold text-[#0395A6] mb-8 price-mobile"><span className="text-base">ab </span>49€</div>
               <p className="text-lg text-gray-600 mb-10 modern-text price-text-mobile">
                 {t(locale, 'home_price_single_desc')}
               </p>
@@ -120,7 +120,7 @@ export default async function HomePage() {
                 <Users className="w-20 h-20 text-[#0395A6] mx-auto" />
               </div>
               <h3 className="text-2xl font-bold text-black mb-8 modern-heading">{t(locale, 'home_groupcoaching')}</h3>
-              <div className="text-6xl font-bold text-[#0395A6] mb-8 price-mobile">25€</div>
+              <div className="text-6xl font-bold text-[#0395A6] mb-8 price-mobile"><span className="text-base">ab </span>35€</div>
               <p className="text-lg text-gray-600 mb-10 modern-text">
                 {t(locale, 'home_price_group_desc')}
               </p>

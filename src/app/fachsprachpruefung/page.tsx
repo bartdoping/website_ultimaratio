@@ -471,7 +471,7 @@ export default async function FachsprachpruefungPage() {
           <div className="max-w-5xl mx-auto">
             <div className="modern-card p-16 modern-animate-fade-in-up">
               <div className="text-center mb-12">
-                <div className="text-4xl md:text-6xl font-bold text-[#0395A6] mb-4 price-mobile">39€</div>
+                <div className="text-4xl md:text-6xl font-bold text-[#0395A6] mb-4 price-mobile"><span className="text-sm md:text-base">ab </span>49€</div>
                 <p className="text-lg text-gray-600 mb-8">{t(locale, 'fsp_price_line1')}</p>
                 <p className="text-lg text-gray-500">{t(locale, 'fsp_price_line2')}</p>
               </div>
