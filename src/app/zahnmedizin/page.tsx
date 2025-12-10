@@ -282,6 +282,197 @@ export default async function ZahnmedizinPage() {
         </div>
       </section>
 
+      {/* Detaillierte Prüfungsfächer */}
+      <section className="modern-section bg-white">
+        <div className="modern-container">
+          <div className="text-center mb-16">
+            <h2 className="modern-heading text-3xl md:text-4xl mb-6">
+              {t(locale, 'zm_exam_details_title')}
+            </h2>
+            <p className="modern-text text-lg text-gray-600 max-w-3xl mx-auto">
+              {t(locale, 'zm_exam_details_sub')}
+            </p>
+          </div>
+
+          <div className="space-y-12">
+            {/* Z1 Fächer */}
+            <div className="modern-card modern-animate-fade-in-up">
+              <div className="mb-6">
+                <h3 className="modern-heading text-2xl mb-3 text-[#0395A6]">{t(locale, 'zm_z1_title')}</h3>
+                <p className="modern-text text-gray-600">{t(locale, 'zm_z1_sub')}</p>
+              </div>
+              <div className="space-y-4">
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-sm font-semibold text-[#0395A6] mb-2">{t(locale, 'zm_z1_group1_title')}</p>
+                  <p className="text-gray-700">{t(locale, 'zm_z1_group1_name')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-sm font-semibold text-[#0395A6] mb-2">{t(locale, 'zm_z1_group2_title')}</p>
+                  <p className="text-gray-700">{t(locale, 'zm_z1_group2_name')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-sm font-semibold text-[#0395A6] mb-2">{t(locale, 'zm_z1_group3_title')}</p>
+                  <p className="text-gray-700">{t(locale, 'zm_z1_group3_name')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-sm font-semibold text-[#0395A6] mb-2">{t(locale, 'zm_z1_subject4_title')}</p>
+                  <p className="text-gray-700">{t(locale, 'zm_z1_subject4_name')}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Z2 Fächer */}
+            <div className="modern-card modern-animate-fade-in-up">
+              <div className="mb-6">
+                <h3 className="modern-heading text-2xl mb-3 text-[#0395A6]">{t(locale, 'zm_z2_title')}</h3>
+                <p className="modern-text text-gray-600">{t(locale, 'zm_z2_sub')}</p>
+              </div>
+              <div className="space-y-4">
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-gray-700 font-medium">{t(locale, 'zm_z2_subject1')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-gray-700 font-medium">{t(locale, 'zm_z2_subject2')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-gray-700 font-medium">{t(locale, 'zm_z2_subject3')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-sm font-semibold text-[#0395A6] mb-3">{t(locale, 'zm_z2_group4_title')}</p>
+                  <p className="text-sm text-gray-600 mb-3">{t(locale, 'zm_z2_group4_sub')}</p>
+                  <ul className="space-y-2 ml-4">
+                    <li className="text-gray-700 flex items-start">
+                      <span className="text-[#0395A6] mr-2">•</span>
+                      <span>{t(locale, 'zm_z2_group4_item1')}</span>
+                    </li>
+                    <li className="text-gray-700 flex items-start">
+                      <span className="text-[#0395A6] mr-2">•</span>
+                      <span>{t(locale, 'zm_z2_group4_item2')}</span>
+                    </li>
+                    <li className="text-gray-700 flex items-start">
+                      <span className="text-[#0395A6] mr-2">•</span>
+                      <span>{t(locale, 'zm_z2_group4_item3')}</span>
+                    </li>
+                    <li className="text-gray-700 flex items-start">
+                      <span className="text-[#0395A6] mr-2">•</span>
+                      <span>{t(locale, 'zm_z2_group4_item4')}</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Z3 Schriftlich */}
+            <div className="modern-card modern-animate-fade-in-up">
+              <div className="mb-6">
+                <h3 className="modern-heading text-2xl mb-3 text-[#0395A6]">{t(locale, 'zm_z3_written_title')}</h3>
+                <p className="modern-text text-gray-600">{t(locale, 'zm_z3_written_sub')}</p>
+              </div>
+              <div className="space-y-4 mb-8">
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-gray-700 font-medium">{t(locale, 'zm_z3_written_subject1')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-gray-700 font-medium">{t(locale, 'zm_z3_written_subject2')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-gray-700 font-medium">{t(locale, 'zm_z3_written_subject3')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-gray-700 font-medium">{t(locale, 'zm_z3_written_subject4')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-gray-700 font-medium">{t(locale, 'zm_z3_written_subject5')}</p>
+                </div>
+              </div>
+              <div className="border-t border-gray-200 pt-6">
+                <p className="text-lg font-semibold text-[#0395A6] mb-3">{t(locale, 'zm_z3_cross_title')}</p>
+                <p className="text-sm text-gray-600 mb-4">{t(locale, 'zm_z3_cross_sub')}</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div className="bg-[#F8FAFC] rounded-lg p-3">
+                    <p className="text-sm text-gray-700">{t(locale, 'zm_z3_cross_item1')}</p>
+                  </div>
+                  <div className="bg-[#F8FAFC] rounded-lg p-3">
+                    <p className="text-sm text-gray-700">{t(locale, 'zm_z3_cross_item2')}</p>
+                  </div>
+                  <div className="bg-[#F8FAFC] rounded-lg p-3">
+                    <p className="text-sm text-gray-700">{t(locale, 'zm_z3_cross_item3')}</p>
+                  </div>
+                  <div className="bg-[#F8FAFC] rounded-lg p-3">
+                    <p className="text-sm text-gray-700">{t(locale, 'zm_z3_cross_item4')}</p>
+                  </div>
+                  <div className="bg-[#F8FAFC] rounded-lg p-3">
+                    <p className="text-sm text-gray-700">{t(locale, 'zm_z3_cross_item5')}</p>
+                  </div>
+                  <div className="bg-[#F8FAFC] rounded-lg p-3">
+                    <p className="text-sm text-gray-700">{t(locale, 'zm_z3_cross_item6')}</p>
+                  </div>
+                  <div className="bg-[#F8FAFC] rounded-lg p-3 md:col-span-2">
+                    <p className="text-sm text-gray-700">{t(locale, 'zm_z3_cross_item7')}</p>
+                  </div>
+                  <div className="bg-[#F8FAFC] rounded-lg p-3">
+                    <p className="text-sm text-gray-700">{t(locale, 'zm_z3_cross_item8')}</p>
+                  </div>
+                  <div className="bg-[#F8FAFC] rounded-lg p-3">
+                    <p className="text-sm text-gray-700">{t(locale, 'zm_z3_cross_item9')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Z3 Mündlich */}
+            <div className="modern-card modern-animate-fade-in-up">
+              <div className="mb-6">
+                <h3 className="modern-heading text-2xl mb-3 text-[#0395A6]">{t(locale, 'zm_z3_oral_title')}</h3>
+                <p className="modern-text text-gray-600">{t(locale, 'zm_z3_oral_sub')}</p>
+              </div>
+              <div className="space-y-4">
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-gray-700 font-medium">{t(locale, 'zm_z3_oral_subject1')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-gray-700 font-medium">{t(locale, 'zm_z3_oral_subject2')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-gray-700 font-medium">{t(locale, 'zm_z3_oral_subject3')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-gray-700 font-medium">{t(locale, 'zm_z3_oral_subject4')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-gray-700 font-medium">{t(locale, 'zm_z3_oral_subject5')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-gray-700 font-medium">{t(locale, 'zm_z3_oral_subject6')}</p>
+                </div>
+                <div className="bg-[#F8FAFC] rounded-lg p-4">
+                  <p className="text-sm font-semibold text-[#0395A6] mb-3">{t(locale, 'zm_z3_oral_group7_title')}</p>
+                  <p className="text-sm text-gray-600 mb-3">{t(locale, 'zm_z3_oral_group7_sub')}</p>
+                  <ul className="space-y-2 ml-4">
+                    <li className="text-gray-700 flex items-start">
+                      <span className="text-[#0395A6] mr-2">•</span>
+                      <span>{t(locale, 'zm_z3_oral_group7_item1')}</span>
+                    </li>
+                    <li className="text-gray-700 flex items-start">
+                      <span className="text-[#0395A6] mr-2">•</span>
+                      <span>{t(locale, 'zm_z3_oral_group7_item2')}</span>
+                    </li>
+                    <li className="text-gray-700 flex items-start">
+                      <span className="text-[#0395A6] mr-2">•</span>
+                      <span>{t(locale, 'zm_z3_oral_group7_item3')}</span>
+                    </li>
+                    <li className="text-gray-700 flex items-start">
+                      <span className="text-[#0395A6] mr-2">•</span>
+                      <span>{t(locale, 'zm_z3_oral_group7_item4')}</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Fächer-Übersicht */}
       <section className="modern-section bg-white">
         <div className="modern-container">
