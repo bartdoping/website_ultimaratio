@@ -273,11 +273,8 @@ export default async function KlinikPage() {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                    <div className="mb-3">
                       <h3 className="modern-heading text-xl">{exam.exam}</h3>
-                      <span className="text-sm font-semibold text-[#0395A6] bg-[#F8FAFC] px-3 py-1 rounded-full">
-                        {exam.duration}
-                      </span>
                     </div>
                     <p className="modern-text text-gray-600 mb-3">{exam.description}</p>
                     <div className="bg-[#F8FAFC] rounded-lg p-3">
