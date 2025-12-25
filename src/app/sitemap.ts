@@ -4,22 +4,23 @@ import { LOCALES, DEFAULT_LOCALE } from '@/i18n/locales'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ultima-rat.io'
   
-  // Statische Routen ohne Locale (nur Routen, die nicht unter [locale] existieren)
-  const staticRoutes = [
-    '',
-    '/agb',
-    '/cookie-richtlinie',
-    '/datenschutz',
-    '/impressum',
-    '/kenntnispruefung',
-    '/klinik',
-    '/kontakt',
-    '/medicalskills',
-    '/vorklinik',
-    '/widerruf',
-    '/zahnmedizin',
-    '/fachsprachpruefung',
-  ]
+      // Statische Routen ohne Locale (nur Routen, die nicht unter [locale] existieren)
+      const staticRoutes = [
+        '',
+        '/agb',
+        '/cookie-richtlinie',
+        '/datenschutz',
+        '/impressum',
+        '/kenntnispruefung',
+        '/klinik',
+        '/kontakt',
+        '/medicalskills',
+        '/vorklinik',
+        '/widerruf',
+        '/zahnmedizin',
+        '/fachsprachpruefung',
+        '/examenskurse',
+      ]
 
   // Locale-spezifische Routen (existieren unter [locale])
   const localeRoutes = [

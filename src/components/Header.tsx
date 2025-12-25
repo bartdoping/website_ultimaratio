@@ -51,6 +51,7 @@ export default function Header() {
         { nameKey: 'nav_zahnmedizin', href: '/zahnmedizin' }
       ]
     },
+    { nameKey: 'nav_examenskurse', fallback: 'Examenskurse', href: '/examenskurse' },
     { 
       nameKey: 'nav_approbation', fallback: 'Approbation',
       href: '#',
