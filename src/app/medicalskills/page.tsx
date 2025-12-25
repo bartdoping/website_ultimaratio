@@ -343,9 +343,9 @@ export default async function MedicalSkillsPage() {
               </p>
               <div className="modern-grid modern-grid-2 gap-4 mb-8">
                 {blackBookMention.features.map((feature, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-[#0395A6] flex-shrink-0" />
-                    <span className="text-gray-700">{feature}</span>
+                  <div key={index} className="flex items-start md:items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-[#0395A6] flex-shrink-0 mt-0.5 md:mt-0" />
+                    <span className="text-gray-700 flex-1 min-w-0">{feature}</span>
                   </div>
                 ))}
               </div>

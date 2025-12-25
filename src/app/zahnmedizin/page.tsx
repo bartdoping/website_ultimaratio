@@ -521,9 +521,9 @@ export default async function ZahnmedizinPage() {
                 </div>
                 <ul className="space-y-2">
                   {solution.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="flex items-start text-gray-700">
+                      <li key={itemIndex} className="flex items-start text-gray-700">
                       <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0 mt-0.5" />
-                      <span className="text-sm">{item}</span>
+                      <span className="text-sm flex-1 min-w-0">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -609,9 +609,9 @@ export default async function ZahnmedizinPage() {
                       t(locale, 'coaching_pricing_what_you_get_item7'),
                       t(locale, 'coaching_pricing_what_you_get_item8')
                     ].map((item, index) => (
-                      <li key={index} className="flex items-center text-lg text-gray-700">
-                        <CheckCircle className="w-6 h-6 text-[#0395A6] mr-3 flex-shrink-0" />
-                        {item}
+                      <li key={index} className="flex items-start md:items-center text-lg text-gray-700">
+                        <CheckCircle className="w-6 h-6 text-[#0395A6] mr-3 flex-shrink-0 mt-0.5 md:mt-0" />
+                        <span className="flex-1 min-w-0">{item}</span>
                       </li>
                     ))}
                   </ul>

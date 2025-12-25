@@ -490,9 +490,9 @@ export default async function FachsprachpruefungPage() {
                       t(locale, 'fsp_price_what_item7'),
                       t(locale, 'fsp_price_what_item8')
                     ].map((item, index) => (
-                      <li key={index} className="flex items-center text-lg text-gray-700">
-                        <CheckCircle className="w-6 h-6 text-[#0395A6] mr-3 flex-shrink-0" />
-                        {item}
+                      <li key={index} className="flex items-start md:items-center text-lg text-gray-700">
+                        <CheckCircle className="w-6 h-6 text-[#0395A6] mr-3 flex-shrink-0 mt-0.5 md:mt-0" />
+                        <span className="flex-1 min-w-0">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -507,9 +507,9 @@ export default async function FachsprachpruefungPage() {
                       t(locale, 'fsp_price_flex_item3'),
                       t(locale, 'fsp_price_flex_item4')
                     ].map((item, index) => (
-                      <li key={index} className="flex items-center text-lg text-gray-700">
-                        <Zap className="w-6 h-6 text-[#0395A6] mr-3 flex-shrink-0" />
-                        {item}
+                      <li key={index} className="flex items-start md:items-center text-lg text-gray-700">
+                        <Zap className="w-6 h-6 text-[#0395A6] mr-3 flex-shrink-0 mt-0.5 md:mt-0" />
+                        <span className="flex-1 min-w-0">{item}</span>
                       </li>
                     ))}
                   </ul>

@@ -58,9 +58,9 @@ export default async function MethodenPage() {
                   t(locale, 'method_retrieval_item3'),
                   t(locale, 'method_retrieval_item4')
                 ].map((item, index) => (
-                  <li key={index} className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
-                    {item}
+                  <li key={index} className="flex items-start md:items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0 mt-0.5 md:mt-0" />
+                    <span className="flex-1 min-w-0">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -81,9 +81,9 @@ export default async function MethodenPage() {
                   t(locale, 'method_spaced_item3'),
                   t(locale, 'method_spaced_item4')
                 ].map((item, index) => (
-                  <li key={index} className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
-                    {item}
+                  <li key={index} className="flex items-start md:items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0 mt-0.5 md:mt-0" />
+                    <span className="flex-1 min-w-0">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -104,9 +104,9 @@ export default async function MethodenPage() {
                   t(locale, 'method_interleaving_item3'),
                   t(locale, 'method_interleaving_item4')
                 ].map((item, index) => (
-                  <li key={index} className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
-                    {item}
+                  <li key={index} className="flex items-start md:items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0 mt-0.5 md:mt-0" />
+                    <span className="flex-1 min-w-0">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -127,9 +127,9 @@ export default async function MethodenPage() {
                   t(locale, 'method_errorlogs_item3'),
                   t(locale, 'method_errorlogs_item4')
                 ].map((item, index) => (
-                  <li key={index} className="flex items-center text-gray-700">
-                    <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0" />
-                    {item}
+                  <li key={index} className="flex items-start md:items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-[#0395A6] mr-3 flex-shrink-0 mt-0.5 md:mt-0" />
+                    <span className="flex-1 min-w-0">{item}</span>
                   </li>
                 ))}
               </ul>
