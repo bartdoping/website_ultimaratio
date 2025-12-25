@@ -238,7 +238,6 @@ export default async function ExamenskursePage() {
                 <div className="text-4xl md:text-6xl font-bold text-[#0395A6] mb-4 price-mobile">
                   <span className="text-base">ab </span>49€
                 </div>
-                <p className="text-lg text-gray-600 mb-8">{t(locale, 'ek_price_line1')}</p>
                 <p className="text-lg text-gray-500">{t(locale, 'ek_price_line2')}</p>
               </div>
 

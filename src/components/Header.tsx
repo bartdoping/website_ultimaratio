@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { t } from '@/i18n/dictionaries'
-import { Menu, X, MessageCircle, Phone, Mail, Settings, ChevronDown, Globe } from 'lucide-react'
+import { Menu, X, MessageCircle, Mail, Settings, ChevronDown, Globe } from 'lucide-react'
 import { useCookies } from '../contexts/CookieContext'
 
 export default function Header() {
@@ -72,11 +72,16 @@ export default function Header() {
         <div className="modern-container px-4 h-full">
           <div className="flex flex-nowrap justify-between items-center text-sm gap-3 md:gap-6 lg:gap-10 h-full">
             <div className="flex items-center space-x-2 sm:space-x-4">
-              <div className="flex items-center">
-                <Phone className="w-4 h-4 mr-1 sm:mr-2" />
-                <span className="hidden xs:inline">+49 163 9347633</span>
-                <span className="xs:hidden">+49 163 9347633</span>
-              </div>
+              <a 
+                href="http://wa.me/491639347633"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center hover:text-white/90 transition-colors"
+              >
+                <MessageCircle className="w-4 h-4 mr-1 sm:mr-2" />
+                <span className="hidden xs:inline">WhatsApp</span>
+                <span className="xs:hidden">WhatsApp</span>
+              </a>
               <a 
                 href="mailto:info@ultima-rat.io"
                 className="flex items-center hover:text-white/90 transition-colors"
