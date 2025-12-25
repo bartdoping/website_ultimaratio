@@ -789,13 +789,7 @@ body {
   background: white;
   border: 1px solid var(--border-light);
   border-radius: 12px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-
-.academic-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transform: translateY(-2px);
 }
 
 .primary-button {
@@ -989,12 +983,6 @@ body {
   box-shadow: var(--shadow-sm);
   position: relative;
   overflow: hidden;
-}
-
-.modern-card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-4px);
-  border-color: var(--primary-color);
 }
 
 .modern-button {
@@ -1195,10 +1183,6 @@ body {
 /* Interactive Elements */
 .interactive-hover {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.interactive-hover:hover {
-  transform: scale(1.02);
 }
 
 /* Loading States */
