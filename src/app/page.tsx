@@ -136,15 +136,6 @@ export default async function HomePage() {
       {/* FAQ Section */}
       <section className="modern-section bg-[#F8FAFC]">
         <div className="modern-container">
-          <div className="text-center modern-spacing">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-12 modern-heading modern-animate-fade-in-up">
-              {t(locale, 'home_faq_title')}
-            </h2>
-            <p className="text-lg text-gray-600 max-w-5xl mx-auto modern-text modern-animate-fade-in-up">
-              {t(locale, 'home_faq_sub')}
-            </p>
-          </div>
-          
           <FAQ />
         </div>
       </section>
