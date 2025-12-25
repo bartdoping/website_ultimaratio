@@ -44,7 +44,7 @@ export default async function MethodenPage() {
           <div className="max-w-6xl mx-auto px-4 md:px-0">
             <div className="modern-grid modern-grid-2 gap-4 md:gap-8">
             <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
-              <div className="mb-3 md:mb-8">
+              <div className="mb-3 md:mb-8 hidden md:block">
                 <Brain className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">{t(locale, 'method_retrieval_title')}</h3>
@@ -67,7 +67,7 @@ export default async function MethodenPage() {
             </div>
 
             <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
-              <div className="mb-3 md:mb-8">
+              <div className="mb-3 md:mb-8 hidden md:block">
                 <Clock className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">{t(locale, 'method_spaced_title')}</h3>
@@ -90,7 +90,7 @@ export default async function MethodenPage() {
             </div>
 
             <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
-              <div className="mb-3 md:mb-8">
+              <div className="mb-3 md:mb-8 hidden md:block">
                 <Target className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">{t(locale, 'method_interleaving_title')}</h3>
@@ -113,7 +113,7 @@ export default async function MethodenPage() {
             </div>
 
             <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up">
-              <div className="mb-3 md:mb-8">
+              <div className="mb-3 md:mb-8 hidden md:block">
                 <Shield className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
               <h3 className="text-xs md:text-xl font-bold text-black mb-2 md:mb-6 modern-heading">{t(locale, 'method_errorlogs_title')}</h3>
@@ -160,7 +160,7 @@ export default async function MethodenPage() {
               </div>
               
               <div className="modern-grid modern-grid-2">
-                <div>
+                <div className="text-center md:text-left">
                   <h3 className="text-lg font-bold text-black mb-6 modern-heading">{t(locale, 'method_research_title')}</h3>
                   <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                     {t(locale, 'method_research_text1')}
@@ -170,7 +170,7 @@ export default async function MethodenPage() {
                   </p>
                 </div>
                 
-                <div>
+                <div className="text-center md:text-left">
                   <h3 className="text-lg font-bold text-black mb-6 modern-heading">{t(locale, 'method_practical_title')}</h3>
                   <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">
                     {t(locale, 'method_practical_text1')}
