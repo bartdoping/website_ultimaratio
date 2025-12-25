@@ -42,8 +42,8 @@ export default async function HomePage() {
           </div>
 
           <div className="modern-grid modern-grid-2 gap-12">
-            <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="mb-8">
+            <div className="modern-card p-12 modern-animate-fade-in-up text-center">
+              <div className="mb-8 flex justify-center">
                 <Brain className="w-16 h-16 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'home_approach_science_title')}</h3>
@@ -52,8 +52,8 @@ export default async function HomePage() {
               </p>
             </div>
 
-            <div className="modern-card p-12 modern-animate-fade-in-up">
-              <div className="mb-8">
+            <div className="modern-card p-12 modern-animate-fade-in-up text-center">
+              <div className="mb-8 flex justify-center">
                 <Target className="w-16 h-16 text-[#0395A6]" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'home_approach_structured_title')}</h3>
@@ -66,17 +66,8 @@ export default async function HomePage() {
       </section>
 
       {/* Erfolgsgeschichten */}
-      <section className="modern-section bg-[#F8FAFC]">
+      <section className="modern-section bg-[#F8FAFC] pb-8 md:pb-16">
         <div className="modern-container">
-          <div className="text-center modern-spacing">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-12 modern-heading modern-animate-fade-in-up">
-              {t(locale, 'home_success_title')}
-            </h2>
-            <p className="text-lg text-gray-600 max-w-5xl mx-auto modern-text modern-animate-fade-in-up">
-              {t(locale, 'home_success_sub')}
-            </p>
-          </div>
-          
           <Testimonials />
         </div>
       </section>

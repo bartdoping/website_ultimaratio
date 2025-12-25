@@ -62,15 +62,11 @@ export default function Testimonials() {
 
 // (Entfernt doppelte Export-Deklaration – return gehört zum obigen Funktionskörper)
   return (
-    <section className="modern-section bg-[#F8FAFC]">
-      <div className="modern-container">
-        <div className="text-center modern-spacing">
+    <div>
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-8 modern-heading modern-animate-fade-in-up">
             {t(locale, 'home_testimonials_title')}
           </h2>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto modern-text modern-animate-fade-in-up">
-            {t(locale, 'home_testimonials_sub')}
-          </p>
         </div>
 
         {/* Desktop: Carousel */}
@@ -149,7 +145,6 @@ export default function Testimonials() {
             </a>
           </div>
         </div>
-      </div>
-    </section>
+    </div>
   )
 }
