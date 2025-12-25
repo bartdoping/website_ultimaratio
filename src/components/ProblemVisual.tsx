@@ -75,10 +75,24 @@ export default function ProblemVisual() {
           </p>
         </div>
 
-        <div className="modern-grid modern-grid-1 gap-12">
+        <div className="modern-grid modern-grid-1 gap-0 md:gap-12">
           {problems.map((problem, index) => (
-            <div key={index} className="modern-card bg-white border-l-4 border-red-500 shadow-xl modern-animate-fade-in-up">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div key={index} className="bg-transparent md:modern-card md:bg-white md:border-l-4 md:border-red-500 md:shadow-xl modern-animate-fade-in-up">
+              {/* Mobile: Kompakte Ansicht ohne Container */}
+              <div className="md:hidden py-4 border-b border-gray-200 last:border-b-0">
+                <div className="flex items-start space-x-3">
+                  <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-red-600 flex-shrink-0">
+                    {problem.icon}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-bold text-black mb-1">{problem.title}</h3>
+                    <p className="text-sm text-gray-600">{problem.stats}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Desktop: Vollständige Ansicht */}
+              <div className="hidden md:grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 {/* Content */}
                 <div className="p-8">
                   <div className="flex items-center space-x-4 mb-6">
@@ -98,7 +112,7 @@ export default function ProblemVisual() {
                   </p>
 
                   {/* Emotional Impact */}
-                  <div className="bg-red-50 rounded-lg p-4 mb-6 hidden md:block">
+                  <div className="bg-red-50 rounded-lg p-4 mb-6">
                     <div className="flex items-center space-x-2 text-red-800">
                       <Heart className="w-5 h-5" />
                       <span className="font-semibold">{t(locale, 'home_emotional_impact')}</span>
