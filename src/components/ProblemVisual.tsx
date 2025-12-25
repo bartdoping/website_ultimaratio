@@ -98,7 +98,7 @@ export default function ProblemVisual() {
                   </p>
 
                   {/* Emotional Impact */}
-                  <div className="bg-red-50 rounded-lg p-4 mb-6">
+                  <div className="bg-red-50 rounded-lg p-4 mb-6 hidden md:block">
                     <div className="flex items-center space-x-2 text-red-800">
                       <Heart className="w-5 h-5" />
                       <span className="font-semibold">{t(locale, 'home_emotional_impact')}</span>
@@ -137,7 +137,7 @@ export default function ProblemVisual() {
         </div>
 
         {/* Transition CTA */}
-            <div className="text-center mt-16 modern-animate-fade-in-up">
+            <div className="text-center mt-16 modern-animate-fade-in-up hidden md:block">
           <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-red-200 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-black mb-4">
               {t(locale, 'home_transition_title')}
@@ -147,7 +147,7 @@ export default function ProblemVisual() {
             </p>
             <a
               href="#solution"
-              className="hidden sm:inline-flex bg-[#0395A6] hover:bg-[#028A9A] text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl"
+              className="inline-flex bg-[#0395A6] hover:bg-[#028A9A] text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl"
             >
               → {t(locale, 'home_transition_cta')}
             </a>

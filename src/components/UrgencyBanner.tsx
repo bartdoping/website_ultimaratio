@@ -89,7 +89,7 @@ export default function UrgencyBanner() {
             </div>
 
             {/* Team Section */}
-            <div className="mb-8">
+            <div className="mb-8 hidden md:block">
               <h3 className="text-xl font-bold text-black mb-6">{t(locale, 'home_urgency_team_title')}</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 {/* Mustafa Eid */}

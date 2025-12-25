@@ -74,14 +74,14 @@ export default function HeroWithImage() {
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
             <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">97%</div>
             <p className="text-white/90 font-semibold text-base">{t(locale, 'home_trust_97_label')}</p>
-            <p className="text-white/70 text-sm">{t(locale, 'home_trust_97_desc')}</p>
+            <p className="text-white/70 text-sm hidden md:block">{t(locale, 'home_trust_97_desc')}</p>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
             <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">500+</div>
             <p className="text-white/90 font-semibold text-base">{t(locale, 'home_trust_500_label')}</p>
-            <p className="text-white/70 text-sm">{t(locale, 'home_trust_500_desc')}</p>
+            <p className="text-white/70 text-sm hidden md:block">{t(locale, 'home_trust_500_desc')}</p>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hidden md:block">
             <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">6+</div>
             <p className="text-white/90 font-semibold text-base">{t(locale, 'home_trust_6_label')}</p>
             <p className="text-white/70 text-sm">{t(locale, 'home_trust_6_desc')}</p>
@@ -89,7 +89,7 @@ export default function HeroWithImage() {
         </div>
 
         {/* Trust Banner */}
-        <div className="mt-16 mb-[3cm] bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 max-w-2xl mx-auto modern-animate-fade-in-up">
+        <div className="mt-16 mb-[3cm] bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 max-w-2xl mx-auto modern-animate-fade-in-up hidden md:block">
           <div className="flex items-center justify-center space-x-2 text-white font-bold text-lg">
             <Target className="w-6 h-6" />
             <span>{t(locale, 'home_trust_banner_title')}</span>

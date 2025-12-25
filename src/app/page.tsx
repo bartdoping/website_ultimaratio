@@ -192,14 +192,14 @@ export default async function HomePage() {
               <div className="text-center">
                 <CheckCircle className="w-12 h-12 text-white mx-auto mb-6" />
                 <h3 className="font-bold text-xl mb-4">{t(locale, 'home_final_feature1_title')}</h3>
-                <p className="text-white/80 text-base">{t(locale, 'home_final_feature1_desc')}</p>
+                <p className="text-white/80 text-base hidden md:block">{t(locale, 'home_final_feature1_desc')}</p>
               </div>
               <div className="text-center">
                 <CheckCircle className="w-12 h-12 text-white mx-auto mb-6" />
                 <h3 className="font-bold text-xl mb-4">{t(locale, 'home_final_feature2_title')}</h3>
-                <p className="text-white/80 text-base">{t(locale, 'home_final_feature2_desc')}</p>
+                <p className="text-white/80 text-base hidden md:block">{t(locale, 'home_final_feature2_desc')}</p>
               </div>
-              <div className="text-center">
+              <div className="text-center hidden md:block">
                 <CheckCircle className="w-12 h-12 text-white mx-auto mb-6" />
                 <h3 className="font-bold text-xl mb-4">{t(locale, 'home_final_feature3_title')}</h3>
                 <p className="text-white/80 text-base">{t(locale, 'home_final_feature3_desc')}</p>

@@ -86,7 +86,7 @@ export default async function CoachingPage() {
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_challenges_anxiety_text')}</p>
             </div>
 
-            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
+            <div className="modern-card p-12 text-center modern-animate-fade-in-up hidden md:block">
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <BookOpen className="w-10 h-10 text-red-500" />
               </div>
@@ -94,7 +94,7 @@ export default async function CoachingPage() {
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_challenges_inefficient_text')}</p>
             </div>
 
-            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
+            <div className="modern-card p-12 text-center modern-animate-fade-in-up hidden md:block">
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Users className="w-10 h-10 text-red-500" />
               </div>
@@ -102,7 +102,7 @@ export default async function CoachingPage() {
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_challenges_structure_text')}</p>
             </div>
 
-            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
+            <div className="modern-card p-12 text-center modern-animate-fade-in-up hidden lg:block">
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Shield className="w-10 h-10 text-red-500" />
               </div>
@@ -142,7 +142,7 @@ export default async function CoachingPage() {
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_problem_timewaste_text')}</p>
             </div>
 
-            <div className="modern-card p-12 text-center modern-animate-fade-in-up">
+            <div className="modern-card p-12 text-center modern-animate-fade-in-up hidden md:block">
               <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
                 <Target className="w-10 h-10 text-red-500" />
               </div>
@@ -229,7 +229,7 @@ export default async function CoachingPage() {
               </ul>
             </div>
 
-            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mobile-inset">
+            <div className="modern-card p-4 md:p-12 modern-animate-fade-in-up mobile-inset hidden md:block">
               <div className="mb-3 md:mb-8">
                 <BookOpen className="w-6 h-6 md:w-12 md:h-12 text-[#0395A6]" />
               </div>
@@ -290,7 +290,7 @@ export default async function CoachingPage() {
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_solution_plans_text')}</p>
             </div>
 
-            <div className="modern-card p-12 modern-animate-fade-in-up">
+            <div className="modern-card p-12 modern-animate-fade-in-up hidden md:block">
               <div className="mb-8">
                 <Target className="w-12 h-12 text-[#0395A6]" />
               </div>
@@ -298,7 +298,7 @@ export default async function CoachingPage() {
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_solution_exam_text')}</p>
             </div>
 
-            <div className="modern-card p-12 modern-animate-fade-in-up">
+            <div className="modern-card p-12 modern-animate-fade-in-up hidden md:block">
               <div className="mb-8">
                 <Zap className="w-12 h-12 text-[#0395A6]" />
               </div>
@@ -306,7 +306,7 @@ export default async function CoachingPage() {
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_solution_time_text')}</p>
             </div>
 
-            <div className="modern-card p-12 modern-animate-fade-in-up">
+            <div className="modern-card p-12 modern-animate-fade-in-up hidden lg:block">
               <div className="mb-8">
                 <Shield className="w-12 h-12 text-[#0395A6]" />
               </div>

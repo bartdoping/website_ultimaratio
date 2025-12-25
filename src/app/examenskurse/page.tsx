@@ -208,7 +208,7 @@ export default async function ExamenskursePage() {
           
           <div className="modern-grid modern-grid-3 gap-8">
             {benefits.map((benefit, index) => (
-              <div key={index} className="modern-card p-8 text-center modern-animate-fade-in-up">
+              <div key={index} className={`modern-card p-8 text-center modern-animate-fade-in-up ${index >= 3 ? 'hidden md:block' : ''} ${index >= 5 ? 'hidden lg:block' : ''}`}>
                 <div className="w-16 h-16 bg-[#0395A6] text-white rounded-full flex items-center justify-center mx-auto mb-6">
                   {benefit.icon}
                 </div>

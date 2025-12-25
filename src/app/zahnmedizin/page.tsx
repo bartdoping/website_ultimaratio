@@ -283,7 +283,7 @@ export default async function ZahnmedizinPage() {
       </section>
 
       {/* Detaillierte Prüfungsfächer */}
-      <section className="modern-section bg-white">
+      <section className="modern-section bg-white hidden md:block">
         <div className="modern-container">
           <div className="text-center mb-16">
             <h2 className="modern-heading text-3xl md:text-4xl mb-6">

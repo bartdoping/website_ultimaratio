@@ -153,7 +153,7 @@ export default function StatsCounter() {
         </div>
 
         {/* Before/After Comparison */}
-        <div className="mt-20 modern-animate-fade-in-up">
+        <div className="mt-20 modern-animate-fade-in-up hidden md:block">
           <div className="bg-white rounded-2xl p-10 border border-gray-200">
             <h3 className="text-2xl font-bold text-center text-black mb-12">
               {t(locale, 'stats_before_after_title')}
@@ -196,7 +196,7 @@ export default function StatsCounter() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-16 modern-animate-fade-in-up">
+        <div className="text-center mt-16 modern-animate-fade-in-up hidden md:block">
           <a
             href="http://wa.me/491639347633"
             target="_blank"

@@ -135,7 +135,7 @@ export default function SolutionVisual() {
         </div>
 
         {/* Process Overview */}
-        <div className="mt-16 modern-animate-fade-in-up">
+        <div className="mt-16 modern-animate-fade-in-up hidden md:block">
           <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-[#0395A6]">
             <h3 className="text-2xl font-bold text-center text-black mb-8">
               {t(locale, 'home_process_title')}
