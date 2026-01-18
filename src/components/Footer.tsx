@@ -218,14 +218,6 @@ export default function Footer() {
               <p className="mb-1">Copyright © 2025 ultima-rat.io. Alle Rechte vorbehalten.</p>
               <p>ultima-rat.io - Optimale Prüfungs-Vorbereitung für dein Medizinstudium.</p>
             </div>
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center text-gray-400 text-sm">
-                <Star className="w-4 h-4 mr-1 text-yellow-400" />
-                <span>Bewertet mit 5.0/5.0</span>
-              </div>
-              <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
-              <span className="text-gray-400 text-sm">Vertrauenswürdig</span>
-            </div>
           </div>
         </div>
       </div>
