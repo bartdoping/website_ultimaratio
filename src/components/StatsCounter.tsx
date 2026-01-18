@@ -46,8 +46,8 @@ export default function StatsCounter() {
     }
 
     const targets = {
-      success: 97,
-      students: 500,
+      success: 94,
+      students: 100,
       years: 6,
       improvement: 1.3
     }
