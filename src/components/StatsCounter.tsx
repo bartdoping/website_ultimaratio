@@ -49,7 +49,7 @@ export default function StatsCounter() {
       success: 97,
       students: 500,
       years: 6,
-      improvement: 2.3
+      improvement: 1.3
     }
 
     const duration = 1500 // a bit faster for mobile
@@ -189,7 +189,7 @@ export default function StatsCounter() {
 
             <div className="text-center mt-12">
               <div className="bg-[#0395A6] text-white px-10 py-6 rounded-lg text-lg font-bold inline-block">
-                {t(locale, 'stats_avg_improvement')}: +2,3 {t(locale, 'stats_grade_points')}
+                {t(locale, 'stats_avg_improvement')}: +1,3 {t(locale, 'stats_grade_points')}
               </div>
             </div>
           </div>

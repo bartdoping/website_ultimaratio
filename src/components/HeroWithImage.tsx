@@ -72,12 +72,12 @@ export default function HeroWithImage() {
         {/* Trust Indicators */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto modern-animate-fade-in-up">
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-            <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">97%</div>
+            <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">94%</div>
             <p className="text-white/90 font-semibold text-base">{t(locale, 'home_trust_97_label')}</p>
             <p className="text-white/70 text-sm hidden md:block">{t(locale, 'home_trust_97_desc')}</p>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-            <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">500+</div>
+            <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">100+</div>
             <p className="text-white/90 font-semibold text-base">{t(locale, 'home_trust_500_label')}</p>
             <p className="text-white/70 text-sm hidden md:block">{t(locale, 'home_trust_500_desc')}</p>
           </div>

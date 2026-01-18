@@ -169,11 +169,11 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-16 pt-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-xl font-bold text-[#0395A6] mb-2">97%</div>
+              <div className="text-xl font-bold text-[#0395A6] mb-2">94%</div>
               <div className="text-gray-300">Erfolgsquote</div>
             </div>
             <div>
-              <div className="text-xl font-bold text-[#0395A6] mb-2">500+</div>
+              <div className="text-xl font-bold text-[#0395A6] mb-2">100+</div>
               <div className="text-gray-300">Erfolgreiche Prüfungen</div>
             </div>
             <div>

@@ -92,9 +92,9 @@ export default function Header() {
               </a>
             </div>
             <div className="hidden lg:flex items-center space-x-3">
-              <span className="text-white/80">500+ Prüfungen</span>
+              <span className="text-white/80">100+ Prüfungen</span>
               <div className="w-1 h-1 bg-white/60 rounded-full"></div>
-              <span className="text-white/80">97% Erfolg</span>
+              <span className="text-white/80">94% Erfolg</span>
             </div>
           </div>
         </div>
