@@ -56,11 +56,6 @@ export default async function TeamPage() {
                 </div>
                         <h3 className="text-sm md:text-xl font-bold text-black mb-1 md:mb-2 modern-heading">Mustafa Eid</h3>
                 <p className="text-xs md:text-lg text-[#0395A6] font-semibold mb-2 md:mb-4">{t(locale, 'team_role_doctor')}</p>
-                <div className="flex justify-center mb-6">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
               </div>
               
               <div className="space-y-3 md:space-y-6">
@@ -104,11 +99,6 @@ export default async function TeamPage() {
                 </div>
                 <h3 className="text-sm md:text-xl font-bold text-black mb-1 md:mb-2 modern-heading">Ahkash Thavarajasingam</h3>
                 <p className="text-xs md:text-lg text-[#0395A6] font-semibold mb-2 md:mb-4">{t(locale, 'team_role_doctor')}</p>
-                <div className="flex justify-center mb-6">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
               </div>
               
               <div className="space-y-6">

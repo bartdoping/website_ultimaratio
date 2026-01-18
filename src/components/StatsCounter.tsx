@@ -152,49 +152,6 @@ export default function StatsCounter() {
           ))}
         </div>
 
-        {/* Before/After Comparison */}
-        <div className="mt-20 modern-animate-fade-in-up hidden md:block">
-          <div className="bg-white rounded-2xl p-10 border border-gray-200">
-            <h3 className="text-2xl font-bold text-center text-black mb-12">
-              {t(locale, 'stats_before_after_title')}
-            </h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <div className="text-center">
-                <div className="bg-red-500/20 rounded-lg p-8 border border-red-500/30">
-                  <h4 className="text-xl font-bold text-red-600 mb-6">{t(locale, 'stats_before_title')}</h4>
-                  <ul className="text-red-700 space-y-3 text-left text-base">
-                    <li>{t(locale, 'stats_before_avg')}</li>
-                    <li>{t(locale, 'stats_before_time')}</li>
-                    <li>{t(locale, 'stats_before_fear')}</li>
-                    <li>{t(locale, 'stats_before_conf')}</li>
-                    <li>{t(locale, 'stats_before_fail')}</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-green-500/20 rounded-lg p-8 border border-green-500/30">
-                  <h4 className="text-xl font-bold text-green-600 mb-6">{t(locale, 'stats_after_title')}</h4>
-                  <ul className="text-green-700 space-y-3 text-left text-base">
-                    <li>{t(locale, 'stats_after_avg')}</li>
-                    <li>{t(locale, 'stats_after_time')}</li>
-                    <li>{t(locale, 'stats_after_fear')}</li>
-                    <li>{t(locale, 'stats_after_conf')}</li>
-                    <li>{t(locale, 'stats_after_success')}</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center mt-12">
-              <div className="bg-[#0395A6] text-white px-10 py-6 rounded-lg text-lg font-bold inline-block">
-                {t(locale, 'stats_avg_improvement')}: +1,3 {t(locale, 'stats_grade_points')}
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* CTA */}
         <div className="text-center mt-16 modern-animate-fade-in-up hidden md:block">
           <a
