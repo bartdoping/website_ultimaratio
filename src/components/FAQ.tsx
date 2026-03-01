@@ -30,6 +30,7 @@ export default function FAQ() {
     { question: t(locale, 'home_faq_q8'), answer: t(locale, 'home_faq_a8') },
     { question: t(locale, 'home_faq_q9'), answer: t(locale, 'home_faq_a9') },
     { question: t(locale, 'home_faq_q10'), answer: t(locale, 'home_faq_a10') },
+    { question: t(locale, 'home_faq_q11'), answer: t(locale, 'home_faq_a11') },
   ]
 
   const [openItems, setOpenItems] = useState<number[]>([])

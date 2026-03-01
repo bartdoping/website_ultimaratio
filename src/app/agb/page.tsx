@@ -104,7 +104,7 @@ export default async function AGBPage() {
             </p>
             <p className="text-gray-700 mb-6">
               4.3 Der Auftragnehmer stellt dem Auftraggeber nach Erbringung der Leistungen eine Rechnung per Post oder per 
-              E-Mail (z.B. als PDF). Die Vergütung ist innerhalb von 14 Tagen nach Zugang der Rechnung zur Zahlung fällig.
+              E-Mail (z.B. als PDF). Die Vergütung ist innerhalb von 7–14 Tagen nach Zugang der Rechnung zur Zahlung fällig.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">5. Haftung / Freistellung</h2>
@@ -124,6 +124,13 @@ export default async function AGBPage() {
               5.2 Der Auftraggeber stellt den Auftragnehmer von jeglichen Ansprüchen Dritter frei, die gegen den Auftragnehmer 
               aufgrund von Verstößen des Kunden gegen diese Vertragsbedingungen oder gegen geltendes Recht geltend gemacht 
               werden.
+            </p>
+            <p className="text-gray-700 mb-6">
+              5.3 Der Auftragnehmer übernimmt keine Haftung und gibt keine Gewährleistung für den Erfolg der Leistungen 
+              (insbesondere für das Bestehen von Prüfungen). Es besteht keine Geld-zurück-Garantie; ein Anspruch auf 
+              Rückerstattung der Vergütung besteht insbesondere nicht bei Nicht-Bestehen einer Prüfung oder bei sonstigem 
+              Ausbleiben eines vom Auftraggeber angestrebten Lernerfolgs. Die vorstehenden Regelungen gelten unbeschadet 
+              der Haftung gemäß Ziffer 5.1.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">6. Vertragsdauer und Kündigung</h2>

@@ -349,6 +349,8 @@ const de: Dict = {
   home_faq_a9: 'Einfach via WhatsApp (+49 163 9347633): Anliegen/Prüfung, Wunschtermin, Lernziele. Meist startet es mit einem kostenlosen Erstgespräch.',
   home_faq_q10: 'Was passiert, wenn ich nicht zufrieden bin?',
   home_faq_a10: 'Zufriedenheit ist oberstes Ziel. Bei Unzufriedenheit: Nachbesprechung oder (teilweise) Rückerstattung.',
+  home_faq_q11: 'Gibt es eine Haftung, Gewährleistung oder Geld-zurück-Garantie – auch bei Nicht-Bestehen?',
+  home_faq_a11: 'Nein. Wir übernehmen keine Haftung und geben keine Gewährleistung für den Lernerfolg. Es besteht keine Geld-zurück-Garantie; ein Anspruch auf Rückerstattung besteht insbesondere nicht bei Nicht-Bestehen einer Prüfung. Details siehe AGB § 5.3.',
   // Urgency banner
   home_urgency_title: '✓ KOSTENLOSES ERSTGESPRÄCH',
   home_urgency_trust_title: 'Für alle Studenten verfügbar!',
@@ -1566,6 +1568,8 @@ const en: Dict = {
   home_faq_a9: 'Simply via WhatsApp (+49 163 9347633): your topic/exam, desired slot, goals. Often we start with a free intro call.',
   home_faq_q10: 'What if I am not satisfied?',
   home_faq_a10: 'Your satisfaction is our priority. If dissatisfied: debrief or partial refund.',
+  home_faq_q11: 'Is there any liability, warranty or money-back guarantee – including if I fail an exam?',
+  home_faq_a11: 'No. We assume no liability and give no warranty for learning success. There is no money-back guarantee; there is no right to a refund, in particular if you do not pass an exam. See Terms § 5.3 for details.',
   // Urgency banner
   home_urgency_title: '✓ FREE INTRO CALL',
   home_urgency_trust_title: 'Available for all students!',
@@ -2754,6 +2758,8 @@ const ar: Dict = {
   home_faq_a9: 'ببساطة عبر واتساب (+49 163 9347633): اذكر موضوعك/امتحانك، الموعد المطلوب، وأهدافك. غالبًا نبدأ بمكالمة تعريفية مجانية.',
   home_faq_q10: 'ماذا لو لم أكن راضيًا؟',
   home_faq_a10: 'رضاك هو أولويتنا. عند عدم الرضا: جلسة مراجعة أو استرداد جزئي.',
+  home_faq_q11: 'هل توجد مسؤولية أو ضمان أو ضمان استرداد أموال – بما في ذلك عند عدم اجتياز الامتحان؟',
+  home_faq_a11: 'لا. لا نتحمل مسؤولية ولا نقدم ضمانًا على نجاح التعلم. لا يوجد ضمان استرداد أموال؛ ولا حق في الاسترداد، خاصة عند عدم اجتياز الامتحان. التفاصيل في الشروط § 5.3.',
   // Final CTA features
   home_final_feature1_title: 'مجاني',
   home_final_feature1_desc: 'استشارة أولية بدون التزام',
