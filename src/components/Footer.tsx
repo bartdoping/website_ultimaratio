@@ -53,7 +53,7 @@ export default function Footer() {
             <div className="space-y-3 sm:space-y-4">
               <div className="flex items-start text-gray-300">
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-[#0395A6] mt-1 flex-shrink-0" />
-                <span className="text-sm sm:text-lg">Warburghof 14, 30627 Hannover, Deutschland</span>
+                <span className="text-sm sm:text-lg">Hallesche Straße 94a, 44143 Dortmund, Deutschland</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-[#0395A6] flex-shrink-0" />

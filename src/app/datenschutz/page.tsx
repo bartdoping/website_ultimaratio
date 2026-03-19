@@ -123,8 +123,8 @@ export default function DatenschutzPage() {
             <p className="text-gray-700 mb-6">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
             <p className="text-gray-700 mb-6">
               Ahkash Thavarajasingam<br />
-              Warburghof 14<br />
-              30627 Hannover
+              Hallesche Straße 94a<br />
+              44143 Dortmund
             </p>
             <p className="text-gray-700 mb-6">
               Telefon: 017624062685<br />

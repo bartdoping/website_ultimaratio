@@ -246,7 +246,7 @@ export default function CookieRichtliniePage() {
                 <div className="space-y-2 text-gray-700">
                   <p><strong>E-Mail:</strong> <a href="mailto:info@ultima-rat.io" className="text-[#0395A6] hover:underline">info@ultima-rat.io</a></p>
                   <p><strong>Telefon:</strong> +49 163 9347633</p>
-                  <p><strong>Adresse:</strong> Warburghof 14, 30627 Hannover, Deutschland</p>
+                  <p><strong>Adresse:</strong> Hallesche Straße 94a, 44143 Dortmund, Deutschland</p>
                 </div>
               </div>
             </div>

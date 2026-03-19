@@ -21,8 +21,8 @@ export default function ImpressumPage() {
           <div className="prose prose-lg max-w-none">
             <p>
               <strong>Thavarajasingam, Ahkash; Eid, Mustafa Magdy Abdel Razik Mahmoud GbR</strong><br />
-              Warburghof, 14<br />
-              30627 Hannover
+              Hallesche Straße 94a<br />
+              44143 Dortmund
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Vertreten durch:</h2>
@@ -46,8 +46,8 @@ export default function ImpressumPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Redaktionell verantwortlich</h2>
             <p className="text-gray-700 mb-6">
               Mustafa Eid<br />
-              Warburghof 14<br />
-              30672 Hannover<br />
+              Hallesche Straße 94a<br />
+              44143 Dortmund<br />
               Deutschland
             </p>
 
