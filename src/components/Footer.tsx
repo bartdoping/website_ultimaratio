@@ -29,7 +29,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6 sm:mb-8">
-              <div className="h-12 w-12 sm:h-16 sm:w-16 rounded-2xl overflow-hidden shadow-xl">
+              <div className="h-12 w-12 sm:h-16 sm:w-16 rounded-2xl overflow-hidden">
                 <Image
                   src="/images/logo/logo-white.png"
                   alt="ultima-rat.io Logo"

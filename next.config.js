@@ -49,6 +49,11 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/examenskurse',
+        destination: '/examensvorbereitung',
+        permanent: true,
+      },
     ]
   },
   

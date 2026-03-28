@@ -51,7 +51,7 @@ export default function Header() {
         { nameKey: 'nav_zahnmedizin', href: '/zahnmedizin' }
       ]
     },
-    { nameKey: 'nav_examenskurse', fallback: 'Examensvorbereitung', href: '/examenskurse' },
+    { nameKey: 'nav_examensvorbereitung', fallback: 'Examensvorbereitung', href: '/examensvorbereitung' },
     { 
       nameKey: 'nav_approbation', fallback: 'Approbation',
       href: '#',
@@ -101,13 +101,13 @@ export default function Header() {
       </div>
  
       {/* Main Header (white) */}
-      <header className="bg-white border-b border-gray-200 shadow-sm w-full">
+      <header className="bg-white border-b border-gray-200 w-full">
         <div className="modern-container w-full">
           <div className="flex flex-nowrap justify-between items-center h-16 md:h-16 min-h-[4rem] w-full">
             {/* Logo */}
             <div className="flex-shrink-0 min-w-0">
               <Link href="/" className="flex flex-nowrap items-center group min-w-0">
-                <div className="h-10 w-10 sm:h-11 sm:w-11 md:h-12 md:w-12 rounded-xl overflow-hidden shadow-lg logo-mobile flex-shrink-0">
+                <div className="h-10 w-10 sm:h-11 sm:w-11 md:h-12 md:w-12 rounded-xl overflow-hidden logo-mobile flex-shrink-0">
                   <Image
                     src="/images/logo/logo.png"
                     alt="ultima-rat.io Logo"
