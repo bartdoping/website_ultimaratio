@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/widerruf',
         '/zahnmedizin',
         '/fachsprachpruefung',
-        '/examensvorbereitung',
+        '/examenskurse',
       ]
 
   // Locale-spezifische Routen (existieren unter [locale])

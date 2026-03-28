@@ -34,7 +34,7 @@ const de: Dict = {
   nav_zahnmedizin: 'Zahnmedizin',
   nav_approbation: 'Approbation',
   nav_fachsprachpruefung: 'Fachsprachprüfung',
-  nav_examensvorbereitung: 'Examensvorbereitung',
+  nav_examenskurse: 'Examensvorbereitung',
   cta_intro_call: 'Erstgespräch',
   hero_kp_heading: 'Kenntnisprüfung erfolgreich bestehen',
   kp_badge: 'Spezialisiert auf Kenntnisprüfung',
@@ -1177,7 +1177,7 @@ const de: Dict = {
   fsp_cta_ready_title: 'Bereit für deine Fachsprachprüfung?',
   fsp_cta_ready_sub1: 'Starte jetzt mit deiner individuellen Vorbereitung.',
   fsp_cta_ready_sub2: 'Kostenloses Erstgespräch, individuelle Beratung und flexible Termine.',
-  // Examensvorbereitung (Route /examensvorbereitung)
+  // Examensvorbereitung (Route /examenskurse)
   ek_hero_title1: 'Examensvorbereitung',
   ek_hero_title2: 'für alle Staatsexamina',
   ek_hero_sub:
@@ -1255,7 +1255,7 @@ const en: Dict = {
   nav_zahnmedizin: 'Dentistry',
   nav_approbation: 'Medical License',
   nav_fachsprachpruefung: 'Medical Language Exam',
-  nav_examensvorbereitung: 'Exam preparation',
+  nav_examenskurse: 'Exam preparation',
   cta_intro_call: 'Intro call',
   hero_kp_heading: 'Succeed in the Kenntnisprüfung',
   kp_badge: 'Specialized in {{Kenntnisprüfung}}',
@@ -2398,7 +2398,7 @@ const en: Dict = {
   fsp_cta_ready_title: 'Ready for your Medical Language Exam?',
   fsp_cta_ready_sub1: 'Start now with your individual preparation.',
   fsp_cta_ready_sub2: 'Free initial consultation, individual advice and flexible appointments.',
-  // Exam preparation (route /examensvorbereitung)
+  // Exam preparation (route /examenskurse)
   ek_hero_title1: 'Exam preparation',
   ek_hero_title2: 'for all state exams',
   ek_hero_sub:
@@ -2475,7 +2475,7 @@ const ar: Dict = {
   nav_zahnmedizin: 'طب الأسنان',
   nav_approbation: 'الترخيص الطبي',
   nav_fachsprachpruefung: 'امتحان اللغة الطبية',
-  nav_examensvorbereitung: 'تحضير الامتحانات',
+  nav_examenskurse: 'تحضير الامتحانات',
   cta_intro_call: 'مكالمة تعريفية',
   hero_kp_heading: 'النجاح في Kenntnisprüfung',
   kp_badge: 'متخصصون في {{Kenntnisprüfung}}',
@@ -3617,7 +3617,7 @@ const ar: Dict = {
   fsp_cta_ready_title: 'جاهز لامتحان اللغة الطبية?',
   fsp_cta_ready_sub1: 'ابدأ الآن مع تحضيرك الفردي.',
   fsp_cta_ready_sub2: 'مكالمة تعريفية مجانية، استشارة فردية ومواعيد مرنة.',
-  // تحضير الامتحانات (المسار /examensvorbereitung)
+  // تحضير الامتحانات (المسار /examenskurse)
   ek_hero_title1: 'تحضير الامتحانات',
   ek_hero_title2: 'لجميع الامتحانات الحكومية',
   ek_hero_sub:

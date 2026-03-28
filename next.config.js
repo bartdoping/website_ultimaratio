@@ -50,8 +50,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/examenskurse',
-        destination: '/examensvorbereitung',
+        source: '/examensvorbereitung',
+        destination: '/examenskurse',
         permanent: true,
       },
     ]
