@@ -22,9 +22,11 @@ import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 
 export const metadata: Metadata = {
-  title: 'Examenskurse - Vorbereitung auf alle Staatsexamina | ultima-rat.io',
-  description: 'Spezielle Kursformate für sämtliche Staatsexamina des Humanmedizin- und Zahnmedizinstudiums mit 1:1 Betreuung durch approbierte Ärzte.',
-  keywords: 'Examenskurse, Staatsexamen, M1, M2, M3, Z1, Z2, Z3, Prüfungsvorbereitung, IMPP, mündliches Examen, schriftliches Examen',
+  title: 'Examensvorbereitung – alle Staatsexamina | ultima-rat.io',
+  description:
+    'Individuelle Prüfungsvorbereitung für sämtliche Staatsexamina des Human- und Zahnmedizinstudiums mit 1:1 Betreuung durch approbierte Ärzte.',
+  keywords:
+    'Examensvorbereitung, Staatsexamen, M1, M2, M3, Z1, Z2, Z3, Prüfungsvorbereitung, IMPP, mündliches Examen, schriftliches Examen',
 }
 
 export default async function ExamenskursePage() {
