@@ -1421,24 +1421,16 @@ body {
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border);
   position: relative;
-  transition: all 0.3s ease;
 }
 
-.modern-testimonial:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
+/* Kompakte Rezensionskarten (Startseite / Subpages mit Testimonials-Komponente) */
+.testimonial-compact.modern-testimonial {
+  padding: 0.875rem 1rem 1rem;
+  border-radius: 0.75rem;
 }
 
-.modern-testimonial::before {
-  content: '"';
-  position: absolute;
-  top: 20px;
-  left: 32px;
-  font-size: 4rem;
-  color: var(--primary-color);
-  font-family: serif;
-  line-height: 1;
-  opacity: 0.3;
+.testimonial-compact.modern-testimonial::before {
+  display: none;
 }
 
 /* Modern FAQ */
