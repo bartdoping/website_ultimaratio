@@ -443,7 +443,6 @@ export default async function CoachingPage() {
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Marcel M.</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">&ldquo;{t(locale, 'home_testimonial_marcel_text')}&rdquo;</p>
               <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-black">{t(locale, 'home_testimonial_marcel_result')}</p>
                 <p className="text-sm text-gray-600">{t(locale, 'coach_testimonial_marcel_label')}</p>
               </div>
             </div>
@@ -457,7 +456,6 @@ export default async function CoachingPage() {
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Victoria G.</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">&ldquo;{t(locale, 'home_testimonial_victoria_text')}&rdquo;</p>
               <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-black">{t(locale, 'home_testimonial_victoria_result')}</p>
                 <p className="text-sm text-gray-600">{t(locale, 'coach_testimonial_victoria_label')}</p>
               </div>
             </div>
@@ -471,7 +469,6 @@ export default async function CoachingPage() {
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">Angelina P.</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text mb-6">&ldquo;{t(locale, 'home_testimonial_angelina_text')}&rdquo;</p>
               <div className="border-t border-gray-200 pt-4">
-                <p className="font-semibold text-black">{t(locale, 'home_testimonial_angelina_result')}</p>
                 <p className="text-sm text-gray-600">{t(locale, 'coach_testimonial_angelina_label')}</p>
               </div>
             </div>

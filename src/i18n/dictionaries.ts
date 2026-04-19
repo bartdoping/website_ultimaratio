@@ -328,6 +328,18 @@ const de: Dict = {
   home_testimonial_angelina_exam: 'Anatomie und Physiologie',
   home_testimonial_angelina_result: 'Bestanden',
   home_testimonial_angelina_text: 'Zu Beginn große Schwierigkeiten, Technik und Relevantes zu filtern. War in Dritt‑ und Zweitversuchen – ohne Hilfe hätte ich es nicht geschafft. Mit ärztlicher Unterstützung waren die Wiederholungen erfolgreich – Neustart gelungen!',
+  home_testimonial_andrei_name: 'Andrei T.',
+  home_testimonial_andrei_exam: 'Kenntnisprüfung',
+  home_testimonial_andrei_text:
+    'Die Vorbereitungskurse von Ultima Rat.io waren für meine Kenntnisprüfung extrem wertvoll.\n\nBesonders stark war das realistische Prüfungsformat: strukturierte Fallbesprechungen, gezielte klinische Fragen, klares Denken unter Druck und echte Prüfungssimulationen. Genau das, was man für die KP braucht – nicht nur Theorie, sondern klinisches Denken und Entscheidungsfindung.\n\nDie Coaches arbeiten sehr präzise, fordernd, aber fair. Fehler werden nicht „abgearbeitet“, sondern wirklich verstanden. Man lernt, strukturiert zu präsentieren, sauber zu argumentieren und sicher aufzutreten – fachlich wie kommunikativ.\n\nDiese Kurse haben mir geholfen, mein Wissen zu ordnen, Unsicherheiten abzubauen und mit einem klaren System in die Prüfung zu gehen.\nEine absolute Empfehlung für alle, die sich ernsthaft und professionell auf die Kenntnisprüfung vorbereiten wollen.\n\nVielen Dank an das gesamte Team von Ultima Rat.io!',
+  home_testimonial_melissa_name: 'Melissa U.',
+  home_testimonial_melissa_exam: 'Coaching',
+  home_testimonial_melissa_text:
+    'Super liebes und kompetentes Team!! Kann es nur von Herzen weiterempfehlen, falls ihr Probleme habt unbedingt austesten!! Wirklich ihr werdet easy bestehen und habt ein viel besseres Verständnis für die nötigen Fächer',
+  home_testimonial_nataliya_name: 'Nataliya S.',
+  home_testimonial_nataliya_exam: 'Kenntnisprüfung',
+  home_testimonial_nataliya_text:
+    'Sehr kompetente Dozenten mit fundiertem Fachwissen. Dank ihrer Vorbereitung habe ich meine Kenntnisprüfung (3. Versuch) erfolgreich bestanden. Herzlichen Dank!',
   // FAQ items
   home_faq_q1: 'Wie funktioniert das Coaching genau?',
   home_faq_a1: 'Coaching über Zoom mit Screen‑Sharing und Whiteboard. Flexible Terminvergabe über WhatsApp, Link folgt zeitnah. Auf Wunsch Notizen als PDF. Zahlung erst nach der Session online über Stripe.',
@@ -1549,6 +1561,18 @@ const en: Dict = {
   home_testimonial_angelina_exam: 'Anatomy and Physiology',
   home_testimonial_angelina_result: 'Passed',
   home_testimonial_angelina_text: 'At the beginning I struggled to find technique and filter what’s relevant. With medical support I passed the retakes successfully – fresh start!',
+  home_testimonial_andrei_name: 'Andrei T.',
+  home_testimonial_andrei_exam: 'Kenntnisprüfung',
+  home_testimonial_andrei_text:
+    'The preparation courses from ultima-rat.io were extremely valuable for my Kenntnisprüfung.\n\nWhat stood out most was the realistic exam format: structured case discussions, targeted clinical questions, clear thinking under pressure, and genuine exam simulations. Exactly what you need for the KP – not just theory, but clinical reasoning and decision-making.\n\nThe coaches work very precisely, are demanding but fair. Mistakes are not just “worked through” but truly understood. You learn to present in a structured way, argue clearly, and appear confident – clinically and in communication.\n\nThese sessions helped me organize my knowledge, reduce uncertainty, and go into the exam with a clear system.\nA wholehearted recommendation for anyone who wants to prepare for the Kenntnisprüfung seriously and professionally.\n\nMany thanks to the entire ultima-rat.io team!',
+  home_testimonial_melissa_name: 'Melissa U.',
+  home_testimonial_melissa_exam: 'Coaching',
+  home_testimonial_melissa_text:
+    'Such a lovely and highly competent team! I can only recommend it from the heart – if you are having difficulties, definitely try it out! You will pass more easily and gain a much better understanding of the subjects you need.',
+  home_testimonial_nataliya_name: 'Nataliya S.',
+  home_testimonial_nataliya_exam: 'Kenntnisprüfung',
+  home_testimonial_nataliya_text:
+    'Very competent instructors with sound subject knowledge. Thanks to their preparation I successfully passed my Kenntnisprüfung (third attempt). Many thanks!',
   // FAQ items
   home_faq_q1: 'How exactly does the coaching work?',
   home_faq_a1: 'Coaching via Zoom with screen sharing and whiteboard. Flexible scheduling via WhatsApp, link sent promptly. Notes as PDF on request. Pay online after the session via Stripe.',
@@ -2791,6 +2815,18 @@ const ar: Dict = {
   home_testimonial_angelina_exam: 'التشريح والفيزيولوجيا',
   home_testimonial_angelina_result: 'ناجح',
   home_testimonial_angelina_text: 'في البداية واجهت صعوبة بتقنيات التعلّم وتحديد المهم. بالدعم الطبي نجحت بالإعادات – بداية جديدة!',
+  home_testimonial_andrei_name: 'Andrei T.',
+  home_testimonial_andrei_exam: 'Kenntnisprüfung',
+  home_testimonial_andrei_text:
+    'كانت تحضيرات ultima-rat.io لامتحان Kenntnisprüfung ذات قيمة كبيرة لدي.\n\nالأقوى كان تنسيق الامتحان الواقعي: مناقشات حالات منظمة، أسئلة سريرية موجهة، تفكير واضح تحت الضغط، ومحاكاة امتحان حقيقية. بالضبط ما تحتاجه لـ KP – ليس نظرية فقط بل تفكير سريري واتخاذ قرار.\n\nالمدربون دقيقون ومطالبون لكن عادلون. الأخطاء لا تُدار بشكل سطحي بل تُفهم حقًا. تتعلم العرض المنظم والحجة الواضحة والظهور بثقة – سريريًا وفي التواصل.\n\nساعدني ذلك على ترتيب معرفتي وتقليل الشكوك والدخول للامتحان بنظام واضح.\nأنصح بشدة بكل جدية لمن يريد التحضير الاحترافي لـ Kenntnisprüfung.\n\nشكرًا لفريق ultima-rat.io!',
+  home_testimonial_melissa_name: 'Melissa U.',
+  home_testimonial_melissa_exam: 'تدريب',
+  home_testimonial_melissa_text:
+    'فريق لطيف جدًا وذو كفاءة عالية! أنصح به من القلب – إن واجهتم صعوبات جرّبوه بالتأكيد! ستجتازون بسهولة أكبر وستفهمون المواد المطلوبة بشكل أفضل بكثير.',
+  home_testimonial_nataliya_name: 'Nataliya S.',
+  home_testimonial_nataliya_exam: 'Kenntnisprüfung',
+  home_testimonial_nataliya_text:
+    'مدرّسون ذوو كفاءة عالية ومعرفة عميقة. بفضل تحضيرهم اجتزت Kenntnisprüfung بنجاح (المحاولة الثالثة). شكرًا جزيلاً!',
   // Urgency banner
   home_urgency_title: '✓ استشارة أولية مجانية',
   home_urgency_trust_title: 'متاح لجميع الطلاب!',
