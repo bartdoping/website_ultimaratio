@@ -214,6 +214,16 @@ export default function DatenschutzPage() {
               ihn eingebundenen Tools.
             </p>
 
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Google Ads / Conversion-Tracking (gtag.js)</h3>
+            <p className="text-gray-700 mb-6">
+              Sofern Sie im Cookie-Banner der Kategorie „Marketing-Cookies“ zustimmen, binden wir das Conversion-Tracking von
+              Google Ads ein (Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Technisch wird
+              dabei die Bibliothek gtag.js mit der Conversion-ID AW-17361559732 geladen. Beim Klick auf Links zu unserem
+              WhatsApp-Kontakt kann eine Conversion-Meldung an Google übermittelt werden, um die Wirksamkeit von Werbekampagnen
+              zu messen. Rechtsgrundlage ist Ihre Einwilligung gemäß Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO. Ohne Einwilligung in
+              Marketing-Cookies findet diese Verarbeitung nicht statt.
+            </p>
+
             <h2 className="text-2xl font-bold text-gray-900 mb-6">7. Newsletter</h2>
             
             <h3 className="text-xl font-bold text-gray-900 mb-4">Newsletter&shy;daten</h3>

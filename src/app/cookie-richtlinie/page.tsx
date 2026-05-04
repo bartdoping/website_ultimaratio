@@ -106,7 +106,7 @@ export default function CookieRichtliniePage() {
                     <li>• Personalisierte Werbung</li>
                     <li>• Remarketing-Kampagnen</li>
                     <li>• Social Media Integration</li>
-                    <li>• Conversion-Tracking</li>
+                    <li>• Conversion-Tracking (z.&nbsp;B. Google Ads bei Kontaktaufnahme per WhatsApp)</li>
                   </ul>
                 </div>
               </div>

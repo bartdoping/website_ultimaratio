@@ -29,6 +29,11 @@ export default function CookieBanner() {
             <p className="cookie-text text-gray-600 max-w-xl mx-auto">
               Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten.
             </p>
+            <p className="cookie-text text-gray-600 max-w-xl mx-auto mt-4 text-sm leading-relaxed">
+              Marketing- und Mess-Tools (z.&nbsp;B. Google Ads zur Kampagnenmessung) sind einwilligungspflichtig
+              gemäß Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO. Sie werden erst nach Ihrer ausdrücklichen Einwilligung über die
+              Kategorie „Marketing-Cookies“ aktiviert.
+            </p>
           </div>
 
           {/* Cookie Categories Preview */}

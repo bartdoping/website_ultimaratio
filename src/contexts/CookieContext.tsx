@@ -1,6 +1,7 @@
 'use client'
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react'
+import { initializeAnalytics, initializeGoogleAdsTag } from '@/lib/cookieTagLoader'
 
 export interface CookiePreferences {
   necessary: boolean
@@ -31,7 +32,7 @@ const defaultPreferences: CookiePreferences = {
   functional: false,
 }
 
-const CONSENT_VERSION = '1.0.0'
+const CONSENT_VERSION = '1.1.0'
 const CONSENT_EXPIRY_DAYS = 180
 
 function daysBetween(a: number, b: number) {
@@ -89,9 +90,11 @@ export function CookieProvider({ children }: { children: ReactNode }) {
     localStorage.setItem('cookie-consent-version', CONSENT_VERSION)
     localStorage.setItem('cookie-consent-savedAt', String(Date.now()))
     
-    // Initialize analytics if accepted
     if (allAccepted.analytics) {
       initializeAnalytics()
+    }
+    if (allAccepted.marketing) {
+      initializeGoogleAdsTag()
     }
   }
 
@@ -124,11 +127,23 @@ export function CookieProvider({ children }: { children: ReactNode }) {
     localStorage.setItem('cookie-consent-version', CONSENT_VERSION)
     localStorage.setItem('cookie-consent-savedAt', String(Date.now()))
     
-    // Initialize analytics if accepted
     if (preferences.analytics) {
       initializeAnalytics()
     }
+    if (preferences.marketing) {
+      initializeGoogleAdsTag()
+    }
   }
+
+  useEffect(() => {
+    if (cookieConsent !== true) return
+    if (cookiePreferences.analytics) {
+      initializeAnalytics()
+    }
+    if (cookiePreferences.marketing) {
+      initializeGoogleAdsTag()
+    }
+  }, [cookieConsent, cookiePreferences.analytics, cookiePreferences.marketing])
 
   const openCookieSettings = () => {
     setShowCookieSettings(true)
@@ -145,28 +160,6 @@ export function CookieProvider({ children }: { children: ReactNode }) {
       ...prev,
       [category]: value
     }))
-  }
-
-  const initializeAnalytics = () => {
-    if (typeof window === 'undefined') return
-    const GA_ID: string | undefined = process.env.NEXT_PUBLIC_GA_ID
-    if (!GA_ID) return
-    if (document.getElementById('ga4-script')) return
-    
-    const script = document.createElement('script')
-    script.id = 'ga4-script'
-    script.async = true
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`
-    document.head.appendChild(script)
-    
-    const inline = document.createElement('script')
-    inline.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '${GA_ID}', { anonymize_ip: true });
-    `
-    document.head.appendChild(inline)
   }
 
   const value: CookieContextType = {

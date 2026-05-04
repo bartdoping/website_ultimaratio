@@ -7,6 +7,7 @@ import { CookieProvider } from '@/contexts/CookieContext'
 import CookieBanner from '@/components/CookieBanner'
 import CookieSettings from '@/components/CookieSettings'
 import BlackBookPopup from '@/components/BlackBookPopup'
+import WhatsAppConversionTracker from '@/components/WhatsAppConversionTracker'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -39,6 +40,7 @@ export default function RootLayout({
           <CookieBanner />
           <CookieSettings />
           <BlackBookPopup />
+          <WhatsAppConversionTracker />
         </CookieProvider>
       </body>
     </html>

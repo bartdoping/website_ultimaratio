@@ -182,8 +182,13 @@ export default function CookieSettings() {
                 die relevant und ansprechend für den einzelnen Benutzer sind und daher wertvoller für Verlage und 
                 werbetreibende Drittanbieter sind.
               </p>
+              <p className="text-gray-700 leading-relaxed mb-3 text-sm">
+                Zur Auswertung von Werbekampagnen nutzen wir unter anderem Google Ads (Conversion-Tracking). Beim Klick auf
+                einen WhatsApp-Link kann ein Conversion-Pixel ausgelöst werden (Google Ireland Limited). Dies erfolgt nur,
+                wenn Sie Marketing-Cookies aktivieren.
+              </p>
               <div className="text-sm text-gray-600">
-                <strong>Beispiele:</strong> Facebook Pixel, Google Ads, LinkedIn Insight Tag
+                <strong>Beispiele:</strong> Facebook Pixel, Google Ads (inkl. gtag.js), LinkedIn Insight Tag
               </div>
             </div>
 
