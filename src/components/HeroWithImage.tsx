@@ -32,29 +32,29 @@ export default function HeroWithImage() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 modern-container text-center text-white pt-16 sm:pt-24 md:pt-32 lg:pt-36">
+      <div className="relative z-10 modern-container text-center text-white pt-10 sm:pt-12 md:pt-16 lg:pt-18">
         
         
         {/* Main Headline */}
-            <h1 className="mt-[5cm] text-[12vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-bold mb-6 sm:mb-8 md:mb-12 modern-heading leading-tight modern-animate-fade-in-up">
+            <h1 className="mt-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl font-bold mb-5 sm:mb-7 md:mb-9 modern-heading leading-tight modern-animate-fade-in-up">
               <span className="block text-white">{t(locale, 'home_hero_l1')}</span>
               <span className="block text-white">{t(locale, 'home_hero_l2')}</span>
               <span className="block text-white">{t(locale, 'home_hero_l3')}</span>
             </h1>
         
         {/* Subheadline */}
-        <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 sm:mb-8 md:mb-12 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
+        <p className="text-sm sm:text-base md:text-lg text-gray-200 mb-6 sm:mb-8 md:mb-10 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
           <span className="font-semibold text-white">{t(locale, 'home_hero_sub_bold')}</span><br />
           {t(locale, 'home_hero_sub_rest')}
         </p>
         
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-5 sm:gap-6 justify-center mb-12 sm:mb-16 modern-animate-fade-in-up">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center mb-10 sm:mb-14 modern-animate-fade-in-up">
             <a
               href="http://wa.me/491639347633"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-8 sm:px-10 py-4 sm:py-5 rounded-lg text-lg sm:text-xl font-bold transition-all duration-300 flex items-center justify-center space-x-3 group shadow-2xl hover:shadow-lg hover:scale-[1.02]"
+              className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-lg text-base sm:text-lg font-bold transition-all duration-300 flex items-center justify-center space-x-3 group shadow-2xl hover:shadow-lg hover:scale-[1.02]"
             >
             <MessageCircle className="w-5 h-5 group-hover:animate-pulse" />
             <span>{t(locale, 'home_hero_cta_primary')}</span>
@@ -62,7 +62,7 @@ export default function HeroWithImage() {
           </a>
           <Link
             href="/coaching"
-            className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-2 border-white/50 hover:border-white px-8 sm:px-10 py-4 sm:py-5 rounded-lg text-lg sm:text-xl font-bold transition-all duration-300 flex items-center justify-center space-x-3 group"
+            className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-2 border-white/50 hover:border-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-lg text-base sm:text-lg font-bold transition-all duration-300 flex items-center justify-center space-x-3 group"
           >
             <span>{t(locale, 'home_hero_cta_secondary')}</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

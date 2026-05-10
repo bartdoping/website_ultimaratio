@@ -66,9 +66,9 @@ export default function Header() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-50" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+      <div className="sticky top-0 left-0 right-0 z-50" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
       {/* Top Bar (visible on mobile) */}
-      <div className="bg-[#0395A6] text-white mobile-top-bar w-full">
+      <div className="bg-[#0395A6] text-white mobile-top-bar w-full md:hidden">
         <div className="modern-container px-4 h-full">
           <div className="flex flex-nowrap justify-between items-center text-sm gap-3 md:gap-6 lg:gap-10 h-full">
             <div className="flex items-center space-x-2 sm:space-x-4">
@@ -103,11 +103,11 @@ export default function Header() {
       {/* Main Header (white) */}
       <header className="bg-white border-b border-gray-200 w-full">
         <div className="modern-container w-full">
-          <div className="flex flex-nowrap justify-between items-center h-16 md:h-16 min-h-[4rem] w-full">
+          <div className="flex flex-nowrap justify-between items-center h-14 md:h-14 min-h-[3.5rem] w-full">
             {/* Logo */}
             <div className="flex-shrink-0 min-w-0">
               <Link href="/" className="flex flex-nowrap items-center group min-w-0">
-                <div className="h-10 w-10 sm:h-11 sm:w-11 md:h-12 md:w-12 rounded-xl overflow-hidden logo-mobile flex-shrink-0">
+                <div className="h-9 w-9 sm:h-10 sm:w-10 md:h-10 md:w-10 rounded-xl overflow-hidden logo-mobile flex-shrink-0">
                   <Image
                     src="/images/logo/logo.png"
                     alt="ultima-rat.io Logo"
@@ -118,14 +118,14 @@ export default function Header() {
                   />
                 </div>
                 <div className="ml-2 sm:ml-3 truncate">
-                  <span className="text-base sm:text-lg font-bold text-black modern-heading block leading-5 truncate">ultima-rat.io</span>
-                  <span className="text-xs sm:text-xs text-gray-500 hidden sm:block leading-4 truncate">Medizin-Nachhilfe</span>
+                  <span className="text-[15px] sm:text-base font-bold text-black modern-heading block leading-5 truncate">ultima-rat.io</span>
+                  <span className="text-[11px] text-gray-500 hidden sm:block leading-4 truncate">Medizin-Nachhilfe</span>
                 </div>
               </Link>
             </div>
  
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex space-x-4">
+            <nav className="hidden lg:flex space-x-3">
               {navigation.map((item) => (
                 <div key={item.href} className="relative">
                   {item.submenu ? (
@@ -141,7 +141,7 @@ export default function Header() {
                             setIsHumanmedizinOpen(false)
                           }
                         }}
-                        className="text-gray-700 hover:text-[#0395A6] px-2.5 py-1.5 text-sm font-medium leading-none transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] modern-focus flex items-center"
+                        className="text-gray-700 hover:text-[#0395A6] px-2 py-1 text-[13px] font-medium leading-none transition-colors border-b-2 border-transparent hover:border-[#0395A6] modern-focus flex items-center"
                       >
                         {t(locale, item.nameKey)}
                         <ChevronDown className="w-4 h-4 ml-1" />
@@ -207,7 +207,7 @@ export default function Header() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="inline-flex items-center text-gray-700 hover:text-[#0395A6] px-2.5 py-1.5 text-sm font-medium leading-none transition-all duration-300 border-b-2 border-transparent hover:border-[#0395A6] modern-focus relative group"
+                      className="inline-flex items-center text-gray-700 hover:text-[#0395A6] px-2 py-1 text-[13px] font-medium leading-none transition-colors border-b-2 border-transparent hover:border-[#0395A6] modern-focus relative group"
                     >
                       {t(locale, item.nameKey)}
                       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0395A6] transition-all duration-300 group-hover:w-full"></span>
@@ -218,9 +218,9 @@ export default function Header() {
             </nav>
  
             {/* Language Switcher + CTA Buttons */}
-            <div className="hidden md:flex items-center space-x-2.5">
+            <div className="hidden md:flex items-center space-x-2">
               <div className="relative pb-2" onMouseEnter={() => setIsLangOpen(true)} onMouseLeave={() => setIsLangOpen(false)}>
-                <button className="px-2.5 py-1.5 text-xs md:text-sm text-gray-700 border border-gray-200 rounded-lg hover:bg-gray-50 flex items-center gap-1" title="Sprache wählen">
+                <button className="px-2 py-1.5 text-xs text-gray-700 border border-gray-200 rounded-lg hover:bg-gray-50 flex items-center gap-1" title="Sprache wählen">
                   <Globe className="w-3.5 h-3.5" />
                   <span>{locale.toUpperCase()}</span>
                 </button>
@@ -243,7 +243,7 @@ export default function Header() {
                 href="http://wa.me/491639347633"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="modern-button px-4 py-2 rounded-lg text-xs md:text-sm font-semibold modern-focus group"
+                className="modern-button px-3.5 py-2 rounded-lg text-xs font-semibold modern-focus group"
               >
                 <MessageCircle className="w-4 h-4 mr-1.5 inline-block group-hover:animate-pulse" />
                 {t(locale, 'cta_intro_call')}
@@ -374,8 +374,6 @@ export default function Header() {
         )}
       </header>
       </div>
-      {/* Spacer for fixed header */}
-      <div className="h-[6.5rem] md:h-[7rem]"></div>
     </>
   )
 }
