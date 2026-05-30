@@ -207,10 +207,9 @@ export default function Header() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="inline-flex items-center text-gray-700 hover:text-[#0395A6] px-2 py-1 text-[13px] font-medium leading-none transition-colors border-b-2 border-transparent hover:border-[#0395A6] modern-focus relative group"
+                      className="inline-flex items-center text-gray-700 hover:text-[#0395A6] px-2 py-1 text-[13px] font-medium leading-none transition-colors border-b-2 border-transparent hover:border-[#0395A6] modern-focus"
                     >
                       {t(locale, item.nameKey)}
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0395A6] transition-all duration-300 group-hover:w-full"></span>
                     </Link>
                   )}
                 </div>
@@ -243,9 +242,9 @@ export default function Header() {
                 href="http://wa.me/491639347633"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="modern-button px-3.5 py-2 rounded-lg text-xs font-semibold modern-focus group"
+                className="modern-button px-3.5 py-2 rounded-lg text-xs font-semibold modern-focus"
               >
-                <MessageCircle className="w-4 h-4 mr-1.5 inline-block group-hover:animate-pulse" />
+                <MessageCircle className="w-4 h-4 mr-1.5 inline-block" />
                 {t(locale, 'cta_intro_call')}
               </a>
             </div>

@@ -77,11 +77,11 @@ export default function ProblemVisual() {
 
         <div className="modern-grid modern-grid-1 gap-0 md:gap-12">
           {problems.map((problem, index) => (
-            <div key={index} className="bg-transparent md:modern-card md:bg-white md:border-l-4 md:border-red-500 md:shadow-xl modern-animate-fade-in-up">
+            <div key={index} className="bg-transparent md:modern-card md:bg-white md:border-l-4 md:border-l-slate-300 modern-animate-fade-in-up">
               {/* Mobile: Kompakte Ansicht ohne Container */}
               <div className="md:hidden py-4 border-b border-gray-200 last:border-b-0">
                 <div className="flex items-start space-x-3">
-                  <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-red-600 flex-shrink-0">
+                  <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 flex-shrink-0">
                     {problem.icon}
                   </div>
                   <div className="flex-1 min-w-0">
@@ -96,12 +96,12 @@ export default function ProblemVisual() {
                 {/* Content */}
                 <div className="p-8">
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-red-600">
+                    <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-slate-600">
                       {problem.icon}
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-black mb-2">{problem.title}</h3>
-                      <div className="bg-red-100 text-red-800 px-3 py-1 rounded-lg text-sm font-semibold">
+                      <div className="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-sm font-semibold">
                         {problem.stats}
                       </div>
                     </div>
@@ -112,12 +112,12 @@ export default function ProblemVisual() {
                   </p>
 
                   {/* Emotional Impact */}
-                  <div className="bg-red-50 rounded-lg p-4 mb-6">
-                    <div className="flex items-center space-x-2 text-red-800">
+                  <div className="bg-slate-50 rounded-lg p-4 mb-6">
+                    <div className="flex items-center space-x-2 text-slate-700">
                       <Heart className="w-5 h-5" />
                       <span className="font-semibold">{t(locale, 'home_emotional_impact')}</span>
                     </div>
-                    <ul className="mt-2 text-red-700 text-sm space-y-1">
+                    <ul className="mt-2 text-slate-600 text-sm space-y-1">
                       {problem.emotionalImpact.map((impact, impactIndex) => (
                         <li key={impactIndex}>{impact}</li>
                       ))}
@@ -152,7 +152,7 @@ export default function ProblemVisual() {
 
         {/* Transition CTA */}
             <div className="text-center mt-16 modern-animate-fade-in-up hidden md:block">
-          <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-red-200 max-w-2xl mx-auto">
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-black mb-4">
               {t(locale, 'home_transition_title')}
             </h3>
@@ -161,7 +161,7 @@ export default function ProblemVisual() {
             </p>
             <a
               href="#solution"
-              className="inline-flex bg-[#0395A6] hover:bg-[#028A9A] text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl"
+              className="inline-flex bg-[#0395A6] hover:bg-[#027686] text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors duration-200 shadow-sm"
             >
               → {t(locale, 'home_transition_cta')}
             </a>

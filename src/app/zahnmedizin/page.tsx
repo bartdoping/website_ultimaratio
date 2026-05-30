@@ -190,7 +190,7 @@ export default async function ZahnmedizinPage() {
                 rel="noopener noreferrer"
                 className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
               >
-                <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                <MessageCircle className="w-6 h-6 mr-3 inline-block" />
                 {t(locale, 'home_cta_primary')}
               </a>
               <a
@@ -643,7 +643,7 @@ export default async function ZahnmedizinPage() {
                   rel="noopener noreferrer"
                   className="modern-button px-12 py-5 rounded-lg button-text modern-focus group price-button-mobile"
                 >
-                  <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                  <MessageCircle className="w-6 h-6 mr-3 inline-block" />
                   {t(locale, 'zm_pricing_cta_book_now')}
                   <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
                 </a>
@@ -669,7 +669,7 @@ export default async function ZahnmedizinPage() {
                   rel="noopener noreferrer"
                   className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
                 >
-                  <Users className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                  <Users className="w-6 h-6 mr-3 inline-block" />
                   {t(locale, 'zm_cta_start')}
                 </a>
                 <Link

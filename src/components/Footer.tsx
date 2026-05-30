@@ -19,7 +19,7 @@ export default function Footer() {
   }, [])
   
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+    <footer className="bg-[#0F172A] text-white">
       {/* Spacer to create gap between content and footer */}
       <div className="h-16"></div>
       
@@ -193,9 +193,9 @@ export default function Footer() {
             href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-            className="modern-button px-8 py-4 rounded-lg text-lg font-semibold modern-focus inline-block group"
+            className="modern-button px-8 py-4 rounded-lg text-lg font-semibold modern-focus inline-block"
           >
-            <MessageCircle className="w-5 h-5 mr-3 inline-block group-hover:animate-pulse" />
+            <MessageCircle className="w-5 h-5 mr-3 inline-block" />
             Kostenloses Erstgespräch
           </a>
         </div>

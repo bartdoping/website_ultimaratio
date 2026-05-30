@@ -32,7 +32,7 @@ export default async function KenntnispruefungPage() {
                 rel="noopener noreferrer"
                 className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus group cursor-pointer"
               >
-                <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                <MessageCircle className="w-6 h-6 mr-3 inline-block" />
                 {t(locale, 'cta_intro_call')}
                 <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </a>
@@ -62,24 +62,24 @@ export default async function KenntnispruefungPage() {
 
           <div className="modern-grid modern-grid-3">
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Brain className="w-10 h-10 text-red-500" />
+              <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-8">
+                <Brain className="w-10 h-10 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'kp_ch_card1_title')}</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'kp_ch_card1_desc')}</p>
             </div>
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Clock className="w-10 h-10 text-red-500" />
+              <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-8">
+                <Clock className="w-10 h-10 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'kp_ch_card2_title')}</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'kp_ch_card2_desc')}</p>
             </div>
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Target className="w-10 h-10 text-red-500" />
+              <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-8">
+                <Target className="w-10 h-10 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'kp_ch_card3_title')}</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'kp_ch_card3_desc')}</p>
@@ -524,7 +524,7 @@ export default async function KenntnispruefungPage() {
                   rel="noopener noreferrer"
                   className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus group price-button-mobile"
                 >
-                  <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                  <MessageCircle className="w-6 h-6 mr-3 inline-block" />
                   {t(locale, 'kp_price_cta_book_now')}
                   <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
                 </a>
@@ -552,7 +552,7 @@ export default async function KenntnispruefungPage() {
             rel="noopener noreferrer"
             className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
           >
-            <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+            <MessageCircle className="w-6 h-6 mr-3 inline-block" />
             Kostenloses Erstgespräch
             <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
           </a>

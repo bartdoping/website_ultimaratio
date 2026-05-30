@@ -32,7 +32,7 @@ export default async function CoachingPage() {
                 rel="noopener noreferrer"
                 className="modern-button px-6 sm:px-12 py-3 sm:py-5 rounded-lg text-sm sm:text-lg font-semibold modern-focus group cursor-pointer w-full sm:w-auto whitespace-nowrap"
               >
-                <MessageCircle className="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3 inline-block group-hover:animate-pulse" />
+                <MessageCircle className="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3 inline-block" />
                 <span className="hidden xs:inline">{t(locale, 'cta_intro_call')}</span>
                 <span className="xs:hidden">{t(locale, 'cta_intro_call')}</span>
                 <ArrowRight className="w-4 h-4 sm:w-6 sm:h-6 ml-2 sm:ml-3 inline-block group-hover:translate-x-1 transition-transform" />
@@ -63,48 +63,48 @@ export default async function CoachingPage() {
 
           <div className="modern-grid modern-grid-3">
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Brain className="w-10 h-10 text-red-500" />
+              <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-8">
+                <Brain className="w-10 h-10 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'coach_challenges_anatomy_title')}</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_challenges_anatomy_text')}</p>
             </div>
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Clock className="w-10 h-10 text-red-500" />
+              <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-8">
+                <Clock className="w-10 h-10 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'coach_challenges_time_title')}</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_challenges_time_text')}</p>
             </div>
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Target className="w-10 h-10 text-red-500" />
+              <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-8">
+                <Target className="w-10 h-10 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'coach_challenges_anxiety_title')}</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_challenges_anxiety_text')}</p>
             </div>
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up hidden md:block">
-              <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
-                <BookOpen className="w-10 h-10 text-red-500" />
+              <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-8">
+                <BookOpen className="w-10 h-10 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'coach_challenges_inefficient_title')}</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_challenges_inefficient_text')}</p>
             </div>
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up hidden md:block">
-              <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Users className="w-10 h-10 text-red-500" />
+              <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-8">
+                <Users className="w-10 h-10 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'coach_challenges_structure_title')}</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_challenges_structure_text')}</p>
             </div>
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up hidden lg:block">
-              <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Shield className="w-10 h-10 text-red-500" />
+              <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-8">
+                <Shield className="w-10 h-10 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'coach_challenges_isolation_title')}</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_challenges_isolation_text')}</p>
@@ -127,24 +127,24 @@ export default async function CoachingPage() {
 
           <div className="modern-grid modern-grid-3">
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Brain className="w-10 h-10 text-red-500" />
+              <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-8">
+                <Brain className="w-10 h-10 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'coach_problem_bulimia_title')}</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_problem_bulimia_text')}</p>
             </div>
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Clock className="w-10 h-10 text-red-500" />
+              <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-8">
+                <Clock className="w-10 h-10 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'coach_problem_timewaste_title')}</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_problem_timewaste_text')}</p>
             </div>
 
             <div className="modern-card p-12 text-center modern-animate-fade-in-up hidden md:block">
-              <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Target className="w-10 h-10 text-red-500" />
+              <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-8">
+                <Target className="w-10 h-10 text-slate-600" />
               </div>
               <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'coach_problem_nostrategy_title')}</h3>
               <p className="text-lg text-gray-600 leading-relaxed modern-text">{t(locale, 'coach_problem_nostrategy_text')}</p>
@@ -544,7 +544,7 @@ export default async function CoachingPage() {
                   rel="noopener noreferrer"
                   className="modern-button px-12 py-5 rounded-lg button-text modern-focus group price-button-mobile"
                 >
-                  <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                  <MessageCircle className="w-6 h-6 mr-3 inline-block" />
                   {t(locale, 'coaching_pricing_cta_book_now')}
                   <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
                 </a>
@@ -573,7 +573,7 @@ export default async function CoachingPage() {
               rel="noopener noreferrer"
               className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all focus-ring inline-block group"
             >
-              <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+              <MessageCircle className="w-6 h-6 mr-3 inline-block" />
               Kostenloses Erstgespräch
               <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
             </a>

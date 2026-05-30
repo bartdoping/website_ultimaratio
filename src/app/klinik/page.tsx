@@ -181,7 +181,7 @@ export default async function KlinikPage() {
                 rel="noopener noreferrer"
                 className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
               >
-                <Users className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                <Users className="w-6 h-6 mr-3 inline-block" />
                 {t(locale, 'home_cta_primary')}
               </a>
               <a
@@ -374,7 +374,7 @@ export default async function KlinikPage() {
                   rel="noopener noreferrer"
                   className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
                 >
-                  <Users className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                  <Users className="w-6 h-6 mr-3 inline-block" />
                   {t(locale, 'cl_cta_start')}
                 </a>
                 <Link

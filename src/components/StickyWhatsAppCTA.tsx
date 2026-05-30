@@ -54,7 +54,7 @@ export default function StickyWhatsAppCTA() {
           className="w-14 h-14 bg-[#0395A6] hover:bg-[#028A9A] text-white rounded-full shadow-lg flex items-center justify-center transition-colors"
           title="WhatsApp Chat öffnen"
         >
-          <MessageCircle className="w-6 h-6 group-hover:animate-pulse" />
+          <MessageCircle className="w-6 h-6" />
         </button>
       )}
     </div>

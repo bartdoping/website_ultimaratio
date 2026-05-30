@@ -54,9 +54,9 @@ export default function HeroWithImage() {
               href="http://wa.me/491639347633"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-lg text-base sm:text-lg font-bold transition-all duration-300 flex items-center justify-center space-x-3 group shadow-2xl hover:shadow-lg hover:scale-[1.02]"
+              className="bg-[#0395A6] hover:bg-[#027686] text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-lg text-base sm:text-lg font-bold transition-colors duration-200 flex items-center justify-center space-x-3 group shadow-lg"
             >
-            <MessageCircle className="w-5 h-5 group-hover:animate-pulse" />
+            <MessageCircle className="w-5 h-5" />
             <span>{t(locale, 'home_hero_cta_primary')}</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
@@ -72,24 +72,24 @@ export default function HeroWithImage() {
         {/* Trust Indicators */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto modern-animate-fade-in-up">
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-            <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">94%</div>
+            <div className="text-4xl md:text-5xl font-bold text-white mb-2">94%</div>
             <p className="text-white/90 font-semibold text-base">{t(locale, 'home_trust_97_label')}</p>
             <p className="text-white/70 text-sm hidden md:block">{t(locale, 'home_trust_97_desc')}</p>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-            <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">100+</div>
+            <div className="text-4xl md:text-5xl font-bold text-white mb-2">100+</div>
             <p className="text-white/90 font-semibold text-base">{t(locale, 'home_trust_500_label')}</p>
             <p className="text-white/70 text-sm hidden md:block">{t(locale, 'home_trust_500_desc')}</p>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hidden md:block">
-            <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">6+</div>
+            <div className="text-4xl md:text-5xl font-bold text-white mb-2">6+</div>
             <p className="text-white/90 font-semibold text-base">{t(locale, 'home_trust_6_label')}</p>
             <p className="text-white/70 text-sm">{t(locale, 'home_trust_6_desc')}</p>
           </div>
         </div>
 
         {/* Trust Banner */}
-        <div className="mt-16 mb-[3cm] bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 max-w-2xl mx-auto modern-animate-fade-in-up hidden md:block">
+        <div className="mt-12 mb-8 bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 max-w-2xl mx-auto modern-animate-fade-in-up hidden md:block">
           <div className="flex items-center justify-center space-x-2 text-white font-bold text-lg">
             <Target className="w-6 h-6" />
             <span>{t(locale, 'home_trust_banner_title')}</span>

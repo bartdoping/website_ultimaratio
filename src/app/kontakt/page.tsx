@@ -308,9 +308,9 @@ export default function KontaktPage() {
                   href="http://wa.me/491639347633"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center p-1.5 md:p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-all group"
+                  className="flex items-center p-1.5 md:p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors"
                 >
-                  <MessageCircle className="w-3 h-3 md:w-6 md:h-6 text-green-600 mr-1.5 md:mr-4" />
+                  <MessageCircle className="w-3 h-3 md:w-6 md:h-6 text-[#0395A6] mr-1.5 md:mr-4" />
                   <div>
                     <p className="font-semibold text-black text-xs md:text-base">{t(locale, 'contact_quick_whatsapp')}</p>
                     <p className="text-gray-600 text-xs md:text-sm">{t(locale, 'contact_quick_whatsapp_sub')}</p>
@@ -320,9 +320,9 @@ export default function KontaktPage() {
                   href="https://www.instagram.com/ultimarat.io?igsh=MXgxeHphbndoYjhs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center p-1.5 md:p-4 bg-pink-50 rounded-lg hover:bg-pink-100 transition-all group"
+                  className="flex items-center p-1.5 md:p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors"
                 >
-                  <Instagram className="w-3 h-3 md:w-6 md:h-6 text-pink-600 mr-1.5 md:mr-4" />
+                  <Instagram className="w-3 h-3 md:w-6 md:h-6 text-[#0395A6] mr-1.5 md:mr-4" />
                   <div>
                     <p className="font-semibold text-black text-xs md:text-base">{t(locale, 'contact_quick_instagram')}</p>
                     <p className="text-gray-600 text-xs md:text-sm">{t(locale, 'contact_quick_instagram_sub')}</p>
@@ -330,9 +330,9 @@ export default function KontaktPage() {
                 </a>
                 <a
                   href="mailto:info@ultima-rat.io"
-                  className="flex items-center p-1.5 md:p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-all group"
+                  className="flex items-center p-1.5 md:p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors"
                 >
-                  <Mail className="w-3 h-3 md:w-6 md:h-6 text-purple-600 mr-1.5 md:mr-4" />
+                  <Mail className="w-3 h-3 md:w-6 md:h-6 text-[#0395A6] mr-1.5 md:mr-4" />
                   <div>
                     <p className="font-semibold text-black text-xs md:text-base">{t(locale, 'contact_quick_email')}</p>
                     <p className="text-gray-600 text-xs md:text-sm">{t(locale, 'contact_quick_email_sub')}</p>
@@ -363,7 +363,7 @@ export default function KontaktPage() {
             rel="noopener noreferrer"
             className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
           >
-            <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+            <MessageCircle className="w-6 h-6 mr-3 inline-block" />
             {t(locale, 'contact_cta_button')}
           </a>
         </div>

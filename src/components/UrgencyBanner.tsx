@@ -132,7 +132,7 @@ export default function UrgencyBanner() {
                 href="http://wa.me/491639347633"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white text-[#0395A6] hover:bg-gray-50 px-12 py-6 rounded-lg text-xl font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center space-x-3"
+                className="bg-white text-[#0395A6] hover:bg-gray-50 px-12 py-6 rounded-lg text-xl font-bold transition-colors duration-200 shadow-lg inline-flex items-center space-x-3"
               >
                 <Zap className="w-6 h-6" />
                 <span>{t(locale, 'home_urgency_cta')}</span>

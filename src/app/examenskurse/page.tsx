@@ -101,7 +101,7 @@ export default async function ExamenskursePage() {
                 rel="noopener noreferrer"
                 className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
               >
-                <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                <MessageCircle className="w-6 h-6 mr-3 inline-block" />
                 {t(locale, 'home_cta_primary')}
               </a>
               <a
@@ -291,7 +291,7 @@ export default async function ExamenskursePage() {
                   rel="noopener noreferrer"
                   className="modern-button px-12 py-5 rounded-lg button-text modern-focus group price-button-mobile"
                 >
-                  <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                  <MessageCircle className="w-6 h-6 mr-3 inline-block" />
                   {t(locale, 'ek_price_cta_book_now')}
                   <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
                 </a>
@@ -336,7 +336,7 @@ export default async function ExamenskursePage() {
               rel="noopener noreferrer"
               className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all focus-ring inline-block group"
             >
-              <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+              <MessageCircle className="w-6 h-6 mr-3 inline-block" />
               {t(locale, 'cta_intro_call')}
               <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
             </a>

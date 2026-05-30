@@ -242,7 +242,7 @@ export default async function TeamPage() {
             rel="noopener noreferrer"
             className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
           >
-            <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+            <MessageCircle className="w-6 h-6 mr-3 inline-block" />
             {t(locale, 'contact_cta_button')}
             <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
           </a>

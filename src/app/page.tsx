@@ -100,7 +100,7 @@ export default async function HomePage() {
                 rel="noopener noreferrer"
                 className="modern-button px-12 py-6 rounded-lg text-lg font-semibold modern-focus group price-button-mobile"
               >
-                <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                <MessageCircle className="w-6 h-6 mr-3 inline-block" />
                 {t(locale, 'home_book_now')}
                 <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </a>
@@ -121,7 +121,7 @@ export default async function HomePage() {
                 rel="noopener noreferrer"
                 className="modern-button px-12 py-6 rounded-lg text-lg font-semibold modern-focus group"
               >
-                <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                <MessageCircle className="w-6 h-6 mr-3 inline-block" />
                 {t(locale, 'home_book_now')}
                 <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </a>
@@ -156,14 +156,14 @@ export default async function HomePage() {
                 href="http://wa.me/491639347633"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-16 py-8 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center justify-center space-x-4"
+                className="bg-[#0395A6] hover:bg-[#027686] text-white px-16 py-8 rounded-lg text-lg font-bold transition-colors duration-200 shadow-lg inline-flex items-center justify-center space-x-4"
               >
                 <MessageCircle className="w-8 h-8" />
                 <span>{t(locale, 'home_cta_primary')}</span>
               </a>
               <Link
                 href="/coaching"
-                className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-2 border-white/50 hover:border-white px-16 py-8 rounded-lg text-lg font-bold transition-all duration-300 inline-flex items-center justify-center space-x-4"
+                className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-2 border-white/50 hover:border-white px-16 py-8 rounded-lg text-lg font-bold transition-colors duration-200 inline-flex items-center justify-center space-x-4"
               >
                 <BookOpen className="w-8 h-8" />
                 <span>{t(locale, 'home_cta_secondary')}</span>

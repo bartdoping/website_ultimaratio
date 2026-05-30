@@ -175,7 +175,7 @@ export default async function MedicalSkillsPage() {
                 rel="noopener noreferrer"
                 className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
               >
-                <Users className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                <Users className="w-6 h-6 mr-3 inline-block" />
                 {t(locale, 'home_cta_primary')}
               </a>
               <a
@@ -355,7 +355,7 @@ export default async function MedicalSkillsPage() {
                 rel="noopener noreferrer"
                 className="modern-button px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
               >
-                <BookMarked className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                <BookMarked className="w-6 h-6 mr-3 inline-block" />
                 {t(locale, 'ms_bb_cta')}
               </a>
             </div>
@@ -393,7 +393,7 @@ export default async function MedicalSkillsPage() {
                   rel="noopener noreferrer"
                   className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
                 >
-                  <Users className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+                  <Users className="w-6 h-6 mr-3 inline-block" />
                   {t(locale, 'ms_cta_start')}
                 </a>
                 <Link

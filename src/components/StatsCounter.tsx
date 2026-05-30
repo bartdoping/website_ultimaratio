@@ -82,37 +82,25 @@ export default function StatsCounter() {
       icon: <Award className="w-8 h-8" />,
       number: `${counts.success}%`,
       label: t(locale, 'stats_label_success'),
-      description: t(locale, 'stats_desc_success'),
-      color: "from-green-500 to-emerald-600",
-      bgColor: "bg-green-50",
-      textColor: "text-green-800"
+      description: t(locale, 'stats_desc_success')
     },
     {
       icon: <Users className="w-8 h-8" />,
       number: `${counts.students}+`,
       label: t(locale, 'stats_label_students'),
-      description: t(locale, 'stats_desc_students'),
-      color: "from-blue-500 to-cyan-600",
-      bgColor: "bg-blue-50",
-      textColor: "text-blue-800"
+      description: t(locale, 'stats_desc_students')
     },
     {
       icon: <Target className="w-8 h-8" />,
       number: `${counts.years}+`,
       label: t(locale, 'stats_label_years'),
-      description: t(locale, 'stats_desc_years'),
-      color: "from-purple-500 to-violet-600",
-      bgColor: "bg-purple-50",
-      textColor: "text-purple-800"
+      description: t(locale, 'stats_desc_years')
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
       number: `+${counts.improvement}`,
       label: t(locale, 'stats_label_improvement'),
-      description: t(locale, 'stats_desc_improvement'),
-      color: "from-orange-500 to-red-600",
-      bgColor: "bg-orange-50",
-      textColor: "text-orange-800"
+      description: t(locale, 'stats_desc_improvement')
     }
   ]
 
@@ -158,7 +146,7 @@ export default function StatsCounter() {
             href="http://wa.me/491639347633"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-16 py-8 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center space-x-4"
+            className="bg-[#0395A6] hover:bg-[#027686] text-white px-16 py-8 rounded-lg text-lg font-bold transition-colors duration-200 shadow-lg inline-flex items-center space-x-4"
           >
             <Users className="w-8 h-8" />
             <span>{t(locale, 'stats_cta_join')}</span>

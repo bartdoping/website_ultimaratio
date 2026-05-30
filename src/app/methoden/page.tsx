@@ -215,14 +215,14 @@ export default async function MethodenPage() {
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">02</div>
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">03</div>
               <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'method_process_step3_title')}</h3>
               <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'method_process_step3_text')}</p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
-                03
+                04
               </div>
               <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'method_process_step4_title')}</h3>
               <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'method_process_step4_text')}</p>
@@ -230,14 +230,14 @@ export default async function MethodenPage() {
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
               <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">
-                04
+                05
               </div>
               <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'method_process_step5_title')}</h3>
               <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'method_process_step5_text')}</p>
             </div>
 
             <div className="modern-card p-8 text-center modern-animate-fade-in-up">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">04</div>
+              <div className="w-20 h-20 bg-gradient-to-br from-[#0395A6] to-[#028A9A] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-lg font-bold">06</div>
               <h3 className="text-lg font-bold text-black mb-4 modern-heading">{t(locale, 'method_process_step6_title')}</h3>
               <p className="text-gray-600 leading-relaxed modern-text">{t(locale, 'method_process_step6_text')}</p>
             </div>
@@ -266,7 +266,7 @@ export default async function MethodenPage() {
             rel="noopener noreferrer"
             className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"
           >
-            <MessageCircle className="w-6 h-6 mr-3 inline-block group-hover:animate-pulse" />
+            <MessageCircle className="w-6 h-6 mr-3 inline-block" />
             {t(locale, 'home_cta_primary')}
             <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
           </a>

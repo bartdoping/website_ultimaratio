@@ -95,7 +95,7 @@ export default function SolutionVisual() {
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-black mb-2">{solution.title}</h3>
-                      <div className="bg-green-100 text-green-800 px-3 py-1 rounded-lg text-sm font-semibold">
+                      <div className="bg-[#E6F4F6] text-[#027686] px-3 py-1 rounded-lg text-sm font-semibold">
                         {t(locale, 'home_scientifically_proven')}
                       </div>
                     </div>
@@ -106,15 +106,15 @@ export default function SolutionVisual() {
                   </p>
 
                   {/* Benefits */}
-                  <div className="bg-green-50 rounded-lg p-4 mb-6">
-                    <div className="flex items-center space-x-2 text-green-800 mb-3">
+                  <div className="bg-[#E6F4F6] rounded-lg p-4 mb-6">
+                    <div className="flex items-center space-x-2 text-[#027686] mb-3">
                       <CheckCircle className="w-5 h-5" />
                       <span className="font-semibold">{t(locale, 'home_benefits_title')}</span>
                     </div>
                     <ul className="space-y-2">
                       {solution.benefits.map((benefit, benefitIndex) => (
-                        <li key={benefitIndex} className="flex items-center space-x-2 text-green-700">
-                          <CheckCircle className="w-4 h-4 text-green-600" />
+                        <li key={benefitIndex} className="flex items-center space-x-2 text-slate-700">
+                          <CheckCircle className="w-4 h-4 text-[#0395A6]" />
                           <span>{benefit}</span>
                         </li>
                       ))}
@@ -187,7 +187,7 @@ export default function SolutionVisual() {
                 href="http://wa.me/491639347633"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#0395A6] hover:bg-[#028A9A] text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-xl inline-flex items-center space-x-2"
+                className="bg-[#0395A6] hover:bg-[#027686] text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors duration-200 shadow-lg inline-flex items-center space-x-2"
               >
                 <Zap className="w-5 h-5" />
                 <span>{t(locale, 'home_hero_cta_primary')}</span>
