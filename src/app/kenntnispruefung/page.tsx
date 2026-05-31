@@ -1,12 +1,38 @@
 import { CheckCircle, Users, Target, BookOpen, Clock, Zap, MessageCircle, Award, ArrowRight, Brain, FileText, Calendar } from 'lucide-react'
+import type { Metadata } from 'next'
 import { cookies } from 'next/headers'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { t } from '@/i18n/dictionaries'
+import { buildMetadata } from '@/i18n/seo'
+import JsonLd from '@/components/JsonLd'
+import { faqJsonLd } from '@/i18n/structured-data'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies()
+  const locale = normalizeLocale(cookieStore.get('lang')?.value)
+  return {
+    ...buildMetadata('kenntnispruefung', locale),
+    keywords: 'Kenntnisprüfung Vorbereitung, Kenntnisprüfung Ärzte, Kenntnisprüfung ausländische Ärzte, Kenntnisprüfung Medizin, Approbation Deutschland Arzt',
+  }
+}
+
+const KP_FAQ = [
+  { q: 'kp_faq_q1', a: 'kp_faq_a1' },
+  { q: 'kp_faq_q2', a: 'kp_faq_a2' },
+  { q: 'kp_faq_q3', a: 'kp_faq_a3' },
+  { q: 'kp_faq_q4', a: 'kp_faq_a4' },
+  { q: 'kp_faq_q5', a: 'kp_faq_a5' },
+  { q: 'kp_faq_q6', a: 'kp_faq_a6' },
+  { q: 'kp_faq_q7', a: 'kp_faq_a7' },
+  { q: 'kp_faq_q8', a: 'kp_faq_a8' },
+]
 
 export default async function KenntnispruefungPage() {
   const cookieStore = await cookies()
   const locale: Locale = normalizeLocale(cookieStore.get('lang')?.value)
   return (
+    <>
+      <JsonLd data={faqJsonLd(locale, KP_FAQ)} />
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="modern-hero modern-section">
@@ -559,5 +585,6 @@ export default async function KenntnispruefungPage() {
         </div>
       </section>
     </div>
+    </>
   )
 }

@@ -30,7 +30,7 @@ export default function HeroWithImage() {
           <div className="modern-animate-fade-in-up">
             <span className="kicker mb-6">
               <ShieldCheck className="w-4 h-4" />
-              {t(locale, 'home_scientifically_proven')}
+              {t(locale, 'home_hero_kicker')}
             </span>
 
             <h1 className="mt-5 text-[2.6rem] sm:text-6xl lg:text-[4.25rem] leading-[1.04] tracking-tight text-[var(--ink)]">

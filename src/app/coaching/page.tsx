@@ -1,7 +1,18 @@
 import { CheckCircle, Users, Target, BookOpen, Clock, Zap, MessageCircle, Award, ArrowRight, Brain, Shield } from 'lucide-react'
+import type { Metadata } from 'next'
 import { cookies } from 'next/headers'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { t } from '@/i18n/dictionaries'
+import { buildMetadata } from '@/i18n/seo'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies()
+  const locale = normalizeLocale(cookieStore.get('lang')?.value)
+  return {
+    ...buildMetadata('coaching', locale),
+    keywords: 'Medizin Coaching, 1 zu 1 Nachhilfe Medizin, private Nachhilfe Medizin, Medizinstudium Coaching, Online Nachhilfe Medizin, Prüfungsvorbereitung',
+  }
+}
 
 export default async function CoachingPage() {
   const cookieStore = await cookies()

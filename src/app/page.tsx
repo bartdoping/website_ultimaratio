@@ -1,7 +1,9 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { cookies } from 'next/headers'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { t } from '@/i18n/dictionaries'
+import { buildMetadata } from '@/i18n/seo'
 import {
   ArrowRight, MessageCircle, CheckCircle, Stethoscope, Smile, Globe,
   Brain, Users, Award, BookOpen,
@@ -10,8 +12,23 @@ import FAQ from '../components/FAQ'
 import Testimonials from '../components/Testimonials'
 import HeroWithImage from '../components/HeroWithImage'
 import StickyWhatsAppCTA from '../components/StickyWhatsAppCTA'
+import JsonLd from '../components/JsonLd'
+import { faqJsonLd } from '@/i18n/structured-data'
 
 const WHATSAPP = 'http://wa.me/491639347633'
+
+// Mirrors the 11 visible Q&A pairs rendered by <FAQ /> below — kept in sync so
+// the FAQPage schema only describes content that is actually visible on the page.
+const HOME_FAQ = Array.from({ length: 11 }, (_, i) => ({
+  q: `home_faq_q${i + 1}`,
+  a: `home_faq_a${i + 1}`,
+}))
+
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies()
+  const locale = normalizeLocale(cookieStore.get('lang')?.value)
+  return buildMetadata('home', locale)
+}
 
 export default async function HomePage() {
   const cookieStore = await cookies()
@@ -69,6 +86,7 @@ export default async function HomePage() {
 
   return (
     <div className="min-h-screen">
+      <JsonLd data={faqJsonLd(locale, HOME_FAQ)} />
       <HeroWithImage />
 
       {/* ============ Angebote / Zielgruppen ============ */}
@@ -106,6 +124,26 @@ export default async function HomePage() {
                 </Link>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ SEO-Band: Themen & interne Verlinkung ============ */}
+      <section className="modern-section bg-white pt-0">
+        <div className="modern-container">
+          <div className="card-soft p-8 sm:p-10 lg:p-12">
+            <span className="kicker">{t(locale, 'seo_band_kicker')}</span>
+            <h2 className="section-title mt-4 max-w-3xl">{t(locale, 'seo_band_title')}</h2>
+            <p className="section-lead mt-4 max-w-2xl">{t(locale, 'seo_band_lead')}</p>
+            <div className="flex flex-wrap gap-2.5 mt-7">
+              <Link href="/vorklinik" className="pill hover:bg-[var(--brand-tint-strong)] transition-colors">{t(locale, 'seo_band_link_physikum')}</Link>
+              <Link href="/vorklinik" className="pill hover:bg-[var(--brand-tint-strong)] transition-colors">{t(locale, 'seo_band_link_abp')}</Link>
+              <Link href="/klinik" className="pill hover:bg-[var(--brand-tint-strong)] transition-colors">{t(locale, 'seo_band_link_m2')}</Link>
+              <Link href="/klinik" className="pill hover:bg-[var(--brand-tint-strong)] transition-colors">{t(locale, 'seo_band_link_m3')}</Link>
+              <Link href="/examenskurse" className="pill hover:bg-[var(--brand-tint-strong)] transition-colors">{t(locale, 'seo_band_link_exam')}</Link>
+              <Link href="/kenntnispruefung" className="pill hover:bg-[var(--brand-tint-strong)] transition-colors">{t(locale, 'seo_band_link_kp')}</Link>
+              <Link href="/fachsprachpruefung" className="pill hover:bg-[var(--brand-tint-strong)] transition-colors">{t(locale, 'seo_band_link_fsp')}</Link>
+            </div>
           </div>
         </div>
       </section>

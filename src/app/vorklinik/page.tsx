@@ -18,11 +18,15 @@ import Testimonials from '@/components/Testimonials'
 import { cookies } from 'next/headers'
 import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
+import { buildMetadata } from '@/i18n/seo'
 
-export const metadata: Metadata = {
-  title: 'Vorklinik Coaching - Physikum erfolgreich bestehen | ultima-rat.io',
-  description: 'Strukturierte Vorbereitung auf das Physikum mit bewährten Lernmethoden. Anatomie, Biochemie, Physiologie & Co. - Dein Weg zum 1. Staatsexamen.',
-  keywords: 'Physikum, Vorklinik, Medizinstudium, Anatomie, Biochemie, Physiologie, 1. Staatsexamen, Lernstrategien',
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies()
+  const locale = normalizeLocale(cookieStore.get('lang')?.value)
+  return {
+    ...buildMetadata('vorklinik', locale),
+    keywords: 'Physikum Nachhilfe, Vorklinik Nachhilfe, Anatomie Nachhilfe, Biochemie Nachhilfe, Physiologie Nachhilfe, Physikum Vorbereitung, Medizin Nachhilfe online',
+  }
 }
 
 export default async function VorklinikPage() {

@@ -20,13 +20,16 @@ import Testimonials from '@/components/Testimonials'
 import { cookies } from 'next/headers'
 import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
+import { buildMetadata } from '@/i18n/seo'
 
-export const metadata: Metadata = {
-  title: 'Examensvorbereitung – alle Staatsexamina | ultima-rat.io',
-  description:
-    'Individuelle Prüfungsvorbereitung für sämtliche Staatsexamina des Human- und Zahnmedizinstudiums mit 1:1 Betreuung durch approbierte Ärzte.',
-  keywords:
-    'Examensvorbereitung, Staatsexamen, M1, M2, M3, Z1, Z2, Z3, Prüfungsvorbereitung, IMPP, mündliches Examen, schriftliches Examen',
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies()
+  const locale = normalizeLocale(cookieStore.get('lang')?.value)
+  return {
+    ...buildMetadata('examenskurse', locale),
+    keywords:
+      'Examensvorbereitung Medizin, Physikum Vorbereitung, M2 Prüfungsvorbereitung, M3 Vorbereitung, Hammerexamen, IMPP, mündliches Examen, Kreuzen',
+  }
 }
 
 export default async function ExamenskursePage() {

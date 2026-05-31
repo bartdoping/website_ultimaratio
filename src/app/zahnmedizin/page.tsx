@@ -21,11 +21,15 @@ import Testimonials from '@/components/Testimonials'
 import { cookies } from 'next/headers'
 import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
+import { buildMetadata } from '@/i18n/seo'
 
-export const metadata: Metadata = {
-  title: 'Zahnmedizin Coaching - Z1, Z2, Z3 erfolgreich bestehen | ultima-rat.io',
-  description: 'Individuelles Coaching für Zahnmedizinstudierende. Vorbereitung auf Z1, Z2 und Z3 Staatsexamen mit bewährten Lernmethoden.',
-  keywords: 'Zahnmedizin, Z1, Z2, Z3, Staatsexamen, Zahnmedizinstudium, Prüfungsvorbereitung, Coaching',
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies()
+  const locale = normalizeLocale(cookieStore.get('lang')?.value)
+  return {
+    ...buildMetadata('zahnmedizin', locale),
+    keywords: 'Zahnmedizin Nachhilfe, Z1, Z2, Z3, Staatsexamen, Zahnmedizinstudium, Prüfungsvorbereitung, Coaching',
+  }
 }
 
 export default async function ZahnmedizinPage() {

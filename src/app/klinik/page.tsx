@@ -22,11 +22,15 @@ import Testimonials from '@/components/Testimonials'
 import { cookies } from 'next/headers'
 import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
+import { buildMetadata } from '@/i18n/seo'
 
-export const metadata: Metadata = {
-  title: 'Klinik Coaching - M2 & M3 erfolgreich bestehen | ultima-rat.io',
-  description: 'Klinisches Denken entwickeln für M2 und M3. Innere Medizin, Chirurgie, Neurologie & Co. - Dein Weg zum 2. und 3. Staatsexamen.',
-  keywords: 'M2, M3, Klinik, Medizinstudium, Innere Medizin, Chirurgie, Neurologie, Hammerexamen, OSCE, klinisches Denken',
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies()
+  const locale = normalizeLocale(cookieStore.get('lang')?.value)
+  return {
+    ...buildMetadata('klinik', locale),
+    keywords: 'M2 Medizin Nachhilfe, M3 Nachhilfe, Hammerexamen Vorbereitung, mündliche Prüfung Medizin, Fallvorstellung Medizin, klinisches Denken, Medizin Nachhilfe online',
+  }
 }
 
 export default async function KlinikPage() {

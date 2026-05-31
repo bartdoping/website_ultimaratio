@@ -21,11 +21,15 @@ import Testimonials from '@/components/Testimonials'
 import { cookies } from 'next/headers'
 import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
+import { buildMetadata } from '@/i18n/seo'
 
-export const metadata: Metadata = {
-  title: 'Medical Skills Training - EKG, Röntgen, Labor & Co. | ultima-rat.io',
-  description: 'Klinische Fertigkeiten für OSCE, M2 & M3. EKG-Interpretation, Röntgen-Thorax, Laborwerte, BGA und Untersuchungstechniken.',
-  keywords: 'Medical Skills, EKG, Röntgen, Laborwerte, BGA, OSCE, M2, M3, klinische Fertigkeiten, Untersuchungstechniken',
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies()
+  const locale = normalizeLocale(cookieStore.get('lang')?.value)
+  return {
+    ...buildMetadata('medicalskills', locale),
+    keywords: 'Medical Skills, EKG Nachhilfe, Röntgen Thorax, Laborwerte, BGA, OSCE, M2, M3, klinische Fertigkeiten, Untersuchungstechniken',
+  }
 }
 
 export default async function MedicalSkillsPage() {

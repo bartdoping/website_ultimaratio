@@ -1,8 +1,16 @@
 import { CheckCircle, Target, Brain, Clock, Award, Shield, ArrowRight, MessageCircle } from 'lucide-react'
+import type { Metadata } from 'next'
 import { cookies } from 'next/headers'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { t } from '@/i18n/dictionaries'
+import { buildMetadata } from '@/i18n/seo'
 import Testimonials from '../../components/Testimonials'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies()
+  const locale = normalizeLocale(cookieStore.get('lang')?.value)
+  return buildMetadata('methoden', locale)
+}
 
 export default async function MethodenPage() {
   const cookieStore = await cookies()

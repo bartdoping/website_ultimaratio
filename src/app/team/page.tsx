@@ -1,8 +1,16 @@
 import Image from 'next/image'
 import { Award, GraduationCap, Heart, Users, Star, MessageCircle, ArrowRight } from 'lucide-react'
+import type { Metadata } from 'next'
 import { cookies } from 'next/headers'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { t } from '@/i18n/dictionaries'
+import { buildMetadata } from '@/i18n/seo'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies()
+  const locale = normalizeLocale(cookieStore.get('lang')?.value)
+  return buildMetadata('team', locale)
+}
 
 export default async function TeamPage() {
   const cookieStore = await cookies()
