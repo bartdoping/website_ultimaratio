@@ -2,196 +2,314 @@ import Link from 'next/link'
 import { cookies } from 'next/headers'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { t } from '@/i18n/dictionaries'
-import { CheckCircle, Users, Target, BookOpen, Brain, Award, ArrowRight, MessageCircle } from 'lucide-react'
+import {
+  ArrowRight, MessageCircle, CheckCircle, Stethoscope, Smile, Globe,
+  Brain, Users, Award, BookOpen,
+} from 'lucide-react'
 import FAQ from '../components/FAQ'
 import Testimonials from '../components/Testimonials'
 import HeroWithImage from '../components/HeroWithImage'
-import ProblemVisual from '../components/ProblemVisual'
-import SolutionVisual from '../components/SolutionVisual'
-import StatsCounter from '../components/StatsCounter'
-import UrgencyBanner from '../components/UrgencyBanner'
 import StickyWhatsAppCTA from '../components/StickyWhatsAppCTA'
+
+const WHATSAPP = 'http://wa.me/491639347633'
 
 export default async function HomePage() {
   const cookieStore = await cookies()
   const locale: Locale = normalizeLocale(cookieStore.get('lang')?.value)
+
+  const offers = [
+    {
+      icon: <Stethoscope className="w-7 h-7" />,
+      title: t(locale, 'hp2_offer_med_title'),
+      desc: t(locale, 'hp2_offer_med_desc'),
+      href: '/coaching',
+      chips: [
+        { label: t(locale, 'nav_vorklinik'), href: '/vorklinik' },
+        { label: t(locale, 'nav_klinik'), href: '/klinik' },
+        { label: t(locale, 'nav_medical_skills'), href: '/medicalskills' },
+        { label: t(locale, 'nav_examenskurse'), href: '/examenskurse' },
+      ],
+    },
+    {
+      icon: <Smile className="w-7 h-7" />,
+      title: t(locale, 'hp2_offer_dent_title'),
+      desc: t(locale, 'hp2_offer_dent_desc'),
+      href: '/zahnmedizin',
+      chips: [{ label: t(locale, 'nav_zahnmedizin'), href: '/zahnmedizin' }],
+    },
+    {
+      icon: <Globe className="w-7 h-7" />,
+      title: t(locale, 'hp2_offer_doc_title'),
+      desc: t(locale, 'hp2_offer_doc_desc'),
+      href: '/kenntnispruefung',
+      chips: [
+        { label: t(locale, 'nav_knowledge_exam'), href: '/kenntnispruefung' },
+        { label: t(locale, 'nav_fachsprachpruefung'), href: '/fachsprachpruefung' },
+      ],
+    },
+  ]
+
+  const steps = [
+    { n: '01', title: t(locale, 'home_process_step1_title'), text: t(locale, 'home_process_step1_text') },
+    { n: '02', title: t(locale, 'home_process_step2_title'), text: t(locale, 'home_process_step2_text') },
+    { n: '03', title: t(locale, 'home_process_step3_title'), text: t(locale, 'home_process_step3_text') },
+  ]
+
+  const reasons = [
+    { icon: <Brain className="w-6 h-6" />, title: t(locale, 'home_sol1_title'), desc: t(locale, 'home_sol1_desc') },
+    { icon: <Users className="w-6 h-6" />, title: t(locale, 'home_sol2_title'), desc: t(locale, 'home_sol2_desc') },
+    { icon: <Award className="w-6 h-6" />, title: t(locale, 'home_sol3_title'), desc: t(locale, 'home_sol3_desc') },
+  ]
+
+  const stats = [
+    { value: '94%', label: t(locale, 'home_trust_97_label'), desc: t(locale, 'home_trust_97_desc') },
+    { value: '100+', label: t(locale, 'home_trust_500_label'), desc: t(locale, 'home_trust_500_desc') },
+    { value: '6+', label: t(locale, 'home_trust_6_label'), desc: t(locale, 'home_trust_6_desc') },
+  ]
+
   return (
     <div className="min-h-screen">
-      {/* New Hero with Image */}
       <HeroWithImage />
 
-      {/* New Problem Section with Visuals */}
-      <ProblemVisual />
-
-      {/* New Solution Section with Visuals */}
-      <SolutionVisual />
-
-      {/* Stats Counter Section */}
-      <StatsCounter />
-
-      {/* Der ultima-rat.io Ansatz */}
+      {/* ============ Angebote / Zielgruppen ============ */}
       <section className="modern-section bg-white">
         <div className="modern-container">
-          <div className="text-center modern-spacing">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-12 modern-heading modern-animate-fade-in-up">
-              {t(locale, 'home_ansatz_title')}
-            </h2>
-            <p className="text-lg text-gray-600 max-w-5xl mx-auto modern-text modern-animate-fade-in-up">
-              {t(locale, 'home_ansatz_sub')}
-            </p>
+          <div className="section-head center modern-spacing text-center">
+            <span className="kicker">{t(locale, 'hp2_offer_kicker')}</span>
+            <h2 className="section-title mt-4">{t(locale, 'hp2_offer_title')}</h2>
+            <p className="section-lead mt-4 mx-auto">{t(locale, 'hp2_offer_sub')}</p>
           </div>
 
-          <div className="modern-grid modern-grid-2 gap-12">
-            <div className="modern-card p-12 modern-animate-fade-in-up text-center">
-              <div className="mb-8 flex justify-center">
-                <Brain className="w-16 h-16 text-[#0395A6]" />
+          <div className="modern-grid modern-grid-3">
+            {offers.map((o, i) => (
+              <div key={i} className="modern-card card-feature p-8 flex flex-col">
+                <div className="icon-chip icon-chip-lg mb-6">{o.icon}</div>
+                <h3 className="text-xl mb-3">{o.title}</h3>
+                <p className="modern-text mb-6">{o.desc}</p>
+                <div className="flex flex-wrap gap-2 mb-7 mt-auto">
+                  {o.chips.map((c, j) => (
+                    <Link
+                      key={j}
+                      href={c.href}
+                      className="pill hover:bg-[var(--brand-tint-strong)] transition-colors"
+                    >
+                      {c.label}
+                    </Link>
+                  ))}
+                </div>
+                <Link
+                  href={o.href}
+                  className="inline-flex items-center gap-1.5 font-semibold text-[var(--brand-dark)] group"
+                >
+                  {t(locale, 'hp2_learn_more')}
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+                </Link>
               </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'home_approach_science_title')}</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text break-words mobile-readable-text">
-                {t(locale, 'home_approach_science_text')}
-              </p>
-            </div>
-
-            <div className="modern-card p-12 modern-animate-fade-in-up text-center">
-              <div className="mb-8 flex justify-center">
-                <Target className="w-16 h-16 text-[#0395A6]" />
-              </div>
-              <h3 className="text-xl font-bold text-black mb-6 modern-heading">{t(locale, 'home_approach_structured_title')}</h3>
-              <p className="text-lg text-gray-600 leading-relaxed modern-text break-words mobile-readable-text">
-                {t(locale, 'home_approach_structured_text')}
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Erfolgsgeschichten */}
-      <section className="modern-section bg-[#F8FAFC] pb-8 md:pb-16">
+      {/* ============ Prozess ============ */}
+      <section className="modern-section bg-[var(--surface)]">
         <div className="modern-container">
+          <div className="section-head center modern-spacing text-center">
+            <span className="kicker">{t(locale, 'hp2_process_kicker')}</span>
+            <h2 className="section-title mt-4">{t(locale, 'home_process_title')}</h2>
+          </div>
+
+          <div className="modern-grid modern-grid-3">
+            {steps.map((s, i) => (
+              <div key={i} className="relative">
+                <div
+                  className="text-6xl font-semibold leading-none mb-5 text-[var(--brand)]/90"
+                  style={{ fontFamily: 'var(--font-display)' }}
+                >
+                  {s.n}
+                </div>
+                <h3 className="text-xl mb-3">{s.title}</h3>
+                <p className="modern-text">{s.text}</p>
+                {i < steps.length - 1 && (
+                  <div className="hidden lg:block absolute top-7 right-0 translate-x-1/2 text-[var(--border-strong)]">
+                    <ArrowRight className="w-6 h-6" />
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ Warum ultima-rat.io (konsolidiert) ============ */}
+      <section className="modern-section bg-white">
+        <div className="modern-container">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            <div className="lg:sticky lg:top-28">
+              <span className="kicker">{t(locale, 'hp2_why_kicker')}</span>
+              <h2 className="section-title mt-4">{t(locale, 'home_solution_title')}</h2>
+              <p className="section-lead mt-5">{t(locale, 'home_solution_sub')}</p>
+              <a
+                href={WHATSAPP}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="modern-button px-7 py-4 text-base mt-8 group"
+              >
+                <MessageCircle className="w-5 h-5" />
+                <span>{t(locale, 'home_cta_primary')}</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
+              </a>
+            </div>
+
+            <div className="space-y-4">
+              {reasons.map((r, i) => (
+                <div key={i} className="modern-card p-6 flex gap-5 items-start">
+                  <div className="icon-chip flex-shrink-0">{r.icon}</div>
+                  <div>
+                    <h3 className="text-lg mb-1.5">{r.title}</h3>
+                    <p className="modern-text text-[0.97rem]">{r.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Stat band */}
+          <div className="card-soft mt-12 lg:mt-16 p-8 sm:p-10 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+            {stats.map((s, i) => (
+              <div key={i}>
+                <div
+                  className="text-4xl sm:text-5xl font-semibold text-[var(--brand)] leading-none"
+                  style={{ fontFamily: 'var(--font-display)' }}
+                >
+                  {s.value}
+                </div>
+                <div className="mt-3 font-bold text-[var(--ink)]">{s.label}</div>
+                <div className="mt-1 text-sm text-[var(--muted)]">{s.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ Testimonials ============ */}
+      <section className="modern-section bg-[var(--surface)] pb-8 md:pb-16">
+        <div className="modern-container">
+          <div className="text-center mb-2">
+            <span className="kicker">{t(locale, 'hp2_testi_kicker')}</span>
+          </div>
           <Testimonials />
         </div>
       </section>
 
-      {/* Transparente Preise */}
+      {/* ============ Preise ============ */}
       <section className="modern-section bg-white">
         <div className="modern-container">
-          <div className="text-center modern-spacing">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-12 modern-heading modern-animate-fade-in-up">
-              {t(locale, 'home_prices_title')}
-            </h2>
-            <p className="text-lg text-gray-600 max-w-5xl mx-auto modern-text modern-animate-fade-in-up">
-              {t(locale, 'home_prices_sub')}
-            </p>
+          <div className="section-head center modern-spacing text-center">
+            <span className="kicker">{t(locale, 'hp2_prices_kicker')}</span>
+            <h2 className="section-title mt-4">{t(locale, 'home_prices_title')}</h2>
+            <p className="section-lead mt-4 mx-auto">{t(locale, 'home_prices_sub')}</p>
           </div>
 
-          <div className="modern-grid modern-grid-2 gap-12">
-            <div className="modern-card p-16 text-center modern-animate-fade-in-up price-card-mobile-extend">
-              <div className="mb-10">
-                <Award className="w-20 h-20 text-[#0395A6] mx-auto" />
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
+            {/* Einzelcoaching */}
+            <div className="modern-card card-feature p-8 sm:p-10 flex flex-col">
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-2xl">{t(locale, 'home_singlecoaching')}</h3>
+                <Award className="w-7 h-7 text-[var(--brand)]" />
               </div>
-              <h3 className="text-2xl font-bold text-black mb-8 modern-heading">{t(locale, 'home_singlecoaching')}</h3>
-              <div className="text-6xl font-bold text-[#0395A6] mb-8 price-mobile"><span className="text-base">ab </span>49€</div>
-              <p className="text-lg text-gray-600 mb-10 modern-text price-text-mobile">
-                {t(locale, 'home_price_single_desc')}
-              </p>
+              <div className="flex items-end gap-1 mb-5">
+                <span className="text-sm text-[var(--muted)] mb-2">ab</span>
+                <span className="price-mobile">49€</span>
+                <span className="text-sm text-[var(--muted)] mb-2">/ 60 min</span>
+              </div>
+              <p className="modern-text mb-8">{t(locale, 'home_price_single_desc')}</p>
               <a
-                href="http://wa.me/491639347633"
+                href={WHATSAPP}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="modern-button px-12 py-6 rounded-lg text-lg font-semibold modern-focus group price-button-mobile"
+                className="modern-button px-7 py-4 text-base mt-auto"
               >
-                <MessageCircle className="w-6 h-6 mr-3 inline-block" />
+                <MessageCircle className="w-5 h-5" />
                 {t(locale, 'home_book_now')}
-                <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
 
-            <div className="modern-card p-16 text-center modern-animate-fade-in-up">
-              <div className="mb-10">
-                <Users className="w-20 h-20 text-[#0395A6] mx-auto" />
+            {/* Gruppencoaching */}
+            <div className="modern-card card-feature p-8 sm:p-10 flex flex-col">
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-2xl">{t(locale, 'home_groupcoaching')}</h3>
+                <Users className="w-7 h-7 text-[var(--brand)]" />
               </div>
-              <h3 className="text-2xl font-bold text-black mb-8 modern-heading">{t(locale, 'home_groupcoaching')}</h3>
-              <div className="text-6xl font-bold text-[#0395A6] mb-8 price-mobile"><span className="text-base">ab </span>35€</div>
-              <p className="text-lg text-gray-600 mb-10 modern-text">
-                {t(locale, 'home_price_group_desc')}
-              </p>
+              <div className="flex items-end gap-1 mb-5">
+                <span className="text-sm text-[var(--muted)] mb-2">ab</span>
+                <span className="price-mobile">35€</span>
+                <span className="text-sm text-[var(--muted)] mb-2">/ 60 min</span>
+              </div>
+              <p className="modern-text mb-8">{t(locale, 'home_price_group_desc')}</p>
               <a
-                href="http://wa.me/491639347633"
+                href={WHATSAPP}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="modern-button px-12 py-6 rounded-lg text-lg font-semibold modern-focus group"
+                className="modern-button-secondary px-7 py-4 text-base mt-auto"
               >
-                <MessageCircle className="w-6 h-6 mr-3 inline-block" />
+                <MessageCircle className="w-5 h-5" />
                 {t(locale, 'home_book_now')}
-                <ArrowRight className="w-6 h-6 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Urgency Banner */}
-      <UrgencyBanner />
-
-      {/* FAQ Section */}
-      <section className="modern-section bg-[#F8FAFC]">
+      {/* ============ FAQ ============ */}
+      <section className="modern-section bg-[var(--surface)]">
         <div className="modern-container">
+          <div className="text-center mb-2">
+            <span className="kicker">{t(locale, 'hp2_faq_kicker')}</span>
+          </div>
           <FAQ />
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="modern-section bg-[#0395A6] text-white">
-        <div className="modern-container">
-          <div className="text-center modern-animate-fade-in-up">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 modern-heading">
-              {t(locale, 'home_final_title')}
-            </h2>
-            <p className="text-lg text-white mb-16 max-w-4xl mx-auto">
-              {t(locale, 'home_final_sub')}
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-8 justify-center">
-              <a
-                href="http://wa.me/491639347633"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#0395A6] hover:bg-[#027686] text-white px-16 py-8 rounded-lg text-lg font-bold transition-colors duration-200 shadow-lg inline-flex items-center justify-center space-x-4"
-              >
-                <MessageCircle className="w-8 h-8" />
-                <span>{t(locale, 'home_cta_primary')}</span>
-              </a>
-              <Link
-                href="/coaching"
-                className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-2 border-white/50 hover:border-white px-16 py-8 rounded-lg text-lg font-bold transition-colors duration-200 inline-flex items-center justify-center space-x-4"
-              >
-                <BookOpen className="w-8 h-8" />
-                <span>{t(locale, 'home_cta_secondary')}</span>
-              </Link>
-            </div>
+      {/* ============ Final CTA ============ */}
+      <section className="modern-cta modern-section">
+        <div className="modern-container text-center">
+          <h2 className="section-title text-white">{t(locale, 'home_final_title')}</h2>
+          <p className="section-lead mt-5 mx-auto max-w-2xl" style={{ color: 'rgba(255,255,255,0.82)' }}>
+            {t(locale, 'home_final_sub')}
+          </p>
 
-            <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
-              <div className="text-center">
-                <CheckCircle className="w-12 h-12 text-white mx-auto mb-6" />
-                <h3 className="font-bold text-xl mb-4">{t(locale, 'home_final_feature1_title')}</h3>
-                <p className="text-white/80 text-base hidden md:block">{t(locale, 'home_final_feature1_desc')}</p>
+          <div className="mt-9 flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="modern-button px-8 py-4 text-base bg-white !text-[var(--ink)] hover:!bg-[var(--surface)]"
+            >
+              <MessageCircle className="w-5 h-5" />
+              <span>{t(locale, 'home_cta_primary')}</span>
+            </a>
+            <Link href="/coaching" className="button-ghost-light px-8 py-4 text-base">
+              <BookOpen className="w-5 h-5" />
+              <span>{t(locale, 'home_cta_secondary')}</span>
+            </Link>
+          </div>
+
+          <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {[1, 2, 3].map((n) => (
+              <div key={n} className={`flex items-start gap-3 text-left ${n === 3 ? 'hidden md:flex' : ''}`}>
+                <CheckCircle className="w-6 h-6 text-white/90 flex-shrink-0 mt-0.5" />
+                <div>
+                  <h3 className="font-bold text-white text-base mb-1">
+                    {t(locale, `home_final_feature${n}_title`)}
+                  </h3>
+                  <p className="text-sm text-white/70">{t(locale, `home_final_feature${n}_desc`)}</p>
+                </div>
               </div>
-              <div className="text-center">
-                <CheckCircle className="w-12 h-12 text-white mx-auto mb-6" />
-                <h3 className="font-bold text-xl mb-4">{t(locale, 'home_final_feature2_title')}</h3>
-                <p className="text-white/80 text-base hidden md:block">{t(locale, 'home_final_feature2_desc')}</p>
-              </div>
-              <div className="text-center hidden md:block">
-                <CheckCircle className="w-12 h-12 text-white mx-auto mb-6" />
-                <h3 className="font-bold text-xl mb-4">{t(locale, 'home_final_feature3_title')}</h3>
-                <p className="text-white/80 text-base">{t(locale, 'home_final_feature3_desc')}</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Sticky WhatsApp CTA */}
       <StickyWhatsAppCTA />
     </div>
   )

@@ -1,14 +1,16 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
-import { MessageCircle, Phone, Mail, MapPin, Clock, Star } from 'lucide-react'
+import { MessageCircle, Mail, MapPin, Clock, ArrowRight } from 'lucide-react'
 import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { useEffect, useState } from 'react'
 
+const WHATSAPP = 'http://wa.me/491639347633'
+
 export default function Footer() {
   const [locale, setLocale] = useState<Locale>('de')
-  
+
   useEffect(() => {
     try {
       const cookieLocale = document.cookie.split('; ').find((c) => c.startsWith('lang='))?.split('=')[1]
@@ -17,19 +19,68 @@ export default function Footer() {
       setLocale('de')
     }
   }, [])
-  
+
+  const nav = [
+    { label: t(locale, 'nav_home'), href: '/' },
+    { label: t(locale, 'nav_methods'), href: '/methoden' },
+    { label: t(locale, 'nav_coaching'), href: '/coaching' },
+    { label: t(locale, 'nav_examenskurse'), href: '/examenskurse' },
+    { label: t(locale, 'nav_team'), href: '/team' },
+    { label: t(locale, 'nav_contact'), href: '/kontakt' },
+  ]
+
+  const programs = [
+    { label: t(locale, 'nav_vorklinik'), href: '/vorklinik' },
+    { label: t(locale, 'nav_klinik'), href: '/klinik' },
+    { label: t(locale, 'nav_zahnmedizin'), href: '/zahnmedizin' },
+    { label: t(locale, 'nav_knowledge_exam'), href: '/kenntnispruefung' },
+    { label: t(locale, 'nav_fachsprachpruefung'), href: '/fachsprachpruefung' },
+  ]
+
+  const legal = [
+    { label: 'Impressum', href: '/impressum' },
+    { label: 'Datenschutz', href: '/datenschutz' },
+    { label: 'AGB', href: '/agb' },
+    { label: 'Widerruf', href: '/widerruf' },
+    { label: 'Cookie-Richtlinie', href: '/cookie-richtlinie' },
+  ]
+
   return (
-    <footer className="bg-[#0F172A] text-white">
-      {/* Spacer to create gap between content and footer */}
-      <div className="h-16"></div>
-      
-      {/* Main Footer Content */}
-      <div className="modern-container pt-8 pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          {/* Company Info */}
-          <div className="lg:col-span-2">
-            <div className="flex items-center mb-6 sm:mb-8">
-              <div className="h-12 w-12 sm:h-16 sm:w-16 rounded-2xl overflow-hidden">
+    <footer className="section-ink relative overflow-hidden mt-24">
+      {/* Top CTA band */}
+      <div className="modern-container pt-20 pb-16">
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-20 items-center border-b border-white/10 pb-16">
+          <div>
+            <span className="kicker text-white/70 mb-5">
+              {t(locale, 'cta_intro_call')}
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.08] text-white tracking-tight">
+              {t(locale, 'home_final_title')}
+            </h2>
+            <p className="mt-5 text-white/70 text-base sm:text-lg max-w-lg leading-relaxed">
+              {t(locale, 'home_final_sub')}
+            </p>
+          </div>
+          <div className="lg:justify-self-end w-full lg:w-auto">
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2.5 w-full lg:w-auto bg-white text-[var(--ink)] rounded-full px-8 py-4 text-base font-semibold hover:bg-white/90 transition-colors group"
+            >
+              <MessageCircle className="w-5 h-5" />
+              <span>{t(locale, 'home_hero_cta_primary')}</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
+            </a>
+          </div>
+        </div>
+
+        {/* Main grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10 lg:gap-12 pt-16">
+          {/* Brand + contact */}
+          <div>
+            <Link href="/" className="flex items-center gap-3 mb-6">
+              <div className="h-11 w-11 rounded-xl overflow-hidden bg-white/5 flex-shrink-0">
                 <Image
                   src="/images/logo/logo-white.png"
                   alt="ultima-rat.io Logo"
@@ -38,187 +89,106 @@ export default function Footer() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="ml-3 sm:ml-4">
-                <span className="text-lg sm:text-xl font-bold text-white block">ultima-rat.io</span>
-                <span className="text-sm sm:text-lg text-gray-300">Medizin-Nachhilfe</span>
+              <div className="leading-tight">
+                <span className="block text-white font-semibold text-base" style={{ fontFamily: 'var(--font-display)' }}>ultima-rat.io</span>
+                <span className="block text-white/50 text-xs">Medizin-Nachhilfe</span>
               </div>
-            </div>
-            
-            <p className="text-gray-300 mb-6 sm:mb-8 text-base sm:text-lg leading-relaxed modern-text max-w-md">
-              Professionelle Medizin-Nachhilfe mit approbierten Ärzt:innen. 
-              Wissenschaftlich fundierte Lernmethoden für optimale Prüfungsvorbereitung.
+            </Link>
+            <p className="text-white/60 text-sm leading-relaxed max-w-xs mb-7">
+              {t(locale, 'footer_about')}
             </p>
-
-            {/* Contact Info */}
-            <div className="space-y-3 sm:space-y-4">
-              <div className="flex items-start text-gray-300">
-                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-[#0395A6] mt-1 flex-shrink-0" />
-                <span className="text-sm sm:text-lg">Hallesche Straße 94a, 44143 Dortmund, Deutschland</span>
-              </div>
-              <div className="flex items-center text-gray-300">
-                <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-[#0395A6] flex-shrink-0" />
-                <span className="text-sm sm:text-lg">+49 163 9347633</span>
-              </div>
-              <a 
-                href="mailto:info@ultima-rat.io"
-                className="flex items-center text-gray-300 hover:text-[#0395A6] transition-colors"
-              >
-                <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-[#0395A6] flex-shrink-0" />
-                <span className="text-sm sm:text-lg">info@ultima-rat.io</span>
-              </a>
-              <div className="flex items-center text-gray-300">
-                <Clock className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-[#0395A6] flex-shrink-0" />
-                <span className="text-sm sm:text-lg">Mo-Fr: 9:00-18:00 Uhr</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-bold mb-6 text-white">Navigation</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
-                  Home
-                </Link>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start gap-3 text-white/70">
+                <MapPin className="w-4 h-4 mt-0.5 text-white/40 flex-shrink-0" />
+                <span>Hallesche Straße 94a, 44143 Dortmund</span>
               </li>
               <li>
-                <Link href="/methoden" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
-                  Unsere Methoden
-                </Link>
+                <a href="mailto:info@ultima-rat.io" className="flex items-center gap-3 text-white/70 hover:text-white transition-colors">
+                  <Mail className="w-4 h-4 text-white/40 flex-shrink-0" />
+                  <span>info@ultima-rat.io</span>
+                </a>
               </li>
-              <li>
-                <Link href="/coaching" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
-                  Coaching
-                </Link>
-              </li>
-              <li>
-                <Link href="/kenntnispruefung" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
-                  Kenntnisprüfung
-                </Link>
-              </li>
-              <li>
-                <Link href="/team" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
-                  Team
-                </Link>
-              </li>
-              <li>
-                <Link href="/kontakt" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
-                  Kontakt
-                </Link>
+              <li className="flex items-center gap-3 text-white/70">
+                <Clock className="w-4 h-4 text-white/40 flex-shrink-0" />
+                <span>Mo–Fr: 9:00–18:00 Uhr</span>
               </li>
             </ul>
           </div>
 
-          {/* Services & Legal */}
+          {/* Navigation */}
           <div>
-            <h3 className="text-lg font-bold mb-6 text-white">Services</h3>
-            <ul className="space-y-3 mb-8">
-              <li className="text-gray-300 text-lg">Einzelcoaching (<span className="text-xs">ab </span>49€/60min)</li>
-              <li className="text-gray-300 text-lg">Crashkurse (beliebig viele Stunden)</li>
-              <li className="text-gray-300 text-lg">Prüfungsvorbereitung</li>
-              <li className="text-gray-300 text-lg">Online via Zoom</li>
-            </ul>
-
-            <h3 className="text-lg font-bold mb-6 text-white">Rechtliches</h3>
+            <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/50 mb-5" style={{ fontFamily: 'var(--font-sans)' }}>
+              {t(locale, 'footer_nav')}
+            </h3>
             <ul className="space-y-3">
-              <li>
-                <Link href="/impressum" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
-                  Impressum
-                </Link>
-              </li>
-              <li>
-                <Link href="/datenschutz" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
-                  Datenschutz
-                </Link>
-              </li>
-              <li>
-                <Link href="/cookie-richtlinie" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
-                  Cookie-Richtlinie
-                </Link>
-              </li>
-              <li>
-                <Link href="/agb" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
-                  AGB
-                </Link>
-              </li>
-              <li>
-                <Link href="/widerruf" className="text-gray-300 hover:text-[#0395A6] transition-colors text-lg">
-                  Widerruf
-                </Link>
-              </li>
+              {nav.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="text-white/70 hover:text-white transition-colors text-sm">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Programs */}
+          <div>
+            <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/50 mb-5" style={{ fontFamily: 'var(--font-sans)' }}>
+              {t(locale, 'footer_programs')}
+            </h3>
+            <ul className="space-y-3">
+              {programs.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="text-white/70 hover:text-white transition-colors text-sm">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/50 mb-5" style={{ fontFamily: 'var(--font-sans)' }}>
+              {t(locale, 'footer_legal')}
+            </h3>
+            <ul className="space-y-3">
+              {legal.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="text-white/70 hover:text-white transition-colors text-sm">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <button
-                  onClick={(e) => {
-                    e.preventDefault()
+                  onClick={() => {
                     if (typeof window !== 'undefined') {
-                      const evt = new CustomEvent('open-cookie-settings')
-                      window.dispatchEvent(evt)
+                      window.dispatchEvent(new CustomEvent('open-cookie-settings'))
                     }
                   }}
-                  className="text-left text-gray-300 hover:text-[#0395A6] transition-colors text-lg"
+                  className="text-left text-white/70 hover:text-white transition-colors text-sm"
                 >
-                  Cookie-Einstellungen öffnen
+                  Cookie-Einstellungen
                 </button>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div className="border-t border-gray-700 mt-16 pt-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-xl font-bold text-[#0395A6] mb-2">94%</div>
-              <div className="text-gray-300">Erfolgsquote</div>
-            </div>
-            <div>
-              <div className="text-xl font-bold text-[#0395A6] mb-2">100+</div>
-              <div className="text-gray-300">Erfolgreiche Prüfungen</div>
-            </div>
-            <div>
-              <div className="text-xl font-bold text-[#0395A6] mb-2">6+</div>
-              <div className="text-gray-300">Jahre Erfahrung</div>
-            </div>
-          </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="border-t border-gray-700 mt-16 pt-16 pb-16 text-center">
-          <h3 className="text-lg font-bold mb-4 text-white">Bereit für deine Prüfung?</h3>
-          <p className="text-gray-300 mb-8 text-lg">
-            Starte jetzt mit deinem kostenlosen Erstgespräch
+        {/* Legal disclaimer */}
+        <div className="border-t border-white/10 mt-16 pt-8">
+          <p className="text-white/40 text-xs leading-relaxed max-w-4xl">
+            {t(locale, 'legal_disclaimer')}
           </p>
-          <a
-            href="http://wa.me/491639347633"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="modern-button px-8 py-4 rounded-lg text-lg font-semibold modern-focus inline-block"
-          >
-            <MessageCircle className="w-5 h-5 mr-3 inline-block" />
-            Kostenloses Erstgespräch
-          </a>
-        </div>
-
-        {/* Legal Disclaimer */}
-        <div className="border-t border-gray-700 pt-8 pb-8">
-          <div className="text-center">
-            <p className="text-gray-400 text-sm leading-relaxed max-w-4xl mx-auto">
-              {t(locale, 'legal_disclaimer')}
-            </p>
-          </div>
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-gray-700 bg-gray-900">
-        <div className="modern-container py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              <p className="mb-1">Copyright © 2025 ultima-rat.io. Alle Rechte vorbehalten.</p>
-              <p>ultima-rat.io - Optimale Prüfungs-Vorbereitung für dein Medizinstudium.</p>
-            </div>
-          </div>
+      {/* Bottom bar */}
+      <div className="border-t border-white/10">
+        <div className="modern-container py-6 flex flex-col sm:flex-row justify-between items-center gap-2">
+          <p className="text-white/50 text-xs">© 2025 ultima-rat.io. Alle Rechte vorbehalten.</p>
+          <p className="text-white/40 text-xs">Optimale Prüfungsvorbereitung für dein Medizinstudium.</p>
         </div>
       </div>
     </footer>

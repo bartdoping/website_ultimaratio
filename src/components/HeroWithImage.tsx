@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { MessageCircle, ArrowRight, Target } from 'lucide-react'
+import { MessageCircle, ArrowRight, ShieldCheck, Star } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { t } from '@/i18n/dictionaries'
@@ -15,92 +15,97 @@ export default function HeroWithImage() {
       setLocale(normalizeLocale(v))
     } catch {}
   }, [])
+
+  const stats = [
+    { value: '94%', label: t(locale, 'home_trust_97_label') },
+    { value: '100+', label: t(locale, 'home_trust_500_label') },
+    { value: '6+', label: t(locale, 'home_trust_6_label') },
+  ]
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden mobile-hero-section">
-      {/* Background Image with Overlay */}
-      <div className="absolute left-0 right-0 bottom-0 top-0 md:inset-0 z-0">
-        <Image
-          src="/images/hero/hero-medical.jpg"
-          alt={t(locale, 'home_hero_alt')}
-          fill
-          className="object-cover"
-          priority
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
-        />
-        <div className="absolute inset-0 bg-black/70"></div>
-      </div>
+    <section className="modern-hero modern-section overflow-hidden">
+      <div className="modern-container">
+        <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-16 items-center">
+          {/* Text column */}
+          <div className="modern-animate-fade-in-up">
+            <span className="kicker mb-6">
+              <ShieldCheck className="w-4 h-4" />
+              {t(locale, 'home_scientifically_proven')}
+            </span>
 
-      {/* Content */}
-      <div className="relative z-10 modern-container text-center text-white pt-10 sm:pt-12 md:pt-16 lg:pt-18">
-        
-        
-        {/* Main Headline */}
-            <h1 className="mt-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl font-bold mb-5 sm:mb-7 md:mb-9 modern-heading leading-tight modern-animate-fade-in-up">
-              <span className="block text-white">{t(locale, 'home_hero_l1')}</span>
-              <span className="block text-white">{t(locale, 'home_hero_l2')}</span>
-              <span className="block text-white">{t(locale, 'home_hero_l3')}</span>
+            <h1 className="mt-5 text-[2.6rem] sm:text-6xl lg:text-[4.25rem] leading-[1.04] tracking-tight text-[var(--ink)]">
+              <span className="block">{t(locale, 'home_hero_l1')}</span>
+              <span className="block italic text-[var(--brand-dark)]">{t(locale, 'home_hero_l2')}</span>
+              <span className="block">{t(locale, 'home_hero_l3')}</span>
             </h1>
-        
-        {/* Subheadline */}
-        <p className="text-sm sm:text-base md:text-lg text-gray-200 mb-6 sm:mb-8 md:mb-10 max-w-4xl mx-auto leading-relaxed modern-animate-fade-in-up">
-          <span className="font-semibold text-white">{t(locale, 'home_hero_sub_bold')}</span><br />
-          {t(locale, 'home_hero_sub_rest')}
-        </p>
-        
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center mb-10 sm:mb-14 modern-animate-fade-in-up">
-            <a
-              href="http://wa.me/491639347633"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#0395A6] hover:bg-[#027686] text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-lg text-base sm:text-lg font-bold transition-colors duration-200 flex items-center justify-center space-x-3 group shadow-lg"
-            >
-            <MessageCircle className="w-5 h-5" />
-            <span>{t(locale, 'home_hero_cta_primary')}</span>
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </a>
-          <Link
-            href="/coaching"
-            className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-2 border-white/50 hover:border-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-lg text-base sm:text-lg font-bold transition-all duration-300 flex items-center justify-center space-x-3 group"
-          >
-            <span>{t(locale, 'home_hero_cta_secondary')}</span>
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </div>
 
-        {/* Trust Indicators */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto modern-animate-fade-in-up">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-            <div className="text-4xl md:text-5xl font-bold text-white mb-2">94%</div>
-            <p className="text-white/90 font-semibold text-base">{t(locale, 'home_trust_97_label')}</p>
-            <p className="text-white/70 text-sm hidden md:block">{t(locale, 'home_trust_97_desc')}</p>
-          </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-            <div className="text-4xl md:text-5xl font-bold text-white mb-2">100+</div>
-            <p className="text-white/90 font-semibold text-base">{t(locale, 'home_trust_500_label')}</p>
-            <p className="text-white/70 text-sm hidden md:block">{t(locale, 'home_trust_500_desc')}</p>
-          </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hidden md:block">
-            <div className="text-4xl md:text-5xl font-bold text-white mb-2">6+</div>
-            <p className="text-white/90 font-semibold text-base">{t(locale, 'home_trust_6_label')}</p>
-            <p className="text-white/70 text-sm">{t(locale, 'home_trust_6_desc')}</p>
-          </div>
-        </div>
+            <p className="mt-7 text-base sm:text-lg text-[var(--body)] max-w-xl leading-relaxed">
+              <span className="font-semibold text-[var(--ink)]">{t(locale, 'home_hero_sub_bold')}</span>{' '}
+              {t(locale, 'home_hero_sub_rest')}
+            </p>
 
-        {/* Trust Banner */}
-        <div className="mt-12 mb-8 bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 max-w-2xl mx-auto modern-animate-fade-in-up hidden md:block">
-          <div className="flex items-center justify-center space-x-2 text-white font-bold text-lg">
-            <Target className="w-6 h-6" />
-            <span>{t(locale, 'home_trust_banner_title')}</span>
+            <div className="mt-9 flex flex-col sm:flex-row gap-3.5">
+              <a
+                href="http://wa.me/491639347633"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="modern-button px-7 py-4 text-base group"
+              >
+                <MessageCircle className="w-5 h-5" />
+                <span>{t(locale, 'home_hero_cta_primary')}</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
+              </a>
+              <Link href="/coaching" className="modern-button-secondary px-7 py-4 text-base">
+                {t(locale, 'home_hero_cta_secondary')}
+              </Link>
+            </div>
+
+            {/* Trust row */}
+            <div className="mt-12 flex flex-wrap items-center gap-x-10 gap-y-5">
+              {stats.map((s, i) => (
+                <div key={i} className="flex items-baseline gap-2.5">
+                  <span className="text-3xl font-semibold text-[var(--ink)]" style={{ fontFamily: 'var(--font-display)' }}>
+                    {s.value}
+                  </span>
+                  <span className="text-sm text-[var(--muted)] max-w-[8rem] leading-tight">{s.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
-          <p className="text-white/90 text-base mt-3">
-            {t(locale, 'home_trust_banner_desc')}
-          </p>
+
+          {/* Image column */}
+          <div className="relative modern-animate-fade-in">
+            <div className="relative aspect-[4/5] sm:aspect-[5/5] lg:aspect-[4/5] rounded-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-xl)] ring-1 ring-black/5">
+              <Image
+                src="/images/hero/hero-medical.jpg"
+                alt={t(locale, 'home_hero_alt')}
+                fill
+                priority
+                className="object-cover"
+                sizes="(min-width: 1024px) 45vw, 100vw"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)]/30 via-transparent to-transparent"></div>
+            </div>
+
+            {/* Floating trust badge */}
+            <div className="absolute -bottom-5 left-5 sm:left-8 bg-white rounded-2xl shadow-[var(--shadow-lg)] border border-[var(--border)] px-5 py-4 flex items-center gap-3 max-w-[16rem]">
+              <div className="icon-chip flex-shrink-0">
+                <Star className="w-5 h-5" />
+              </div>
+              <div className="min-w-0">
+                <div className="text-sm font-bold text-[var(--ink)] leading-tight">
+                  {t(locale, 'home_trust_97_label')}
+                </div>
+                <div className="text-xs text-[var(--muted)] leading-tight truncate">
+                  {t(locale, 'home_trust_97_desc')}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      {/* Scroll Indicator removed on mobile for better UX */}
     </section>
   )
 }
