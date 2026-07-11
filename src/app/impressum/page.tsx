@@ -20,7 +20,7 @@ export default function ImpressumPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <p>
-              <strong>Thavarajasingam, Ahkash; Eid, Mustafa Magdy Abdel Razik Mahmoud GbR</strong><br />
+              <strong>Eid/Thavarajasingam GbR</strong><br />
               Hallesche Straße 94a<br />
               44143 Dortmund
             </p>

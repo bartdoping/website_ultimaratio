@@ -37,7 +37,7 @@ export default async function AGBPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-8">
-              für die Erbringung von Dienstleistungen von Thavarajasingam, Ahkash; Eid, Mustafa Magdy Abdel Razik GbR, 
+              für die Erbringung von Dienstleistungen von Eid/Thavarajasingam GbR, 
               Hallesche Straße 94a, 44143 Dortmund, E-Mail: <a href="mailto:info@ultima-rat.io" className="text-[#0395A6] hover:underline">info@ultima-rat.io</a> (nachfolgend &ldquo;Auftragnehmer&rdquo;) gegenüber seinen 
               Kunden (nachfolgend &ldquo;Auftraggeber&rdquo;)
             </p>
