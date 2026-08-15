@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { MessageCircle, X } from 'lucide-react'
+import { whatsappHref } from '@/lib/links'
 
 export default function StickyWhatsAppCTA() {
   const [isVisible] = useState(true)
@@ -36,7 +37,7 @@ export default function StickyWhatsAppCTA() {
 
           {/* CTA Button */}
           <a
-            href="http://wa.me/491639347633"
+            href={whatsappHref('sticky')}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full bg-[#0395A6] hover:bg-[#028A9A] text-white font-medium py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"

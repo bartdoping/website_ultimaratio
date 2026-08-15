@@ -5,8 +5,7 @@ import { MessageCircle, Mail, MapPin, Clock, ArrowRight } from 'lucide-react'
 import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { useEffect, useState } from 'react'
-
-const WHATSAPP = 'http://wa.me/491639347633'
+import { whatsappHref } from '@/lib/links'
 
 export default function Footer() {
   const [locale, setLocale] = useState<Locale>('de')
@@ -63,7 +62,7 @@ export default function Footer() {
           </div>
           <div className="lg:justify-self-end w-full lg:w-auto">
             <a
-              href={WHATSAPP}
+              href={whatsappHref('footer')}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2.5 w-full lg:w-auto bg-white text-[var(--ink)] rounded-full px-8 py-4 text-base font-semibold hover:bg-white/90 transition-colors group"

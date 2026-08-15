@@ -22,6 +22,7 @@ import { cookies } from 'next/headers'
 import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { buildMetadata } from '@/i18n/seo'
+import { whatsappHref } from '@/lib/links'
 
 export async function generateMetadata(): Promise<Metadata> {
   const cookieStore = await cookies()
@@ -174,7 +175,7 @@ export default async function MedicalSkillsPage() {
             <p className="modern-text text-lg text-gray-600 mb-8 max-w-3xl mx-auto">{t(locale, 'ms_hero_sub')}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="http://wa.me/491639347633"
+                href={whatsappHref('medicalskills')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
@@ -392,7 +393,7 @@ export default async function MedicalSkillsPage() {
               <p className="modern-text text-lg text-gray-600 mb-8">{t(locale, 'ms_cta_sub')}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="http://wa.me/491639347633"
+                  href={whatsappHref('medicalskills')}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"

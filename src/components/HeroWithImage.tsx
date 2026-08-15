@@ -6,6 +6,7 @@ import { MessageCircle, ArrowRight, ShieldCheck, Star } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { t } from '@/i18n/dictionaries'
+import { whatsappHref } from '@/lib/links'
 
 export default function HeroWithImage() {
   const [locale, setLocale] = useState<Locale>('de')
@@ -46,7 +47,7 @@ export default function HeroWithImage() {
 
             <div className="mt-9 flex flex-col sm:flex-row gap-3.5">
               <a
-                href="http://wa.me/491639347633"
+                href={whatsappHref('home')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modern-button px-7 py-4 text-base group"

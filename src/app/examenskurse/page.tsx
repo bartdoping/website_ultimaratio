@@ -21,6 +21,7 @@ import { cookies } from 'next/headers'
 import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { buildMetadata } from '@/i18n/seo'
+import { whatsappHref } from '@/lib/links'
 
 export async function generateMetadata(): Promise<Metadata> {
   const cookieStore = await cookies()
@@ -99,7 +100,7 @@ export default async function ExamenskursePage() {
             <p className="modern-text text-lg text-gray-600 mb-8 max-w-3xl mx-auto">{t(locale, 'ek_hero_sub')}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="http://wa.me/491639347633"
+                href={whatsappHref('examenskurse')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modern-button px-12 py-5 rounded-lg text-lg font-semibold inline-flex items-center justify-center group"
@@ -289,7 +290,7 @@ export default async function ExamenskursePage() {
               <div className="text-center">
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed modern-text price-text-mobile">{t(locale, 'ek_price_info')}</p>
                 <a
-                  href="http://wa.me/491639347633"
+                  href={whatsappHref('examenskurse')}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="modern-button px-12 py-5 rounded-lg button-text modern-focus group price-button-mobile"
@@ -334,7 +335,7 @@ export default async function ExamenskursePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-8 justify-center animate-fade-in-up">
             <a
-              href="http://wa.me/491639347633"
+              href={whatsappHref('examenskurse')}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all focus-ring inline-block group"

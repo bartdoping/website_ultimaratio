@@ -5,6 +5,7 @@ import { cookies } from 'next/headers'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { t } from '@/i18n/dictionaries'
 import { buildMetadata } from '@/i18n/seo'
+import { whatsappHref } from '@/lib/links'
 
 export async function generateMetadata(): Promise<Metadata> {
   const cookieStore = await cookies()
@@ -245,7 +246,7 @@ export default async function TeamPage() {
             {t(locale, 'team_cta_sub2')}
           </p>
           <a
-            href="http://wa.me/491639347633"
+            href={whatsappHref('team')}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"

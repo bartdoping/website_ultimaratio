@@ -6,8 +6,7 @@ import { useEffect, useRef, useState } from 'react'
 import { t } from '@/i18n/dictionaries'
 import { Menu, X, MessageCircle, Settings, ChevronDown, Globe } from 'lucide-react'
 import { useCookies } from '../contexts/CookieContext'
-
-const WHATSAPP = 'http://wa.me/491639347633'
+import { whatsappHref } from '@/lib/links'
 
 type SubItem = { nameKey: string; href: string }
 type NavItem = { nameKey: string; href: string; submenu?: SubItem[] }
@@ -177,7 +176,7 @@ export default function Header() {
 
             {/* WhatsApp CTA */}
             <a
-              href={WHATSAPP}
+              href={whatsappHref('header')}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:inline-flex items-center gap-1.5 bg-[var(--brand-dark)] text-white rounded-full px-4 py-2 text-[13px] font-semibold hover:bg-[var(--brand-deep)] transition-colors"
@@ -252,7 +251,7 @@ export default function Header() {
 
             <div className="pt-4 mt-2 border-t border-[var(--border)] space-y-2">
               <a
-                href={WHATSAPP}
+                href={whatsappHref('header')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full bg-[var(--brand-dark)] text-white rounded-full px-4 py-3 text-sm font-semibold"

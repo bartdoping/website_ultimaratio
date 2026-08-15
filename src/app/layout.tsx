@@ -8,7 +8,6 @@ import { CookieProvider } from '@/contexts/CookieContext'
 import CookieBanner from '@/components/CookieBanner'
 import CookieSettings from '@/components/CookieSettings'
 import BlackBookPopup from '@/components/BlackBookPopup'
-import WhatsAppConversionTracker from '@/components/WhatsAppConversionTracker'
 import JsonLd from '@/components/JsonLd'
 import { normalizeLocale, getDirection } from '@/i18n/locales'
 import { SITE_NAME, SITE_URL } from '@/i18n/seo'
@@ -79,7 +78,6 @@ export default async function RootLayout({
           <CookieBanner />
           <CookieSettings />
           <BlackBookPopup />
-          <WhatsAppConversionTracker />
         </CookieProvider>
       </body>
     </html>

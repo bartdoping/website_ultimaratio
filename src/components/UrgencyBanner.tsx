@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { Clock, Users, Zap, CheckCircle } from 'lucide-react'
 import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
+import { whatsappHref } from '@/lib/links'
 
 export default function UrgencyBanner() {
   const [locale, setLocale] = useState<Locale>('de')
@@ -129,7 +130,7 @@ export default function UrgencyBanner() {
             {/* CTA */}
             <div className="space-y-4">
               <a
-                href="http://wa.me/491639347633"
+                href={whatsappHref('home')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-[#0395A6] hover:bg-gray-50 px-12 py-6 rounded-lg text-xl font-bold transition-colors duration-200 shadow-lg inline-flex items-center space-x-3"

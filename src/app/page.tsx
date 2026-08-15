@@ -14,8 +14,7 @@ import HeroWithImage from '../components/HeroWithImage'
 import StickyWhatsAppCTA from '../components/StickyWhatsAppCTA'
 import JsonLd from '../components/JsonLd'
 import { faqJsonLd } from '@/i18n/structured-data'
-
-const WHATSAPP = 'http://wa.me/491639347633'
+import { whatsappHref } from '@/lib/links'
 
 // Mirrors the 11 visible Q&A pairs rendered by <FAQ /> below — kept in sync so
 // the FAQPage schema only describes content that is actually visible on the page.
@@ -187,7 +186,7 @@ export default async function HomePage() {
               <h2 className="section-title mt-4">{t(locale, 'home_solution_title')}</h2>
               <p className="section-lead mt-5">{t(locale, 'home_solution_sub')}</p>
               <a
-                href={WHATSAPP}
+                href={whatsappHref('home')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modern-button px-7 py-4 text-base mt-8 group"
@@ -262,7 +261,7 @@ export default async function HomePage() {
               </div>
               <p className="modern-text mb-8">{t(locale, 'home_price_single_desc')}</p>
               <a
-                href={WHATSAPP}
+                href={whatsappHref('home')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modern-button px-7 py-4 text-base mt-auto"
@@ -285,7 +284,7 @@ export default async function HomePage() {
               </div>
               <p className="modern-text mb-8">{t(locale, 'home_price_group_desc')}</p>
               <a
-                href={WHATSAPP}
+                href={whatsappHref('home')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modern-button-secondary px-7 py-4 text-base mt-auto"
@@ -318,7 +317,7 @@ export default async function HomePage() {
 
           <div className="mt-9 flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={WHATSAPP}
+              href={whatsappHref('home')}
               target="_blank"
               rel="noopener noreferrer"
               className="modern-button px-8 py-4 text-base bg-white !text-[var(--ink)] hover:!bg-[var(--surface)]"

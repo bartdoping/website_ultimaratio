@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import { TrendingUp, Users, Award, Target } from 'lucide-react'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { t } from '@/i18n/dictionaries'
+import { whatsappHref } from '@/lib/links'
 
 export default function StatsCounter() {
   const [isVisible, setIsVisible] = useState(false)
@@ -143,7 +144,7 @@ export default function StatsCounter() {
         {/* CTA */}
         <div className="text-center mt-16 modern-animate-fade-in-up hidden md:block">
           <a
-            href="http://wa.me/491639347633"
+            href={whatsappHref('home')}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#0395A6] hover:bg-[#027686] text-white px-16 py-8 rounded-lg text-lg font-bold transition-colors duration-200 shadow-lg inline-flex items-center space-x-4"

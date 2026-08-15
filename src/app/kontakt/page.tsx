@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
 import { t } from '@/i18n/dictionaries'
 import { MessageCircle, Phone, Mail, MapPin, Clock, Send, CheckCircle, Instagram, MessageSquare, MailOpen } from 'lucide-react'
+import { whatsappHref } from '@/lib/links'
 
 export default function KontaktPage() {
   const [locale, setLocale] = useState<Locale>('de')
@@ -99,7 +100,7 @@ export default function KontaktPage() {
                 {t(locale, 'contact_whatsapp_p')}
               </p>
               <a
-                href="http://wa.me/491639347633"
+                href={whatsappHref('kontakt')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modern-button px-3 md:px-8 py-2 md:py-4 rounded-lg text-xs md:text-lg font-semibold modern-focus inline-block"
@@ -305,7 +306,7 @@ export default function KontaktPage() {
               <h3 className="text-xs md:text-lg font-bold text-black mb-3 md:mb-8 modern-heading">{t(locale, 'contact_quick_title')}</h3>
               <div className="space-y-2 md:space-y-6">
                 <a
-                  href="http://wa.me/491639347633"
+                  href={whatsappHref('kontakt')}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center p-1.5 md:p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors"
@@ -358,7 +359,7 @@ export default function KontaktPage() {
             {t(locale, 'contact_cta_p2')}
           </p>
           <a
-            href="http://wa.me/491639347633"
+            href={whatsappHref('kontakt')}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"

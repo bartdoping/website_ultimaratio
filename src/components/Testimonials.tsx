@@ -4,6 +4,7 @@ import { Star } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
+import { whatsappHref } from '@/lib/links'
 
 interface Testimonial {
   name: string
@@ -192,7 +193,7 @@ export default function Testimonials() {
             {t(locale, 'home_testimonials_cta_sub')}
           </p>
           <a
-            href="http://wa.me/491639347633"
+            href={whatsappHref('home')}
             target="_blank"
             rel="noopener noreferrer"
             className="modern-button px-10 py-4 rounded-lg text-base font-semibold modern-focus inline-block"

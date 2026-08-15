@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
+import { whatsappHref } from '@/lib/links'
 
 interface FAQItem {
   question: string
@@ -81,7 +82,7 @@ export default function FAQ() {
             {t(locale, 'contact_hero_p')}
           </p>
           <a
-            href="http://wa.me/491639347633"
+            href={whatsappHref('faq')}
             target="_blank"
             rel="noopener noreferrer"
             className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus inline-block"

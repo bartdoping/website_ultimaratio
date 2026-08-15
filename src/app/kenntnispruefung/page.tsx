@@ -6,6 +6,7 @@ import { t } from '@/i18n/dictionaries'
 import { buildMetadata } from '@/i18n/seo'
 import JsonLd from '@/components/JsonLd'
 import { faqJsonLd } from '@/i18n/structured-data'
+import { whatsappHref } from '@/lib/links'
 
 export async function generateMetadata(): Promise<Metadata> {
   const cookieStore = await cookies()
@@ -53,7 +54,7 @@ export default async function KenntnispruefungPage() {
             
             <div className="flex flex-col sm:flex-row gap-8 justify-center modern-animate-fade-in-up">
               <a
-                href="http://wa.me/491639347633"
+                href={whatsappHref('kenntnispruefung')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus group cursor-pointer"
@@ -545,7 +546,7 @@ export default async function KenntnispruefungPage() {
                   {t(locale, 'kp_price_info')}
                 </p>
                 <a
-                  href="http://wa.me/491639347633"
+                  href={whatsappHref('kenntnispruefung')}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="modern-button px-12 py-5 rounded-lg text-lg font-semibold modern-focus group price-button-mobile"
@@ -573,7 +574,7 @@ export default async function KenntnispruefungPage() {
             {t(locale, 'cta_ready_sub2')}
           </p>
           <a
-            href="http://wa.me/491639347633"
+            href={whatsappHref('kenntnispruefung')}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-[#0395A6] hover:bg-gray-100 px-12 py-5 rounded-lg text-lg font-semibold transition-all modern-focus inline-block group modern-animate-fade-in-up"

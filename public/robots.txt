@@ -8,4 +8,5 @@ Sitemap: https://ultima-rat.io/sitemap.xml
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
+Disallow: /whatsapp-start
 

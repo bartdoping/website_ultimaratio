@@ -5,6 +5,7 @@ import { CheckCircle, Users, Award, TrendingUp, Brain, Zap } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { t } from '@/i18n/dictionaries'
 import { normalizeLocale, type Locale } from '@/i18n/locales'
+import { whatsappHref } from '@/lib/links'
 
 export default function SolutionVisual() {
   const [locale, setLocale] = useState<Locale>('de')
@@ -184,7 +185,7 @@ export default function SolutionVisual() {
             {/* CTA */}
             <div className="text-center mt-8">
               <a
-                href="http://wa.me/491639347633"
+                href={whatsappHref('home')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#0395A6] hover:bg-[#027686] text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors duration-200 shadow-lg inline-flex items-center space-x-2"
